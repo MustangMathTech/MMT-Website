@@ -300,7 +300,7 @@
         </div>
     </div>
 
-    
+
 
     <div class="homeText">
         As MM gears up for the upcoming year, we plan to host an
@@ -336,7 +336,7 @@ collaboration and be enjoyable for the participants.
 
 <style>
     .outside {
-        background-image: url("/home-page/mustang_math_splash_screeen\ copy.png"); 
+        background-image: url("/home-page/mustang_math_splash_screeen.png"); 
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
