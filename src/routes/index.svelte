@@ -215,7 +215,7 @@
 
 <style>
     .outside {
-        background-image: url("/splash.svg");
+        background-image: url("/static/home-page/mustang_math_gif.gif"); 
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
