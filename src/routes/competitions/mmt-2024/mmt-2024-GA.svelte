@@ -61,7 +61,7 @@
 <svelte:window bind:innerWidth={windowWidth} />
 
 <div class="page"></div>
-<PageHeader title="Mustang Math Tournament (MMT) Georgia" description="May 4, 2024: 9:00 AM - 5:00 PM PT" button_url="http://tinyurl.com/MMT2024Registration" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
+<PageHeader title="Mustang Math Tournament (MMT) Georgia" description="TBD, 2024: 9:00 AM - 5:00 PM PT" button_url="http://tinyurl.com/MMT2024Registration" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
 
 <br />
 
