@@ -74,8 +74,8 @@
             <strong>TEAM SIZE:</strong> 3-4* <br />
             <strong>LOCATION:</strong> Greater Atlanta Area, Georgia<br />
             <strong>EARLY HORSE COST:</strong> $15 per participant (Register before <strong>March 14th, 2024</strong>)<br />
-            <strong>NORMAL COST:</strong> $20 per participant (Register before <strong>April 24th, 2024</strong>)<br /> 
-            <strong>LATE COST:</strong> $25 per participant (Register before <strong>April 31th, 2024</strong>)<br /> <br />
+            <strong>NORMAL COST:</strong> $20 per participant (Register before <strong>TBD, 2024</strong>)<br /> 
+            <strong>LATE COST:</strong> $25 per participant (Register before <strong>TBD, 2024</strong>)<br /> <br />
             <a href="https://tinyurl.com/MMT2024Registration" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
             <br /><br />
             <i><strong>*:</strong> Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4</i><br />
