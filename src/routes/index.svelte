@@ -1,13 +1,14 @@
 <script>
     import Heading from "$lib/components/Heading.svelte";
     import Newsletter from "$lib/components/Newsletter.svelte";
-    import { fly, slide, blur } from "svelte/transition";
+    import { fly, slide, blur, fade } from "svelte/transition";
     import { quintOut } from 'svelte/easing';
     import { onMount } from "svelte";
     import PanelBox from "$lib/components/PanelBox.svelte";
     import AnimatedElement from "$lib/components/AnimatedElement.svelte";
     import PanelBoxAnimated from "$lib/components/PanelBoxAnimated.svelte";
     import Header from "$lib/header/Header.svelte";
+    import Horse from "$lib/components/Horse.svelte";
 
     // need to do this to make the animation play on page load
     let visible = false;
@@ -28,11 +29,13 @@
     }
 
     let y;
+    let x;
     $: console.log(y);
     $: y = 5 * y;
+    $: x = x;
 </script>
 
-<svelte:window bind:scrollY={y} bind:innerWidth={windowWidth} />
+<svelte:window bind:scrollY={y} bind:scrollX={x} bind:innerWidth={windowWidth} />
 
 <svelte:head>
     <title>Mustang Math</title>
@@ -41,18 +44,12 @@
 <Newsletter {show} />
 <div class="outside" style="height: 100vh;">
     <div class="header flex">
-        {#if visible}
+        {#if windowWidth < 860}
             <div in:fly={{ y: -20, duration: 700 }} class="minidiv">
-                <!-- {#if windowWidth > 600}
-                    <Heading
-                        className="glow"
-                        text="Mustang Math"
-                        textColor="white"
-                    />
-                {:else}
+
                     <Heading className="glow" text="MM" textColor="white" />
-                {/if} -->
-                <!-- <div class="flex"><div class="headerline" /></div>
+  
+                <div class="flex"><div class="headerline" /></div>
 
                 <a sveltekit:prefetch href="/join" class="headerButton">
                     <div
@@ -71,13 +68,13 @@
                         />
                     </div>
                 </a>
-                <br /> -->
+                <br />
                 <!--
                 <button class="sign-up" on:click={() => {show = !show;}}><i class="fa-regular fa-newspaper"></i> Sign Up for our Newsletter</button>
                 -->
             </div>
 
-            <!-- <svg
+            <svg
                 style="transform: translate({y / 6 - 30}px, 0px)"
                 id="Layer_1"
                 width="400"
@@ -142,7 +139,7 @@
                     class="cls-4"
                     d="M180.89,402.66c.63.68,1.27,1.35,1.9,2C182.16,404,181.52,403.34,180.89,402.66Z"
                 /></svg
-            > -->
+            >
         {/if}
     </div>
 </div>
@@ -203,22 +200,25 @@
     </div>
 </div> -->
 <div style="background: #FFFCFC; width:100%; display:flex; align-items:center; flex-direction:column; justify-content:center;">
+    <!-- <Horse></Horse> -->
     <div class="vertLine"></div>
-    <div class="scrollHorse"></div>
+    <div class="dot"> </div>
 
-    <Heading text="About Mustang Math" size={4} textColor="#3C6F8B;" />
-    <div class="homeText">
-        Mustang Math is a <b>nonprofit organization</b> of high school and college volunteers that are dedicated towards providing middle schoolers access to challenging, interesting, fun, and collaborative math competitions and resources! We are the organizers of the annual <b>Mustang Math Tournament</b>, run low-cost and high-quality <b>mathematics tutoring</b> and are also working on many new and exciting projects including a Youtube Channel, a competition management platform, private tutoring, and more! We reached over 500 U.S. competitors in our MMT 2023 contests, and we're expecting 750 more in our international tournament this upcoming August. We are excited to expand our team to continue our mission of spreading a love for mathematics amongst students.
-    </div>
-
+    <div style="width:100%; align-items:center;display:flex; flex-direction:column; justify-content:center;" >
+        <Heading text="About Mustang Math" size={4} textColor="#3C6F8B;" />
+        <div class="homeText">
+            Mustang Math is a <b>nonprofit organization</b> of high school and college volunteers that are dedicated towards providing middle schoolers access to challenging, interesting, fun, and collaborative math competitions and resources! We are the organizers of the annual <b>Mustang Math Tournament</b>, run low-cost and high-quality <b>mathematics tutoring</b> and are also working on many new and exciting projects including a Youtube Channel, a competition management platform, private tutoring, and more! We reached over 500 U.S. competitors in our MMT 2023 contests, and we're expecting 750 more in our international tournament this upcoming August. We are excited to expand our team to continue our mission of spreading a love for mathematics amongst students.
+        </div>
+    </div>  
 
     <div class="vertLine"></div>
+    <div class="dot"> </div>
 
 
 
     <Heading text="Who are We?" size={4} textColor="#3C6F8B;" />
-    <div style="display:flex; margin-left: 10%; margin-right:10%; margin-top:3%; align-items:center; justify-content:center;">
-        <div style="display:flex; align-items:center; flex-direction:column; justify-content:center; margin-left:5%; margin-right:15%">
+    <div class="homeBox">
+        <div class="homeCard">
             <img 
             src="/home-page/Volunteers.png" 
             style="width: 216px;
@@ -229,7 +229,7 @@
             <Heading text="80+" size={4} textColor="#38C27C;" />
             <Heading text="Volunteers" size={2} textColor="#000;" />
         </div>
-        <div style="display:flex; align-items:center; flex-direction:column; justify-content:center; margin-left:15%; margin-right:15%">
+        <div class="homeCard">
             <img 
             src="/home-page/States.png" 
             style="width: 216px;
@@ -240,7 +240,7 @@
             <Heading text="34" size={4} textColor="#38C27C;" />
             <Heading text="States with Volunteers" size={2} textColor="#000;" />
         </div>
-        <div style="display:flex; align-items:center; flex-direction:column; justify-content:center; margin-left:15%; margin-right:5%">
+        <div class="homeCard">
             <img 
             src="/home-page/Teams.png" 
             style="width: 216px;
@@ -262,10 +262,12 @@
     </div>
 
     <div class="vertLine"></div>
+    <div class="dot"> </div>
+
 
     <Heading text="Tournaments" size={4} textColor="#3C6F8B;" />
-    <div style="display:flex; margin-left: 10%; margin-right:10%; margin-top:3%; align-items:center; justify-content:center;">
-        <div style="display:flex; align-items:center; flex-direction:column; justify-content:center; margin-left:5%; margin-right:10%">
+    <div class="homeBox">
+        <div class="homeCard">
             <img 
             src="/home-page/DomesticComp.png" 
             style="width: 266px;
@@ -276,7 +278,7 @@
             <Heading text="550+" size={4} textColor="#38C27C;" />
             <Heading text="Domestic Competitors" size={2} textColor="#000;" />
         </div>
-        <div style="display:flex; align-items:center; flex-direction:column; justify-content:center; margin-left:10%; margin-right:10%">
+        <div class="homeCard">
             <img 
             src="/home-page/InternationalComp.png" 
             style="width: 266px;
@@ -287,7 +289,7 @@
             <Heading text="350+" size={4} textColor="#38C27C;" />
             <Heading text="International Competitors" size={2} textColor="#000;" />
         </div>
-        <div style="display:flex; align-items:center; flex-direction:column; justify-content:center; margin-left:10%; margin-right:5%">
+        <div class="homeCard">
             <img 
             src="/home-page/Worldcomp.png" 
             style="width: 266px;
@@ -315,6 +317,8 @@ collaboration and be enjoyable for the participants.
 <!-- Add button here -->
 
     <div class="vertLine"></div>
+    <div class="dot"> </div>
+
     <Heading text="Classes" size={4} textColor="#3C6F8B;" />
 
     <div class="homeText">
@@ -338,9 +342,11 @@ collaboration and be enjoyable for the participants.
     .outside {
         background-image: url("/home-page/mustang_math_splash_screeen_5.gif"); 
         background-size: cover;
-        background-position: center;
+        background-position: left;
         background-repeat: no-repeat;
         overflow: hidden;
+        
+        padding-top:60px;
     }
 
     .sign-up {
@@ -348,7 +354,7 @@ collaboration and be enjoyable for the participants.
         color: white;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 860px) {
         .outside {
             background-image: url("/splash-mobile.svg");
             background-size: cover;
@@ -426,26 +432,56 @@ collaboration and be enjoyable for the participants.
         padding: 0px;
     }
 
-    .scrollHorse{
-        width: 256px;
-        height: 256px;
-        flex-shrink: 0;
-        background: url('/home-page/scrollHorsie.png'), #FCFCFC 50% / cover no-repeat;
-    }
 
     .homeText{
-        width: 1210px;
+        width: 80%;
         flex-shrink: 0;
-    color: #000;
-    text-align: center;
-    font-family: Ubuntu;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; /* 125% */
-    margin-bottom: 3%;
-    margin-top:3%;
-
+        color: #000;
+        text-align: center;
+        font-family: Ubuntu;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 3%;
+        margin-top:3%;
         }
+
+    .homeBox{
+        display:flex;
+        margin-left: 10%;
+        margin-right:10%; 
+        margin-top:3%; 
+        align-items:center; 
+        justify-content:center;
+    }
+
+    @media (max-width: 950px){
+        .homeBox{
+        display:flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right:10%; 
+        margin-top:3%; 
+        align-items:center; 
+        justify-content:center;
+    }
+
+    }
+
+    .homeCard{
+        display:flex; 
+        align-items:center; 
+        flex-direction:column; 
+        justify-content:center; 
+        margin-left:5%; 
+        margin-right:5%
+    }
+
+    .dot{
+        border-radius: 10000px;
+        border-color: #000;
+        border-width: 10px;
+        border-style: solid;
+    }
 
 </style>
