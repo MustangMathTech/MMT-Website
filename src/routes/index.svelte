@@ -58,7 +58,7 @@
                         on:mouseleave={toggleBackground}
                     >
                         <p class="headerButton" id="signupformmt">
-                            Join the Mustang Math Team!
+                            Register for MMT 2024
                         </p>
                         <img
                             height="25px"
