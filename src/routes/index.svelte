@@ -202,7 +202,7 @@
         </PanelBox>
     </div>
 </div> -->
-<div style="background: #FFFCFC; width:100%; height:4000px; display:flex; align-items:center; flex-direction:column; justify-content:center;">
+<div style="background: #FFFCFC; width:100%; display:flex; align-items:center; flex-direction:column; justify-content:center;">
     <div class="vertLine"></div>
     <div class="scrollHorse"></div>
 
@@ -218,7 +218,7 @@
 
     <Heading text="Who are We?" size={4} textColor="#3C6F8B;" />
     <div style="display:flex; margin-left: 10%; margin-right:10%; margin-top:3%; align-items:center; justify-content:center;">
-        <div style="display:flex; align-items:center; flex-direction:column; justify-content:center; margin-left:15%; margin-right:15%">
+        <div style="display:flex; align-items:center; flex-direction:column; justify-content:center; margin-left:5%; margin-right:15%">
             <img 
             src="/home-page/Volunteers.png" 
             style="width: 216px;
@@ -240,7 +240,7 @@
             <Heading text="34" size={4} textColor="#38C27C;" />
             <Heading text="States with Volunteers" size={2} textColor="#000;" />
         </div>
-        <div style="display:flex; align-items:center; flex-direction:column; justify-content:center; margin-left:15%; margin-right:15%">
+        <div style="display:flex; align-items:center; flex-direction:column; justify-content:center; margin-left:15%; margin-right:5%">
             <img 
             src="/home-page/Teams.png" 
             style="width: 216px;
@@ -265,7 +265,7 @@
 
     <Heading text="Tournaments" size={4} textColor="#3C6F8B;" />
     <div style="display:flex; margin-left: 10%; margin-right:10%; margin-top:3%; align-items:center; justify-content:center;">
-        <div style="display:flex; align-items:center; flex-direction:column; justify-content:center; margin-left:10%; margin-right:10%">
+        <div style="display:flex; align-items:center; flex-direction:column; justify-content:center; margin-left:5%; margin-right:10%">
             <img 
             src="/home-page/DomesticComp.png" 
             style="width: 266px;
@@ -287,7 +287,7 @@
             <Heading text="350+" size={4} textColor="#38C27C;" />
             <Heading text="International Competitors" size={2} textColor="#000;" />
         </div>
-        <div style="display:flex; align-items:center; flex-direction:column; justify-content:center; margin-left:10%; margin-right:10%">
+        <div style="display:flex; align-items:center; flex-direction:column; justify-content:center; margin-left:10%; margin-right:5%">
             <img 
             src="/home-page/Worldcomp.png" 
             style="width: 266px;
@@ -336,7 +336,7 @@ collaboration and be enjoyable for the participants.
 
 <style>
     .outside {
-        background-image: url("/home-page/mustang_math_splash_screeen.png"); 
+        background-image: url("/home-page/mustang_math_splash_screeen_5.gif"); 
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -421,7 +421,7 @@ collaboration and be enjoyable for the participants.
 
     .vertLine{
         width: 1px;
-        height: 253px;  
+        height: 153px;  
         background: #000;
         padding: 0px;
     }
