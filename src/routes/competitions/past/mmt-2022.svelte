@@ -77,10 +77,10 @@
 <Heading text="Rounds" size={2.5} textColor="#1B9AAA" />
 <div class="competition-wrapper">
     <FlexBox align="start">
-        <Competition imgSource="mmt-2022/puzzlepiece.png" competition="Mounting Mayhem" description="A team puzzle round where participants are faced with a variety of logical and mathematical puzzles" />
-        <Competition imgSource="mmt-2022/bingoboard.png" competition="Bucking Bingo" description="A 24-question strategy-based round where teams work to knock out as many bingos as possible!" />
-        <Competition imgSource="mmt-2022/runninghorse.png" competition="Gallop" description="An intense, fast paced round where teams race to be at the top of the live-scored leaderboard" />
-        <Competition imgSource="mmt-2022/magnifyingglass.png" competition="Mystery Mare" description="MMT's signature mystery round, where students will be introduced to the format of the round on competition day!" />
+        <Competition imgSource="/competitions/mmt-2022/puzzlepiece.png" competition="Mounting Mayhem" description="A team puzzle round where participants are faced with a variety of logical and mathematical puzzles" />
+        <Competition imgSource="/competitions/mmt-2022/bingoboard.png" competition="Bucking Bingo" description="A 24-question strategy-based round where teams work to knock out as many bingos as possible!" />
+        <Competition imgSource="/competitions/mmt-2022/runninghorse.png" competition="Gallop" description="An intense, fast paced round where teams race to be at the top of the live-scored leaderboard" />
+        <Competition imgSource="/competitions/mmt-2022/magnifyingglass.png" competition="Mystery Mare" description="MMT's signature mystery round, where students will be introduced to the format of the round on competition day!" />
     </FlexBox>
 </div> <br />
 

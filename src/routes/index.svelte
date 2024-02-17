@@ -1,12 +1,14 @@
 <script>
     import Heading from "$lib/components/Heading.svelte";
     import Newsletter from "$lib/components/Newsletter.svelte";
-    import { fly, slide, blur } from "svelte/transition";
+    import { fly, slide, blur, fade } from "svelte/transition";
     import { quintOut } from 'svelte/easing';
     import { onMount } from "svelte";
     import PanelBox from "$lib/components/PanelBox.svelte";
     import AnimatedElement from "$lib/components/AnimatedElement.svelte";
     import PanelBoxAnimated from "$lib/components/PanelBoxAnimated.svelte";
+    import Header from "$lib/header/Header.svelte";
+    import Horse from "$lib/components/Horse.svelte";
 
     // need to do this to make the animation play on page load
     let visible = false;
@@ -27,11 +29,13 @@
     }
 
     let y;
+    let x;
     $: console.log(y);
     $: y = 5 * y;
+    $: x = x;
 </script>
 
-<svelte:window bind:scrollY={y} bind:innerWidth={windowWidth} />
+<svelte:window bind:scrollY={y} bind:scrollX={x} bind:innerWidth={windowWidth} />
 
 <svelte:head>
     <title>Mustang Math</title>
@@ -40,29 +44,14 @@
 <Newsletter {show} />
 <div class="outside" style="height: 100vh;">
     <div class="header flex">
-        {#if visible}
+        {#if windowWidth < 860}
             <div in:fly={{ y: -20, duration: 700 }} class="minidiv">
-                {#if windowWidth > 600}
-                    <Heading
-                        className="glow"
-                        text="Mustang Math"
-                        textColor="white"
-                    />
-                {:else}
+
                     <Heading className="glow" text="MM" textColor="white" />
-                {/if}
+  
                 <div class="flex"><div class="headerline" /></div>
-                <p
-                    class="descript"
-                    style="font-weight: 300; font-size: 22px; color: white;"
-                >
-                    Mustang Math [MM] is a 501(c)(3) nonprofit organization of
-                    committed high school and college volunteers who are
-                    dedicated to promoting a spirit of collaboration among
-                    middle school students around the world and piquing their
-                    curiosity in mathematics.
-                </p>
-                <a sveltekit:prefetch href="/competitions/mmt-2024" class="headerButton">
+
+                <a sveltekit:prefetch href="/join" class="headerButton">
                     <div
                         class="headerButton"
                         on:mouseenter={toggleBackground}
@@ -210,16 +199,154 @@
         </PanelBox>
     </div>
 </div> -->
+<div style="background: #FFFCFC; width:100%; display:flex; align-items:center; flex-direction:column; justify-content:center;">
+    <!-- <Horse></Horse> -->
+    <div class="vertLine"></div>
+    <div class="dot"> </div>
+
+    <div style="width:100%; align-items:center;display:flex; flex-direction:column; justify-content:center;" >
+        <Heading text="About Mustang Math" size={4} textColor="#3C6F8B;" />
+        <div class="homeText">
+            Mustang Math is a <b>nonprofit organization</b> of high school and college volunteers that are dedicated towards providing middle schoolers access to challenging, interesting, fun, and collaborative math competitions and resources! We are the organizers of the annual <b>Mustang Math Tournament</b>, run low-cost and high-quality <b>mathematics tutoring</b> and are also working on many new and exciting projects including a Youtube Channel, a competition management platform, private tutoring, and more! We reached over 500 U.S. competitors in our MMT 2023 contests, and we're expecting 750 more in our international tournament this upcoming August. We are excited to expand our team to continue our mission of spreading a love for mathematics amongst students.
+        </div>
+    </div>  
+
+    <div class="vertLine"></div>
+    <div class="dot"> </div>
+
+
+
+    <Heading text="Who are We?" size={4} textColor="#3C6F8B;" />
+    <div class="homeBox">
+        <div class="homeCard">
+            <img 
+            src="/home-page/Volunteers.png" 
+            style="width: 216px;
+            height: 216px;
+            flex-shrink: 0;"
+            alt="Volunteers"
+            />
+            <Heading text="80+" size={4} textColor="#38C27C;" />
+            <Heading text="Volunteers" size={2} textColor="#000;" />
+        </div>
+        <div class="homeCard">
+            <img 
+            src="/home-page/States.png" 
+            style="width: 216px;
+            height: 216px;
+            flex-shrink: 0;"
+            alt="States with Volunteers"
+            />
+            <Heading text="34" size={4} textColor="#38C27C;" />
+            <Heading text="States with Volunteers" size={2} textColor="#000;" />
+        </div>
+        <div class="homeCard">
+            <img 
+            src="/home-page/Teams.png" 
+            style="width: 216px;
+            height: 216px;
+            flex-shrink: 0;"
+            alt="Teams"
+            />
+            <Heading text="7" size={4} textColor="#38C27C;" />
+            <Heading text="Teams" size={2} textColor="#000;" />
+        </div>
+    </div>
+
+    <div class="homeText">
+        Mustang Math began with a small team of dedicated volunteers in 2020, who wanted to spread their love for mathematics to the surrounding community. Since then, MM has hosted several successful tournaments and provided mathematical resources available worldwide. 
+    </div>
+
+    <div class="homeText"> 
+        Now, MM has a full team of volunteers worldwide, consisting of multiple dedicated teams overseeing several projects, all working towards the shared goal of promoting mathematics. Alongside our projects, MM has contributed to other mathematical initiatives, such as the ASDAN Math Tournament (AMT), by providing problems and proctors to coordinate testing.
+    </div>
+
+    <div class="vertLine"></div>
+    <div class="dot"> </div>
+
+
+    <Heading text="Tournaments" size={4} textColor="#3C6F8B;" />
+    <div class="homeBox">
+        <div class="homeCard">
+            <img 
+            src="/home-page/DomesticComp.png" 
+            style="width: 266px;
+            height: 216px;
+            flex-shrink: 0;"
+            alt="Domestic Competitiors"
+            />
+            <Heading text="550+" size={4} textColor="#38C27C;" />
+            <Heading text="Domestic Competitors" size={2} textColor="#000;" />
+        </div>
+        <div class="homeCard">
+            <img 
+            src="/home-page/InternationalComp.png" 
+            style="width: 266px;
+            height: 216px;
+            flex-shrink: 0;"
+            alt="International Competitors"
+            />
+            <Heading text="350+" size={4} textColor="#38C27C;" />
+            <Heading text="International Competitors" size={2} textColor="#000;" />
+        </div>
+        <div class="homeCard">
+            <img 
+            src="/home-page/Worldcomp.png" 
+            style="width: 266px;
+            height: 216px;
+            flex-shrink: 0;"
+            alt="Countries with Competitors"
+            />
+            <Heading text="16" size={4} textColor="#38C27C;" />
+            <Heading text="Countries with Competitors" size={2} textColor="#000;" />
+        </div>
+    </div>
+
+
+
+    <div class="homeText">
+        As MM gears up for the upcoming year, we plan to host an
+individual tournament this fall along with the team-based Mustang
+Math Tournament (MMT). MMT is our focal point, and we plan to
+have four in-person locations in addition to an online tournament in
+the upcoming year. This is an international math tournament for the middle school level that features a variety of interesting rounds
+designed to not only test mathematical ability, but also promote
+collaboration and be enjoyable for the participants.
+    </div>
+
+<!-- Add button here -->
+
+    <div class="vertLine"></div>
+    <div class="dot"> </div>
+
+    <Heading text="Classes" size={4} textColor="#3C6F8B;" />
+
+    <div class="homeText">
+        Mustang Math classes bring together students from around the world with one thing in common: an outstanding passion for math. Our highly qualified instructors prepare students for competitions in a fun and engaging way. Beyond instruction, we want to build a community of students and teachers sharing their love of math.
+    </div>
+
+    <div class="homeText">
+        These classes will be run year-round and will be split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving/AMC Prep, each run for 8 weeks. Instructive sessions will run for 90 minutes every week over Zoom. Additionally, teachers will hold office hours each week, during which students can seek assistance with the content or ask any lingering questions. Each class will have 10-15 students and, depending on the interest we receive, there may be multiple classes run for each level. The total cost for 8 weeks of classes will be $160 with financial aid available.
+    </div>
+
+    <PanelBox>
+
+    </PanelBox>
+
+</div>
+
 
 
 
 <style>
     .outside {
-        background-image: url("/splash.svg");
+        background-image: url("/home-page/mustang_math_splash_screeen_5.gif"); 
         background-size: cover;
-        background-position: center;
+        background-position: left;
         background-repeat: no-repeat;
         overflow: hidden;
+        
+        padding-top:60px;
     }
 
     .sign-up {
@@ -227,7 +354,7 @@
         color: white;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 860px) {
         .outside {
             background-image: url("/splash-mobile.svg");
             background-size: cover;
@@ -298,7 +425,63 @@
         text-align: center;
     }
 
+    .vertLine{
+        width: 1px;
+        height: 153px;  
+        background: #000;
+        padding: 0px;
+    }
 
 
+    .homeText{
+        width: 80%;
+        flex-shrink: 0;
+        color: #000;
+        text-align: center;
+        font-family: Ubuntu;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 3%;
+        margin-top:3%;
+        }
+
+    .homeBox{
+        display:flex;
+        margin-left: 10%;
+        margin-right:10%; 
+        margin-top:3%; 
+        align-items:center; 
+        justify-content:center;
+    }
+
+    @media (max-width: 950px){
+        .homeBox{
+        display:flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right:10%; 
+        margin-top:3%; 
+        align-items:center; 
+        justify-content:center;
+    }
+
+    }
+
+    .homeCard{
+        display:flex; 
+        align-items:center; 
+        flex-direction:column; 
+        justify-content:center; 
+        margin-left:5%; 
+        margin-right:5%
+    }
+
+    .dot{
+        border-radius: 10000px;
+        border-color: #000;
+        border-width: 10px;
+        border-style: solid;
+    }
 
 </style>
