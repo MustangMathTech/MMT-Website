@@ -61,7 +61,7 @@
 <svelte:window bind:innerWidth={windowWidth} />
 
 <div class="page"></div>
-<PageHeader title="Mustang Math Tournament (MMT) Georgia" description="TBD, 2024: 9:00 AM - 5:00 PM PT" button_url="http://tinyurl.com/MMT2024Registration" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
+<PageHeader title="Mustang Math Tournament (MMT) Georgia" description="April 20, 2024: 9:00 AM - 5:00 PM PT" button_url="http://tinyurl.com/MMT2024Registration" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
 
 <br />
 
@@ -74,8 +74,8 @@
             <strong>TEAM SIZE:</strong> 3-4* <br />
             <strong>LOCATION:</strong> Greater Atlanta Area, Georgia<br />
             <strong>EARLY HORSE COST:</strong> $15 per participant (Register before <strong>March 14th, 2024</strong>)<br />
-            <strong>NORMAL COST:</strong> $20 per participant (Register before <strong>TBD, 2024</strong>)<br /> 
-            <strong>LATE COST:</strong> $25 per participant (Register before <strong>TBD, 2024</strong>)<br /> <br />
+            <strong>NORMAL COST:</strong> $20 per participant (Register before <strong>April 10th, 2024, 2024</strong>)<br /> 
+            <strong>LATE COST:</strong> $25 per participant (Register before <strong>April 17th, 2024, 2024</strong>)<br /> <br />
             <a href="https://tinyurl.com/MMT2024Registration" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
             <br /><br />
             <i><strong>*:</strong> Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4</i><br />

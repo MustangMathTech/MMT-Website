@@ -15,7 +15,7 @@
 <svelte:window bind:innerWidth={windowWidth} />
 
 <div class="page"></div>
-<PageHeader title="Mustang Math Tournament [MMT] 2024" description="Coming April/May 2024" button_url="#competition" button_text="Learn More" button_id="registerForCompetition" target="" />
+<PageHeader title="Mustang Math Tournament [MMT] 2024" description="Coming April - May 2024" button_url="#competition" button_text="Learn More" button_id="registerForCompetition" target="" />
 
 <br />
 
