@@ -44,10 +44,10 @@
 <Newsletter {show} />
 <div class="outside" style="height: 100vh;">
     <div class="header flex">
-        {#if windowWidth < 860}
+        {#if windowWidth > 0} <!--windowWidth < 860}-->
             <div in:fly={{ y: -20, duration: 700 }} class="minidiv">
 
-                    <Heading className="glow" text="MM" textColor="white" />
+                    <Heading className="glow" text={windowWidth > 860 ? "Mustang Math" : "MM"} textColor="white" />
   
                 <div class="flex"><div class="headerline" /></div>
 
@@ -340,7 +340,7 @@ collaboration and be enjoyable for the participants.
 
 <style>
     .outside {
-        background-image: url("/home-page/mustang_math_splash_screeen_5.gif"); 
+        background-image: url("/splash.svg"); /*url("/home-page/mustang_math_splash_screeen_5.gif");*/
         background-size: cover;
         background-position: left;
         background-repeat: no-repeat;
