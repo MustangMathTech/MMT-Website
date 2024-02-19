@@ -51,7 +51,7 @@
   
                 <div class="flex"><div class="headerline" /></div>
 
-                <a sveltekit:prefetch href="/join" class="headerButton">
+                <a sveltekit:prefetch href="/competitions/mmt-2024" class="headerButton">
                     <div
                         class="headerButton"
                         on:mouseenter={toggleBackground}
