@@ -33,9 +33,20 @@
     $: console.log(y);
     $: y = 5 * y;
     $: x = x;
+    let windowHeight;
+    let scrollOpacity = 1;
+    $: scrollOpacity = Math.max((windowHeight - 2 * y) / windowHeight, 0);
+    $: learnMoreIsVisible = scrollOpacity > 0;
+    let scrollElem;
+    function scrollToElem(e) {
+        e.scrollIntoView({
+            behavior: "smooth",
+        });
+    }
 </script>
 
-<svelte:window bind:scrollY={y} bind:scrollX={x} bind:innerWidth={windowWidth} />
+<svelte:window bind:scrollY={y} bind:scrollX={x} bind:innerWidth={windowWidth}
+bind:innerHeight={windowHeight} />
 
 <svelte:head>
     <title>Mustang Math</title>
@@ -51,7 +62,6 @@
   
                 <div class="flex"><div class="headerline" /></div>
 
-                <a sveltekit:prefetch href="/competitions/mmt-2024" class="headerButton">
                     <div
                         class="headerButton"
                         on:mouseenter={toggleBackground}
@@ -66,8 +76,17 @@
                             src={background}
                             alt="Right-facing arrow icon"
                         />
+                        <div
+                        class="scroll-notification topbuttons"
+                        style="opacity: {scrollOpacity}; display: {learnMoreIsVisible
+                            ? ''
+                            : 'none'} "
+                        on:click={() => scrollToElem(scrollElem)}
+                    >
+                        Learn more &nbsp;
+                        <i class="fa fa-caret-down" style="margin-left: 2px;" />
                     </div>
-                </a>
+                    </div>
                 <br />
                 <!--
                 <button class="sign-up" on:click={() => {show = !show;}}><i class="fa-regular fa-newspaper"></i> Sign Up for our Newsletter</button>
@@ -199,7 +218,7 @@
         </PanelBox>
     </div>
 </div> -->
-<div style="background: #FFFCFC; width:100%; display:flex; align-items:center; flex-direction:column; justify-content:center;">
+<div bind:this={scrollElem} style="background: #FFFCFC; width:100%; display:flex; align-items:center; flex-direction:column; justify-content:center;">
     <!-- <Horse></Horse> -->
     <div class="vertLine"></div>
     <div class="dot"> </div>
@@ -346,7 +365,6 @@ collaboration and be enjoyable for the participants.
         background-repeat: no-repeat;
         overflow: hidden;
         
-        padding-top:60px;
     }
 
     .sign-up {
@@ -483,5 +501,18 @@ collaboration and be enjoyable for the participants.
         border-width: 10px;
         border-style: solid;
     }
+    .scroll-notification {
+    display: flex;
+    position: absolute;
+    bottom: 3%;
+    border-radius: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    justify-content: center;
+    align-items: bottom;
+    flex-grow: 0;
+    cursor:pointer
+}
 
 </style>
