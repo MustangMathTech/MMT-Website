@@ -3,10 +3,12 @@
     import PageHeader from '$lib/components/PageHeader.svelte';
     import Testimonial from "$lib/components/Testimonial.svelte";
     import Tournament from '$lib/components/Tournament.svelte';
+    import SVGComponent from '$lib/components/SVGComponent.svelte';
     import FlexBox from '$lib/components/FlexBox.svelte';
     import Card from '$lib/components/CardPanelBox.svelte';
 
     let windowWidth;
+
 </script>
 <svelte:head>
     <title>MMT 2024</title>
@@ -18,6 +20,17 @@
 <PageHeader title="Mustang Math Tournament [MMT] 2024" description="Coming April - May 2024" button_url="#competition" button_text="Learn More" button_id="registerForCompetition" target="" />
 
 <br />
+
+<SVGComponent svgURL="/competitions/states/CaliforniaOutlineCursive.svg" hoverFill="red"/>
+<SVGComponent svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill="orange"/>
+<SVGComponent svgURL="/competitions/states/GeorgiaOutlineCursive.svg" hoverFill="yellow"/>
+<SVGComponent svgURL="/competitions/states/IllinoisOutlineCursive.svg" hoverFill="green"/>
+<SVGComponent svgURL="/competitions/states/MassachusettsOutlineCursive.svg" hoverFill="blue"/>
+<SVGComponent svgURL="/competitions/states/WashingtonOutlineCursive.svg" hoverFill="purple"/>
+
+
+
+
 
 <br id="competition" />
 <Heading text="Competitions" size={2.5} textColor="#1B9AAA" />
