@@ -61,7 +61,7 @@ bind:innerHeight={windowHeight} />
                     <Heading className="glow" text={windowWidth > 860 ? "Mustang Math" : "MM"} textColor="white" />
   
                 <div class="flex"><div class="headerline" /></div>
-
+                    <br>
                     <div
                         class="headerButton"
                         on:mouseenter={toggleBackground}
