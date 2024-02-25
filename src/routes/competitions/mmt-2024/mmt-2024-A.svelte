@@ -15,30 +15,82 @@
     import scheduleData from "$lib/mmt-2024-Jsons/CA/schedule-data.json";
     import overviewData from "$lib/mmt-2024-Jsons/CA/overview.json";
     import { page } from '$app/stores';
+    import Tournament from '$lib/components/Tournament.svelte';
 
     let windowWidth;
     let data = JSON.parse(JSON.stringify(overviewData))[0];
     let sD = scheduleData;
+    let Loc;
+    $:Loc;
+    $:data;
+    $:sD;
 
-    if($page.url.searchParams.has('CA')){
+    if($page.url.searchParams.has('CA') || Loc == "CA"){
         data = JSON.parse(JSON.stringify(overviewData))[0];
         sD = scheduleData[0];
-    }else if($page.url.searchParams.has('GA')){
+    }else if($page.url.searchParams.has('GA') || Loc == "GA"){
         data = JSON.parse(JSON.stringify(overviewData))[1];
         sD = scheduleData[1];
-    }else if($page.url.searchParams.has('IL')){
+    }else if($page.url.searchParams.has('IL') || Loc == "IL"){
         data = JSON.parse(JSON.stringify(overviewData))[2];
         sD = scheduleData[2];
-    }else if($page.url.searchParams.has('MA')){
+    }else if($page.url.searchParams.has('MA') || Loc == "MA"){
         data = JSON.parse(JSON.stringify(overviewData))[3];
         sD = scheduleData[3];
-    }else if($page.url.searchParams.has('WA')){        
+    }else if($page.url.searchParams.has('WA') || Loc == "WA"){        
         data = JSON.parse(JSON.stringify(overviewData))[4];
         sD = scheduleData[4];
-    }else if($page.url.searchParams.has('Online')){
+    }else if($page.url.searchParams.has('Online') || Loc == "Online"){
         data = JSON.parse(JSON.stringify(overviewData))[5];
         sD = scheduleData[5];
     }
+    function handleClickOnline(){
+        data = JSON.parse(JSON.stringify(overviewData))[5];
+        sD = scheduleData[5];
+    //     if( Loc == "CA"){
+    //     data = JSON.parse(JSON.stringify(overviewData))[0];
+    //     sD = scheduleData[0];
+    // }else if(Loc == "GA"){
+    //     data = JSON.parse(JSON.stringify(overviewData))[1];
+    //     sD = scheduleData[1];
+    // }else if( Loc == "IL"){
+    //     data = JSON.parse(JSON.stringify(overviewData))[2];
+    //     sD = scheduleData[2];
+    // }else if(Loc == "MA"){
+    //     data = JSON.parse(JSON.stringify(overviewData))[3];
+    //     sD = scheduleData[3];
+    // }else if( Loc == "WA"){        
+    //     data = JSON.parse(JSON.stringify(overviewData))[4];
+    //     sD = scheduleData[4];
+    // }else if( Loc == "Online"){
+    //     data = JSON.parse(JSON.stringify(overviewData))[5];
+    //     sD = scheduleData[5];
+    // }
+        console.log("CLicled");
+    };
+        function handleClickCA(){
+        data = JSON.parse(JSON.stringify(overviewData))[0];
+        sD = scheduleData[0];
+    };
+    function handleClickGA(){
+        data = JSON.parse(JSON.stringify(overviewData))[1];
+        sD = scheduleData[1];
+    };
+    function handleClickIL(){
+        data = JSON.parse(JSON.stringify(overviewData))[2];
+        sD = scheduleData[2];
+    };
+    function handleClickMA(){
+        data = JSON.parse(JSON.stringify(overviewData))[3];
+        sD = scheduleData[3];
+    };
+    function handleClickWA(){
+        data = JSON.parse(JSON.stringify(overviewData))[4];
+        sD = scheduleData[4];
+    };
+    
+
+    
 
     const topicsCovered = [
         { "Algebra": "<ul><li>Systems of equations</li> <li>Quadratics</li> <li>Vieta’s</li> <li>Binomial Theorem</li> <li>Radicals/Exponents</li> <li>Simon’s Favorite Factoring Trick</li> <li>Ratios</li> <li>(Infinite) Geometric Series</li> <li>Arithmetic Series</li> <li>Sum/Difference of Powers</li> <li>Rate/Time</li> <li>Floor/Ceiling</li> <li>Absolute Value</li> <li>Substitution (Nested Roots/Repeated Fractions)</li> <li>Mean, Median, Mode, Range</li> <li>Telescoping</li></ul>",
@@ -77,6 +129,18 @@
 <PageHeader title="Mustang Math Tournament (MMT) {data["Statef"]}" description="{data["Date"]}" button_url="http://tinyurl.com/MMT2024Registration" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
 
 <br />
+<Heading text="Competitions" size={2.5} textColor="#1B9AAA" />
+<div class="competition-wrapper">
+    <FlexBox align="start">
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickCA}><Tournament initials="CA" imgSource="/competitions/states/CaliforniaOutlineCursive.svg" title="MMT California" location= "San Jose, CA" description="" button_text = "MMT CA" /> </button>
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickGA}><Tournament initials="GA" imgSource="/competitions/states/GeorgiaOutlineCursive.svg" title="MMT Georgia" location= "Atlanta, GA" description="" button_text = "MMT GA" /></button>
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickIL}><Tournament initials="IL" imgSource="/competitions/states/IllinoisOutlineCursive.svg" title="MMT Illinois" location= "Chicago, IL" description="" button_text = "MMT IL" /></button>
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickMA}><Tournament initials="MA" imgSource="/competitions/states/MassachusettsOutlineCursive.svg" title="MMT Massachusetts" location= "Boston, MA" description="" button_text = "MMT MA" /></button>
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickWA}><Tournament initials="WA" imgSource="/competitions/states/WashingtonOutlineCursive.svg" title="MMT Washington" location="Bellevue, WA" description="" button_text = "MMT WA" /></button>
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickOnline}><Tournament initials="O" imgSource="/competitions/mmt-2024/online.png" title="MMT Online" location="Online (Discord)" description="" button_text = "MMT Online" /></button>
+    </FlexBox>
+
+</div> 
 
 <br id="registrationInfo" />
 <Heading text="Overview" size={2.5} textColor="#1B9AAA" />
@@ -228,6 +292,8 @@
 </div> <br />
 
 <br /><br />
+
+
 
 <style>
 
