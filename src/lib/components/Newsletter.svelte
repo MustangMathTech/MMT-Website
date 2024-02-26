@@ -48,9 +48,9 @@
         <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
             <div>
-                <h2 style="margin: 0; padding:0;"><strong>Join Mustang Math's Newsletter!</strong></h2>
+                <h2 style="margin: 0; padding:0;"><strong>Join Mustang Math's Mailing List!</strong></h2>
                 <br />
-                <p style="margin: 0; padding:0;">Our Monthly Newsletter will include a lot of information about our various classes, competitions, and events, as well as interesting math tidbits and information about other cool opportunities! We use location information to help tell you about local math opportunities, and we highly recommend you join!</p>
+                <p style="margin: 0; padding:0;">Our Emails include a lot of information about our various classes, competitions, and events. Sign up to stay tuned about dates and deadlines!</p>
                 <br />
             </div>
     <div class="mc-field-group">
