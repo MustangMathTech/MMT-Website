@@ -72,6 +72,7 @@
         function handleClickCA(){
         data = JSON.parse(JSON.stringify(overviewData))[0];
         sD = scheduleData[0];
+
     };
     function handleClickGA(){
         data = JSON.parse(JSON.stringify(overviewData))[1];
@@ -86,6 +87,10 @@
         sD = scheduleData[3];
     };
     function handleClickWA(){
+        data = JSON.parse(JSON.stringify(overviewData))[4];
+        sD = scheduleData[4];
+    };
+    function handleClickCO(){
         data = JSON.parse(JSON.stringify(overviewData))[4];
         sD = scheduleData[4];
     };
@@ -130,23 +135,26 @@
 <PageHeader title="Mustang Math Tournament (MMT) {data["Statef"]}" description="{data["Date"]}" button_url="http://tinyurl.com/MMT2024Registration" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
 
 <br />
+<br/>
 <Heading text="Competitions" size={2.5} textColor="#1B9AAA" />
+<div style="margin-top:5%;"></div>
 <div class="competition-wrapper">
     <FlexBox align="start">
-        <button style="background:transparent; border-color:transparent;" on:click={handleClickCA}><Tournament initials="CA" imgSource="/competitions/states/CaliforniaOutlineCursive.svg" title="MMT California" location= "San Jose, CA" description="" button_text = "MMT CA" /> </button>
+        <!-- <button style="background:transparent; border-color:transparent;" on:click={handleClickCA}><Tournament initials="CA" imgSource="/competitions/states/CaliforniaOutlineCursive.svg" title="MMT California" location= "San Jose, CA" description="" button_text = "MMT CA" /> </button>
         <button style="background:transparent; border-color:transparent;" on:click={handleClickGA}><Tournament initials="GA" imgSource="/competitions/states/GeorgiaOutlineCursive.svg" title="MMT Georgia" location= "Atlanta, GA" description="" button_text = "MMT GA" /></button>
         <button style="background:transparent; border-color:transparent;" on:click={handleClickIL}><Tournament initials="IL" imgSource="/competitions/states/IllinoisOutlineCursive.svg" title="MMT Illinois" location= "Chicago, IL" description="" button_text = "MMT IL" /></button>
         <button style="background:transparent; border-color:transparent;" on:click={handleClickMA}><Tournament initials="MA" imgSource="/competitions/states/MassachusettsOutlineCursive.svg" title="MMT Massachusetts" location= "Boston, MA" description="" button_text = "MMT MA" /></button>
         <button style="background:transparent; border-color:transparent;" on:click={handleClickWA}><Tournament initials="WA" imgSource="/competitions/states/WashingtonOutlineCursive.svg" title="MMT Washington" location="Bellevue, WA" description="" button_text = "MMT WA" /></button>
-        <button style="background:transparent; border-color:transparent;" on:click={handleClickOnline}><Tournament initials="O" imgSource="/competitions/mmt-2024/online.png" title="MMT Online" location="Online (Discord)" description="" button_text = "MMT Online" /></button>
-        <button style="background:transparent; border-color:transparent;" on:click={handleClickCA}><SVGComponent svgURL="/competitions/states/CaliforniaOutlineCursive.svg" hoverFill="red"/></button>
-        <button style="background:transparent; border-color:transparent;" on:click={handleClickGA}><SVGComponent svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill="orange"/></button>
-        <button style="background:transparent; border-color:transparent;" on:click={handleClickIL}><SVGComponent svgURL="/competitions/states/GeorgiaOutlineCursive.svg" hoverFill="yellow"/></button>
-        <button style="background:transparent; border-color:transparent;" on:click={handleClickMA}><SVGComponent svgURL="/competitions/states/IllinoisOutlineCursive.svg" hoverFill="green"/></button>
-        <button style="background:transparent; border-color:transparent;" on:click={handleClickWA}><SVGComponent svgURL="/competitions/states/MassachusettsOutlineCursive.svg" hoverFill="blue"/></button>
-        <button style="background:transparent; border-color:transparent;" on:click={handleClickOnline}><SVGComponent svgURL="/competitions/states/WashingtonOutlineCursive.svg" hoverFill="purple"/></button>
-        </FlexBox>
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickOnline}><Tournament initials="O" imgSource="/competitions/mmt-2024/online.png" title="MMT Online" location="Online (Discord)" description="" button_text = "MMT Online" /></button> -->
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickOnline}><SVGComponent svgURL="/competitions//states/UnitedStatesOutline.svg" hoverFill="purple"/></button>
 
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickCA}><SVGComponent svgURL="/competitions/states/CaliforniaOutlineCursive.svg" hoverFill="red"/></button>
+        <!-- <button style="background:transparent; border-color:transparent;" on:click={handleClickCO}><SVGComponent svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill="orange"/></button> -->
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickGA}><SVGComponent svgURL="/competitions/states/GeorgiaOutlineCursive.svg" hoverFill="orange"/></button>
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickIL}><SVGComponent svgURL="/competitions/states/IllinoisOutlineCursive.svg" hoverFill="green"/></button>
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickMA}><SVGComponent svgURL="/competitions/states/MassachusettsOutlineCursive.svg" hoverFill="blue"/></button>
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickWA}><SVGComponent svgURL="/competitions/states/WashingtonOutlineCursive.svg" hoverFill="hotpink"/></button>
+    </FlexBox>
 </div> 
 
 <br id="registrationInfo" />

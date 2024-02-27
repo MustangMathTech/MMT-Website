@@ -6,7 +6,7 @@
     export let hoverFill = 'green'; // Fill color on hover
     export let rotationAngle = Math.random()*6 - 3; // Initial rotation angle
     export let rotationOnHover = Math.random()*10 - 5; // Rotation angle on hover
-    export let initialWidth = '300px'; // Initial width of the SVG
+    export let initialWidth = '30vw'; // Initial width of the SVG
     export let id = uuid(); // Unique identifier for the component
 
     console.log(id)
@@ -49,13 +49,13 @@
           });
           svgContainer.style.transform = `scale(1.1) rotate(${rotationOnHover}deg)`; // Scale up and rotate on hover
         });
-        svgContainer.addEventListener('mouseleave', () => {
-          const svgElements = svgContainer.querySelectorAll('svg *');
+         svgContainer.addEventListener('mouseleave', () => {
+           const svgElements = svgContainer.querySelectorAll('svg *');
           svgElements.forEach(element => {
             element.setAttribute('fill', fill);
-          });
-          svgContainer.style.transform = `scale(1) rotate(${rotationAngle}deg)`; // Reset scale and rotation on mouse leave
-          svgContainer.style.animation = 'none'; // Remove shake animation
+           });
+           svgContainer.style.transform = `scale(1) rotate(${rotationAngle}deg)`; // Reset scale and rotation on mouse leave
+           svgContainer.style.animation = 'none'; // Remove shake animation
         });
       }
     }
