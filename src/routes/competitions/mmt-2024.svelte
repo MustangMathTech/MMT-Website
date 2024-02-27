@@ -27,7 +27,7 @@
         <Tournament initials="GA" imgSource="/competitions/states/GeorgiaOutlineCursive.svg" title="MMT Georgia" location= "Atlanta, GA" description="" button_text = "MMT GA" button_url = "/competitions/mmt-2024/mmt-2024-A?GA"/>
         <Tournament initials="IL" imgSource="/competitions/states/IllinoisOutlineCursive.svg" title="MMT Illinois" location= "Chicago, IL" description="" button_text = "MMT IL" button_url = "/competitions/mmt-2024/mmt-2024-A?IL"/>
         <Tournament initials="MA" imgSource="/competitions/states/MassachusettsOutlineCursive.svg" title="MMT Massachusetts" location= "Boston, MA" description="" button_text = "MMT MA" button_url = "/competitions/mmt-2024/mmt-2024-A?MA"/>
-        <Tournament initials="WA" imgSource="/competitions/states/WashingtonOutlineCursive.svg" title="MMT Washington" location="Bellevue, WA" description="" button_text = "MMT WA" button_url = "/competitions/mmt-2024/mmt-2024-?WA" />
+        <Tournament initials="WA" imgSource="/competitions/states/WashingtonOutlineCursive.svg" title="MMT Washington" location="Bellevue, WA" description="" button_text = "MMT WA" button_url = "/competitions/mmt-2024/mmt-2024-A?WA" />
         <Tournament initials="O" imgSource="/competitions/mmt-2024/online.png" title="MMT Online" location="Online (Discord)" description="" button_text = "MMT Online" button_url = "/competitions/mmt-2024/mmt-2024-A?Online"/>
     </FlexBox>
 </div> 
