@@ -31,25 +31,20 @@
     $:loc;
     $:data = overviewData[loc];
 
-    console.log($page.url.searchParams)
-
-    if($page.url.searchParams.has('CA') || loc == "CA"){
-        data = overviewData["CA"]
-    }else if($page.url.searchParams.has('GA') || loc == "GA"){
-        data = overviewData["GA"]
-    }else if($page.url.searchParams.has('IL') || loc == "IL"){
-        data = overviewData["IL"]
-    }else if($page.url.searchParams.has('MA') || loc == "MA"){
-        data = overviewData["MA"]
-    }else if($page.url.searchParams.has('WA') || loc == "WA"){
-        data = overviewData["WA"]   
-    }else if($page.url.searchParams.has('Online') || loc == "Online"){
-        data = overviewData["O"]
+    let infoElem;
+    function scrollToElem(e) {
+        console.log(e)
+        e.scrollIntoView({
+            behavior: "smooth",
+        });
     }
+
+    console.log($page.url.searchParams)
 
     function handleClick(id) {
         loc = id;
         window.location.hash = id;
+        scrollToElem(infoElem)
         console.log(id)
     }
     
@@ -125,13 +120,14 @@
         </FlexBox>
 </div> 
 
-<br id="registrationInfo" />
+<br id="registrationInfo" bind:this={infoElem}/>
 {#if data}
     <Heading text={"MMT " + data["State"] + " Overview"} size={2.5} textColor="#1B9AAA" />
     <div style="margin-left: 10vw; margin-right: 10vw;">
         <CardPanelBox initials="MM">
             <div style="padding: 10px; padding-left: 30px; padding-top: 25px;">
             <p>
+                <strong>DATE:</strong> {data["Date"]} <br />
                 <strong>TEAM SIZE:</strong> {data["TeamSize"]} <br />
                 <strong>LOCATION:</strong> {data["Location"]}<br />
                 <strong>EARLY HORSE COST:</strong> ${data["EarlyHorseCost"]} per participant (Register before <strong>{data["EarlyHorseCostDate"]}</strong>)<br />
