@@ -44,27 +44,36 @@
     function addHoverEffect() {
       const svgContainer = document.querySelector(`#svg-container-${id}`);
       if (svgContainer) {
-        svgContainer.addEventListener('mouseenter', () => {
-          if (!clicked) {
-            const svgElements = svgContainer.querySelectorAll('svg *');
-            svgElements.forEach(element => {
-              element.setAttribute('fill', hoverFill);
-            });
-            svgContainer.style.transform = `scale(1.1) rotate(${rotationOnHover}deg)`; // Scale up and rotate on hover
-          }
-        });
-         svgContainer.addEventListener('mouseleave', () => {
-          if (!clicked) {
-            const svgElements = svgContainer.querySelectorAll('svg *');
-            svgElements.forEach(element => {
-              element.setAttribute('fill', fill);
-            });
-            svgContainer.style.transform = `scale(1) rotate(${rotationAngle}deg)`; // Reset scale and rotation on mouse leave
-            svgContainer.style.animation = 'none'; // Remove shake animation
-          }
-        });
+        if (clicked) {
+          const svgElements = svgContainer.querySelectorAll('svg *');
+          svgElements.forEach(element => {
+            element.setAttribute('fill', hoverFill);
+          });
+          svgContainer.style.transform = `scale(1.1) rotate(${rotationOnHover}deg)`; // Scale up and rotate on hover
+        } else {
+            svgContainer.addEventListener('mouseenter', () => {
+            if (!clicked) {
+              const svgElements = svgContainer.querySelectorAll('svg *');
+              svgElements.forEach(element => {
+                element.setAttribute('fill', hoverFill);
+              });
+              svgContainer.style.transform = `scale(1.1) rotate(${rotationOnHover}deg)`; // Scale up and rotate on hover
+            }
+          });
+          svgContainer.addEventListener('mouseleave', () => {
+            if (!clicked) {
+              const svgElements = svgContainer.querySelectorAll('svg *');
+              svgElements.forEach(element => {
+                element.setAttribute('fill', fill);
+              });
+              svgContainer.style.transform = `scale(1) rotate(${rotationAngle}deg)`; // Reset scale and rotation on mouse leave
+              svgContainer.style.animation = 'none'; // Remove shake animation
+            }
+          });
+        }
         svgContainer.addEventListener('click', () => {
-          clicked = !clicked; // Toggle clicked state
+          const newClicked = !clicked
+          clicked = newClicked; // Toggle clicked state
           console.log(clicked)
         });
       }
@@ -74,12 +83,9 @@
     onMount(async () => {
       await fetchSVG();
       updateFill();
-    });
-  
-    // Add hover effect after SVG content has been updated
-    afterUpdate(() => {
       addHoverEffect();
     });
+  
 </script>
   
 <style>
