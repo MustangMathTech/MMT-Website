@@ -16,6 +16,7 @@
     import overviewData from "$lib/mmt-2024-Jsons/CA/overview.json";
     import { page } from '$app/stores';
     import Tournament from '$lib/components/Tournament.svelte';
+    import SVGComponent from '$lib/components/SVGComponent.svelte';
 
     let windowWidth;
     let data = JSON.parse(JSON.stringify(overviewData))[0];
@@ -138,7 +139,13 @@
         <button style="background:transparent; border-color:transparent;" on:click={handleClickMA}><Tournament initials="MA" imgSource="/competitions/states/MassachusettsOutlineCursive.svg" title="MMT Massachusetts" location= "Boston, MA" description="" button_text = "MMT MA" /></button>
         <button style="background:transparent; border-color:transparent;" on:click={handleClickWA}><Tournament initials="WA" imgSource="/competitions/states/WashingtonOutlineCursive.svg" title="MMT Washington" location="Bellevue, WA" description="" button_text = "MMT WA" /></button>
         <button style="background:transparent; border-color:transparent;" on:click={handleClickOnline}><Tournament initials="O" imgSource="/competitions/mmt-2024/online.png" title="MMT Online" location="Online (Discord)" description="" button_text = "MMT Online" /></button>
-    </FlexBox>
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickCA}><SVGComponent svgURL="/competitions/states/CaliforniaOutlineCursive.svg" hoverFill="red"/></button>
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickGA}><SVGComponent svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill="orange"/></button>
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickIL}><SVGComponent svgURL="/competitions/states/GeorgiaOutlineCursive.svg" hoverFill="yellow"/></button>
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickMA}><SVGComponent svgURL="/competitions/states/IllinoisOutlineCursive.svg" hoverFill="green"/></button>
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickWA}><SVGComponent svgURL="/competitions/states/MassachusettsOutlineCursive.svg" hoverFill="blue"/></button>
+        <button style="background:transparent; border-color:transparent;" on:click={handleClickOnline}><SVGComponent svgURL="/competitions/states/WashingtonOutlineCursive.svg" hoverFill="purple"/></button>
+        </FlexBox>
 
 </div> 
 
