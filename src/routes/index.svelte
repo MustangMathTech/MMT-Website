@@ -62,31 +62,33 @@ bind:innerHeight={windowHeight} />
   
                 <div class="flex"><div class="headerline" /></div>
                     <br>
-                    <div
-                        class="headerButton"
-                        on:mouseenter={toggleBackground}
-                        on:mouseleave={toggleBackground}
-                    >
-                        <p class="headerButton" id="signupformmt">
-                            Register for MMT 2024
-                        </p>
-                        <img
-                            height="25px"
-                            class="headerButton"
-                            src={background}
-                            alt="Right-facing arrow icon"
-                        />
+                    <a sveltekit:prefetch href="/competitions/mmt-2024" class="headerButton">
                         <div
-                        class="scroll-notification topbuttons"
-                        style="opacity: {scrollOpacity}; display: {learnMoreIsVisible
-                            ? ''
-                            : 'none'} "
-                        on:click={() => scrollToElem(scrollElem)}
-                    >
-                        Learn more &nbsp;
-                        <i class="fa fa-caret-down" style="margin-left: 2px;" />
-                    </div>
-                    </div>
+                            class="headerButton"
+                            on:mouseenter={toggleBackground}
+                            on:mouseleave={toggleBackground}
+                        >
+                            <p class="headerButton" id="signupformmt">
+                                Register for MMT 2024
+                            </p>
+                            <img
+                                height="25px"
+                                class="headerButton"
+                                src={background}
+                                alt="Right-facing arrow icon"
+                            />
+                            <div
+                            class="scroll-notification topbuttons"
+                            style="opacity: {scrollOpacity}; display: {learnMoreIsVisible
+                                ? ''
+                                : 'none'} "
+                            on:click={() => scrollToElem(scrollElem)}
+                        >
+                            Learn more &nbsp;
+                            <i class="fa fa-caret-down" style="margin-left: 2px;" />
+                        </div>
+                        </div>
+                    </a>
                 <br />
                 <!--
                 <button class="sign-up" on:click={() => {show = !show;}}><i class="fa-regular fa-newspaper"></i> Sign Up for our Newsletter</button>
