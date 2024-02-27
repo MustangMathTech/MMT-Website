@@ -9,6 +9,8 @@
     export let initialWidth = '30vw'; // Initial width of the SVG
     export let id = uuid(); // Unique identifier for the component
 
+    export let clicked = false;
+
     console.log(id)
   
     import { onMount } from "svelte";
@@ -43,19 +45,27 @@
       const svgContainer = document.querySelector(`#svg-container-${id}`);
       if (svgContainer) {
         svgContainer.addEventListener('mouseenter', () => {
-          const svgElements = svgContainer.querySelectorAll('svg *');
-          svgElements.forEach(element => {
-            element.setAttribute('fill', hoverFill);
-          });
-          svgContainer.style.transform = `scale(1.1) rotate(${rotationOnHover}deg)`; // Scale up and rotate on hover
+          if (!clicked) {
+            const svgElements = svgContainer.querySelectorAll('svg *');
+            svgElements.forEach(element => {
+              element.setAttribute('fill', hoverFill);
+            });
+            svgContainer.style.transform = `scale(1.1) rotate(${rotationOnHover}deg)`; // Scale up and rotate on hover
+          }
         });
          svgContainer.addEventListener('mouseleave', () => {
-           const svgElements = svgContainer.querySelectorAll('svg *');
-          svgElements.forEach(element => {
-            element.setAttribute('fill', fill);
-           });
-           svgContainer.style.transform = `scale(1) rotate(${rotationAngle}deg)`; // Reset scale and rotation on mouse leave
-           svgContainer.style.animation = 'none'; // Remove shake animation
+          if (!clicked) {
+            const svgElements = svgContainer.querySelectorAll('svg *');
+            svgElements.forEach(element => {
+              element.setAttribute('fill', fill);
+            });
+            svgContainer.style.transform = `scale(1) rotate(${rotationAngle}deg)`; // Reset scale and rotation on mouse leave
+            svgContainer.style.animation = 'none'; // Remove shake animation
+          }
+        });
+        svgContainer.addEventListener('click', () => {
+          clicked = !clicked; // Toggle clicked state
+          console.log(clicked)
         });
       }
     }
