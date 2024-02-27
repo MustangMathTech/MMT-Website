@@ -5,13 +5,13 @@
     export let fill = 'black'; // Default fill color
     export let hoverFill = 'green'; // Fill color on hover
     export let rotationAngle = Math.random()*6 - 3; // Initial rotation angle
-    export let rotationOnHover = Math.random()*10 - 5; // Rotation angle on hover
-    export let initialWidth = '30vw'; // Initial width of the SVG
+    export let rotationOnHover = Math.random() * 2 - 1 > 0 ? 2+Math.random()*3 : -2-Math.random()*3; // Rotation angle on hover
+    export let initialWidth = '250px'; // Initial width of the SVG
     export let id = uuid(); // Unique identifier for the component
 
     export let clicked = false;
 
-    console.log(id)
+    console.log(svgURL, clicked)
   
     import { onMount } from "svelte";
     import { afterUpdate } from 'svelte';
@@ -29,48 +29,40 @@
     }
   
     // Update fill color of SVG elements with transition
-    function updateFill() {
+    function setRestingFill() {
       const parser = new DOMParser();
-      const svgDoc = parser.parseFromString(svgSource, 'image/svg+xml');
-      const svgElements = svgDoc.querySelectorAll('*');
+      const svgContainer = document.querySelector(`#svg-container-${id}`);
+      const svgElements = svgContainer.querySelectorAll('svg *');
       svgElements.forEach(element => {
-        element.style.transition = 'fill 0.1s ease-in-out'; // Add transition for fill
         element.setAttribute('fill', fill);
       });
-      svgSource = new XMLSerializer().serializeToString(svgDoc);
+      svgContainer.style.transform = `scale(1) rotate(${rotationAngle}deg)`; // Reset scale and rotation on mouse leave
+      svgContainer.style.animation = 'none'; // Remove shake animation
+    }
+
+    function setActiveFill() {
+      const svgContainer = document.querySelector(`#svg-container-${id}`);
+      const svgElements = svgContainer.querySelectorAll('svg *');
+      svgElements.forEach(element => {
+        element.setAttribute('fill', hoverFill);
+      });
+      svgContainer.style.transform = `scale(1.1) rotate(${rotationAngle + rotationOnHover}deg)`; // Scale up and rotate on hover
     }
   
     // Add hover effect to all SVG elements
     function addHoverEffect() {
       const svgContainer = document.querySelector(`#svg-container-${id}`);
       if (svgContainer) {
-        if (clicked) {
-          const svgElements = svgContainer.querySelectorAll('svg *');
-          svgElements.forEach(element => {
-            element.setAttribute('fill', hoverFill);
-          });
-          svgContainer.style.transform = `scale(1.1) rotate(${rotationOnHover}deg)`; // Scale up and rotate on hover
-        } else {
-            svgContainer.addEventListener('mouseenter', () => {
-            if (!clicked) {
-              const svgElements = svgContainer.querySelectorAll('svg *');
-              svgElements.forEach(element => {
-                element.setAttribute('fill', hoverFill);
-              });
-              svgContainer.style.transform = `scale(1.1) rotate(${rotationOnHover}deg)`; // Scale up and rotate on hover
-            }
-          });
-          svgContainer.addEventListener('mouseleave', () => {
-            if (!clicked) {
-              const svgElements = svgContainer.querySelectorAll('svg *');
-              svgElements.forEach(element => {
-                element.setAttribute('fill', fill);
-              });
-              svgContainer.style.transform = `scale(1) rotate(${rotationAngle}deg)`; // Reset scale and rotation on mouse leave
-              svgContainer.style.animation = 'none'; // Remove shake animation
-            }
-          });
-        }
+        svgContainer.addEventListener('mouseenter', () => {
+          if (!clicked) {
+            setActiveFill();
+          }
+        });
+        svgContainer.addEventListener('mouseleave', () => {
+          if (!clicked) {
+            setRestingFill();
+          }
+        });
         svgContainer.addEventListener('click', () => {
           const newClicked = !clicked
           clicked = newClicked; // Toggle clicked state
@@ -82,9 +74,21 @@
     // Fetch SVG content when the component mounts
     onMount(async () => {
       await fetchSVG();
-      updateFill();
+      if (!clicked) {
+        setRestingFill();
+      } else {
+        setActiveFill();
+      }
       addHoverEffect();
     });
+
+    afterUpdate(async () => {
+      if (!clicked) {
+        setRestingFill();
+      } else {
+        setActiveFill();
+      }
+    })
   
 </script>
   

@@ -6,7 +6,7 @@
     import Image from '$lib/components/Image.svelte';
     import PanelBox from '$lib/components/PanelBox.svelte';
     import Link from '$lib/components/Link.svelte';
-    import sponsorTiers from '$lib/sponsorTiers';
+    import sponsorTiers from '$lib/jsons/sponsorTiers';
 
     let windowWidth;
     let windowHeight;

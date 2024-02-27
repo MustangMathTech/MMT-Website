@@ -8,7 +8,7 @@
 
     const competitions = [        
         {
-            title: "Mustang Math Tournament 2024 (MMT)",
+            title: "Mustang Math Tournament 2024 [MMT]",
             location: "mmt-2024",
         },
         {

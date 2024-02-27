@@ -1,0 +1,30 @@
+[
+	{
+		"from": "/competitions/mmt-2024/mmt-2024-WA",
+		"to": "/competitions/mmt-2024#WA"
+	},
+	{
+		"from": "/competitions/mmt-2024/mmt-2024-CA",
+		"to": "/competitions/mmt-2024#CA"
+	},
+	{
+		"from": "/competitions/mmt-2024/mmt-2024-IL",
+		"to": "/competitions/mmt-2024#IL"
+	},
+	{
+		"from": "/competitions/mmt-2024/mmt-2024-MA",
+		"to": "/competitions/mmt-2024#MA"
+	},
+	{
+		"from": "/competitions/mmt-2024/mmt-2024-GA",
+		"to": "/competitions/mmt-2024#GA"
+	},
+	{
+		"from": "/competitions/mmt-2024/mmt-2024-A",
+		"to": "/competitions/mmt-2024"
+	},
+	{
+		"from": "/competitions/mmt-2024/mmt-2024-online",
+		"to": "/competitions/mmt-2024#O"
+	}
+]
