@@ -328,7 +328,7 @@ bind:innerHeight={windowHeight} />
     <div class="homeText">
         As MM gears up for the upcoming year, we plan to host an
 individual tournament this fall along with the team-based Mustang
-Math Tournament (MMT). MMT is our focal point, and we plan to
+Math Tournament [MMT]. MMT is our focal point, and we plan to
 have four in-person locations in addition to an online tournament in
 the upcoming year. This is an international math tournament for the middle school level that features a variety of interesting rounds
 designed to not only test mathematical ability, but also promote

@@ -7,8 +7,8 @@
   import Person from "$lib/components/Person.svelte";
   import PageHeader from "$lib/components/PageHeader.svelte";
   import Alumni from "$lib/components/Alumni.svelte";
-  import Members from "$lib/Members.json";
-  import Titles from "$lib/Titles.json";
+  import Members from "$lib/jsons/Members.json";
+  import Titles from "$lib/jsons/Titles.json";
   import MultiSelect from "svelte-multiselect";
   import Heading from "$lib/components/Heading.svelte";
   import { text } from "svelte/internal";

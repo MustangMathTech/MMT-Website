@@ -25,14 +25,9 @@
   const navPages = [
     { path: "/", text: "Home", hasSubPages: false },
     {
-      path: "/competitions",
-      text: "Competitions",
-      hasSubPages: true,
-      index: 0,
-      subPages: [
-        { path: "/competitions/mmt-2024", text: "MMT 2024"},
-        { path: "/competitions/past", text: "Past" },
-      ],
+      path: "/competitions/mmt-2024",
+      text: "MMT 2024",
+      hasSubPages: false,
     },
     {
       path: "/classes",
