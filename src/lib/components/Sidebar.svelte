@@ -1,6 +1,6 @@
 <script>
-    import { onMount } from 'svelte';
-    
+    import { onMount, afterUpdate } from 'svelte';
+  
     let sections = []; // Array to store section details
     let expanded = false; // Boolean to track sidebar expansion
     let currentSection; // Variable to store current section ID
@@ -29,23 +29,31 @@
     }
   
     onMount(() => {
-      // Initialize sections array with section details
-      sections = Array.from(document.querySelectorAll('section')).map(section => ({
-        id: section.id,
-        offsetTop: section.offsetTop
-      }));
-      
+      updateSectionsArray();
       // Listen for scroll events to update current section
       window.addEventListener('scroll', updateCurrentSection);
   
       // Initial calculation of current section
       updateCurrentSection();
-      
+  
       // Cleanup scroll event listener on component destroy
       return () => {
         window.removeEventListener('scroll', updateCurrentSection);
       };
     });
+  
+    // Update sections array after DOM updates
+    afterUpdate(() => {
+      updateSectionsArray();
+    });
+  
+    // Function to update the sections array
+    function updateSectionsArray() {
+      sections = Array.from(document.querySelectorAll('section')).map(section => ({
+        id: section.id,
+        offsetTop: section.offsetTop
+      }));
+    }
   </script>
   
   <style>
