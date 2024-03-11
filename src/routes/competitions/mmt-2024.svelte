@@ -112,19 +112,19 @@
         <p style="font-size: 2em; text-align: center;">Select your location to see more information!</p>
         <FlexBox align="start">
             
-            <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("CA")}}><SVGComponent clicked={loc == "CA" ? true : false} svgURL="/competitions/states/CaliforniaOutlineCursive.svg" hoverFill={LightenDarkenColor("#4A2469",20)}/></button>
-            <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("CO")}}><SVGComponent clicked={loc == "CO" ? true : false} svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill={LightenDarkenColor("#264569",20)}/></button>
-            <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("GA")}}><SVGComponent clicked={loc == "GA" ? true : false} svgURL="/competitions/states/GeorgiaOutlineCursive.svg" hoverFill={LightenDarkenColor("#2E6187",20)}/></button>
-            <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("IL")}}><SVGComponent clicked={loc == "IL" ? true : false} svgURL="/competitions/states/IllinoisOutlineCursive.svg" hoverFill={LightenDarkenColor("#397822",20)}/></button>
-            <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("MA")}}><SVGComponent clicked={loc == "MA" ? true : false} svgURL="/competitions/states/MassachusettsOutlineCursive.svg" hoverFill={LightenDarkenColor("#706D1F",20)}/></button>
-            <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("WA")}}><SVGComponent clicked={loc == "WA" ? true : false} svgURL="/competitions/states/WashingtonOutlineCursive.svg" hoverFill={LightenDarkenColor("#7A5227",20)}/></button>
-            <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("O")}}><SVGComponent clicked={loc == "O" ? true : false} svgURL="/competitions//states/OnlineOutlineCursive.svg" hoverFill={LightenDarkenColor("#70261F",20)}/></button>
+            <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("CA")}}><SVGComponent clicked={loc == "CA" ? true : false} svgURL="/competitions/states/CaliforniaOutlineCursive.svg" hoverFill={LightenDarkenColor("#FB5607",40)}/></button>
+            <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("CO")}}><SVGComponent clicked={loc == "CO" ? true : false} svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill={LightenDarkenColor("#FD2B3B",40)}/></button>
+            <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("GA")}}><SVGComponent clicked={loc == "GA" ? true : false} svgURL="/competitions/states/GeorgiaOutlineCursive.svg" hoverFill={LightenDarkenColor("#FF006E",40)}/></button>
+            <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("IL")}}><SVGComponent clicked={loc == "IL" ? true : false} svgURL="/competitions/states/IllinoisOutlineCursive.svg" hoverFill={LightenDarkenColor("#C11CAD",40)}/></button>
+            <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("MA")}}><SVGComponent clicked={loc == "MA" ? true : false} svgURL="/competitions/states/MassachusettsOutlineCursive.svg" hoverFill={LightenDarkenColor("#8338EC",40)}/></button>
+            <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("WA")}}><SVGComponent clicked={loc == "WA" ? true : false} svgURL="/competitions/states/WashingtonOutlineCursive.svg" hoverFill={LightenDarkenColor("#5F5FF6",40)}/></button>
+            <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("O")}}><SVGComponent clicked={loc == "O" ? true : false} svgURL="/competitions//states/OnlineOutlineCursive.svg" hoverFill={LightenDarkenColor("#3A86FF",40)}/></button>
         </FlexBox>
 </div> 
 
 <br id="registrationInfo" bind:this={infoElem}/>
 {#if data}
-    <Heading text={"MMT " + data["State"] + " Overview"} size={2.5} textColor="#1B9AAA" />
+    <Heading text={"MMT " + data["Statef"] + " Overview"} size={2.5} textColor="#1B9AAA" />
     <div style="margin-left: 10vw; margin-right: 10vw;">
         <CardPanelBox initials="MM">
             <div style="padding: 10px; padding-left: 30px; padding-top: 25px;">
@@ -134,12 +134,14 @@
                 <strong>LOCATION:</strong> {data["Location"]}<br />
                 <strong>EARLY HORSE COST:</strong> ${data["EarlyHorseCost"]} per participant (Register before <strong>{data["EarlyHorseCostDate"]}</strong>)<br />
                 <strong>NORMAL COST:</strong> ${data["NormalCost"]} per participant (Register before <strong>{data["NormalCostDate"]}</strong>)<br /> 
-                <strong>LATE COST:</strong> ${data["LateCost"]}  per participant (Register before <strong>{data["LateCostDate"]}</strong>)<br /> <br />
+                <strong>LATE COST:</strong> ${data["LateCost"]}  per participant (Register before <strong>{data["LateCostDate"]}</strong>)<br />
+                <strong>EMAIL:</strong> <a href="mailto:{data["email"]}">{data["email"]}</a><br /> <br />
                 <a href="https://tinyurl.com/MMT2024Registration" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
                 <br /><br />
-                <i><strong>*:</strong> Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4</i><br />
-                <i><strong>Note for International Students:</strong> Students not in Canada or the United States should participate in the international version of our tournament being run by SIMCC. Email us at <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a> if you're interested.</i><br /><br />
-                <i><strong>Note for Students in the US:</strong> Students living within 50 miles of our in-person sites <strong>must</strong> participate in person. If you have an extenuating circumstance that would prevent this please send an email to <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a>, and we may grant you permission to participate online.</i>
+                <i><strong>*:</strong> Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4</i><br /><br />
+                <i><strong>Note for Students in the US:</strong> Students living within 50 miles of our in-person sites <strong>must</strong> participate in person. If you have an extenuating circumstance that would prevent this please send an email to <a href="mailto:{data["email"]}">{data["email"]}</a>, and we may grant you permission to participate online.</i><br /><br />
+                <i><strong>Note for International Students:</strong> Students not in Canada or the United States should participate in the international version of our tournament being run by SIMCC. Email us at <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a> if you're interested.</i>
+                
             </p>
             </div>
         </CardPanelBox>
