@@ -260,19 +260,25 @@
 <Heading text="Testimonials" size={2.5} textColor="#1B9AAA" />
 <div class="grid-three" style="margin-left: 10vw; margin-right: 10vw;">
     <div>
-        <Testimonial testimonial="MMT has a unique take on standard math competitions" title="2022 Participant" />
-        <Testimonial testimonial="MMT focused less on calculations than other math competitions" title="2022 Participant" />
-        <Testimonial testimonial="I think this was a very nice way to spend my day." title="2021 Participant" />
+        <Testimonial testimonial="MMT was really fun and more focused on working as a team and thinking outside of the box than other competitions." title="MMT 2023 California" />
+        <Testimonial testimonial="MMT set the bar very high for the next math tournament I participate in." title="Frank L, MMT 2023 California" />
+        <Testimonial testimonial="MMT has a unique take on standard math competitions." title="MMT 2022" />
+        <Testimonial testimonial="MMT focused less on calculations than other math competitions." title="MMT 2022" />
+        <Testimonial testimonial="I think this was a very nice way to spend my day." title="MMT 2021" />
     </div>
 
     <div>
-        <Testimonial testimonial="MMT's style of problems are much better than other tournaments. Unlike other tournaments that has the same style over the years, MMT has new and exciting styles of problems that makes it more fun to try and solve it on the spot" title="2022 Participant" />
-        <Testimonial testimonial="MMT had people captivated even before the tournament started with their Discord server and problems of the day" title="2022 Participant" />
+        <Testimonial testimonial="I loved the puzzle aspect as well as the way MMT makes math problem sets more interesting by introducing more strategy in how they should be tackled." title="MMT 2023 Washington" />
+        <Testimonial testimonial="I loved all of the rounds. They were all different and interesting -- much more interesting than just a string of math problems." title="MMT 2023 Online" />
+        <Testimonial testimonial="MMT's style of problems are much better than other tournaments. Unlike other tournaments that has the same style over the years, MMT has new and exciting styles of problems that makes it more fun to try and solve it on the spot" title="MMT 2022" />
+        <Testimonial testimonial="MMT had people captivated even before the tournament started with their Discord server and problems of the day" title="MMT 2022" />
     </div>
     
     <div>
-        <Testimonial testimonial="I really appreciate all that MMT has done and I look forward to the competition that is held next year! I must say that the MMT was an impressive execution of math competitions unlike anything I've seen before!" title="2022 Participant" />
-        <Testimonial testimonial="My favorite memory from MMT was the teamwork - both chaotically and organizedly working with each other to solve the problems" title="2022 Participant" />
+        <Testimonial testimonial="The concepts were very original and rounds were much more fun to participate in than the standard math competition." title="MMT 2023 California" />
+        <Testimonial testimonial="I loved the creative format, the team emphasis, and the depth and complexity of problems." title="MMT 2023 California" />
+        <Testimonial testimonial="I really appreciate all that MMT has done and I look forward to the competition that is held next year! I must say that the MMT was an impressive execution of math competitions unlike anything I've seen before!" title="MMT 2022" />
+        <Testimonial testimonial="My favorite memory from MMT was the teamwork - both chaotically and organizedly working with each other to solve the problems" title="MMT 2022" />
     </div>
 </div> <br />
 
