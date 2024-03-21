@@ -68,6 +68,7 @@
         ["Rules", "archive/2023/Mounting_Mayhem_Rules.pdf"],
         ["Puzzles", "archive/2023/Mounting_Mayhem.pdf"],
         ["Answers", "archive/2023/Mounting_Mayhem_Answers.pdf"],
+        ["Note this round is quite hard - we aim to make 2024's more accessible!"]
       ], 
       [
         ["Herding Hexes [Foal]"],
