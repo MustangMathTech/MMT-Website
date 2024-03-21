@@ -28,25 +28,21 @@
     });
     
     let data = loc != "" ? overviewData[loc] : null;
-    console.log(data)
     $:loc;
     $:data = overviewData[loc];
 
     let infoElem;
     function scrollToElem(e) {
-        console.log(e)
         e.scrollIntoView({
             behavior: "smooth",
         });
     }
 
-    console.log($page.url.searchParams)
 
     function handleClick(id) {
         loc = id;
         window.location.hash = id;
         scrollToElem(infoElem)
-        console.log(id)
     }
     
 
