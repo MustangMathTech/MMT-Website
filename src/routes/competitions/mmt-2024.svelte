@@ -131,8 +131,13 @@
                 <strong>EARLY HORSE COST:</strong> ${data["EarlyHorseCost"]} per participant (Register before <strong>{data["EarlyHorseCostDate"]}</strong>)<br />
                 <strong>NORMAL COST:</strong> ${data["NormalCost"]} per participant (Register before <strong>{data["NormalCostDate"]}</strong>)<br /> 
                 <strong>LATE COST:</strong> ${data["LateCost"]}  per participant (Register before <strong>{data["LateCostDate"]}</strong>)<br />
-                <strong>EMAIL:</strong> <a href="mailto:{data["email"]}">{data["email"]}</a><br /> <br />
+                <strong>EMAIL:</strong> <a href="mailto:{data["email"]}">{data["email"]}</a><br /> 
+                {#if data["Footer"]}
+                    {@html data["Footer"]}<br>
+                {/if}
+                <br>
                 <a href="https://tinyurl.com/MMT2024Registration" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
+                
                 <br /><br />
                 <i><strong>*:</strong> Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4</i><br /><br />
                 <i><strong>Note for Students in the US:</strong> Students living within 50 miles of our in-person sites <strong>must</strong> participate in person. If you have an extenuating circumstance that would prevent this please send an email to <a href="mailto:{data["email"]}">{data["email"]}</a>, and we may grant you permission to participate online.</i><br /><br />
