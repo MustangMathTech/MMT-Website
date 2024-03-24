@@ -1,5 +1,6 @@
 <script>
     import { onMount, afterUpdate } from 'svelte';
+	import { time_ranges_to_array } from 'svelte/internal';
   
     let sections = []; // Array to store section details
     let expanded = false; // Boolean to track sidebar expansion
@@ -8,6 +9,8 @@
     // Function to toggle sidebar expansion
     function toggleSidebar() {
       expanded = !expanded;
+      const dis = document.getElementById("navigation");
+      dis.textContent = "Page Navigator";
     }
   
     // Function to scroll to a section
@@ -54,6 +57,14 @@
         offsetTop: section.offsetTop
       }));
     }
+
+    function navhide(){
+      const dis = document.getElementById("navigation");
+      dis.textContent = "";
+
+    }
+
+
   </script>
   
   <style>
@@ -61,11 +72,13 @@
       position: fixed;
       top: 50%;
       transform: translateY(-50%);
-      right: -100px; /* Initially hide the sidebar */
+      right: -110px; /* Initially hide the sidebar */
       background-color: #fff;
       border: 1px solid #ccc;
       padding: 10px;
       transition: right 0.3s ease;
+      width:100px;
+      border-radius: 25px;
     }
   
     .sidebar:hover {
@@ -76,9 +89,28 @@
       display: block;
       margin-bottom: 5px;
       cursor: pointer;
+      border-color: gainsboro;
+      border-style: solid;
+      border-width: 0px 0px 1px 0px;
+      padding-bottom: 5px;
     }
+
+    .navigation{
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      right:-20px;
+      transform: rotate(-90deg);
+      background-color: rgba(256,256,256, 0.4);
+      padding: 5px;
+      border-radius: 10px;
+    }
+
+
   </style>
-  
+  <div>
+    <div id="navigation" class="navigation" on:mouseenter={navhide}>Page Navigation</div>
+
   <div class="sidebar" on:mouseleave={toggleSidebar}>
     {#if expanded}
       {#each sections as section}
@@ -92,4 +124,4 @@
       </div>
     {/if}
   </div>
-  
+</div>

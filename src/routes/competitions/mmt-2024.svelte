@@ -45,8 +45,8 @@
     function handleClick(id) {
         loc = id;
         window.location.hash = id;
-        scrollToElem(infoElem)
-        console.log(id)
+        scrollToElem(infoElem);
+        console.log(id);
     }
     
 
@@ -128,6 +128,9 @@
 
 <br id="registrationInfo" bind:this={infoElem}/>
 {#if data}
+
+
+
     <section id={data["State"] +" Overview"}>
         <Heading text={"MMT " + data["State"] + " Overview"} size={2.5} textColor="#1B9AAA" />
         <div style="margin-left: 10vw; margin-right: 10vw;">
