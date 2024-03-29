@@ -19,6 +19,7 @@
     import Tournament from '$lib/components/Tournament.svelte';
     import SVGComponent from '$lib/components/SVGComponent.svelte';
 
+
     let windowWidth;
 
     let loc = ""
@@ -47,6 +48,9 @@
         window.location.hash = id;
         scrollToElem(infoElem);
         console.log(id);
+        Sidebar.updateCurrentSection();
+        Sidebar.updateSectionsArray();
+
     }
     
 
@@ -87,8 +91,9 @@
 
 <div class="page"></div>
 
-<PageHeader title="Mustang Math Tournament [MMT] {data ? data["Statef"] : "2024"}" description="A teamwork-based, fun, and strategic math contest" button_url="http://tinyurl.com/MMT2024Registration" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
-
+<section id="Scroll to Top">
+<PageHeader id="Sidebar" title="Mustang Math Tournament [MMT] {data ? data["Statef"] : "2024"}" description="A teamwork-based, fun, and strategic math contest" button_url="http://tinyurl.com/MMT2024Registration" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
+</section>
 <br />
 <br/>
 <section id="What is MMT">
