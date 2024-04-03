@@ -107,9 +107,7 @@
 <div class="competition-wrapper">
         <p style="font-size: 2em; text-align: center;">Select your location to see more information!</p>
         <FlexBox align="start">
-            
             <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("CA")}}><SVGComponent clicked={loc == "CA" ? true : false} svgURL="/competitions/states/CaliforniaOutlineCursive.svg" hoverFill={LightenDarkenColor("#FB5607",40)}/></button>
-            <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("CO")}}><SVGComponent clicked={loc == "CO" ? true : false} svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill={LightenDarkenColor("#FD2B3B",40)}/></button>
             <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("GA")}}><SVGComponent clicked={loc == "GA" ? true : false} svgURL="/competitions/states/GeorgiaOutlineCursive.svg" hoverFill={LightenDarkenColor("#FF006E",40)}/></button>
             <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("IL")}}><SVGComponent clicked={loc == "IL" ? true : false} svgURL="/competitions/states/IllinoisOutlineCursive.svg" hoverFill={LightenDarkenColor("#C11CAD",40)}/></button>
             <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("MA")}}><SVGComponent clicked={loc == "MA" ? true : false} svgURL="/competitions/states/MassachusettsOutlineCursive.svg" hoverFill={LightenDarkenColor("#8338EC",40)}/></button>
