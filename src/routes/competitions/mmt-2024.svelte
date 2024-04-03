@@ -117,6 +117,15 @@
 </div> 
 
 <br id="registrationInfo" bind:this={infoElem}/>
+{#if loc=="CO"}
+    <div style="margin-left: 10vw; margin-right: 10vw;">
+    <CardPanelBox initials="MM">
+        <p>We are no longer running our in-person Colorado Tournament. We encourage you to sign up for our <a href="https://mustangmath.com/competitions/mmt-2024#O">Online Contest</a>, and we hope to bring MMT 2025 to Colorado!</p>
+    </CardPanelBox>
+    </div>
+{/if}
+
+<br id="registrationInfo" bind:this={infoElem}/>
 {#if data}
     <Heading text={"MMT " + data["Statef"] + " Overview"} size={2.5} textColor="#1B9AAA" />
     <div style="margin-left: 10vw; margin-right: 10vw;">
