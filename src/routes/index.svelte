@@ -30,7 +30,6 @@
 
     let y;
     let x;
-    $: console.log(y);
     $: y = 5 * y;
     $: x = x;
     let windowHeight;
