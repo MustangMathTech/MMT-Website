@@ -22,8 +22,8 @@ export const components = [
 	() => import("..\\..\\src\\routes\\donate.svelte"),
 	() => import("..\\..\\src\\routes\\index.svelte"),
 	() => import("..\\..\\src\\routes\\our-team.svelte"),
+	() => import("..\\..\\src\\routes\\past-tests.svelte"),
 	() => import("..\\..\\src\\routes\\redirect.svelte"),
-	() => import("..\\..\\src\\routes\\resources.svelte"),
 	() => import("..\\..\\src\\routes\\sponsors.svelte")
 ];
 
@@ -34,8 +34,8 @@ export const dictionary = {
 	"competitions": [[0, 8], [1]],
 	"donate": [[0, 18], [1]],
 	"our-team": [[0, 20], [1]],
-	"redirect": [[0, 21], [1]],
-	"resources": [[0, 22], [1]],
+	"past-tests": [[0, 21], [1]],
+	"redirect": [[0, 22], [1]],
 	"sponsors": [[0, 23], [1]],
 	"archive/AlgebraClasses": [[0, 3], [1]],
 	"archive/join": [[0, 4], [1]],
