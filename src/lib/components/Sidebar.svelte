@@ -24,8 +24,9 @@
     // Function to update current section based on scroll position
     function updateCurrentSection() {
       const scrollPosition = window.scrollY;
+      //console.log(sections);
       for (let i = sections.length - 1; i >= 0; i--) {
-        if (scrollPosition >= sections[i].offsetTop) {
+        if (scrollPosition + 200 >= sections[i].offsetTop) {
           // Set current section
           currentSection = sections[i].id;
           break;
@@ -72,7 +73,8 @@
     export function updateSectionsArray() {
       sections = Array.from(document.querySelectorAll('section')).map(section => ({
         id: section.id,
-        offsetTop: section.offsetTop
+        offsetTop: section.offsetTop,
+        offsetHeight: section.offsetHeight
       }));
     }
 
