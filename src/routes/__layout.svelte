@@ -8,7 +8,7 @@
 	import { onMount } from "svelte";
 	import { inject } from '@vercel/analytics'
 
-	inject({ mode: dev ? 'development' : 'production' });
+	//inject({ mode: dev ? 'development' : 'production' });
 
 	let show = false;
 
