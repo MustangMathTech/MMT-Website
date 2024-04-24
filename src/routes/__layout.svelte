@@ -6,6 +6,7 @@
 	import Newsletter from '$lib/components/Newsletter.svelte';
 	import { user } from '$lib/store';
 	import { onMount } from "svelte";
+	import { inject } from '@vercel/analytics'
 
 	let show = false;
 
