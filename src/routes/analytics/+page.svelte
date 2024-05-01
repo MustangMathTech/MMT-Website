@@ -1,5 +1,6 @@
 <script>
 	import "./overwrites.css";
+    import MajorStatistic from "$lib/components/v3/majorStatistic.svelte";
 
 	/**
 	 * @typedef {Object} PageStat
@@ -45,94 +46,12 @@
 	class="w-full bg-[#eae3e3] h-screen min-h-screen overflow-y-scroll flex flex-col p-6 px-10 gap-y-8"
 >
 	<div class="flex flex-row h-2/5 w-full gap-x-10 justify-between">
-		<div
-			class="rounded-md bg-white flex flex-col h-full w-1/2 max-w-1/2 max-h-full shadow-xl drop-shadow-xl p-4 gap-y-2"
-		>
-			<div class="flex h-1/7 w-full flex-row justify-between px-2">
-				<p class="text-xl w-2/5 text-start pl-4 font-semibold">Pages</p>
-				<div class="flex flex-row flex-grow h-full" />
-				<p class="text-lg w-1/5 text-center font-light uppercase">Visitors</p>
-			</div>
-			<div class="border-t border-gray-300 pt-1 w-full"></div>
-
-			<!-- TODO componentize this -->
-			{#each data.pages as page}
-				<div
-					class="self-center w-full bg-[#eaeaea]/80 rounded-lg h-fit px-2 py-2 flex flex-row justify-between"
-				>
-					<p class="text-base w-2/5 text-start pl-4">{page.name}</p>
-					<div class="flex flex-row flex-grow" />
-					<p class="text-base font-bold w-1/5 text-center">{page.times}</p>
-				</div>
-			{/each}
-
-			<div
-				class="self-center w-full bg-[#eaeaea]/80 rounded-lg h-fit px-2 py-2 flex flex-row justify-between"
-			>
-				<p class="text-base w-2/5 text-start pl-4">/</p>
-				<div class="flex flex-row flex-grow" />
-				<p class="text-base font-bold w-1/5 text-center">4</p>
-			</div>
-		</div>
-
-		<div
-			class="rounded-md bg-white flex flex-col h-full w-1/2 max-w-1/2 max-h-full shadow-xl drop-shadow-xl p-4 gap-y-2"
-		>
-			<div class="flex h-1/7 w-full flex-row justify-between px-2">
-				<p class="text-xl w-2/5 text-start pl-4 font-semibold">Referrers</p>
-				<div class="flex flex-row flex-grow h-full" />
-				<p class="text-lg w-1/5 text-center font-light uppercase">Visitors</p>
-			</div>
-			<div class="border-t border-gray-300 pt-1 w-full"></div>
-
-			<!-- TODO componentize this -->
-			<div
-				class="self-center w-full bg-[#eaeaea]/80 rounded-lg h-fit px-2 py-2 flex flex-row justify-between"
-			>
-				<img
-					src="https://mustangmath.com/logo.png"
-					alt="Site Logo"
-					class="h-[32px] aspect-square"
-				/>
-				<a
-					class="text-base w-2/5 text-start pl-4 text-black underline"
-					href="/"
-					target="_blank">Direct Link</a
-				>
-				<div class="flex flex-row flex-grow" />
-				<p class="text-base font-bold w-1/5 text-center">4</p>
-			</div>
-		</div>
+        <MajorStatistic sublogs={data.pages}  />
+		<MajorStatistic sublogs={data.referrers} heading1={'Referrers'} hasImage={true} interactive={true}  />
 	</div>
 
 	<div class="flex flex-row h-2/5 w-full gap-x-10 justify-between">
-		<div
-			class="rounded-md bg-white flex flex-col h-full w-1/3 max-w-1/3 max-h-full shadow-xl drop-shadow-xl p-4 gap-y-2"
-		>
-			<div class="flex h-1/7 w-full flex-row justify-between px-2">
-				<p class="text-lg w-2/5 text-start pl-4 font-medium">Countries</p>
-				<div class="flex flex-row flex-grow h-full" />
-				<p class="text-base w-1/5 text-center font-light uppercase">Visitors</p>
-			</div>
-			<div class="border-t border-gray-300 pt-1 w-full"></div>
-
-			<!-- TODO componentize this -->
-			<div
-				class="self-center w-full bg-[#eaeaea]/80 rounded-lg h-fit px-2 py-2 flex flex-row justify-between"
-			>
-				<p class="text-sm w-2/5 text-start pl-4">/our-team</p>
-				<div class="flex flex-row flex-grow" />
-				<p class="text-sm font-bold w-1/5 text-center">3</p>
-			</div>
-
-			<div
-				class="self-center w-full bg-[#eaeaea]/80 rounded-lg h-fit px-2 py-2 flex flex-row justify-between"
-			>
-				<p class="text-sm w-2/5 text-start pl-4">/</p>
-				<div class="flex flex-row flex-grow" />
-				<p class="text-sm font-bold w-1/5 text-center">4</p>
-			</div>
-		</div>
+		
 
 		<div
 			class="rounded-md bg-white flex flex-col h-full w-1/3 max-w-1/3 max-h-full shadow-xl drop-shadow-xl p-4 gap-y-2"
