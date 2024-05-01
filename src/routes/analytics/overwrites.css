@@ -1,0 +1,12 @@
+footer {
+    display: none !important;
+}
+
+.flex {
+    justify-content: start !important;
+    align-items: start !important;
+}
+
+p {
+    color: black !important;
+}

@@ -13,6 +13,9 @@ export const handle = async ({ event, resolve }) => {
 	// @ts-ignore
 	event.locals.ip = event.getClientAddress()
 
+	//@ts-ignore
+	event.locals.url = event.route
+
 	const response = await resolve(event);
 
 	if (!cookies.userid) {
