@@ -1,11 +1,9 @@
 <script>
+// @ts-nocheck
+
     import Heading from '$lib/components/Heading.svelte';
-    import Dropdown from '$lib/components/Dropdown.svelte';
-    import Link from '$lib/components/Link.svelte';
-    import Button from '$lib/components/Button.svelte';
     import PageHeader from '$lib/components/PageHeader.svelte';
     import Testimonial from "$lib/components/Testimonial.svelte";
-    import Competition from '$lib/components/Competition.svelte';
     import FlexBox from '$lib/components/FlexBox.svelte';
     import Sidebar from '$lib/components/Sidebar.svelte';
     import Table from "$lib/components/Table.svelte";
@@ -14,23 +12,21 @@
     import CardPanelBox from '$lib/components/CardPanelBox.svelte';
     import FlipCard from '$lib/components/InfoBox.svelte';
     import overviewData from "$lib/jsons/MMT-2024.json";
-    import { page } from '$app/stores';
     import { onMount } from 'svelte';
-    import Tournament from '$lib/components/Tournament.svelte';
     import SVGComponent from '$lib/components/SVGComponent.svelte';
-    import {LightenDarkenColor} from "$lib/utils/Colors.svelte";
 
-    import IntersectionObserver from "svelte-intersection-observer";
-
-    let element;
-    let intersecting;
+    import Viewer from '$lib/components/v3/viewer.svelte';
+    import { page } from '$app/stores';
 
     let windowWidth;
 
     let loc = ""
+    let pathName = "";
 
     onMount(() => {
         loc = window.location.hash.substring(1)
+        pathName = window.location.pathname;
+        console.log('hey', pathName)
     });
     
     let data = loc != "" ? overviewData[loc] : null;
@@ -55,9 +51,10 @@
 
 
     }
-    
 
-    
+    // const intersectionCallback = (/** @type {any} */ e) => {
+    //     console.log(e.detail.isIntersecting)
+    // }
 
     const topicsCovered = [
         { "Algebra": "<ul><li>Systems of equations</li> <li>Quadratics</li> <li>Vieta’s</li> <li>Binomial Theorem</li> <li>Radicals/Exponents</li> <li>Simon’s Favorite Factoring Trick</li> <li>Ratios</li> <li>(Infinite) Geometric Series</li> <li>Arithmetic Series</li> <li>Sum/Difference of Powers</li> <li>Rate/Time</li> <li>Floor/Ceiling</li> <li>Absolute Value</li> <li>Substitution (Nested Roots/Repeated Fractions)</li> <li>Mean, Median, Mode, Range</li> <li>Telescoping</li></ul>",
@@ -118,12 +115,7 @@
 </section>
 <br>
 
-<IntersectionObserver {element}
-on:observe={(e) => {
-  console.log(e.detail); // IntersectionObserverEntry
-  console.log(e.detail.isIntersecting); // true | false
-}}>
-<section id="Competitions" bind:this={element}>
+<Viewer id={"Competitions"} route={pathName}>
     <Heading text="Competitions" size={2.5} textColor="#1B9AAA" />
     <div style="margin-top:1%;"></div>
     <div class="competition-wrapper">
@@ -139,8 +131,7 @@ on:observe={(e) => {
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("O")}}><SVGComponent clicked={loc == "O" ? true : false} svgURL="/competitions//states/UnitedStatesOutline.svg" hoverFill="purple"/></button>
             </FlexBox>
     </div> 
-</section>
-</IntersectionObserver>
+</Viewer>
 
 <br id="registrationInfo" bind:this={infoElem}/>
 {#if data}
