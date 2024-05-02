@@ -17,6 +17,7 @@
 
     import Viewer from '$lib/components/v3/viewer.svelte';
     import { page } from '$app/stores';
+	import Lock from '$lib/components/v3/lock.svelte';
 
     let windowWidth;
 
@@ -51,10 +52,6 @@
 
 
     }
-
-    // const intersectionCallback = (/** @type {any} */ e) => {
-    //     console.log(e.detail.isIntersecting)
-    // }
 
     const topicsCovered = [
         { "Algebra": "<ul><li>Systems of equations</li> <li>Quadratics</li> <li>Vieta’s</li> <li>Binomial Theorem</li> <li>Radicals/Exponents</li> <li>Simon’s Favorite Factoring Trick</li> <li>Ratios</li> <li>(Infinite) Geometric Series</li> <li>Arithmetic Series</li> <li>Sum/Difference of Powers</li> <li>Rate/Time</li> <li>Floor/Ceiling</li> <li>Absolute Value</li> <li>Substitution (Nested Roots/Repeated Fractions)</li> <li>Mean, Median, Mode, Range</li> <li>Telescoping</li></ul>",
@@ -115,7 +112,7 @@
 </section>
 <br>
 
-<Viewer id={"Competitions"} route={pathName}>
+<Viewer id={"Competitions"} route={pathName} sym={$page.data.identifier}>
     <Heading text="Competitions" size={2.5} textColor="#1B9AAA" />
     <div style="margin-top:1%;"></div>
     <div class="competition-wrapper">
@@ -318,7 +315,7 @@
 <br /><br />
 
 <Sidebar />
-
+<Lock ident={$page.data.identifier} />
 <style>
 
     .cards {

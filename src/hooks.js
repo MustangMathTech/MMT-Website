@@ -13,6 +13,8 @@ export const handle = async ({ event, resolve }) => {
 	// @ts-ignore
 	event.locals.ip = event.getClientAddress()
 
+	console.log('rajjj')
+
 	//@ts-ignore
 	event.locals.url = event.route
 

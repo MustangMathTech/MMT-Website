@@ -1,6 +1,7 @@
 <script>
 	import IntersectionObserver from "svelte-intersection-observer";
     import { onMount } from 'svelte';
+	import { postData } from "$lib/utils";
 
 	/**
 	 * @type {(HTMLElement | null | undefined)}
@@ -24,14 +25,14 @@
 
     
     const fragmentTimer = (/** @type {number} */ time, /** @type {string} */ route, /** @type {(boolean | null)} */ status) => {
-        if (mounted) {
-            callback(time, route, id, 'page::load')
-            mounted = false;
+        if (status) {
+            callback(time, sym, id, 'user::enter')   
+            mounted = false;    
+        } else if (mounted) {
+            
         }
-        else if (status) {
-            callback(time, route, id, 'user::enter')       
-        } else {
-            callback(time, route, id, 'user::exit')
+        else {
+            callback(time, sym, id, 'user::exit')
         }
 
         return performance.now()
@@ -41,7 +42,22 @@
 
 	export let id = "";
     export let route = "";
-	export let callback = (/** @type {number} */ time, /** @type {string} */ route, /** @type {string} */ section, /** @type {string} */ message) => {console.log(time, route, section, message)};
+
+    /** @type {string} */
+    export let sym;
+
+	export let callback = (/** @type {number} */ time, /** @type {string} */ sym, /** @type {string} */ section, /** @type {string} */ message) => {
+        const responseObject = {
+            time: time,
+            key: sym,
+            event_string: message,
+            body: section
+        }
+
+        console.log(responseObject);
+
+        postData('http://localhost:8000/stream', responseObject)
+    };
 </script>
 
 <IntersectionObserver {element} on:observe={(e) => {

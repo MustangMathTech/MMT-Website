@@ -68,7 +68,7 @@
     class:active={$page.url.pathname === "/"}
     style="text-align: left; position: absolute; top: 0; left: 0;padding: 0;font-weight: bold; text-decoration: none;"
   >
-    <a style="text-decoration: none;" sveltekit:prefetch href="/">
+    <a style="text-decoration: none;" data-sveltekit-reload href="/">
       <img src="/favicon.png" alt="mustang math logo" />
       <h1 style="font-size: 24px;">
         {#if windowWidth > TITLE_BREAKPOINT}
@@ -86,7 +86,7 @@
         {#if navPage.hasSubPages}
           <div class="dropdown">
             <button class="dropbtn">
-              <a href={navPage.path} style="padding: 0; margin: 0;">
+              <a href={navPage.path} data-sveltekit-reload style="padding: 0; margin: 0;">
                 <span>
                   {navPage.text}
                   <i class="fa fa-caret-down" style="margin-left: 2px;" />
@@ -104,6 +104,7 @@
               {#each navPage.subPages as subPage}
                 <a
                   href={subPage.path}
+                  data-sveltekit-reload
                   style="text-decoration: {$page.url.pathname == subPage.path
                     ? 'underline'
                     : 'none'}">{subPage.text}</a
@@ -113,7 +114,7 @@
           </div>
         {:else}
           <a
-            sveltekit:prefetch
+          data-sveltekit-reload
             href={navPage.path}
             class:active={$page.url.pathname === navPage.path}
           >
