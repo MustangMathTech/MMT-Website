@@ -20,6 +20,10 @@
     import SVGComponent from '$lib/components/SVGComponent.svelte';
     import {LightenDarkenColor} from "$lib/utils/Colors.svelte";
 
+    import IntersectionObserver from "svelte-intersection-observer";
+
+    let element;
+    let intersecting;
 
     let windowWidth;
 
@@ -113,7 +117,13 @@
     </div>
 </section>
 <br>
-<section id="Competitions">
+
+<IntersectionObserver {element}
+on:observe={(e) => {
+  console.log(e.detail); // IntersectionObserverEntry
+  console.log(e.detail.isIntersecting); // true | false
+}}>
+<section id="Competitions" bind:this={element}>
     <Heading text="Competitions" size={2.5} textColor="#1B9AAA" />
     <div style="margin-top:1%;"></div>
     <div class="competition-wrapper">
@@ -130,6 +140,7 @@
             </FlexBox>
     </div> 
 </section>
+</IntersectionObserver>
 
 <br id="registrationInfo" bind:this={infoElem}/>
 {#if data}

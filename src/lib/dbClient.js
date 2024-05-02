@@ -9,4 +9,4 @@ const anon = env.SUPABASE_ANON_KEY;
 
 
 // @ts-ignore
-export const supabase = createClient(url, anon)
+// export const supabase = createClient(url, anon)
