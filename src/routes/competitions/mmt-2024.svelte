@@ -126,7 +126,7 @@
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("IL")}}><SVGComponent clicked={loc == "IL" ? true : false} svgURL="/competitions/states/IllinoisOutlineCursive.svg" hoverFill="green"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("MA")}}><SVGComponent clicked={loc == "MA" ? true : false} svgURL="/competitions/states/MassachusettsOutlineCursive.svg" hoverFill="blue"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("WA")}}><SVGComponent clicked={loc == "WA" ? true : false} svgURL="/competitions/states/WashingtonOutlineCursive.svg" hoverFill="hotpink"/></button>
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("O")}}><SVGComponent clicked={loc == "O" ? true : false} svgURL="/competitions//states/UnitedStatesOutline.svg" hoverFill="purple"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("O")}}><SVGComponent clicked={loc == "O" ? true : false} svgURL="/competitions/states/OnlineOutlineCursive.svg" hoverFill="purple"/></button>
             </FlexBox>
     </div> 
 </section>
