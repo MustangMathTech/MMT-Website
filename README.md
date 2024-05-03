@@ -7,7 +7,6 @@
 6. Start coding! :)
 
 
-
 # Repository
 The `static` folder contains static content, like the about us images and past tests.
 
