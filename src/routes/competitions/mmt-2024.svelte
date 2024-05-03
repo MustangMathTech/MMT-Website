@@ -135,16 +135,6 @@
 {#if data}
 
 
-<Heading text="Awards" size={2.5} textColor="#1B9AAA" />
-<div style="margin-left: 10vw; margin-right: 10vw;">
-    <CardPanelBox initials="MM">
-        <div style="padding: 20px;">
-            <p style="font-size: 1.5em; text-align: center;">Medals will be given to (at minimum) the members of the top 5 teams of each division, along with certificates of participation to all students. We also have shirts, pins, stickers, and more for all participants!</p>
-        </div>
-    </CardPanelBox>
-</div> <br />
-
-
     <section id={data["State"] +" Overview"}>
         <Heading text={"MMT " + data["State"] + " Overview"} size={2.5} textColor="#1B9AAA" />
         <div style="margin-left: 10vw; margin-right: 10vw;">
