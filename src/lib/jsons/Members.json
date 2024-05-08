@@ -1156,7 +1156,8 @@
       "cdpriority": 5,
       "cepriority": 5,
       "vppriority": 5,
-      "pic1path": "about-us-images/serious/Han_Wu_Serious.png",
+      "pic1path": "about-us-images/serious/Hannah_Lee_Serious.png",
+      "pic2path": "about-us-images/silly/Hannah_Lee_Silly.png",
       "bio": "Hannah is a junior at West Ranch High School in California. Besides helping out with Community Engagement projects at Mustang Math, she enjoys listening to music, going on walks with her dog, baking, coding and reading. "
   },
   {
@@ -1212,7 +1213,7 @@
       "cdpriority": 5,
       "cepriority": 5,
       "vppriority": 5,
-      "pic1path": "about-us-images/serious/Hannah_Lee_Serious.png",
+      "pic1path": "about-us-images/serious/Han_Wu_Serious.png",
       "pic2path": "about-us-images/silly/Han_Wu_Silly.png",
       "bio": "Han is a 10th grader from Vancouver who attends Southridge School. Apart from writing problems and handouts, and helping out with tournament development, Han enjoys playing sports and following professional football (soccer) leagues. His favourite subject in math is geometry and some academic subjects he enjoys apart from math are geography and music. "
   },
