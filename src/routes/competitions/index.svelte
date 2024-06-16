@@ -7,10 +7,10 @@
     import PageHeader from '$lib/components/PageHeader.svelte';
 
     const competitions = [        
-        {
+        /*{
             title: "Mustang Math Tournament 2024 [MMT]",
             location: "mmt-2024",
-        },
+        },*/
         {
             title: "Past Competitions",
             location: "past"
