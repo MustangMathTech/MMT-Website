@@ -57,9 +57,10 @@
 <PageHeader
   title="Meet the Team"
   description="The Ones Making Mustang Math Possible"
-  button_url="https://contestdojo.com/"
-  button_text="Register on ContestDojo!"
+  button_url="/join"
+  button_text="Join Us"
   id="registerOnContestDojo"
+  target="_self"
 />
 <section>
   <br>  

@@ -20,12 +20,6 @@
 <PageHeader title="Join the Mustang Math Team" description="Become a part of the herd!" button_url="https://forms.gle/vFz396ivct19bSRA8" button_text="Join our Team!"  id="joinTheMustangMathTeam" />
 <br /> <br />
 
-<div style="margin-left: 10vw; margin-right: 10vw;">
-    <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><strong>Notice:</strong><br /> We are mainly recruiting for Tournament Development from Massachusetts, Illinois, and British Columbia. However, you may get the opportunity to join other teams.</p>
-    </PanelBox>
-</div> <br />
-
 <Heading text="What is MMT?" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
