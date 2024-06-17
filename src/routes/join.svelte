@@ -34,8 +34,8 @@
 			the annual <b style="color: #1B9AAA;">Mustang Math Tournament</b>
 			as well as our individual 3MT, run low-cost and high-quality
 			<b style="color: #1B9AAA;">mathematics teaching</b>
-			and are also working on many new and exciting projects such as building a website
-			for tournaments, creating our own math curriculum and books, and expanding
+			and are also working on many new and exciting projects such as building an online test-taking platform, 
+			creating our own math curriculum and books, and expanding
 			our social media reach! We reached
 			<b style="color: #1B9AAA;">almost 600 U.S. competitors</b> across our 6 locations of MMT 2024
 			contests, and we're expecting many more in our international tournament this
@@ -128,7 +128,7 @@
 			The <b style="color: #1B9AAA;">Design</b> team ensures that Mustang Math
 			maintains a <b style="color: #1B9AAA;">consistent image</b> and
 			<b style="color: #1B9AAA;">aesthetic</b> throughout the year. Specific jobs
-			that may arise include: Building and desiging our merch, maintaining and rebranding
+			that may arise include: Building and designing our merch, maintaining and rebranding
 			the organization as necessary, working with other teams to ensure that materials
 			are on brand, and expanding our reach through social media.
 		</p>
@@ -188,7 +188,7 @@
 		text-decoration: none;
 		padding: 20px 50px;
 		width: fit-content;
-		font-size: 64px;
+		font-size: 40px;
 		margin: 20px;
 		margin-bottom: 50px;
 		cursor: pointer;
