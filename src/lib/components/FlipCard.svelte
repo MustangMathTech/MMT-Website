@@ -1,36 +1,47 @@
 <script>
-    import Heading from '$lib/components/Heading.svelte';
-    export let mainText;
+	export let mainText;
+    export let iconName;
 </script>
 
 <div>
-    <div style="padding: 20px" class="flex">
-        <div class="panel-box">
-            <div class="flip-card">
-                <div class="card-side-inner">
-                    <div class="card-side-front person-details">
-                        <Heading text={mainText} size={1.5} textColor="#000" />
-                    </div>
-                    <div class="card-side-back person-details">
-                        <div style="margin-top: auto; margin-bottom: auto;">
-                            <slot />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div style="padding: 20px" class="flex">
+		<div class="panel-box">
+			<div class="flip-card">
+				<div class="card-side-inner">
+					<div class="card-side-front person-details">
+						<div class="center-content">
+							<i class="fa-solid icon {iconName}" />
+                            <h1 style="font-size: 1.5em; color: #000; font-weight: 800;">{mainText}</h1>
+						</div>
+					</div>
+					<div class="card-side-back person-details">
+						<div class="center-content">
+							<slot />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <style>
-    .person-details {
-        line-height: 350px;
-    }
+	.flip-card {
+		background-color: transparent;
+		width: 350px;
+		height: 350px;
+		perspective: 1000px;
+	}
 
-    .flip-card {
-        background-color: transparent;
-        width: 350px;
-        height: 350px;
-        perspective: 1000px;
+	.center-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+    i {
+        font-size: 30px;
     }
 </style>

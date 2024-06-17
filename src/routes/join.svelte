@@ -111,7 +111,7 @@
 <Heading text="Our Teams" size={2.5} textColor="#1B9AAA" />
 
 <div class="teams">
-	<FlipCard mainText="Problem Writing" id="showDropdown">
+	<FlipCard mainText="Problem Writing" id="showDropdown" iconName="fa-calculator problem-writing">
 		<p>
 			The <b style="color: #1B9AAA;">Problem Writing</b> team is primarily
 			responsible for the <b style="color: #1B9AAA;">creation of problems</b>
@@ -122,7 +122,7 @@
 			problem writers with a variety of experience.
 		</p>
 	</FlipCard>
-	<FlipCard mainText="Tech" id="showDropdown">
+	<FlipCard mainText="Tech" id="showDropdown" iconName="fa-computer tech">
 		<p>
 			The <b style="color: #1B9AAA;">Tech</b> team is in charge of ensuring that
 			all the various <b style="color: #1B9AAA;">technological-related needs</b>
@@ -133,7 +133,7 @@
 			training platform, and other exciting projects!
 		</p>
 	</FlipCard>
-	<FlipCard mainText="Design" id="showDropdown">
+	<FlipCard mainText="Design" id="showDropdown" iconName="fa-pen-fancy design">
 		<p>
 			The <b style="color: #1B9AAA;">Design</b> team ensures that Mustang Math
 			maintains a <b style="color: #1B9AAA;">consistent image</b> and
@@ -143,7 +143,7 @@
 			are on brand, and expanding our reach through social media.
 		</p>
 	</FlipCard>
-	<FlipCard mainText="Tournament Development" id="showDropdown">
+	<FlipCard mainText="Tournament Development" id="showDropdown" iconName="fa-pen-ruler tournament-development">
 		<p>
 			The <b style="color: #1B9AAA;">Tournament Development</b> team is
 			responsible for <b style="color: #1B9AAA;">organization-level</b>
@@ -157,7 +157,7 @@
 			all day-of operations for Mustang Math Tournament’s in-person competition(s).
 		</p>
 	</FlipCard>
-	<FlipCard mainText="Curriculum Development" id="showDropdown">
+	<FlipCard mainText="Curriculum Development" id="showDropdown" iconName="fa-chalkboard-user curriculum-development">
 		<p>
 			The <b style="color: #1B9AAA;">Curriculum Development</b> team is in
 			charge of <b style="color: #1B9AAA;">developing content</b> for all
@@ -168,7 +168,7 @@
 			and new ideas.
 		</p>
 	</FlipCard>
-	<FlipCard mainText="Community Engagement" id="showDropdown">
+	<FlipCard mainText="Community Engagement" id="showDropdown" iconName="fa-people-group community-engagement">
 		<p>
 			The <b style="color: #1B9AAA;">Community Engagement</b> team is in charge
 			of building and engaging the Mustang Math student community. Some of the
@@ -179,7 +179,7 @@
 			the discord server, and managing the youtube channel.
 		</p>
 	</FlipCard>
-</div>
+</div> 
 
 <br />
 

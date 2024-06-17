@@ -294,34 +294,6 @@
     margin: 3px;
   }
 
-  .community-engagement {
-    color: #d8c87e;
-  }
-
-  .curriculum-development {
-    color: #9bd87e;
-  }
-
-  .design {
-    color: #7ed8af;
-  }
-
-  .problem-writing {
-    color: #7eb5d8;
-  }
-
-  .technology {
-    color: #957ed8;
-  }
-
-  .tournament-development {
-    color: #d87ece;
-  }
-
-  .video-production {
-    color: #d87e80;
-  }
-
   .bio {
     margin: 5px;
   }
