@@ -22,16 +22,6 @@
 />
 <br /> <br />
 
-<div style="margin-left: 10vw; margin-right: 10vw;">
-	<PanelBox>
-		<p style="font-size: 1.5em; text-align: center;">
-			<strong>Notice:</strong><br /> We are mainly recruiting for Tournament Development
-			from Massachusetts, Illinois, and British Columbia. However, you may get the
-			opportunity to join other teams.
-		</p>
-	</PanelBox>
-</div>
-<br />
 
 <Heading text="What is MMT?" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
@@ -47,7 +37,7 @@
 			and are also working on many new and exciting projects such as building a website
 			for tournaments, creating our own math curriculum and books, and expanding
 			our social media reach! We reached
-			<b style="color: #1B9AAA;">almost 600 U.S. competitors</b> in our MMT 2024
+			<b style="color: #1B9AAA;">almost 600 U.S. competitors</b> across our 6 locations of MMT 2024
 			contests, and we're expecting many more in our international tournament this
 			upcoming August. We are excited to expand our team to continue our mission
 			of spreading a love for mathematics amongst students.
@@ -92,7 +82,7 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
 	<PanelBox>
 		<p style="font-size: 1.5em; text-align: center;">
-			For 2024-2025, we are looking to expand our in-person offerings to include
+			For 2024-2025, we are looking to expand our in-person tournaments to include
 			Washington (Seattle), Northern California (Bay), Southern California
 			(LA/San Diego), Illinois (Chicago), Massachusetts (Boston), Texas
 			(Austin/Houston/Dallas), Virginia (Alexandria/DC), Georgia (Atlanta),
@@ -122,7 +112,7 @@
 			problem writers with a variety of experience.
 		</p>
 	</FlipCard>
-	<FlipCard mainText="Tech" id="showDropdown" iconName="fa-computer tech">
+	<FlipCard mainText="Tech" id="showDropdown" iconName="fa-computer technology">
 		<p>
 			The <b style="color: #1B9AAA;">Tech</b> team is in charge of ensuring that
 			all the various <b style="color: #1B9AAA;">technological-related needs</b>
