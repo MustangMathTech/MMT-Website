@@ -82,13 +82,24 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
 	<PanelBox>
 		<p style="font-size: 1.5em; text-align: center;">
-			For 2024-2025, we are looking to expand our in-person tournaments to include
-			Washington (Seattle), Northern California (Bay), Southern California
-			(LA/San Diego), Illinois (Chicago), Massachusetts (Boston), Texas
-			(Austin/Houston/Dallas), Virginia (Alexandria/DC), Georgia (Atlanta),
-			Nevada (Las Vegas), North Carolina, (Chapel Hill/Raleigh/Charlotte),
-			Minnesota (Minneapolis), and Colorado (Denver). These locations would be
-			responsible for running an in-person location of MMT 2025 to the students
+			For 2024-2025, we are looking to expand our in-person tournaments to include:
+		</p>
+		<ul>
+			<li>Washington (Seattle)</li>
+			<li>Northern California (Bay)</li>
+			<li>Southern California (LA/San Diego)</li>
+			<li>Illinois (Chicago)</li>
+			<li>Massachusetts (Boston)</li>
+			<li>Texas (Austin/Houston/Dallas)</li>
+			<li>Virginia (Alexandria/DC)</li>
+			<li>Georgia (Atlanta)</li>
+			<li>Nevada (Las Vegas)</li>
+			<li>North Carolina, (Chapel Hill/Raleigh/Charlotte)</li>
+			<li>Minnesota (Minneapolis)</li>
+			<li>Colorado (Denver)</li>
+		</ul>
+		<p style="font-size: 1.5em; text-align: center;">
+			These locations would be responsible for running an in-person location of MMT 2025 to the students
 			from their state and nearby areas, and will also receive support from
 			Mustang Math to run other similar events. If you're from these areas and
 			want to help give a wonderful contest experience to your local middle
