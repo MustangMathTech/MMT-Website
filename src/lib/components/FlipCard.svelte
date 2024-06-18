@@ -49,6 +49,7 @@
 		justify-content: center;
 		align-items: center;
 		height: 100%;
+		margin: 5px;
 	}
 
     i {
