@@ -22,16 +22,6 @@
 />
 <br /> <br />
 
-<div style="margin-left: 10vw; margin-right: 10vw;">
-	<PanelBox>
-		<p style="font-size: 1.5em; text-align: center;">
-			<strong>Notice:</strong><br /> We are mainly recruiting for Tournament Development
-			from Massachusetts, Illinois, and British Columbia. However, you may get the
-			opportunity to join other teams.
-		</p>
-	</PanelBox>
-</div>
-<br />
 
 <Heading text="What is MMT?" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
@@ -44,10 +34,10 @@
 			the annual <b style="color: #1B9AAA;">Mustang Math Tournament</b>
 			as well as our individual 3MT, run low-cost and high-quality
 			<b style="color: #1B9AAA;">mathematics teaching</b>
-			and are also working on many new and exciting projects such as building a website
-			for tournaments, creating our own math curriculum and books, and expanding
+			and are also working on many new and exciting projects such as building an online test-taking platform, 
+			creating our own math curriculum and books, and expanding
 			our social media reach! We reached
-			<b style="color: #1B9AAA;">almost 600 U.S. competitors</b> in our MMT 2024
+			<b style="color: #1B9AAA;">almost 600 U.S. competitors</b> across our 6 locations of MMT 2024
 			contests, and we're expecting many more in our international tournament this
 			upcoming August. We are excited to expand our team to continue our mission
 			of spreading a love for mathematics amongst students.
@@ -92,7 +82,7 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
 	<PanelBox>
 		<p style="font-size: 1.5em; text-align: center;">
-			For 2024-2025, we are looking to expand our in-person offerings to include:
+			For 2024-2025, we are looking to expand our in-person tournaments to include:
 		</p>
 		<ul>
 			<li>Washington (Seattle)</li>
@@ -133,7 +123,7 @@
 			problem writers with a variety of experience.
 		</p>
 	</FlipCard>
-	<FlipCard mainText="Tech" id="showDropdown" iconName="fa-computer tech">
+	<FlipCard mainText="Tech" id="showDropdown" iconName="fa-computer technology">
 		<p>
 			The <b style="color: #1B9AAA;">Tech</b> team is in charge of ensuring that
 			all the various <b style="color: #1B9AAA;">technological-related needs</b>
@@ -149,7 +139,7 @@
 			The <b style="color: #1B9AAA;">Design</b> team ensures that Mustang Math
 			maintains a <b style="color: #1B9AAA;">consistent image</b> and
 			<b style="color: #1B9AAA;">aesthetic</b> throughout the year. Specific jobs
-			that may arise include: Building and desiging our merch, maintaining and rebranding
+			that may arise include: Building and designing our merch, maintaining and rebranding
 			the organization as necessary, working with other teams to ensure that materials
 			are on brand, and expanding our reach through social media.
 		</p>
@@ -209,7 +199,7 @@
 		text-decoration: none;
 		padding: 20px 50px;
 		width: fit-content;
-		font-size: 64px;
+		font-size: 40px;
 		margin: 20px;
 		margin-bottom: 50px;
 		cursor: pointer;
