@@ -57,7 +57,7 @@ bind:innerHeight={windowHeight} />
         {#if windowWidth > 0} <!--windowWidth < 860}-->
             <div in:fly={{ y: -20, duration: 700 }} class="minidiv">
 
-                    <Heading className="glow" text={windowWidth > 860 ? "Mustang Math" : "MM"} textColor="white" />
+                    <Heading className="glow" text="Mustang Math" textColor="white" />
   
                 <div class="flex"><div class="headerline" /></div>
                     <br>
@@ -68,7 +68,7 @@ bind:innerHeight={windowHeight} />
                             on:mouseleave={toggleBackground}
                         >
                             <p class="headerButton" id="signupformmt">
-                                Join Us
+                                Join Our Team
                             </p>
                             <img
                                 height="25px"
