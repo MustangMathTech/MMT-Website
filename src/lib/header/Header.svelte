@@ -72,11 +72,7 @@
     <a style="text-decoration: none;" sveltekit:prefetch href="/">
       <img src="/favicon.png" alt="mustang math logo" />
       <h1 style="font-size: 24px;">
-        {#if windowWidth > TITLE_BREAKPOINT}
-          Mustang Math
-        {:else}
-          MM
-        {/if}
+        Mustang Math
       </h1>
     </a>
   </div>
