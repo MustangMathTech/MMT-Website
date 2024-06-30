@@ -68,7 +68,7 @@ bind:innerHeight={windowHeight} />
                             on:mouseleave={toggleBackground}
                         >
                             <p class="headerButton" id="signupformmt">
-                                Join Us
+                                Join Our Team
                             </p>
                             <img
                                 height="25px"
