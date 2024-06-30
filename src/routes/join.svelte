@@ -16,7 +16,7 @@
 <PageHeader
 	title="Join the Mustang Math Team"
 	description="Become a part of the herd!"
-	button_url="https://link.mustangmath.com/RecruitementInfo"
+	button_url="https://link.mustangmath.com/RecruitmentInfo"
 	button_text="Join our Team!"
 	id="joinTheMustangMathTeam"
 />
@@ -185,7 +185,7 @@
 <br />
 
 <div class="flex">
-	<a class="join_now" href="https://link.mustangmath.com/RecruitementInfo" target="_blank"
+	<a class="join_now" href="https://link.mustangmath.com/RecruitmentInfo" target="_blank"
 		>Join Now</a
 	>
 </div>
