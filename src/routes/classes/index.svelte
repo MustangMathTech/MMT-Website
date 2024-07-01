@@ -47,8 +47,8 @@
 	    { "Class": "4", "Dates": "July 24th - July 27th, 2024", "Topics Covered": "Geometry B" },
         { "Class": "5", "Dates": "July 28th - July 30th, 2024", "Topics Covered": "Combinatorics A" },
         { "Class": "6", "Dates": "July 31st - August 3rd, 2024", "Topics Covered": "Combinatorics B" },
-        { "Class": "7", "Dates": "xx, 2024", "Topics Covered": "Number Theory A" },
-        { "Class": "8", "Dates": "xx, 2024", "Topics Covered": "Number Theory B" },
+        { "Class": "7", "Dates": "August 4th - August 6th, 2024", "Topics Covered": "Number Theory A" },
+        { "Class": "8", "Dates": "August 7th - August 10th, 2024", "Topics Covered": "Number Theory B" },
     ]
 
     onMount(() => {
