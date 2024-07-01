@@ -48,7 +48,7 @@
         { "Class": "5", "Dates": "July 28th - July 30th, 2024", "Topics Covered": "Combinatorics A" },
         { "Class": "6", "Dates": "July 31st - August 3rd, 2024", "Topics Covered": "Combinatorics B" },
         { "Class": "7", "Dates": "August 4th - August 6th, 2024", "Topics Covered": "Number Theory A" },
-        { "Class": "8", "Dates": "August 7th - August 10th, 2024", "Topics Covered": "Number Theory B" },
+        { "Class": "8", "Dates": "August 7th - August 9th, 2024", "Topics Covered": "Number Theory B" },
     ]
 
     onMount(() => {
@@ -135,7 +135,7 @@
 <Heading text="Class Details" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Our class will be on Problem Solving and will start on the week of <strong>July 14th, 2024</strong> and run through the end of the week of <strong>August 4th, 2024</strong>. There are currently 2 levels of classes planned: <strong>Beginner Problem Solving</strong> and <strong>Intermediate Problem Solving</strong>. See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://forms.gle/S9oyf34H8L7bJcus5"><strong>registration form</strong></a>.</p>
+        <p style="font-size: 1.5em; text-align: center;">Our class will be on Problem Solving and will start on the week of <strong>July 14th, 2024</strong> and run through <strong>August 9th, 2024</strong>. There are currently 2 levels of classes planned: <strong>Beginner Problem Solving</strong> and <strong>Intermediate Problem Solving</strong>. See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://forms.gle/S9oyf34H8L7bJcus5"><strong>registration form</strong></a>.</p>
     </PanelBox>
 </div> <br />
 <br />
