@@ -1,15 +1,29 @@
 const sponsorTiers = [
 	{
-		name: "National Sponsors",
-		singular: "National Sponsor",
+		name: "Unicorn Sponsors",
+		singular: "Unicorn Sponsor",
+		headerColor: "#F9C4CA",
+		sponsors: [
+		],
+	},
+	{
+		name: "Stallion Sponsors",
+		singular: "Stallion Sponsor",
 		headerColor: "#5ba89a",
 		sponsors: [
-			{
-				url: "sponsors/stallion/nontrivial.png",
-				alt: "Non-Trivial",
-				link: "https://nntrvl.org/MMT",
-			},
 		],
+	},
+	{
+		name: "Colt Sponsors",
+		singular: "Colt Sponsor",
+		headerColor: "#4d9464",
+		sponsors: [],
+	},
+	{
+		name: "Foal Sponsors",
+		singular: "Foal Sponsor",
+		headerColor: "#ad8c9e",
+		sponsors: [],
 	},
 	{
 		name: "Partners",

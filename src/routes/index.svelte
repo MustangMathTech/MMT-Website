@@ -57,18 +57,18 @@ bind:innerHeight={windowHeight} />
         {#if windowWidth > 0} <!--windowWidth < 860}-->
             <div in:fly={{ y: -20, duration: 700 }} class="minidiv">
 
-                    <Heading className="glow" text={windowWidth > 860 ? "Mustang Math" : "MM"} textColor="white" />
+                    <Heading className="glow" text="Mustang Math" textColor="white" />
   
                 <div class="flex"><div class="headerline" /></div>
                     <br>
-                    <a sveltekit:prefetch href="/competitions/mmt-2024" class="headerButton">
+                    <a sveltekit:prefetch href="/join" class="headerButton">
                         <div
                             class="headerButton"
                             on:mouseenter={toggleBackground}
                             on:mouseleave={toggleBackground}
                         >
                             <p class="headerButton" id="signupformmt">
-                                Register for MMT 2024
+                                Join Our Team
                             </p>
                             <img
                                 height="25px"

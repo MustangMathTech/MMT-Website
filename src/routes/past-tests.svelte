@@ -50,7 +50,7 @@
 <svelte:window bind:innerWidth={windowWidth} />
 
 <PageHeader
-  title="Resources"
+  title="Past Tests"
   description="Study for upcoming tournaments or classes with these resources!"
   button_url="/classes"
   button_text="Learn more with our classes!"
