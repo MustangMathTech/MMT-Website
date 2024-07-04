@@ -4,7 +4,7 @@
 		"Statef": "California",
 		"email": "california@mustangmath.com",
 		"TeamSize": "3-4*",
-		"Location": "San Jose, California",
+		"Location": "San Jose High School, California",
 		"EarlyHorseCost": "15",
 		"EarlyHorseCostDate": "March 25th, 2024",
 		"NormalCost": "20",
@@ -69,7 +69,7 @@
 		"EarlyHorseCost": "15",
 		"EarlyHorseCostDate": "April 1st, 2024",
 		"NormalCost": "20",
-		"NormalCostDate": "April 20th, 2024",
+		"NormalCostDate": "April 22nd, 2024",
 		"LateCost": "25",
 		"LateCostDate": "April 27th, 2024",
 		"Date": "May 4, 2024",
@@ -99,9 +99,9 @@
 		"Location": "Thurston Middle School - Westwood, Massachusetts",
 		"EarlyHorseCost": "15",
 		"EarlyHorseCostDate": "March 25th, 2024",
-		"NormalCost": "20",
+		"NormalCost": "17.50",
 		"NormalCostDate": "April 17th, 2024",
-		"LateCost": "25",
+		"LateCost": "20",
 		"LateCostDate": "April 20th, 2024",
 		"Date": "April 27, 2024",
 		"scheduleData": [
@@ -192,7 +192,7 @@
 		"NormalCost": "20",
 		"NormalCostDate": "April 24th, 2024",
 		"LateCost": "25",
-		"LateCostDate": "April 27th, 2024",
+		"LateCostDate": "May 3rd, 2024",
 		"Date": "May 4, 2024",
 		"scheduleData": [
 			{

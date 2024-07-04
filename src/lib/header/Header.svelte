@@ -24,11 +24,11 @@
 
   const navPages = [
     { path: "/", text: "Home", hasSubPages: false },
-    {
+    /*{
       path: "/competitions/mmt-2024",
       text: "MMT 2024",
       hasSubPages: false,
-    },
+    },*/
     {
       path: "/classes",
       text: "Classes",
@@ -40,8 +40,9 @@
       ],
     },
     { path: "/our-team", text: "Our Team", hasSubPages: false },
+    { path: "/join", text: "Join Us", hasSubPages: false },
     { path: "/sponsors", text: "Sponsors", hasSubPages: false },
-    { path: "/resources", text: "Resources", hasSubPages: false },
+    { path: "/past-tests", text: "Past Tests", hasSubPages: false },
     { path: "/donate", text: "Donate", hasSubPages: false },
   ];
   const show = [0, 0];
@@ -71,11 +72,7 @@
     <a style="text-decoration: none;" sveltekit:prefetch href="/">
       <img src="/favicon.png" alt="mustang math logo" />
       <h1 style="font-size: 24px;">
-        {#if windowWidth > TITLE_BREAKPOINT}
-          Mustang Math
-        {:else}
-          MM
-        {/if}
+        Mustang Math
       </h1>
     </a>
   </div>
