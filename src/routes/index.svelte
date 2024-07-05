@@ -227,7 +227,7 @@ bind:innerHeight={windowHeight} />
     <div style="width:100%; align-items:center;display:flex; flex-direction:column; justify-content:center;" >
         <Heading text="About Mustang Math" size={4} textColor="#3C6F8B;" />
         <div class="homeText">
-            Mustang Math is a <b>nonprofit organization</b> of high school and college volunteers that are dedicated towards providing middle schoolers access to challenging, interesting, fun, and collaborative math competitions and resources! We are the organizers of the annual <b>Mustang Math Tournament</b>, run low-cost and high-quality <b>mathematics tutoring</b> and are also working on many new and exciting projects including a Youtube Channel, a competition management platform, private tutoring, and more! We reached over 500 U.S. competitors in our MMT 2023 contests, and we're expecting 750 more in our international tournament this upcoming August. We are excited to expand our team to continue our mission of spreading a love for mathematics amongst students.
+            Mustang Math is a <b>nonprofit organization</b> of high school and college volunteers that are dedicated towards providing middle schoolers access to challenging, interesting, fun, and collaborative math competitions and resources! We are the organizers of the annual Mustang Math Tournament, run low-cost and high-quality mathematics tutoring and are also working on many new and exciting projects including a Youtube Channel, a competition management platform, private tutoring, and more! We reached almost 600 U.S. competitors in our MMT 2024 contests, and we're expecting 1000 more in our international tournament this upcoming August. We are excited to expand our team to continue our mission of spreading a love for mathematics amongst students. 
         </div>
     </div>  
 
@@ -325,13 +325,7 @@ bind:innerHeight={windowHeight} />
 
 
     <div class="homeText">
-        As MM gears up for the upcoming year, we plan to host an
-individual tournament this fall along with the team-based Mustang
-Math Tournament [MMT]. MMT is our focal point, and we plan to
-have four in-person locations in addition to an online tournament in
-the upcoming year. This is an international math tournament for the middle school level that features a variety of interesting rounds
-designed to not only test mathematical ability, but also promote
-collaboration and be enjoyable for the participants.
+        As MM gears up for the upcoming year, we plan to host an individual tournament this fall, a proof based tournament after that, along with our flagship team-based Mustang Math Tournament [MMT]. MMT is our focal point, and we plan to have twelve in-person locations in addition to an online tournament in the upcoming year. This is an international math tournament for the middle school level that features a variety of interesting rounds designed to not only test mathematical ability, but also promote collaboration and be enjoyable for the participants. 
     </div>
 
 <!-- Add button here -->
