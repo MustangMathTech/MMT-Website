@@ -326,7 +326,6 @@ bind:innerHeight={windowHeight} />
 
     <div class="homeText">
         As MM gears up for the upcoming year, we plan to host an individual tournament this fall, a proof based tournament after that, along with our flagship team-based Mustang Math Tournament [MMT]. MMT is our focal point, and we plan to have twelve in-person locations in addition to an online tournament in the upcoming year. This is an international math tournament for the middle school level that features a variety of interesting rounds designed to not only test mathematical ability, but also promote collaboration and be enjoyable for the participants. 
-
 <!-- Add button here -->
 
     <div class="vertLine"></div>
@@ -342,10 +341,8 @@ bind:innerHeight={windowHeight} />
         These classes will be run year-round and will be split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving/AMC Prep, each run for 8 weeks. Instructive sessions will run for 90 minutes every week over Zoom. Additionally, teachers will hold office hours each week, during which students can seek assistance with the content or ask any lingering questions. Each class will have 10-15 students and, depending on the interest we receive, there may be multiple classes run for each level. The total cost for 8 weeks of classes will be $160 with financial aid available.
     </div>
 
-    <PanelBox>
 
-    </PanelBox>
-
+</div>
 </div>
 
 
