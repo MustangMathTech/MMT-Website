@@ -345,8 +345,6 @@ bind:innerHeight={windowHeight} />
 
 
 </div>
-</div>
-
 
 
 
