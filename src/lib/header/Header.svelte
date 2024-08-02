@@ -19,7 +19,7 @@
 		courseExpanded = !courseExpanded;
 	}
 
-	const MOBILE = 1120;
+	const MOBILE = 1300;
 	const TITLE_BREAKPOINT = MOBILE + 150;
 
 	const navPages = [
