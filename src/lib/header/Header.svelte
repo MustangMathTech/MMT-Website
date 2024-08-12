@@ -24,11 +24,13 @@
 
   const navPages = [
     { path: "/", text: "Home", hasSubPages: false },
-    /*{
-      path: "/competitions/mmt-2024",
+    { path: "/join", text: "Join Us", hasSubPages: false },
+    { path: "/our-team", text: "Our Team", hasSubPages: false },
+    {
+      path: "/competitions/past/mmt-2024",
       text: "MMT 2024",
       hasSubPages: false,
-    },*/
+    },
     {
       path: "/classes",
       text: "Classes",
