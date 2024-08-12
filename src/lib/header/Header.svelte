@@ -39,6 +39,7 @@
         { path: "/classes/tutoring", text: "Tutoring" }
       ],
     },
+    { path: "/competitions/3mt-2024", text: "3MT", hasSubPages: false },
     { path: "/our-team", text: "Our Team", hasSubPages: false },
     { path: "/join", text: "Join Us", hasSubPages: false },
     { path: "/sponsors", text: "Sponsors", hasSubPages: false },
