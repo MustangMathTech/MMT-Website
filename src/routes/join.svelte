@@ -14,10 +14,12 @@
 <svelte:window bind:innerWidth={windowWidth} />
 
 <PageHeader
-	title="Join the Mustang Math Team"
-	description="Become a part of the herd!"
-	button_url="https://link.mustangmath.com/RecruitmentInfo"
-	button_text="Join our Team!"
+	title="Join Mustang Math"
+	description="Spread our Mission!"
+	button_url="https://tinyurl.com/MMRegionDirectorRecruitment"
+	button_text="Start MMT in your Area"
+	button2_url="https://link.mustangmath.com/RecruitmentInfo"
+	button2_text="Join Our Teams"
 	id="joinTheMustangMathTeam"
 />
 <br /> <br />
@@ -42,6 +44,16 @@
 			upcoming August. We are excited to expand our team to continue our mission
 			of spreading a love for mathematics amongst students.
 		</p>
+		<p style="font-size: 1.5em; text-align: center;">
+			We're currently looking for motivated high school students to <b style="color: #1B9AAA;">start a Mustang Math Tournament</b> in your area! By joining our team, 
+			we will give you the guidance and resources that you need to run your own MMT, including building a team of volunteers, finding a location, marketing, and much more!
+			To apply and learn more, click below!
+		</p>
+		<div class="flex">
+			<a class="join_now" href="https://tinyurl.com/MMRegionDirectorRecruitment" target="_blank"
+				>Start your own MMT Contest</a
+			>
+		</div>
 	</PanelBox>
 </div>
 <br />
@@ -74,6 +86,7 @@
 			all while learning <b style="color: #1B9AAA;">real-life skills</b> such as
 			teamwork, time management, and how to see a project through to completion.
 		</p>
+		
 	</PanelBox>
 </div>
 <br />

@@ -37,7 +37,6 @@
 		<Newsletter show={show} />
 	</main>
 
-    {#if $page.url.pathname !== "/"}
 	<footer>
 		<div class="socials">
 			<button class="sign-up" on:click={() => {show = !show;}}><i class="fa-regular fa-newspaper"></i> Signup</button>
@@ -51,7 +50,6 @@
 			<SocialsLink url="https://artofproblemsolving.com/wiki/index.php/Mustang_Math_Tournament" type="text" icon="AoPS" text />
 		</div>
 	</footer>
-    {/if}
 </div>
 </body>
 
@@ -92,7 +90,7 @@
 		bottom: 0;
 		width: 100%;
 		text-align: center;
-		position: sticky;
+		position: fixed;
 		z-index: 2;
 		min-height: 50px;
 		background-color: #1c6825;
