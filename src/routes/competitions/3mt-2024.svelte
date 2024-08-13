@@ -51,12 +51,12 @@
     ];
 </script>
 <svelte:head>
-    <title>3MT</title>
+    <title>M^3</title>
 </svelte:head>
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="Mustang Mini Math Tournament (3MT)" description="November 18, 2023: 9:00 AM - 11:30 AM PT"  button_url="https://contestdojo.com" button_text="Register Here!" button_id="registerOnContestDojo" />
+<PageHeader title="Mustang Mini Math Tournament (M^3)" description="September 28th, 2024, 9:00 AM - 5:00 PM PST"  button_url="https://contestdojo.com" button_text="Register Here!" button_id="registerOnContestDojo" />
 
 <br /><br />
 
@@ -191,19 +191,50 @@
     </PanelBoxAnimated>
 </div>
 <br />
+
+<Dropdown mainText="Rounds" id="showDropdown">
+
+    <Heading text="Rounds" size={2} textColor="#1B9AAA"/>
+    <br />
+    <div style="margin-left: 5vw; margin-right: 5vw; font-size: 1em;">
+            <p style="color:black;"> Proof Round:</p>
+            <ol>
+                <li>The week before competition day, teams will compete in a proof-writing competition. This round will consist of various problems in which students must either compute an answer, explain their reasoning, or write mathematically sound proofs to demonstrate why some property holds true.
+                </li>
+            </ol>
+            <p style="color:black;"> Individual Round:</p>
+            <ol>
+                <li>Students will compete individually to answer a X question test in X minutes. These individual scores will be factored into the team score at the end.
+                </li>
+            </ol>
+            <p style="color:black;"> Floor-is-lava: </p>
+            <ol>
+                <li>Teams will compete in a 25 question test over 25 minutes. After the first minute, problem #1 will sink and become unsolvable. Every minute, the next problem will sink until all 25 problems become locked (new answers can not be submitted). Students will only earn points on unlocked problems solved correctly.
+                </li>
+            </ol>
+            <p style="color:black;"> Gambling:</p>
+            <ol>
+                <li>Teams start with 100 points and 5 problem sets, each with a multiplier, (1.5, 2, 2.5, 3, and 3.5). Teams can then bet/allocate their points to sets before seeing problems, keeping any unused points. Over the next 45 minutes, teams work to solve the 25 problems. Each full set correctly solved returns the bet points multiplied, no points otherwise. Teams also earn 2 bonus points per correct problem, with a maximum of 50 bonus points.
+                </li>
+            </ol>
+    </div>
+    </Dropdown>
+
+
+<Dropdown mainText="Scoring & Tiebreakers" id="showDropdown">
+
 <Heading text="Scoring & Tiebreakers" size={2} textColor="#1B9AAA"/>
 <br />
 <div style="margin-left: 5vw; margin-right: 5vw; font-size: 1em;">
-    <PanelBoxAnimated>
-        <p style="color:black;">Your score on the 3MT Round is simply the number of questions you get right - each question is worth 1 point.</p>
+        <p style="color:black;">Your score on the M^3 Round is simply the number of questions you get right - each question is worth 1 point.</p>
         <p style="color:black;">If two or more students get the same number of questions right, ties will be broken as follows:</p>
         <ol>
             <li>Difficulty of problems solved. This will be determined by whichever student has the lowest <b>tiebreaker index</b>. <br>
             The <b>tiebreaker index</b> for a student is calculated by multiplying the total number of correct solves per problem for each problem the student got correct.</li><br>
             <li>Completion time. Should two students have the same tiebreaker index, ties will be broken by completion time. In particular, whichever student enters their final correct answer earliest will win this tiebreaker.</li>
         </ol>
-    </PanelBoxAnimated>
 </div>
+</Dropdown>
 
 <Dropdown mainText="Answer Formatting Rules" id="showDropdown">
     <br />
