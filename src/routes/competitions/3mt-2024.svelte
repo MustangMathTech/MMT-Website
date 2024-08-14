@@ -13,11 +13,11 @@
     import Testimonial from '$lib/components/Testimonial.svelte';
     let windowWidth;
     const scheduleData = [
-        { "Day": "09/20-09/27", "Start Time (PT)": "All Day", "Event": "Proof Based Round" },
+        { "Day": "09/20-09/27", "Start Time (PT)": "All Day", "Event": "Perilous Proofs" },
         [ "09/28", "9:00 AM-9:30 AM", "Opening Ceremony" ],
-        [ "09/28", "9:30 AM-10:45 AM", "Individual Round" ],
-        [ "09/28", "10:45 AM-1:00 PM", "Floor is Lava" ],
-        [ "09/28", "1:00 PM-2:30 PM", "Gambiling" ],
+        [ "09/28", "9:30 AM-10:45 AM", "Solo Stampede" ],
+        [ "09/28", "10:45 AM-1:00 PM", "Meltdown Madness" ],
+        [ "09/28", "1:00 PM-2:30 PM", "Betting Bonanza" ],
         [ "09/28", "2:30 PM-4:30 PM", "Activities" ],
         [ "09/28", "4:30 PM", "Awards" ]
 
@@ -71,7 +71,7 @@
         <br/>
         <br/>
 
-        The tournament is centered around teamwork and collaboration, incentivizing students to work with their teams not only to navigate the challenging but interesting problems of the tournament, but also to develop strategies to master the unique and fun game-like rounds. Kicking off the week prior to the tournament with a proof based round tailored towards middle school students, and continuing with innovative and interesting rounds such as “the ground is lava” and a risky gambling round, our tournaments are filled with fun and excitement for students at all levels. 
+        The tournament is centered around teamwork and collaboration, incentivizing students to work with their teams not only to navigate the challenging but interesting problems of the tournament, but also to develop strategies to master the unique and fun game-like rounds. Kicking off the week prior to the tournament with a proof based round tailored towards middle school students, and continuing with innovative and interesting rounds such as “the ground is lava” and a risky gambling round, our tournaments are filled with fun and excitement for students at all levels.
         <br/>        <br/>
 
         Don't believe us? Check out some comments from past participants below!
@@ -197,22 +197,22 @@
     <Heading text="Rounds" size={2} textColor="#1B9AAA"/>
     <br />
     <div style="margin-left: 5vw; margin-right: 5vw; font-size: 1em;">
-            <p style="color:black;"> Proof Round:</p>
+            <p style="color:black;"> Perilous Proofs:</p>
             <ol>
                 <li>The week before competition day, teams will compete in a proof-writing competition. This round will consist of various problems in which students must either compute an answer, explain their reasoning, or write mathematically sound proofs to demonstrate why some property holds true.
                 </li>
             </ol>
-            <p style="color:black;"> Individual Round:</p>
+            <p style="color:black;"> Solo Stampede:</p>
             <ol>
                 <li>Students will compete individually to answer a X question test in X minutes. These individual scores will be factored into the team score at the end.
                 </li>
             </ol>
-            <p style="color:black;"> Floor-is-lava: </p>
+            <p style="color:black;"> Meltdown Madness: </p>
             <ol>
                 <li>Teams will compete in a 25 question test over 25 minutes. After the first minute, problem #1 will sink and become unsolvable. Every minute, the next problem will sink until all 25 problems become locked (new answers can not be submitted). Students will only earn points on unlocked problems solved correctly.
                 </li>
             </ol>
-            <p style="color:black;"> Gambling:</p>
+            <p style="color:black;"> Betting Bonanza:</p>
             <ol>
                 <li>Teams start with 100 points and 5 problem sets, each with a multiplier, (1.5, 2, 2.5, 3, and 3.5). Teams can then bet/allocate their points to sets before seeing problems, keeping any unused points. Over the next 45 minutes, teams work to solve the 25 problems. Each full set correctly solved returns the bet points multiplied, no points otherwise. Teams also earn 2 bonus points per correct problem, with a maximum of 50 bonus points.
                 </li>
