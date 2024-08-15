@@ -51,18 +51,18 @@
     ];
 </script>
 <svelte:head>
-    <title>M^3</title>
+    <title>M³</title>
 </svelte:head>
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="Mustang Math Mania (M^3)" description="September 28th, 2024, 9:00 AM - 5:00 PM PST"  button_url="https://contestdojo.com" button_text="Register Here!" button_id="registerOnContestDojo" />
+<PageHeader title="Mustang Math Mania (M³)" description="September 28th, 2024, 9:00 AM - 5:00 PM PST"  button_url="https://contestdojo.com" button_text="Register Here!" button_id="registerOnContestDojo" />
 
 <br /><br />
 
 <br /><br />
 
-<Heading text="What is M^3" size={2.5} textColor="#1B9AAA" />
+<Heading text="What is M³" size={2.5} textColor="#1B9AAA" />
 <br/>
 
 <PanelBoxAnimated id="showDropdown" style="margin-right:5vw; margin-left:5vw;">
@@ -226,13 +226,14 @@
 <Heading text="Scoring & Tiebreakers" size={2} textColor="#1B9AAA"/>
 <br />
 <div style="margin-left: 5vw; margin-right: 5vw; font-size: 1em;">
-        <p style="color:black;">Your score on the M^3 Round is simply the number of questions you get right - each question is worth 1 point.</p>
+        <p style="color:black;">Your score on the M³ individual Round is simply the number of questions you get right - each question is worth 1 point.</p>
         <p style="color:black;">If two or more students get the same number of questions right, ties will be broken as follows:</p>
         <ol>
             <li>Difficulty of problems solved. This will be determined by whichever student has the lowest <b>tiebreaker index</b>. <br>
             The <b>tiebreaker index</b> for a student is calculated by multiplying the total number of correct solves per problem for each problem the student got correct.</li><br>
             <li>Completion time. Should two students have the same tiebreaker index, ties will be broken by completion time. In particular, whichever student enters their final correct answer earliest will win this tiebreaker.</li>
         </ol>
+        <p>Team scoring is the same as MMT - your score in each round will be normalized against the sccores of other teams in your divisions, and added up. Should there remain a tie, ties will be broken by the sum of the top 3 individual scores on your team.</p>
 </div>
 </Dropdown>
 
