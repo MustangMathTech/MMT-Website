@@ -24,13 +24,6 @@
 
   const navPages = [
     { path: "/", text: "Home", hasSubPages: false },
-    { path: "/join", text: "Join Us", hasSubPages: false },
-    { path: "/our-team", text: "Our Team", hasSubPages: false },
-    {
-      path: "/competitions/past/mmt-2024",
-      text: "MMT 2024",
-      hasSubPages: false,
-    },
     {
       path: "/classes",
       text: "Classes",
@@ -40,7 +33,10 @@
         { path: "/classes/instructors", text: "Instructors" },
         { path: "/classes/tutoring", text: "Tutoring" }
       ],
-    },   
+    },
+    { path: "/competitions/3mt-2024", text: "3MT", hasSubPages: false },
+    { path: "/our-team", text: "Our Team", hasSubPages: false },
+    { path: "/join", text: "Join Us", hasSubPages: false },
     { path: "/sponsors", text: "Sponsors", hasSubPages: false },
     { path: "/past-tests", text: "Past Tests", hasSubPages: false },
     { path: "/donate", text: "Donate", hasSubPages: false },
