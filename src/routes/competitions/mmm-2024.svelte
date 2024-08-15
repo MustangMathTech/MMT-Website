@@ -56,7 +56,7 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="Mustang Mini Math Tournament (M^3)" description="September 28th, 2024, 9:00 AM - 5:00 PM PST"  button_url="https://contestdojo.com" button_text="Register Here!" button_id="registerOnContestDojo" />
+<PageHeader title="Mustang Math Mania (M^3)" description="September 28th, 2024, 9:00 AM - 5:00 PM PST"  button_url="https://contestdojo.com" button_text="Register Here!" button_id="registerOnContestDojo" />
 
 <br /><br />
 
