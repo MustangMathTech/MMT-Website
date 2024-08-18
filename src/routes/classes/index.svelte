@@ -135,7 +135,7 @@
 <Heading text="Class Details" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Our class will be on Algebra and will start on the week of <strong>September 8th, 2024</strong> and run through the week of <strong>October 27th, 2024</strong>. There are currently 2 levels of classes planned: <strong>Beginner Problem Solving</strong> (AMC 8/10) and <strong>Intermediate Problem Solving</strong> (AMC 12/AIME). See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://forms.gle/QntdTLexMYyftKJt8"><strong>registration form</strong></a>. If you are not contacted by us by 9/6, please email classes@mustangmath.com to check in.</p>
+        <p style="font-size: 1.5em; text-align: center;">Our class will be on Algebra and will start on the week of <strong>September 8th, 2024</strong> and run through the week of <strong>October 27th, 2024</strong>. There are currently 2 levels of classes planned: <strong>Beginner Algebra</strong> (AMC 8/10) and <strong>Intermediate Algebra</strong> (AMC 12/AIME). See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://forms.gle/QntdTLexMYyftKJt8"><strong>registration form</strong></a>. If you are not contacted by us by 9/6, please email classes@mustangmath.com to check in.</p>
     </PanelBox>
 </div> <br />
 <br />
