@@ -80,6 +80,7 @@
 		position: relative;
 		min-height: 100vh;
 		box-sizing: border-box;
+		margin-bottom: 10vh;
 	}
 
 	footer {

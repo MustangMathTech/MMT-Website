@@ -35,20 +35,20 @@
     let y;
 
     let scheduleData = [
-        { "Class": "Beginner 1", "Days of Week": "Sunday/Wednesday", "Time (PT)": "2:30 - 4:00 PM"},
-        { "Class": "Beginner 2", "Days of Week": "Tuesday/Friday", "Time (PT)": "4:30 - 6:00 PM"},
-        { "Class": "Intermediate", "Days of Week": "Monday/Wednesday", "Time (PT)": "6:00 - 7:30 PM"}
+        { "Class": "Beginner 1", "Day of Week": "Sundays", "Time (PT)": "2:30 - 4:00 PM"},
+        { "Class": "Beginner 2", "Day of Week": "Saturdays", "Time (PT)": "4:00 - 5:30 PM"},
+        { "Class": "Intermediate", "Day of Week": "Tuesdays", "Time (PT)": "5:30 - 7:00 PM"}
     ]
     
     let topicsData = [
-        { "Class": "1", "Dates": "July 14th - July 16th, 2024", "Topics Covered": "Algebra A" },
-        { "Class": "2", "Dates": "July 17th - July 20th, 2024", "Topics Covered": "Algebra B" },
-        { "Class": "3", "Dates": "July 21st - July 23rd, 2024", "Topics Covered": "Geometry A" },
-	    { "Class": "4", "Dates": "July 24th - July 27th, 2024", "Topics Covered": "Geometry B" },
-        { "Class": "5", "Dates": "July 28th - July 30th, 2024", "Topics Covered": "Combinatorics A" },
-        { "Class": "6", "Dates": "July 31st - August 3rd, 2024", "Topics Covered": "Combinatorics B" },
-        { "Class": "7", "Dates": "August 4th - August 6th, 2024", "Topics Covered": "Number Theory A" },
-        { "Class": "8", "Dates": "August 7th - August 9th, 2024", "Topics Covered": "Number Theory B" },
+        { "Week": "1", "Dates": "Sept 8th - 14th, 2024", "Topics Covered": "Review and Absolute Value" },
+        { "Week": "2", "Dates": "Sept 15th - 21th, 2024", "Topics Covered": "Systems of Equations" },
+        { "Week": "3", "Dates": "Sept 22th - 28th, 2024", "Topics Covered": "Inequalities" },
+	    { "Week": "4", "Dates": "Sept 29th - Oct 5th, 2024", "Topics Covered": "Sequences and Series" },
+        { "Week": "5", "Dates": "Oct 6th - 12th, 2024", "Topics Covered": "Functions and their Graphs" },
+        { "Week": "6", "Dates": "Oct 13th - 19th, 2024", "Topics Covered": "Polynomials" },
+        { "Week": "7", "Dates": "Oct 20th - 26th, 2024", "Topics Covered": "Contest Tricks" },
+        { "Week": "8", "Dates": "Oct 27th - Nov 2nd, 2024", "Topics Covered": "Logarithms and Complex Numbers" },
     ]
 
     onMount(() => {
@@ -105,7 +105,7 @@
 </div>
 -->
 
-<PageHeader title="Classes" description="High Quality Online Math Contest Prep Classes" button_url="https://forms.gle/S9oyf34H8L7bJcus5" button_text="Class Registration!" id="register"/>
+<PageHeader title="Classes" description="High Quality Online Math Contest Prep Classes" button_url="https://forms.gle/QntdTLexMYyftKJt8" button_text="Class Registration!" id="register"/>
 
 <br><br>
 
@@ -114,7 +114,7 @@
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;"><strong>Mustang Math classes</strong> bring together students from around the world with one thing in common: an outstanding passion for math. Our highly qualified instructors prepare students for competitions in a fun and engaging way. Beyond instruction, we want to build a <strong>community</strong> of students and teachers sharing their love of math.</p>
         <br />
-        <p style="font-size: 1.5em; text-align: center;">These classes will be run year-round and will be split into 4 quarters: Algebra, Geometry, Problem Solving Mathematics, and Problem Solving/AMC Prep, each run for <strong>8 weeks</strong>. Instructive sessions will run for <strong>90 minutes</strong> every week over Zoom. Additionally, teachers will hold <strong>office hours</strong> each week, during which students can seek assistance with the content or ask any lingering questions. Each class will have <strong>10-15 students</strong> and, depending on the interest we receive, there may be multiple classes run for each level. The total cost for 8 classes will be <strong>$80</strong> with financial aid available.</p>
+        <p style="font-size: 1.5em; text-align: center;">These classes will be run year-round and will be split into 4 quarters: Algebra, Geometry, Problem Solving Mathematics, and Problem Solving/AMC Prep, each run for <strong>8 weeks</strong>. Instructive sessions will run for <strong>90 minutes</strong> every week over Zoom. Additionally, teachers will hold <strong>office hours</strong> each week, during which students can seek assistance with the content or ask any lingering questions. Each class will have <strong>10-15 students</strong> and, depending on the interest we receive, there may be multiple classes run for each level. The total cost for 8 classes will be <strong>$80</strong> with financial aid available. Alternatively, students who would like to attend all four terms of our classes can pay $250 for a total of 32 classes.</p>
     </PanelBox>
 </div> 
 <br />
@@ -130,12 +130,12 @@
     </FlexBox>
 </div> <br />
 
-<h1 id="Problem Solving"><strong style="color: #1b9aaa;">Problem Solving</strong></h1>
+<h1 id="Problem Solving"><strong style="color: #1b9aaa;">Algebra</strong></h1>
 
 <Heading text="Class Details" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Our class will be on Problem Solving and will start on the week of <strong>July 14th, 2024</strong> and run through <strong>August 9th, 2024</strong>. There are currently 2 levels of classes planned: <strong>Beginner Problem Solving</strong> and <strong>Intermediate Problem Solving</strong>. See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://forms.gle/S9oyf34H8L7bJcus5"><strong>registration form</strong></a>.</p>
+        <p style="font-size: 1.5em; text-align: center;">Our class will be on Algebra and will start on the week of <strong>September 8th, 2024</strong> and run through the week of <strong>October 27th, 2024</strong>. There are currently 2 levels of classes planned: <strong>Beginner Problem Solving</strong> (AMC 8/10) and <strong>Intermediate Problem Solving</strong> (AMC 12/AIME). See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://forms.gle/QntdTLexMYyftKJt8"><strong>registration form</strong></a>. If you are not contacted by us by 9/6, please email classes@mustangmath.com to check in.</p>
     </PanelBox>
 </div> <br />
 <br />
@@ -144,7 +144,7 @@
 <Heading text="Pricing" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Problem Solving will be <strong>$80</strong>.</p>
+        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Algebra will be <strong>$80</strong>.</p>
         <p style="font-size: 1.5em; text-align: center;">We charge for our classes for a multitude of reasons. First, while we are a fully volunteer-run nonprofit organization, we need money to continue <strong>improving upon and providing better classes, competitions, events, and materials</strong>! All money earned from MM Classes will go back into these projects for you, the students. Second, we work very hard to provide high quality classes, and we want students to take them seriously - ascribing a price value to the class naturally leads to more <strong>committed students</strong>.</p>
         <p style="font-size: 1.5em; text-align: center;">If the cost of these classes poses a significant burden to you, please reach out to us! <strong>Financial aid is available upon request</strong>.</p>
     </PanelBox>
