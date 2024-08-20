@@ -45,7 +45,7 @@
 
 <style>
     .person-img{
-        margin: 3px;
+        margin: 4px;
         max-height: 100%;
     }
     .person-pic {
