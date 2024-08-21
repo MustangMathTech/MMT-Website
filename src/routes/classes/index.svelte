@@ -109,6 +109,7 @@
 
 <br><br>
 
+<div class="body">
 <Heading text="Summary" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
@@ -174,8 +175,13 @@
     </FlexBox>
 </div> <br />
 <br />
+</div>
 
 <style>
+    .body {
+        background-image: url("/backgrounds/BE_Website_Design.png");
+        background-size: 100vw auto;
+    }
     strong {
         color: #1b9aaa;
     }
