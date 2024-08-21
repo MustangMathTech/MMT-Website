@@ -5,9 +5,10 @@
     export let imgSource;
     export let description;
     export let initials;
+    export let opacity;
 </script>
 
-<Card width="17em" height="23em" {imgSource} {initials}>
+<Card width="17em" height="23em" {imgSource} {initials} {opacity}>
     <a href="#{competition.toLowerCase()}">
         <div class="competition-img">
             <img alt={competition} src={imgSource} />

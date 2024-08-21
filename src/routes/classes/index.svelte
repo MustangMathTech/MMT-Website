@@ -112,7 +112,7 @@
 <div class="body">
 <Heading text="Summary" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
-    <PanelBox>
+    <PanelBox style="opacity: 1">
         <p style="font-size: 1.5em; text-align: center;"><strong>Mustang Math classes</strong> bring together students from around the world with one thing in common: an outstanding passion for math. Our highly qualified instructors prepare students for competitions in a fun and engaging way. Beyond instruction, we want to build a <strong>community</strong> of students and teachers sharing their love of math.</p>
         <br />
         <p style="font-size: 1.5em; text-align: center;">These classes will be run year-round and will be split into 4 quarters: Algebra, Geometry, Problem Solving Mathematics, and Problem Solving/AMC Prep, each run for <strong>8 weeks</strong>. Instructive sessions will run for <strong>90 minutes</strong> every week over Zoom. Additionally, teachers will hold <strong>office hours</strong> each week, during which students can seek assistance with the content or ask any lingering questions. Each class will have <strong>10-15 students</strong> and, depending on the interest we receive, there may be multiple classes run for each level. The total cost for 8 classes will be <strong>$80</strong> with financial aid available.</p>
@@ -124,10 +124,10 @@
 <Heading text="Topic-Based Courses" size={2.5} textColor="#1B9AAA" />
 <div class="competition-wrapper">
     <FlexBox align="start">
-        <Competition initials="A" imgSource="classes/fx.png" competition="Algebra" description="Invariably fun. Key topics include Polynomials, Sequences, and Inequalities." />
-        <Competition initials="G" imgSource="classes/compass.png" competition="Geometry" description="Just plane interesting. Key topics include Similar Triangles, Circles, and 3D Geometry" />
-        <Competition initials="C/NT" imgSource="classes/dice.png" competition="Discrete" description="You can always count on it. Key topics include Counting Techniques, Distinguishability, Probability, Primes, Bases, and Modular Arithmetic" />
-        <Competition initials="PS" imgSource="classes/numbers.png" competition="Problem Solving" description="Prime learning material. Key focus is on preparing students for the AMC Series and other contests that come in the Fall." />
+        <Competition opacity="1" initials="A" imgSource="classes/fx.png" competition="Algebra" description="Invariably fun. Key topics include Polynomials, Sequences, and Inequalities." />
+        <Competition opacity="1" initials="G" imgSource="classes/compass.png" competition="Geometry" description="Just plane interesting. Key topics include Similar Triangles, Circles, and 3D Geometry" />
+        <Competition opacity="1" initials="C/NT" imgSource="classes/dice.png" competition="Discrete" description="You can always count on it. Key topics include Counting Techniques, Distinguishability, Probability, Primes, Bases, and Modular Arithmetic" />
+        <Competition opacity="1" initials="PS" imgSource="classes/numbers.png" competition="Problem Solving" description="Prime learning material. Key focus is on preparing students for the AMC Series and other contests that come in the Fall." />
     </FlexBox>
 </div> <br />
 
@@ -135,7 +135,7 @@
 
 <Heading text="Class Details" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
-    <PanelBox>
+    <PanelBox style="opacity: 1">
         <p style="font-size: 1.5em; text-align: center;">Our class will be on Problem Solving and will start on the week of <strong>July 14th, 2024</strong> and run through <strong>August 9th, 2024</strong>. There are currently 2 levels of classes planned: <strong>Beginner Problem Solving</strong> and <strong>Intermediate Problem Solving</strong>. See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://forms.gle/S9oyf34H8L7bJcus5"><strong>registration form</strong></a>.</p>
     </PanelBox>
 </div> <br />
@@ -144,7 +144,7 @@
 
 <Heading text="Pricing" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
-    <PanelBox>
+    <PanelBox style="opacity: 1">
         <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Problem Solving will be <strong>$80</strong>.</p>
         <p style="font-size: 1.5em; text-align: center;">We charge for our classes for a multitude of reasons. First, while we are a fully volunteer-run nonprofit organization, we need money to continue <strong>improving upon and providing better classes, competitions, events, and materials</strong>! All money earned from MM Classes will go back into these projects for you, the students. Second, we work very hard to provide high quality classes, and we want students to take them seriously - ascribing a price value to the class naturally leads to more <strong>committed students</strong>.</p>
         <p style="font-size: 1.5em; text-align: center;">If the cost of these classes poses a significant burden to you, please reach out to us! <strong>Financial aid is available upon request</strong>.</p>
@@ -156,7 +156,7 @@
 <Heading text="Weekly Schedule" size={2} textColor="#1B9AAA" />
 <div class="schedule-wrapper">
     <FlexBox>
-        <PanelBox>
+        <PanelBox style="opacity: 1">
             <Table data={scheduleData} width="auto" headerColor="#1B9AAA" rowColors={["#A4D6AF", "#ADCDD6"]} cellPadding={5} cellPaddingRight={20}/>
             {#if windowWidth < 700}
                 <p>OH = Office Hours</p>
@@ -169,7 +169,7 @@
 <Heading text="Classes Schedule" size={2} textColor="#1B9AAA" />
 <div class="schedule-wrapper">
     <FlexBox>
-        <PanelBox>
+        <PanelBox style="opacity: 1">
             <Table data={topicsData} width="auto" headerColor="#1B9AAA" rowColors={["#A4D6AF", "#ADCDD6"]} cellPadding={5} cellPaddingRight={20}/>
         </PanelBox>
     </FlexBox>

@@ -7,9 +7,10 @@
   export let borderRadius = "5px";
   export let style = "";
   export let boxSizing = "border-box";
+  export let opacity = 0.8;
 </script>
 
-<div class="panel-box"  style="width: {width}; height: {height}; margin: {margin}; padding: {padding}; border-radius: {borderRadius}; box-sizing: {boxSizing}; {style}">
+<div class="panel-box"  style="opacity: {opacity}; width: {width}; height: {height}; margin: {margin}; padding: {padding}; border-radius: {borderRadius}; box-sizing: {boxSizing}; {style}">
   <slot />
 </div>
 
@@ -17,7 +18,6 @@
   .panel-box {
     background-color: #ffffff;
     box-shadow: 5px 10px 10px rgb(0, 0, 0, 0.1);
-    opacity: 0.8;
     transition: 0.5s;
   }
 
