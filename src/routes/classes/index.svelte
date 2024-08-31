@@ -179,7 +179,7 @@
 
 <style>
     .body {
-        background-image: url("/backgrounds/BE_Website_Design.png");
+        background-image: url("/backgrounds/TutoringBackground140.png");
         background-size: 100vw auto;
     }
     strong {
