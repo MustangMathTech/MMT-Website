@@ -105,7 +105,7 @@
 </div>
 -->
 
-<PageHeader title="Classes" description="High Quality Online Math Contest Prep Classes" button_url="https://forms.gle/QntdTLexMYyftKJt8" button_text="Class Registration!" id="register"/>
+<PageHeader title="Classes" description="High Quality Online Math Contest Prep Classes" button_url="https://forms.gle/xm1G4ohZCzAvydsR6" button_text="	Class Registration!	" id="register"/>
 
 <br><br>
 
