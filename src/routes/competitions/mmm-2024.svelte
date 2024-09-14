@@ -76,7 +76,7 @@
         <strong>TEAM SIZE: </strong> 3-4*<br/><br/>
         <strong>LOCATION:</strong> Online <br /> <br />
         <strong>EARLY COST: </strong> $8 per participant (Register before August 30th, 2024) <br /> <br />
-        <strong>REGULAR COST: </strong> $10 per participant (Register before September 13th, 2024) <br /> <br />
+        <strong>REGULAR COST: </strong> $10 per participant (Register before September 16th, 2024) <br /> <br />
         <strong>LATE COST: </strong> $15 per participant (Register before September 20th, 2024) <br /> <br />
 
         
