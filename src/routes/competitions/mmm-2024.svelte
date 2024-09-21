@@ -11,13 +11,16 @@
     import Image from '$lib/components/Image.svelte';
     import PanelBoxAnimated from '$lib/components/PanelBoxAnimated.svelte';
     import Testimonial from '$lib/components/Testimonial.svelte';
+    import FlipCard from "$lib/components/FlipCard.svelte";
+    
     let windowWidth;
+    
     const scheduleData = [
         { "Day": "09/21-09/27", "Start Time (PT)": "All Day", "Event": "Perilous Proofs" },
         [ "09/28", "9:00 AM-9:30 AM", "Opening Ceremony" ],
         [ "09/28", "9:30 AM-10:45 AM", "Solo Stampede" ],
-        [ "09/28", "10:45 AM-1:00 PM", "Meltdown Madness" ],
-        [ "09/28", "1:00 PM-2:30 PM", "Betting Bonanza" ],
+        [ "09/28", "10:45 AM-1:00 PM", "Betting Bonanza" ],
+        [ "09/28", "1:00 PM-2:30 PM", "Meltdown Madness" ],
         [ "09/28", "2:30 PM-4:30 PM", "Activities" ],
         [ "09/28", "4:30 PM", "Awards" ]
 
@@ -51,19 +54,38 @@
     ];
 </script>
 <svelte:head>
-    <title>M^3</title>
+    <title>M³</title>
 </svelte:head>
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="Mustang Math Mania (M^3)" description="September 28th, 2024, 9:00 AM - 5:00 PM PST"  button_url="https://contestdojo.com" button_text="Register Here!" button_id="registerOnContestDojo" />
+<PageHeader title="Mustang Math Mania (M³)" description="September 28th, 2024, 9:00 AM - 5:00 PM PST"  button_url="https://contestdojo.com" button_text="Register for M³!" button_id="registerTournament" button2_url="https://classroom.google.com/c/NzA1MzI4MDMwMjk3?cjc=66q7ckx" button2_text="Free Prep Classes!" button2_id="registerClasses" />
 
 <br /><br />
 
 <br /><br />
 
-<Heading text="What is M^3" size={2.5} textColor="#1B9AAA" />
-<br/>
+<Heading text="Registration Instructions and Information" size={2.5} textColor="#1B9AAA" />
+
+
+<PanelBoxAnimated id="showDropdown" style="margin-right:5vw; margin-left:5vw;">
+    <div style="padding: 10px;padding-right:5vw; font-size:1.5rem;">
+        <a href="https://docs.google.com/document/d/1TYj8YWiXXkg8WBNouppjlsJNRG1Cs21LW4TR3GKGL1I/edit" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
+        <br/><br/>
+        <strong>DATE: </strong> September 28th, 2024 <br/><br/>
+        <strong>TEAM SIZE: </strong> 3-4*<br/><br/>
+        <strong>LOCATION:</strong> Online <br /> <br />
+        <strong>EARLY COST: </strong> $8 per participant (Register before August 30th, 2024) <br /> <br />
+        <strong>REGULAR COST: </strong> $10 per participant (Register before September 16th, 2024) <br /> <br />
+        <strong>LATE COST: </strong> $15 per participant (Register before September 20th, 2024) <br /> <br />
+
+        
+        *: Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4
+
+    </div>
+</PanelBoxAnimated> <br /><br>
+
+<Heading text="What is M³" size={2.5} textColor="#1B9AAA" />
 
 <PanelBoxAnimated id="showDropdown" style="margin-right:5vw; margin-left:5vw;">
     <div style="padding: 10px;padding-right:5vw; font-size:1.5rem;">
@@ -71,38 +93,66 @@
         <br/>
         <br/>
 
-        The tournament is centered around teamwork and collaboration, incentivizing students to work with their teams not only to navigate the challenging but interesting problems of the tournament, but also to develop strategies to master the unique and fun game-like rounds. Kicking off the week prior to the tournament with a proof based round tailored towards middle school students, and continuing with innovative and interesting rounds such as “the ground is lava” and a risky gambling round, our tournaments are filled with fun and excitement for students at all levels.
+        The tournament is centered around teamwork and collaboration, incentivizing students to work with their teams not only to navigate the challenging but interesting problems of the tournament, but also to develop strategies to master the unique and fun game-like rounds. Kicking off the week prior to the tournament with a proof based round tailored towards middle school students, and continuing with innovative and interesting rounds such as a “floor is lava” and a risky gambling round, our tournaments are filled with fun and excitement for students at all levels.
         <br/>        <br/>
 
         Don't believe us? Check out some comments from past participants below!
 
     </div>
-</PanelBoxAnimated> <br />
+</PanelBoxAnimated> <br /> <br>
 
-
-<Heading text="Registration Instructions and Information" size={2.5} textColor="#1B9AAA" />
-<br /><br />
+<Heading text="Free Perilous Proof Prep Program" size={2.5} textColor="#1B9AAA" />
 
 <PanelBoxAnimated id="showDropdown" style="margin-right:5vw; margin-left:5vw;">
     <div style="padding: 10px;padding-right:5vw; font-size:1.5rem;">
-        <strong>DATE: </strong> September 28th, 2024 <br/><br/>
-        <strong>TEAM SIZE: </strong> 3-4*<br/><br/>
-        <strong>LOCATION:</strong> Online <br /> <br />
-        <strong>EARLY EQUINE COST: </strong> $8 per participant (Register before August 30th, 2024) <br /> <br />
-        <strong>NORMAL COST: </strong> $10 per participant (Register before September 13th, 2024) <br /> <br />
-        <strong>LATE COST: </strong> $15 per participant (Register before September 20th, 2024) <br /> <br />
-
-        <a href="https://docs.google.com/document/d/1ULLQTe1zmXSG4EZZbvpoIV3Y0-x9IzTH4hEHvBoKC7Q/edit#heading=h.gjdgxs" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
-        <br/><br/>
-        *: Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4
-
+        In order to help familiarize students to the concept of proofs for the <b>Perilous Proofs</b> round, Mustang Math is offering two <b>free</b> online introductory proof classes on <b>9/14</b> and <b>9/15</b>.
+        <br><br>
+        <b>Class 1</b> will cover logic and proof techniques like contradiction. It will take place on Saturday, September 14, 1:30 PM PT. <br><b>Class 2</b> will be slightly more challenging and focus on induction. This class will be on Sunday, September 15, 11:00 AM PT. 
+        <br><br>
+        <div class="flex">
+            <a class="button" href="https://classroom.google.com/c/NzA1MzI4MDMwMjk3?cjc=66q7ckx" target="_blank"
+                >Sign Up</a
+            >
+        </div>
     </div>
-</PanelBoxAnimated> <br />
+</PanelBoxAnimated> <br /> <br>
+
+
+
 
 <br />
 
+<Heading text="Rounds" size={2.5} textColor="#1B9AAA" />
+<div class="rounds">
+	<FlipCard mainText="Perilous Proofs" iconName="fa-calculator" borderColor="#82BD88">
+		<p>
+			<b style="color: #1B9AAA;">Perilous Proofs</b> is a team proof-based round that 
+            will consist of a variety of mathematical reasoning and proof based questions designed to challenge the participants.
+            The round will take place the week <b style="color: #1B9AAA;">before</b> M³ to ensure students have
+            ample time to think through the problems.
+		</p>
+	</FlipCard>
+	<FlipCard mainText="Solo Stampede" iconName="fa-computer" borderColor="#90CDA9">
+		<p>
+			<b style="color: #1B9AAA;">Solo Stampede</b> is an individual round where students will have 60 minutes
+            to complete a 25 question test. This round is akin to a typical individual round in a contest like AMC8 or Sprint in MATHCOUNTS.
+		</p>
+	</FlipCard>
+	<FlipCard mainText="Betting Bonanza" iconName="fa-pen-fancy" borderColor="#82B9A9">
+		<p>
+			<b style="color: #1B9AAA;">Betting Bonanza</b> is a team round where teams need to strategically bid points on various sets of problems of increasing difficulty.
+            Teams need to balance their greed with their confidence to succeed in this round.
+		</p>
+	</FlipCard>
+	<FlipCard mainText="Meltdown Madness" iconName="fa-pen-ruler" borderColor="#67909E">
+		<p>
+			<b style="color: #1B9AAA;">Meltdown Madness</b> is a fast-paced team round where teams must work together to solve problems before they 'melt' into the rising lava. 
+            Any problems solved after they have 'melted' will no longer be worth any points.
+		</p>
+	</FlipCard>
+</div> 
+
 <Heading text="Schedule" size={2.5} textColor="#1B9AAA" />
-<br /><br />
 
 <div class="schedule-wrapper">
     <FlexBox>
@@ -111,7 +161,7 @@
             <p style="margin-top: 2px; margin-bottom: 0px;">*Schedule subject to change. Note that there is built-in buffer time to explain instructions and assist with technical difficulties.*</p>
         </PanelBoxAnimated>
     </FlexBox>
-</div> <br />
+</div>
 
 
 <!-- <Heading text="Awards" size={2.5} textColor="#1B9AAA" />
@@ -125,7 +175,6 @@
 <br /><br />
 
 <Heading text="Participant Eligibility" size={2.5} textColor="#1B9AAA" />
-<br /><br />
 
 <div style="margin-left: 5vw; margin-right: 5vw; font-size: 1.5em;">
     <PanelBoxAnimated style="padding-left:5vw; padding-right:5vw;">
@@ -191,7 +240,7 @@
     </PanelBoxAnimated>
 </div>
 <br />
-
+<!--
 <Dropdown mainText="Rounds" id="showDropdown">
 
     <Heading text="Rounds" size={2} textColor="#1B9AAA"/>
@@ -219,20 +268,21 @@
             </ol>
     </div>
     </Dropdown>
-
+-->
 
 <Dropdown mainText="Scoring & Tiebreakers" id="showDropdown">
 
 <Heading text="Scoring & Tiebreakers" size={2} textColor="#1B9AAA"/>
 <br />
 <div style="margin-left: 5vw; margin-right: 5vw; font-size: 1em;">
-        <p style="color:black;">Your score on the M^3 Round is simply the number of questions you get right - each question is worth 1 point.</p>
+        <p style="color:black;">Your score on the M³ individual Round is simply the number of questions you get right - each question is worth 1 point.</p>
         <p style="color:black;">If two or more students get the same number of questions right, ties will be broken as follows:</p>
         <ol>
             <li>Difficulty of problems solved. This will be determined by whichever student has the lowest <b>tiebreaker index</b>. <br>
             The <b>tiebreaker index</b> for a student is calculated by multiplying the total number of correct solves per problem for each problem the student got correct.</li><br>
             <li>Completion time. Should two students have the same tiebreaker index, ties will be broken by completion time. In particular, whichever student enters their final correct answer earliest will win this tiebreaker.</li>
         </ol>
+        <p>Team scoring is the same as MMT - your score in each round will be normalized against the sccores of other teams in your divisions, and added up. Should there remain a tie, ties will be broken by the sum of the top 3 individual scores on your team.</p>
 </div>
 </Dropdown>
 
@@ -314,50 +364,38 @@
         </p>
         <p>
             <strong>Q:</strong> Where can I find practice material for the tests? How can we prepare? <br />
+
             <strong>A:</strong> You can take a look at our <a target="_blank" sveltekit:prefetch href="/past-tests">past tests</a>, and we also highly recommend looking at <a target="_blank" sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a target="_blank" sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a target="_blank" sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
         </p>
 </div>
 </Dropdown>
 
 <br>
-
-<Heading text="Testimonials" size={2.5} textColor="#1B9AAA"/>
-<div class="grid-two" style="display:flex">
-    <div style="margin:5vw;">
-        <PanelBoxAnimated time={100} style="background-color:transparent; box-shadow:none;" >
-        <Testimonial testimonial="I have never seen problems like them, and the solutions were very detailed, letting me see how I could've done them differently. They really exercised my brain, and they were very carefully created." title="2022 Participant" />
-        </PanelBoxAnimated>
-       
-        <PanelBoxAnimated style="background-color:transparent; box-shadow:none;" time={1000}>
-        <Testimonial testimonial="I think that 3MT has been one of the most engaging and fun competitions that I've participated in this year. The quality of the questions is really high and the activities/the way that the competition is set up makes it more fun than others." title="2022 Participant" />
-        </PanelBoxAnimated>
-
-        <PanelBoxAnimated style="background-color:transparent; box-shadow:none;" time={2500}>
-        <Testimonial testimonial="I just want to say that I had lots of fun during the tournament and would definitely do it again." title="2022 Participant" />
-        </PanelBoxAnimated>
-
+<Heading text="Testimonials" size={2.5} textColor="#1B9AAA" />
+<div class="grid-three" style="margin-left: 10vw; margin-right: 10vw;">
+    <div>
+        <Testimonial testimonial="This contest was the most organized one I've ever been to." title="MMT 2024" />
+        <Testimonial testimonial="MMT was really fun and more focused on working as a team and thinking outside of the box than other competitions." title="MMT 2023" />
+        <Testimonial testimonial="MMT set the bar very high for the next math tournament I participate in." title="MMT 2023" />
+        <Testimonial testimonial="MMT has a unique take on standard math competitions." title="MMT 2022" />
+        <Testimonial testimonial="MMT focused less on calculations than other math competitions." title="MMT 2022" />
     </div>
 
-    <div style="margin:5vw;">
-        <PanelBoxAnimated style="background-color:transparent; box-shadow:none;" time={500}>
-        <Testimonial testimonial="I really enjoyed it because the increasing difficulty made it possible to solve the first ten, and really think about that last 10 with lots of thought." title="2022 Participant" />
-        </PanelBoxAnimated>
-
-
-        <PanelBoxAnimated style="background-color:transparent; box-shadow:none;" time={2000}>
-        <Testimonial testimonial="I liked the variety of the questions and how they prompted you to think differently. I had fun trying to figure out answers to the problems that I wouldn't usually put because I thought that there would be some weird trick to solving the problem." title="2022 Participant" />
-        </PanelBoxAnimated>
-
-
-        <PanelBoxAnimated style="background-color:transparent; box-shadow:none;" time={3000}>
-        <Testimonial testimonial="The 3MT Round was very good. I felt like there was a good balance between different types of problems. The structure, 20 problems in 1 hour did not seem overwhelming, and I had enough time to solve all the problems and check my work. This was a really good round" title="2022 Participant" />
-        </PanelBoxAnimated>
-
-
+    <div>
+        <Testimonial testimonial="Probably the best [math competition] so far in terms of theme and enjoyment." title="MMT 2024" />
+        <Testimonial testimonial="I LOVED MMT this year so much and that's mostly due to the fantastic problems that you guys cook up. The rounds are ingenious and questions well written and overall MMT is a very wonderful competition indeed." title="MMT 2024" />
+        <Testimonial testimonial="I loved all of the rounds. They were all different and interesting -- much more interesting than just a string of math problems." title="MMT 2023 Online" />
+        <Testimonial testimonial="MMT's style of problems are much better than other tournaments. Unlike other tournaments that has the same style over the years, MMT has new and exciting styles of problems that makes it more fun to try and solve it on the spot" title="MMT 2022" />
     </div>
     
-</div>
-
+    <div>
+        <Testimonial testimonial="I loved the quality of the competition as a whole, whether through their meticulous questions,  clear instructions, ingenious format, or cool hidden tricks MMT was awesome and exceeded all of my expectations for a math competition and I am for sure coming back next year!" title="MMT 2023" />
+        <Testimonial testimonial="The concepts were very original and rounds were much more fun to participate in than the standard math competition." title="MMT 2023" />
+        <Testimonial testimonial="I loved the creative format, the team emphasis, and the depth and complexity of problems." title="MMT 2023" />
+        <Testimonial testimonial="I really appreciate all that MMT has done and I look forward to the competition that is held next year! I must say that the MMT was an impressive execution of math competitions unlike anything I've seen before!" title="MMT 2022" />
+    </div>
+</div> 
+<br><br><br><br><br>
 <style>
    
     li {
@@ -367,7 +405,27 @@
         font-size: 1.3rem;
     }
 
+    .button {
+		text-align: center;
+		color: white;
+		background-color: #1b9aaa;
+		border-radius: 200px;
+		text-decoration: none;
+		padding: 15px 40px;
+		width: fit-content;
+		font-size: 30px;
+		cursor: pointer;
+		transition: all 0.2s ease-out;
+	}
+
     p {
         font-size: 1.3rem;
+    }
+    .rounds {
+        padding: 20px; 
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 </style>
