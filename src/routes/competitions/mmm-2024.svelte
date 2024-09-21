@@ -13,7 +13,7 @@
     import Testimonial from '$lib/components/Testimonial.svelte';
     let windowWidth;
     const scheduleData = [
-        { "Day": "09/20-09/27", "Start Time (PT)": "All Day", "Event": "Perilous Proofs" },
+        { "Day": "09/21-09/27", "Start Time (PT)": "All Day", "Event": "Perilous Proofs" },
         [ "09/28", "9:00 AM-9:30 AM", "Opening Ceremony" ],
         [ "09/28", "9:30 AM-10:45 AM", "Solo Stampede" ],
         [ "09/28", "10:45 AM-1:00 PM", "Meltdown Madness" ],
