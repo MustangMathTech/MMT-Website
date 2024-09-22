@@ -14,6 +14,8 @@
 
 <PageHeader title="Tutoring" description="Join Mustang Math's one-on-one tutoring!" button_url="https://forms.gle/D1ckzySxmH5L7v4X9" button_text="Tutoring Registration" id="registerTutoring"/>
 
+<div class="body">
+
 <br><br>
 
 <div style="margin-left: 10vw; margin-right: 10vw;">
@@ -36,3 +38,11 @@
     </PanelBox>
 </div> <br />
 <br />
+</div>
+
+<style>
+    .body {
+        background-image: url("/backgrounds/TutoringBackground140.png");
+        background-size: 100vw auto;
+    }
+</style>
