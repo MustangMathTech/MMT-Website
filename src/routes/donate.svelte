@@ -16,6 +16,7 @@
 <PageHeader title="Donate" description="Help improve our tournaments, classes, and more!" button_url="
 https://link.mustangmath.com/donate" button_text="Donate to Mustang Math!" button_id="donateMM"/>
 
+<div class = "body">
 
 <Section>
     <br /> <br />
@@ -45,4 +46,11 @@ https://link.mustangmath.com/donate" button_text="Donate to Mustang Math!" butto
     <br />
 </Section>
 
+</div>
 
+<style>
+    .body {
+        background-image: url("/backgrounds/Donate_BG.png");
+        background-size: 100vw auto;
+    }
+</style>
