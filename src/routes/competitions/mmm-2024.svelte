@@ -19,9 +19,10 @@
         { "Day": "09/21-09/28", "Start Time (PT)": "All Day", "Event": "Perilous Proofs" },
         [ "09/28", "9:00 AM-9:30 AM", "Opening Ceremony" ],
         [ "09/28", "9:30 AM-10:45 AM", "Solo Stampede" ],
-        [ "09/28", "10:45 AM-1:00 PM", "Betting Bonanza" ],
-        [ "09/28", "1:00 PM-2:30 PM", "Meltdown Madness" ],
-        [ "09/28", "2:30 PM-4:30 PM", "Activities" ],
+        [ "09/28", "10:45 AM-12:00 PM", "Lunch" ],
+        [ "09/28", "12:00 PM-1:00 PM", "Betting Bonanza" ],
+        [ "09/28", "1:00 PM-2:15 PM", "Meltdown Madness" ],
+        [ "09/28", "2:15 PM-4:30 PM", "Activities" ],
         [ "09/28", "4:30 PM", "Awards" ]
 
     ];
