@@ -57,6 +57,7 @@
   button_id="trainingPortal"
 />
 
+<div class = "body">
 <section>
   <Heading text="Past Exams" size={2.5} textColor="#1B9AAA" />
   <DropdownArchive
@@ -275,8 +276,13 @@
     <DropdownArchive id="showDropdown" {year} tests={issues[year]} />
   {/each}
 </section>
+</div>
 
 <style>
+  .body {
+        background-image: url("/backgrounds/Past_Tests_BG.png");
+        background-size: 100vw auto;
+  }
   section {
     padding: 10px;
   }

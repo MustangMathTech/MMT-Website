@@ -5,10 +5,11 @@
     export let width;
     export let height;
     export let borderRadius="15px";
+    export let opacity;
 </script>
 
 <div style="position: relative;">
-    <PanelBox {width} {borderRadius} {height}>
+    <PanelBox {opacity} {width} {borderRadius} {height}>
         <!--<div class="icon top-left">
             <p><strong>{initials}</strong></p>
             <img src="/favicon.png" alt="logo" />
