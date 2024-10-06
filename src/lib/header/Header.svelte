@@ -31,7 +31,8 @@
       index: 1,
       subPages: [
         { path: "/classes/instructors", text: "Instructors" },
-        { path: "/classes/tutoring", text: "Tutoring" }
+        { path: "/classes/tutoring", text: "Tutoring" },
+        { path: "/classes/seminars", text: "Free Seminars" }
       ],
     },
     { path: "/competitions/mmm-2024", text: "M³", hasSubPages: false },
