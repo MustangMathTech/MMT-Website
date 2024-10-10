@@ -1,52 +1,50 @@
 <script>
-	import { page } from "$app/stores";
-	import { fly, slide, crossfade } from "svelte/transition";
 
-	let windowWidth = 0;
-	let open = false;
-	let courseExpanded = false;
+  import { page } from "$app/stores";
+  import { fly, slide, crossfade } from "svelte/transition";
 
-	let showMobile = false;
-	function toggleMobile() {
-		showMobile = showMobile ? false : true;
-	}
+  let windowWidth = 0;
+  let open = false;
+  let courseExpanded = false;
 
-	const [send, receive] = crossfade({
-		duration: 400,
-	});
+  let showMobile = false;
+  function toggleMobile() {
+    showMobile = showMobile ? false : true;
+  }
 
-	function clickHandler() {
-		courseExpanded = !courseExpanded;
-	}
+  const [send, receive] = crossfade({
+    duration: 400,
+  });
 
-	const MOBILE = 1300;
-	const TITLE_BREAKPOINT = MOBILE + 150;
+  function clickHandler() {
+    courseExpanded = !courseExpanded;
+  }
 
-const navPages = [
-		{ path: "/", text: "Home", hasSubPages: false },
-		/*{
-      path: "/competitions/mmt-2024",
-      text: "MMT 2024",
-      hasSubPages: false,
-    },*/
-		{
-			path: "/classes",
-			text: "Classes",
-			hasSubPages: true,
-			index: 1,
-			subPages: [
-				{ path: "/classes/instructors", text: "Instructors" },
-				{ path: "/classes/tutoring", text: "Tutoring" },
-			],
-		},
-		{ path: "/our-team", text: "Our Team", hasSubPages: false },
-		{ path: "/join", text: "Join Us", hasSubPages: false },
-		{ path: "/sponsors", text: "Sponsors", hasSubPages: false },
-		{ path: "/past-tests", text: "Past Tests", hasSubPages: false },
-		{ path: "/donate", text: "Donate", hasSubPages: false },
-		{ path: "/parent-info", text: "Parent Info", hasSubPages: false },
-	];
-	const show = [0, 0];
+  const MOBILE = 1120;
+  const TITLE_BREAKPOINT = MOBILE + 150;
+
+  const navPages = [
+    { path: "/", text: "Home", hasSubPages: false },
+    {
+      path: "/classes",
+      text: "Classes",
+      hasSubPages: true,
+      index: 1,
+      subPages: [
+        { path: "/classes/instructors", text: "Instructors" },
+        { path: "/classes/tutoring", text: "Tutoring" },
+        { path: "/classes/seminars", text: "Seminars" }
+      ],
+    },
+    { path: "/competitions/mmm-2024", text: "M³", hasSubPages: false },
+    { path: "/our-team", text: "Our Team", hasSubPages: false },
+    { path: "/join", text: "Join Us", hasSubPages: false },
+    { path: "/sponsors", text: "Sponsors", hasSubPages: false },
+    { path: "/past-tests", text: "Past Tests", hasSubPages: false },
+    { path: "/donate", text: "Donate", hasSubPages: false },
+    { path: "/parent-info", text: "Parent Info", hasSubPages: false },
+  ];
+  const show = [0, 0];
 
 </script>
 
