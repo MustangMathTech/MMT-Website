@@ -61,14 +61,14 @@ bind:innerHeight={windowHeight} />
   
                 <div class="flex"><div class="headerline" /></div>
                     <br>
-                    <a sveltekit:prefetch href="/join" class="headerButton">
+                    <a sveltekit:prefetch href="/competitions/mmm-2024" class="headerButton">
                         <div
                             class="headerButton"
                             on:mouseenter={toggleBackground}
                             on:mouseleave={toggleBackground}
                         >
                             <p class="headerButton" id="signupformmt">
-                                Join Our Team
+                                Register for M³
                             </p>
                             <img
                                 height="25px"
@@ -340,15 +340,11 @@ bind:innerHeight={windowHeight} />
     </div>
 
     <div class="homeText">
-        These classes will be run year-round and will be split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving/AMC Prep, each run for 8 weeks. Instructive sessions will run for 90 minutes every week over Zoom. Additionally, teachers will hold office hours each week, during which students can seek assistance with the content or ask any lingering questions. Each class will have 10-15 students and, depending on the interest we receive, there may be multiple classes run for each level. The total cost for 8 weeks of classes will be $160 with financial aid available.
+        These classes will be run year-round and will be split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving/AMC Prep, each run for 8 weeks. Instructive sessions will run for 90 minutes every week over Zoom. Additionally, teachers will hold office hours each week, during which students can seek assistance with the content or ask any lingering questions. Each class will have 10-15 students and, depending on the interest we receive, there may be multiple classes run for each level. The total cost for 8 weeks of classes will be $80 with financial aid available. Alternatively, students who would like to attend all four terms of our classes can pay $250 for a total of 32 classes.
     </div>
 
-    <PanelBox>
-
-    </PanelBox>
 
 </div>
-
 
 
 

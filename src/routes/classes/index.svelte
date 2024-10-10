@@ -1,4 +1,5 @@
 <script>
+
 	import Heading from "$lib/components/Heading.svelte";
 	import FlexBox from "$lib/components/FlexBox.svelte";
 	import Table from "$lib/components/Table.svelte";
@@ -133,6 +134,7 @@
 			}
 		}
 	});
+
 </script>
 
 <svelte:window bind:scrollY={y} bind:innerWidth={windowWidth} />
@@ -170,6 +172,7 @@
 </div>
 -->
 
+
 <PageHeader
 	title="Classes"
 	description="High Quality Online Math Contest Prep Classes"
@@ -178,10 +181,12 @@
 	id="register"
 />
 
+
 <br /><br />
 
 <Heading text="Summary" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
+
 	<PanelBox>
 		<p style="font-size: 1.5em; text-align: center;">
 			<strong>Mustang Math classes</strong> bring together students from around
@@ -205,6 +210,7 @@
 		</p>
 	</PanelBox>
 </div>
+
 <br />
 <br />
 
@@ -239,6 +245,7 @@
 </div>
 <br />
 
+
 <h1 id="Problem Solving">
 	<strong style="color: #1b9aaa;">Problem Solving</strong>
 </h1>
@@ -262,10 +269,12 @@
 	</PanelBox>
 </div>
 <br />
+
 <br />
 
 <Heading text="Pricing" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
+
 	<PanelBox>
 		<p style="font-size: 1.5em; text-align: center;">
 			The total cost for the 8 sessions of Problem Solving will be <strong
@@ -289,6 +298,7 @@
 		</p>
 	</PanelBox>
 </div>
+
 <br />
 <br />
 

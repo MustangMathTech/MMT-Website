@@ -1,6 +1,7 @@
 export { matchers } from './client-matchers.js';
 
 export const components = [
+
 	() => import("..\\..\\src\\routes\\__layout.svelte"),
 	() => import("..\\..\\src\\routes\\__error.svelte"),
 	() => import("..\\..\\src\\routes\\3MTOpeningCeremony.svelte"),
@@ -30,7 +31,7 @@ export const components = [
 ];
 
 export const dictionary = {
-	"": [[0, 19], [1]],
+	"": [[0, 20], [1]],
 	"3MTOpeningCeremony": [[0, 2], [1]],
 	"classes": [[0, 5], [1]],
 	"competitions": [[0, 8], [1]],
@@ -45,13 +46,14 @@ export const dictionary = {
 	"archive/join": [[0, 4], [1]],
 	"classes/instructors": [[0, 6], [1]],
 	"classes/tutoring": [[0, 7], [1]],
-	"competitions/past": [[0, 11], [1]],
-	"competitions/past/3mt-2022": [[0, 9], [1]],
-	"competitions/past/3mt-2023": [[0, 10], [1]],
-	"competitions/past/mmt-2022": [[0, 12], [1]],
-	"competitions/past/mmt-2023": [[0, 16], [1]],
-	"competitions/past/mmt-2024": [[0, 17], [1]],
-	"competitions/past/mmt-2023/mmt-2023-CA": [[0, 13], [1]],
-	"competitions/past/mmt-2023/mmt-2023-WA": [[0, 14], [1]],
-	"competitions/past/mmt-2023/mmt-2023-online": [[0, 15], [1]]
+	"competitions/mmm-2024": [[0, 9], [1]],
+	"competitions/past": [[0, 12], [1]],
+	"competitions/past/3mt-2022": [[0, 10], [1]],
+	"competitions/past/3mt-2023": [[0, 11], [1]],
+	"competitions/past/mmt-2022": [[0, 13], [1]],
+	"competitions/past/mmt-2023": [[0, 17], [1]],
+	"competitions/past/mmt-2024": [[0, 18], [1]],
+	"competitions/past/mmt-2023/mmt-2023-CA": [[0, 14], [1]],
+	"competitions/past/mmt-2023/mmt-2023-WA": [[0, 15], [1]],
+	"competitions/past/mmt-2023/mmt-2023-online": [[0, 16], [1]]
 };

@@ -22,7 +22,7 @@
 	const MOBILE = 1300;
 	const TITLE_BREAKPOINT = MOBILE + 150;
 
-	const navPages = [
+const navPages = [
 		{ path: "/", text: "Home", hasSubPages: false },
 		/*{
       path: "/competitions/mmt-2024",
@@ -47,6 +47,7 @@
 		{ path: "/parent-info", text: "Parent Info", hasSubPages: false },
 	];
 	const show = [0, 0];
+
 </script>
 
 <svelte:head>
