@@ -16,12 +16,13 @@
     let windowWidth;
     
     const scheduleData = [
-        { "Day": "09/20-09/27", "Start Time (PT)": "All Day", "Event": "Perilous Proofs" },
+        { "Day": "09/21-09/28", "Start Time (PT)": "All Day", "Event": "Perilous Proofs" },
         [ "09/28", "9:00 AM-9:30 AM", "Opening Ceremony" ],
         [ "09/28", "9:30 AM-10:45 AM", "Solo Stampede" ],
-        [ "09/28", "10:45 AM-1:00 PM", "Betting Bonanza" ],
-        [ "09/28", "1:00 PM-2:30 PM", "Meltdown Madness" ],
-        [ "09/28", "2:30 PM-4:30 PM", "Activities" ],
+        [ "09/28", "10:45 AM-12:00 PM", "Lunch" ],
+        [ "09/28", "12:00 PM-1:00 PM", "Betting Bonanza" ],
+        [ "09/28", "1:00 PM-2:15 PM", "Meltdown Madness" ],
+        [ "09/28", "2:15 PM-4:30 PM", "Activities" ],
         [ "09/28", "4:30 PM", "Awards" ]
 
     ];
@@ -59,11 +60,31 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="Mustang Math Mania (M³)" description="September 28th, 2024, 9:00 AM - 5:00 PM PST"  button_url="https://contestdojo.com" button_text="Register Here!" button_id="registerOnContestDojo" />
+<PageHeader title="Mustang Math Mania (M³)" description="September 28th, 2024, 9:00 AM - 5:00 PM PST"  button_url="https://contestdojo.com" button_text="Register for M³!" button_id="registerTournament" button2_url="https://classroom.google.com/c/NzA1MzI4MDMwMjk3?cjc=66q7ckx" button2_text="Free Prep Classes!" button2_id="registerClasses" />
 
 <br /><br />
 
 <br /><br />
+
+<Heading text="Registration Instructions and Information" size={2.5} textColor="#1B9AAA" />
+
+
+<PanelBoxAnimated id="showDropdown" style="margin-right:5vw; margin-left:5vw;">
+    <div style="padding: 10px;padding-right:5vw; font-size:1.5rem;">
+        <a href="https://docs.google.com/document/d/1TYj8YWiXXkg8WBNouppjlsJNRG1Cs21LW4TR3GKGL1I/edit" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
+        <br/><br/>
+        <strong>DATE: </strong> September 28th, 2024 <br/><br/>
+        <strong>TEAM SIZE: </strong> 3-4*<br/><br/>
+        <strong>LOCATION:</strong> Online <br /> <br />
+        <strong>EARLY COST: </strong> $8 per participant (Register before August 30th, 2024) <br /> <br />
+        <strong>REGULAR COST: </strong> $10 per participant (Register before September 16th, 2024) <br /> <br />
+        <strong>LATE COST: </strong> $15 per participant (Register before September 20th, 2024) <br /> <br />
+
+        
+        *: Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4
+
+    </div>
+</PanelBoxAnimated> <br /><br>
 
 <Heading text="What is M³" size={2.5} textColor="#1B9AAA" />
 
@@ -81,25 +102,24 @@
     </div>
 </PanelBoxAnimated> <br /> <br>
 
-
-<Heading text="Registration Instructions and Information" size={2.5} textColor="#1B9AAA" />
-
+<Heading text="Free Perilous Proof Prep Program" size={2.5} textColor="#1B9AAA" />
 
 <PanelBoxAnimated id="showDropdown" style="margin-right:5vw; margin-left:5vw;">
     <div style="padding: 10px;padding-right:5vw; font-size:1.5rem;">
-        <strong>DATE: </strong> September 28th, 2024 <br/><br/>
-        <strong>TEAM SIZE: </strong> 3-4*<br/><br/>
-        <strong>LOCATION:</strong> Online <br /> <br />
-        <strong>EARLY COST: </strong> $8 per participant (Register before August 30th, 2024) <br /> <br />
-        <strong>REGULAR COST: </strong> $10 per participant (Register before September 13th, 2024) <br /> <br />
-        <strong>LATE COST: </strong> $15 per participant (Register before September 20th, 2024) <br /> <br />
-
-        <a href="https://docs.google.com/document/d/1TYj8YWiXXkg8WBNouppjlsJNRG1Cs21LW4TR3GKGL1I/edit" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
-        <br/><br/>
-        *: Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4
-
+        In order to help familiarize students to the concept of proofs for the <b>Perilous Proofs</b> round, Mustang Math is offering two <b>free</b> online introductory proof classes on <b>9/14</b> and <b>9/15</b>.
+        <br><br>
+        <b>Class 1</b> will cover logic and proof techniques like contradiction. It will take place on Saturday, September 14, 1:30 PM PT. <br><b>Class 2</b> will be slightly more challenging and focus on induction. This class will be on Sunday, September 15, 11:00 AM PT. 
+        <br><br>
+        <div class="flex">
+            <a class="button" href="https://classroom.google.com/c/NzA1MzI4MDMwMjk3?cjc=66q7ckx" target="_blank"
+                >Sign Up</a
+            >
+        </div>
     </div>
-</PanelBoxAnimated> <br />
+</PanelBoxAnimated> <br /> <br>
+
+
+
 
 <br />
 
@@ -345,7 +365,8 @@
         </p>
         <p>
             <strong>Q:</strong> Where can I find practice material for the tests? How can we prepare? <br />
-            <strong>A:</strong> You can take a look at our <a target="_blank" sveltekit:prefetch href="/resources">past tests</a>, and we also highly recommend looking at <a target="_blank" sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a target="_blank" sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a target="_blank" sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
+
+            <strong>A:</strong> You can take a look at our <a target="_blank" sveltekit:prefetch href="/past-tests">past tests</a>, and we also highly recommend looking at <a target="_blank" sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a target="_blank" sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a target="_blank" sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
         </p>
 </div>
 </Dropdown>
@@ -384,6 +405,19 @@
         margin-top:10px;
         font-size: 1.3rem;
     }
+
+    .button {
+		text-align: center;
+		color: white;
+		background-color: #1b9aaa;
+		border-radius: 200px;
+		text-decoration: none;
+		padding: 15px 40px;
+		width: fit-content;
+		font-size: 30px;
+		cursor: pointer;
+		transition: all 0.2s ease-out;
+	}
 
     p {
         font-size: 1.3rem;

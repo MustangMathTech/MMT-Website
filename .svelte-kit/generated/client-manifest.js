@@ -1,6 +1,7 @@
 export { matchers } from './client-matchers.js';
 
 export const components = [
+
 	() => import("../../src/routes/__layout.svelte"),
 	() => import("../../src/routes/__error.svelte"),
 	() => import("../../src/routes/3MTOpeningCeremony.svelte"),
@@ -25,22 +26,27 @@ export const components = [
 	() => import("../../src/routes/index.svelte"),
 	() => import("../../src/routes/join.svelte"),
 	() => import("../../src/routes/our-team.svelte"),
+  () => import("..\\..\\src\\routes\\parent-info.svelte"),
 	() => import("../../src/routes/past-tests.svelte"),
 	() => import("../../src/routes/redirect.svelte"),
 	() => import("../../src/routes/sponsors.svelte")
+
 ];
 
 export const dictionary = {
 	"": [[0, 21], [1]],
 	"3MTOpeningCeremony": [[0, 2], [1]],
 	"classes": [[0, 5], [1]],
-	"competitions": [[0, 9], [1]],
-	"donate": [[0, 20], [1]],
-	"join": [[0, 22], [1]],
-	"our-team": [[0, 23], [1]],
-	"past-tests": [[0, 24], [1]],
-	"redirect": [[0, 25], [1]],
-	"sponsors": [[0, 26], [1]],
+
+	"competitions": [[0, 8], [1]],
+	"donate": [[0, 18], [1]],
+	"join": [[0, 20], [1]],
+	"our-team": [[0, 21], [1]],
+	"parent-info": [[0, 22], [1]],
+	"past-tests": [[0, 23], [1]],
+	"redirect": [[0, 24], [1]],
+	"sponsors": [[0, 25], [1]],
+
 	"archive/AlgebraClasses": [[0, 3], [1]],
 	"archive/join": [[0, 4], [1]],
 	"classes/instructors": [[0, 6], [1]],
