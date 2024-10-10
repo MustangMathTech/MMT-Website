@@ -20,11 +20,10 @@
     courseExpanded = !courseExpanded;
   }
 
-  const MOBILE = 1120;
+  const MOBILE = 1140;
   const TITLE_BREAKPOINT = MOBILE + 150;
 
   const navPages = [
-    { path: "/", text: "Home", hasSubPages: false },
     {
       path: "/classes",
       text: "Classes",
