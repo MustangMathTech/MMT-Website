@@ -35,7 +35,7 @@
         { path: "/classes/seminars", text: "Seminars" }
       ],
     },
-    { path: "/competitions/mmm-2024", text: "M³", hasSubPages: false },
+    // { path: "/competitions/mmm-2024", text: "M³", hasSubPages: false },
     { path: "/our-team", text: "Our Team", hasSubPages: false },
     { path: "/join", text: "Join Us", hasSubPages: false },
     { path: "/sponsors", text: "Sponsors", hasSubPages: false },
