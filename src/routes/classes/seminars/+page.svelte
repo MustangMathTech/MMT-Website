@@ -15,7 +15,7 @@
     onMount(() => {
         visible = true;
     })
-
+//ishita
     function toggleBackground() {
         if (background == "right-arrow.png") {
             background = "right-arrow-shaded.png";
