@@ -145,7 +145,7 @@
 </div> 
 <br />
 <br />
-
+//pdf embedded
 <iframe src="https://cdn.artofproblemsolving.com/attachments/0/b/56fefcdda950b46fffcd5e6b325c52680af248.pdf" title="MMMOck" class="frame-style" scrolling="no"></iframe>
 
 
