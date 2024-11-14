@@ -6,7 +6,7 @@
     import Competition from '$lib/components/Competition.svelte';
     import PageHeader from '$lib/components/PageHeader.svelte';
     import { onMount } from "svelte";
-
+    
     let visible = false;
     let windowWidth;
     let background = "right-arrow.png";
@@ -15,7 +15,6 @@
     onMount(() => {
         visible = true;
     })
-//ishita
     function toggleBackground() {
         if (background == "right-arrow.png") {
             background = "right-arrow-shaded.png";
@@ -122,7 +121,21 @@
 </div>
 <br />
 <br />
-<Heading text="Classes Schedule" size={2.5} textColor="#1B9AAA" />
+<Heading text="Mustang Math AMC 10 Mock" size={2.5} textColor="#1B9AAA" />
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox>
+        <p style="font-size: 1.5em; text-align: center;">We are proud to present the <strong>2024 Mustang Math
+        Mock AMC 10</strong>!<br /><br /><strong>How to Access:</strong> 
+        <a href="https://classroom.google.com/c/NzA2OTY2MDcwMzAw?cjc=iyjksde">Google Classroom</a> or 
+        <a href="https://artofproblemsolving.com/community/c594864h3429062p33032201">AoPS Post</a><br />
+    <strong>How to Submit:</strong> After working on the test for 75 minutes, you can use this <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLKfDymSWTKEQ4HBmgXKObuKO0im_9X4HHgPZDX6sLh0IzfA/viewform">Google Form</a> 
+    to submit your answers. Anyone is eligible to take the test, but the Google Form will close on November 12th, 2024.
+    </p>
+    </PanelBox>
+</div>
+<br />
+<br />
+<Heading text="AMC Seminar Class Schedule" size={2.5} textColor="#1B9AAA" />
 <div class="schedule-wrapper">
     <FlexBox>
         <PanelBox>
@@ -130,6 +143,12 @@
         </PanelBox>
     </FlexBox>
 </div> 
+<br />
+<br />
+
+<iframe src="https://cdn.artofproblemsolving.com/attachments/0/b/56fefcdda950b46fffcd5e6b325c52680af248.pdf" title="MMMOck" class="frame-style" scrolling="no"></iframe>
+
+
 <br />
 <br />
 <Heading text="Past Seminars" size={2.5} textColor="#1B9AAA" />
@@ -143,6 +162,12 @@
 <br />
 <br />
 <style>
+    .frame-style {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height: 80vh;
+    }
     strong {
         color: #1b9aaa;
     }
