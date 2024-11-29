@@ -32,7 +32,7 @@
       subPages: [
         { path: "/classes/instructors", text: "Instructors" },
         { path: "/classes/tutoring", text: "Tutoring" },
-        { path: "/classes/seminars", text: "Seminars" }
+        { path: "/classes/seminars", text: "Free Seminars" }
       ],
     },
     { path: "/our-team", text: "Our Team", hasSubPages: false },

@@ -12,7 +12,7 @@
 	<title>Classes | Instructors</title>
 </svelte:head>
 
-<PageHeader title="Instructors" description="Meet the Experienced Instructors for our Prep Classes" button_url="https://forms.gle/xm1G4ohZCzAvydsR6" button_text="	Class Registration! 	" id="registerBeginner"/>
+<PageHeader title="Instructors" description="Meet the Experienced Instructors for our Prep Classes" button_url="https://forms.gle/Vh8Qrv8Nbye5RfxY6" button_text="	Class Registration! 	" id="registerBeginner"/>
 
 <br><br>
 
