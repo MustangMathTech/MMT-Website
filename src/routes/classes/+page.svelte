@@ -41,14 +41,14 @@
     ]
     
     let topicsData = [
-        { "Week": "1", "Dates": "Jan 5th - Jan 11th", "Beginner Lesson": "Lesson A", "Advanced Lesson": "Lesson A + B" },
-        { "Week": "2", "Dates": "Jan 12th - Jan 18th", "Beginner Lesson": "Systems of Equations", "Advanced Lesson": "Problemset A + B" },
-        { "Week": "3", "Dates": "Jan 19th - Jan 25th", "Beginner Lesson": "Inequalities", "Advanced Lesson": "Lesson C + More Triangle Properties" },
-	    { "Week": "4", "Dates": "Jan 26th - Feb 1st", "Beginner Lesson": "Sequences and Series", "Advanced Lesson": "Problemset C + More Triangle Properties" },
-        { "Week": "5", "Dates": "Feb 2nd - Feb 8th", "Beginner Lesson": "Functions and their Graphs", "Advanced Lesson": "Lesson D + More Circle Theorems" },
-        { "Week": "6", "Dates": "Feb 9th - Feb 15th", "Beginner Lesson": "Polynomials", "Advanced Lesson": "Problemset D + More Circle Theorems" },
-        { "Week": "7", "Dates": "Feb 16th - Feb 22nd", "Beginner Lesson": "Contest Tricks", "Advanced Lesson": "Lesson E" },
-        { "Week": "8", "Dates": "Feb 23rd - Mar 1st", "Beginner Lesson": "Logarithms and Complex Numbers", "Advanced Lesson": "Problemset E + Review" },
+        { "Week": "1", "Dates": "Jan 5th - Jan 11th", "Beginner": "Lesson A", "Intermediate": "Lesson A + B" },
+        { "Week": "2", "Dates": "Jan 12th - Jan 18th", "Beginner": "Systems of Equations", "Intermediate": "Problemset A + B" },
+        { "Week": "3", "Dates": "Jan 19th - Jan 25th", "Beginner": "Inequalities", "Intermediate": "Lesson C + More Triangle Properties" },
+	    { "Week": "4", "Dates": "Jan 26th - Feb 1st", "Beginner": "Sequences and Series", "Intermediate": "Problemset C + More Triangle Properties" },
+        { "Week": "5", "Dates": "Feb 2nd - Feb 8th", "Beginner": "Functions and their Graphs", "Intermediate": "Lesson D + More Circle Theorems" },
+        { "Week": "6", "Dates": "Feb 9th - Feb 15th", "Beginner": "Polynomials", "Intermediate": "Problemset D + More Circle Theorems" },
+        { "Week": "7", "Dates": "Feb 16th - Feb 22nd", "Beginner": "Contest Tricks", "Intermediate": "Lesson E" },
+        { "Week": "8", "Dates": "Feb 23rd - Mar 1st", "Beginner": "Logarithms and Complex Numbers", "Intermediate": "Problemset E + Review" },
     ]
 
     onMount(() => {
