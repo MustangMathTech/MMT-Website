@@ -61,14 +61,14 @@ bind:innerHeight={windowHeight} />
   
                 <div class="flex"><div class="headerline" /></div>
                     <br>
-                    <a sveltekit:prefetch href="/classes/seminars" class="headerButton">
+                    <a sveltekit:prefetch href="https://forms.gle/Vh8Qrv8Nbye5RfxY6" class="headerButton">
                         <div
                             class="headerButton"
                             on:mouseenter={toggleBackground}
                             on:mouseleave={toggleBackground}
                         >
                             <p class="headerButton" id="signupformmt">
-                                Free Seminars
+                                Geometry Classes
                             </p>
                             <img
                                 height="25px"
@@ -336,14 +336,16 @@ bind:innerHeight={windowHeight} />
     <Heading text="Classes" size={4} textColor="#3C6F8B;" />
 
     <div class="homeText">
-        Mustang Math classes bring together students from around the world with one thing in common: an outstanding passion for math. Our highly qualified instructors prepare students for competitions in a fun and engaging way. Beyond instruction, we want to build a community of students and teachers sharing their love of math.
+        <strong>Mustang Math Classes</strong> focus on <strong>competition math</strong> and are split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving, with each term running for <strong>8 weeks</strong>. Our upcoming <a href="/classes#topicSection"><strong>Geometry term</strong></a> will alternate between <strong>lectures + problem solving</strong>, allowing for students to gain a stronger understanding of the material. A <strong>$10 gift card prize</strong> will be awarded to students who show diligent effort.
     </div>
 
     <div class="homeText">
-        These classes will be run year-round and will be split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving/AMC Prep, each run for 8 weeks. Instructive sessions will run for 90 minutes every week over Zoom. Additionally, teachers will hold office hours each week, during which students can seek assistance with the content or ask any lingering questions. Each class will have 10-15 students and, depending on the interest we receive, there may be multiple classes run for each level. The total cost for 8 weeks of classes will be $80 with financial aid available. Alternatively, students who would like to attend all four terms of our classes can pay $250 for a total of 32 classes.
+        Instructive sessions run for <strong>90 minutes</strong> every week over Zoom. Each class will have 10-15 students and 2 instructors.
     </div>
 
-
+    <div class="homeText">
+        The total cost for the 8 sessions is <strong>$100</strong>, or all 32 sessions for <strong>$320</strong>. Financial aid is available upon request. As a nonprofit, we charge for our classes to improve our classes and tournaments. Furthermore, putting a price on our classes encourages students to stay committed. <a href="https://er.educause.edu/articles/2013/6/retention-and-intention-in-massive-open-online-courses-in-depth">Learn more</a>.
+    </div>
 </div>
 
 
