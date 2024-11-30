@@ -41,14 +41,14 @@
     ]
     
     let topicsData = [
-        { "Week": "1", "Dates": "Jan 5th - Jan 11th", "Beginner": "Lesson A", "Intermediate": "Lesson A + B" },
-        { "Week": "2", "Dates": "Jan 12th - Jan 18th", "Beginner": "Systems of Equations", "Intermediate": "Problemset A + B" },
-        { "Week": "3", "Dates": "Jan 19th - Jan 25th", "Beginner": "Inequalities", "Intermediate": "Lesson C + More Triangle Properties" },
-	    { "Week": "4", "Dates": "Jan 26th - Feb 1st", "Beginner": "Sequences and Series", "Intermediate": "Problemset C + More Triangle Properties" },
-        { "Week": "5", "Dates": "Feb 2nd - Feb 8th", "Beginner": "Functions and their Graphs", "Intermediate": "Lesson D + More Circle Theorems" },
-        { "Week": "6", "Dates": "Feb 9th - Feb 15th", "Beginner": "Polynomials", "Intermediate": "Problemset D + More Circle Theorems" },
-        { "Week": "7", "Dates": "Feb 16th - Feb 22nd", "Beginner": "Contest Tricks", "Intermediate": "Lesson E" },
-        { "Week": "8", "Dates": "Feb 23rd - Mar 1st", "Beginner": "Logarithms and Complex Numbers", "Intermediate": "Problemset E + Review" },
+        { "Week": "1", "Dates": "Jan 5 - Jan 11", "Beginner": "Lesson A", "Intermediate": "Lesson A + B" },
+        { "Week": "2", "Dates": "Jan 12 - Jan 18", "Beginner": "Problemset A", "Intermediate": "Problemset A + B" },
+        { "Week": "3", "Dates": "Jan 19 - Jan 25", "Beginner": "Lesson B", "Intermediate": "Lesson C + More Triangle Properties" },
+	    { "Week": "4", "Dates": "Jan 26 - Feb 1", "Beginner": "Problemset B", "Intermediate": "Problemset C + More Triangle Properties" },
+        { "Week": "5", "Dates": "Feb 2 - Feb 8", "Beginner": "Lesson C", "Intermediate": "Lesson D + More Circle Theorems" },
+        { "Week": "6", "Dates": "Feb 9 - Feb 15", "Beginner": "Problemset C", "Intermediate": "Problemset D + More Circle Theorems" },
+        { "Week": "7", "Dates": "Feb 16 - Feb 22", "Beginner": "Lesson D", "Intermediate": "Lesson E" },
+        { "Week": "8", "Dates": "Feb 23 - Mar 1", "Beginner": "Problemset D", "Intermediate": "Problemset E + Review" },
     ]
 
     onMount(() => {
@@ -85,7 +85,7 @@
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;"><strong>Mustang Math Classes</strong> focus on <strong>competition math</strong> and are split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving, with each term running for <strong>8 weeks</strong>. Our upcoming <a href="#topicSection"><strong>Geometry term</strong></a> will alternate between <strong>lectures + problem solving</strong>, allowing for students to gain a stronger understanding of the material. A <strong>$10 gift card prize</strong> will be awarded to students who show diligent effort.</p>  
         <p style="font-size: 1.5em; text-align: center;">Instructive sessions run for <strong>90 minutes</strong> every week over Zoom. Each class will have 10-15 students and 2 instructors.</p>
-        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions is <strong>$100</strong>, or all 32 sessions for <strong>$320</strong>. Financial aid is available upon request. As a nonprofit, we charge for our classes to improve our classes and tournaments. Furthermore, putting a price on our classes encourages students to stay committed. <a href="https://er.educause.edu/articles/2013/6/retention-and-intention-in-massive-open-online-courses-in-depth">Learn more</a>.</p> 
+        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions is <strong>$100</strong>, or all 32 sessions for <strong>$320</strong>. Financial aid is available upon request. As a nonprofit, we charge for our classes to improve our classes and tournaments. Furthermore, putting a price on our classes encourages students to stay committed. <a href="https://er.educause.edu/articles/2013/6/retention-and-intention-in-massive-open-online-courses-in-depth">Learn more</a>!</p> 
     </PanelBox>
 </div> 
 <br />
@@ -121,12 +121,12 @@
     </FlexBox>
 </div> <br />
 
-<h1 id="Problem Solving topicSection"><strong style="color: #1b9aaa;">Current Term: Geometry</strong></h1>
+<h1 id="topicSection"><strong style="color: #1b9aaa;">Current Term: Geometry</strong></h1>
 
 <Heading text="Class Details" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Our class will be on Geometry and will start on the week of <strong>January 5th, 2025</strong> and run through the week of <strong>February 23rd, 2025</strong>. We have two levels of classes: <strong>Beginner Geometry (AMC 8/10)</strong> and <strong>Intermediate Geometry (AMC 10/12/AIME)</strong>. Both classes will feature problemsets with a diverse range of difficulty <a href="#benefitsSection">(see above)</a>. Individualized feedback and a wide range of problems allows for most students to benefit from this class. See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://forms.gle/Vh8Qrv8Nbye5RfxY6"><strong>registration form</strong></a>. If you have any questions, please email <a href="mailto:classes@mustangmath.com">classes@mustangmath.com</a>.</p>
+        <p style="font-size: 1.5em; text-align: center;">Our class will be on Geometry and will start on the week of <strong>January 5th, 2025</strong> and run through the week of <strong>February 23rd, 2025</strong>. We have two levels of classes: <strong>Beginner Geometry (AMC 8/10)</strong> and <strong>Intermediate Geometry (AMC 10/12/AIME)</strong>. Both classes will feature individualized feedback and problemsets with a diverse range of difficulty <a href="#benefitsSection">(see above)</a>. See below for the weekly schedule and breakdown of topics! If you're interested in participating, make sure to fill out the <a href="https://forms.gle/Vh8Qrv8Nbye5RfxY6"><strong>registration form</strong></a>. If you have any questions, please email <a href="mailto:classes@mustangmath.com">classes@mustangmath.com</a>.</p>
     </PanelBox>
 </div> <br />
 <br />
