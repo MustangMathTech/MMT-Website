@@ -35,13 +35,14 @@
     let y;
     
     let seminarData = [
-        { "Class": "1", "Dates": "Saturday, November 2", "Time (PT)": "1-3 PM", "Topics Covered": "Algebra and Number Theory" },
-        { "Class": "2", "Dates": "Sunday, November 3", "Time (PT)": "3-5 PM", "Topics Covered": "Combinatorics and Geometry" }
+        { "Class": "1", "Dates": "Saturday, January 18", "Time (PT)": "4-6 PM", "Topics Covered": "Combinatorics and Number Theory" },
+        { "Class": "2", "Dates": "Sunday, January 19", "Time (PT)": "12-2 PM", "Topics Covered": "Geometry and Algebra" }
     ]
 
     let prevseminarData = [
         { "Past Seminar Topics": "Intro To Proofs", "Dates": "September 14-15, 2024", "Archived Material (Google Classroom)": "66q7ckx" },
-        { "Past Seminar Topics": "AMC Seminar", "Dates": "-------", "Archived Material (Google Classroom)": "-------" }
+        { "Past Seminar Topics": "AMC 10 Seminar", "Dates": "November 2-3, 2024", "Archived Material (Google Classroom)": "iyjksde" },
+        { "Past Seminar Topics": "AMC 8 Seminar", "Dates": "-------", "Archived Material (Google Classroom)": "-------" }
     ]
 
     onMount(() => {
@@ -110,19 +111,19 @@
 </div> 
 <br />
 <br />
-<Heading text="AMC Seminar" size={2.5} textColor="#1B9AAA" />
+<Heading text="AMC 8 Seminar" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Looking for a final boost <strong>before the AMC 10/12</strong>? Mustang Math is excited 
+        <p style="font-size: 1.5em; text-align: center;">Looking for a final boost <strong>before the AMC 8</strong>? Mustang Math is excited 
             to be offering a free 2-day AMC Seminar designed to sharpen your skills! These classes will take place the 
-            weekend before the AMC A. <strong>See below for more details.</strong> <br /><br /><strong>Please join the <a href="https://classroom.google.com/c/NzA2OTY2MDcwMzAw?cjc=iyjksde">Google Classroom</a>
+            weekend before the AMC 8. <strong>See below for more details.</strong> <br /><br /><strong>Please join the <a href="https://classroom.google.com/c/NzA2OTY2MDcwMzAw?cjc=iyjksde">Google Classroom</a>
             to gain access to the zoom link and class material!</strong> 
             Let’s get ready for the AMC together!</p>
     </PanelBox>
 </div>
 <br />
 <br />
-<Heading text="AMC Seminar Class Schedule" size={2.5} textColor="#1B9AAA" />
+<Heading text="AMC 8 Seminar Class Schedule" size={2.5} textColor="#1B9AAA" />
 <div class="schedule-wrapper">
     <FlexBox>
         <PanelBox>
