@@ -13,7 +13,7 @@
     import Image from '$lib/components/Image.svelte';
     import CardPanelBox from '$lib/components/CardPanelBox.svelte';
     import FlipCard from '$lib/components/InfoBox.svelte';
-    import overviewData from "$lib/jsons/MMT-2024.json";
+    import overviewData from "$lib/jsons/MMT-2025.json";
     import { page } from '$app/stores';
     import { onMount } from 'svelte';
     import Tournament from '$lib/components/Tournament.svelte';
@@ -83,7 +83,7 @@
     ];
 </script>
 <svelte:head>
-    <title>MMT 2024 {data ? data["State"] : ""}</title>
+    <title>MMT 2025 {data ? data["State"] : ""}</title>
 </svelte:head>
 
 <svelte:window bind:innerWidth={windowWidth} />
@@ -91,7 +91,7 @@
 <div class="page"></div>
 
 <section id="Scroll to Top">
-<PageHeader id="Sidebar" title="Mustang Math Tournament [MMT] {data ? data["Statef"] : "2024"}" description="A teamwork-based, fun, and strategic math contest" button_url="http://tinyurl.com/MMT2024Registration" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
+<PageHeader id="Sidebar" title="Mustang Math Tournament [MMT] {data ? data["Statef"] : "2025"}" description="A teamwork-based, fun, and strategic math contest" button_url="http://tinyurl.com/MMT2024Registration" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
 </section>
 <br />
 <br/>
@@ -100,11 +100,7 @@
     <div style="margin-left: 10vw; margin-right: 10vw;">
         <CardPanelBox initials="MM">
             <div style="padding: 20px;">
-                <p style="font-size: 1.5em; text-align: center;">Mustang Math Tournament is a middle school math competition run for students around the nation. It is put together by Mustang Math, a 501(c)(3) nonprofit organization comprising high school and college students!
-
-                    The tournament is centered around teamwork and collaboration, incentivizing students to work with their teams to not only navigate the challenging but interesting problems but also to develop strategies to master the fun and unique game-like rounds. The week before the tournament, students will be able to get ready for the tournament with a set of problems released everyday on our online platform. Awards will be given to top ranking students doing our daily problem sets! Mustang Math Tournament is a unique and enriching experience for middle schoolers regardless of current math level and expertise. 
-                    
-                    Check out some comments from past participants below!                    
+                <p style="font-size: 1.5em; text-align: center;">Mustang Math Tournament is a middle school math competition run for students around the nation. It is put together by Mustang Math, a 501(c)(3) nonprofit organization comprising high school and college students! The tournament is centered around teamwork and collaboration, incentivizing students to work with their teams to not only navigate the challenging but interesting problems but also to develop strategies to master the fun and unique game-like rounds. The week before the tournament, students will be able to get ready for the tournament with a set of problems released everyday on our online platform. Awards will be given to top ranking students doing our daily problem sets! Mustang Math Tournament is a unique and enriching experience for middle schoolers regardless of current math level and expertise. Check out some comments from past participants below!                    
                 </p>
 
             </div>
@@ -118,14 +114,16 @@
     <div class="competition-wrapper">
             <p style="font-size: 2em; text-align: center;">Select your location to see more information!</p>
             <FlexBox align="start">
-                
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("CA")}}><SVGComponent clicked={loc == "CA" ? true : false} svgURL="/competitions/states/CaliforniaOutlineCursive.svg" hoverFill="red"/></button>
-                <!-- <button style="background:transparent; border-color:transparent;" on:click={handleClickCO}><SVGComponent svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill="orange"/></button> -->
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("GA")}}><SVGComponent clicked={loc == "GA" ? true : false} svgURL="/competitions/states/GeorgiaOutlineCursive.svg" hoverFill="orange"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("IL")}}><SVGComponent clicked={loc == "IL" ? true : false} svgURL="/competitions/states/IllinoisOutlineCursive.svg" hoverFill="green"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("MA")}}><SVGComponent clicked={loc == "MA" ? true : false} svgURL="/competitions/states/MassachusettsOutlineCursive.svg" hoverFill="blue"/></button>
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("WA")}}><SVGComponent clicked={loc == "WA" ? true : false} svgURL="/competitions/states/WashingtonOutlineCursive.svg" hoverFill="hotpink"/></button>
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("O")}}><SVGComponent clicked={loc == "O" ? true : false} svgURL="/competitions/states/OnlineOutlineCursive.svg" hoverFill="purple"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NV")}}><SVGComponent clicked={loc == "NV" ? true : false} svgURL="/competitions/states/NevadaOutlineCursive.svg" hoverFill="purple"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NCA")}}><SVGComponent clicked={loc == "NCA" ? true : false} svgURL="/competitions/states/CaliforniaOutlineCursive.svg" hoverFill="red"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("SCA")}}><SVGComponent clicked={loc == "SCA" ? true : false} svgURL="/competitions/states/CaliforniaOutlineCursive.svg" hoverFill="red"/></button>
+                <!-- <button style="background:transparent; border-color:transparent;" on:click={handleClickCO}><SVGComponent svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill="orange"/></button> -->
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("GA")}}><SVGComponent clicked={loc == "GA" ? true : false} svgURL="/competitions/states/GeorgiaOutlineCursive.svg" hoverFill="orange"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("CO")}}><SVGComponent clicked={loc == "CO" ? true : false} svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill="hotpink"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NJ")}}><SVGComponent clicked={loc == "NJ" ? true : false} svgURL="/competitions/states/NewJerseyOutlineCursive.svg" hoverFill="hotpink"/></button>
+                
             </FlexBox>
     </div> 
 </section>
@@ -143,7 +141,7 @@
                     <strong>DATE:</strong> {data["Date"]} <br />
                     <strong>TEAM SIZE:</strong> {data["TeamSize"]} <br />
                     <strong>LOCATION:</strong> {data["Location"]}<br />
-                    <strong>EARLY HORSE COST:</strong> ${data["EarlyHorseCost"]} per participant (Register before <strong>{data["EarlyHorseCostDate"]}</strong>)<br />
+                    <strong>EARLY EQUINE COST:</strong> ${data["EarlyEquineCost"]} per participant (Register before <strong>{data["EarlyEquineCostDate"]}</strong>)<br />
                     <strong>NORMAL COST:</strong> ${data["NormalCost"]} per participant (Register before <strong>{data["NormalCostDate"]}</strong>)<br /> 
                     <strong>LATE COST:</strong> ${data["LateCost"]}  per participant (Register before <strong>{data["LateCostDate"]}</strong>)<br /> <br />
                     <a href="https://tinyurl.com/MMT2024Registration" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
@@ -187,26 +185,38 @@
         <div class="cards">
             <FlipCard mainText="General Rules" id="showDropdown">
                 <ol>
-                    <li>No cheating - This contest has a zero-tolerance cheating policy. Any evidence of cheating may lead to immediate disqualification, or any other punishment deemed appropriate by competition staff.</li>
+                    <li><strong>No cheating</strong> - This contest has a zero-tolerance cheating policy. Any evidence of cheating may lead to immediate disqualification, or any other punishment deemed appropriate by competition staff.</li>
                     <li>No calculators, rulers, compasses, protractors, or other aids are permitted.</li>
-                    <li>You may not use the Internet as a resource at any point during a test.</li>
+                    <li>You may not use the Internet or AI tools (e.g. ChatGPT) as a resource at any point during a test.</li>
                         <ol type="a">
                             <li>In order to help enforce this, we may require individuals to provide a solution for a problem during the competition - so keep track of your work!</li>
                         </ol>
-                    <li>The team divisions are determined by the highest grade level amongst the team members. Teams with 1 or more 8th graders will be in the <strong>Stallion</strong> division, teams with 7th graders and below will be in the <strong>Colt</strong> division, and teams with 6th graders and below will be in the <strong>Foal</strong> division. Teams may <em>choose</em> to compete in a higher division, if they&rsquo;d like.</li>
+                    <li><strong>The team divisions are determined by the highest grade level</strong> amongst the team members.</li>
+                        <ol type="a">
+                            <li>Teams with 1 or more 8th graders will be in the <strong>Stallion</strong> division, teams with 7th graders and below will be in the <strong>Colt</strong> division, and teams with 6th graders and below will be in the <strong>Foal</strong> division.</li>
+                            <li>Teams <strong>may choose to compete in a higher division.</strong></li>
+                        </ol>
                 </ol>
             </FlipCard>
             <br />
             <FlipCard mainText="Answer Formatting Rules" id="showDropdown">
                 <ol>
-                    <li>Carry out any reasonable calculations. For instance, you should evaluate any expressions which will take negligible time to evaluate (such as 1/2+1/3). You don't have to carry out unreasonable calculations, including large powers (e.g. 7<sup>8</sup>), large factorials, large products, and trigonometric functions which cannot be expressed in terms of radicals.</li>
-                    <li>Write rational numbers in lowest terms. Decimals are also acceptable, provided they are exact.</li>
-                    <li>Move all square factors outside radicals. For example, write 3√7 instead of √63.</li>
-                    <li>Denominators need to be rationalized. For example, write 1/√2 as √2/2 instead.</li>
-                    <li>Do not express an answer using a repeated sum or product.</li>
-                    <li>Here are some examples of simplified answers, and examples of unsimplified answers with simplified equivalents://asdas
-                        <div style="margin-top: 5px"><Image url="/competitions/mmt-2022/acceptable-answers.png" alt="Acceptable answer examples" /></div>
-                        <div style="margin-top: 5px"><Image url="/competitions/mmt-2022/unacceptable-answers.png" alt="Unacceptable answer examples" /></div>
+                    <li>Make sure you don’t have any extra calculations in your answers!</li>
+                    <ol type="a">
+                        <li>For example, 78 and 2<sup>85</sup> is okay, but ½ + ⅓ is not</li>
+                    </ol>
+                    <li>Simplify radicals!</li>
+                    <ol type="a">
+                        <li>Rewrite expressions like √63 into 3√7 and √(1/9) as ⅓ (exact decimal answers are also acceptable)</li>
+                        <li>Rationalize all denominators - write 1/√2 as √2/2 and 1/(√2 - 1) as √2 + 1</li>
+                    </ol>
+                    <li>No repeating sums / products!</li>
+                    <ol type="a">
+                        <li>1.333… should be submitted as 1 ⅓ and 2*2*2*2*2 as 32</li>
+                    </ol>
+                    <li>If you have any further questions, please contact us at tournament@mustangmath.com!</li>
+                    <li>Here are some examples of simplified answers, and examples of unsimplified answers with simplified equivalents
+                        <div style="margin-top: 20px"><Image url="/competitions/mmt-2025/answers_graphic.png" alt="Acceptable and unacceptable answer examples" /></div>
                     </li>
                 </ol>
             </FlipCard>
@@ -278,25 +288,25 @@
 <Heading text="Testimonials" size={2.5} textColor="#1B9AAA" />
 <div class="grid-three" style="margin-left: 10vw; margin-right: 10vw;">
     <div>
-        <Testimonial testimonial="MMT was really fun and more focused on working as a team and thinking outside of the box than other competitions." title="MMT 2023 California" />
-        <Testimonial testimonial="MMT set the bar very high for the next math tournament I participate in." title="Frank L, MMT 2023 California" />
+        <Testimonial testimonial="This contest was the most organized one I've ever been to." title="MMT 2024" />
+        <Testimonial testimonial="MMT was really fun and more focused on working as a team and thinking outside of the box than other competitions." title="MMT 2023" />
+        <Testimonial testimonial="MMT set the bar very high for the next math tournament I participate in." title="MMT 2023" />
         <Testimonial testimonial="MMT has a unique take on standard math competitions." title="MMT 2022" />
         <Testimonial testimonial="MMT focused less on calculations than other math competitions." title="MMT 2022" />
-        <Testimonial testimonial="I think this was a very nice way to spend my day." title="MMT 2021" />
     </div>
 
     <div>
-        <Testimonial testimonial="I loved the puzzle aspect as well as the way MMT makes math problem sets more interesting by introducing more strategy in how they should be tackled." title="MMT 2023 Washington" />
+        <Testimonial testimonial="Probably the best [math competition] so far in terms of theme and enjoyment." title="MMT 2024" />
+        <Testimonial testimonial="I LOVED MMT this year so much and that's mostly due to the fantastic problems that you guys cook up. The rounds are ingenious and questions well written and overall MMT is a very wonderful competition indeed." title="MMT 2024" />
         <Testimonial testimonial="I loved all of the rounds. They were all different and interesting -- much more interesting than just a string of math problems." title="MMT 2023 Online" />
         <Testimonial testimonial="MMT's style of problems are much better than other tournaments. Unlike other tournaments that has the same style over the years, MMT has new and exciting styles of problems that makes it more fun to try and solve it on the spot" title="MMT 2022" />
-        <Testimonial testimonial="MMT had people captivated even before the tournament started with their Discord server and problems of the day" title="MMT 2022" />
     </div>
     
     <div>
-        <Testimonial testimonial="The concepts were very original and rounds were much more fun to participate in than the standard math competition." title="MMT 2023 California" />
-        <Testimonial testimonial="I loved the creative format, the team emphasis, and the depth and complexity of problems." title="MMT 2023 California" />
+        <Testimonial testimonial="I loved the quality of the competition as a whole, whether through their meticulous questions,  clear instructions, ingenious format, or cool hidden tricks MMT was awesome and exceeded all of my expectations for a math competition and I am for sure coming back next year!" title="MMT 2023" />
+        <Testimonial testimonial="The concepts were very original and rounds were much more fun to participate in than the standard math competition." title="MMT 2023" />
+        <Testimonial testimonial="I loved the creative format, the team emphasis, and the depth and complexity of problems." title="MMT 2023" />
         <Testimonial testimonial="I really appreciate all that MMT has done and I look forward to the competition that is held next year! I must say that the MMT was an impressive execution of math competitions unlike anything I've seen before!" title="MMT 2022" />
-        <Testimonial testimonial="My favorite memory from MMT was the teamwork - both chaotically and organizedly working with each other to solve the problems" title="MMT 2022" />
     </div>
 </div> 
 </section>
