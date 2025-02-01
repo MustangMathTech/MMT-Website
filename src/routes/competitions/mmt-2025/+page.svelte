@@ -8,6 +8,7 @@
     import Competition from '$lib/components/Competition.svelte';
     import FlexBox from '$lib/components/FlexBox.svelte';
     import Sidebar from '$lib/components/Sidebar.svelte';
+    import Slideshow from '$lib/components/Slideshow.svelte';
     import Table from "$lib/components/Table.svelte";
     import PanelBox from "$lib/components/PanelBox.svelte";
     import Image from '$lib/components/Image.svelte';
@@ -311,7 +312,11 @@
     </div>
 </div> 
 </section>
-<br />
+<!-- <section id="Sample-Questions">
+    <Heading text="Sample Questions" size={2.5} textColor="#1B9AAA" />
+    <Slideshow/>
+    </section>
+<br /> -->
 
 <br /><br />
 

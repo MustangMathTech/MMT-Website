@@ -35,12 +35,14 @@
         { path: "/classes/seminars", text: "Free Seminars" }
       ],
     },
+	{ path: "/competitions/mmt-2025", text: "Register", hasSubPages: false },
     { path: "/our-team", text: "Our Team", hasSubPages: false },
     { path: "/join", text: "Join Us", hasSubPages: false },
     { path: "/sponsors", text: "Sponsors", hasSubPages: false },
     { path: "/past-tests", text: "Past Tests", hasSubPages: false },
     { path: "/donate", text: "Donate", hasSubPages: false },
     { path: "/parent-info", text: "Parent Info", hasSubPages: false },
+	
   ];
   const show = [0, 0];
 
