@@ -14,19 +14,19 @@
 		"Date": "March 29, 2025",
 		"scheduleData": [
 			{
-				"Day": "4/22-4/26",
+				"Day": "4/24-3/28",
 				"Time": "All Day",
 				"Event": "Problem of the Day"
 			},
-			["4/27", "8:30 AM-9:00 AM", "Check-in"],
-			["4/27", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
-			["4/27", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
-			["4/27", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
-			["4/27", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
-			["4/27", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
-			["4/27", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
-			["4/27", "3:20 PM-4:30 PM", "Optional Activities"],
-			["4/27", "4:30 PM", "Awards Ceremony"]
+			["3/29", "8:30 AM-9:00 AM", "Check-in"],
+			["3/29", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
+			["3/29", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
+			["3/29", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
+			["3/29", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
+			["3/29", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
+			["3/29", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
+			["3/29", "3:20 PM-4:30 PM", "Optional Activities"],
+			["3/29", "4:30 PM", "Awards Ceremony"]
 		]
 	},
     "SCA": {
@@ -44,19 +44,19 @@
 		"Date": "March 29, 2025",
 		"scheduleData": [
 			{
-				"Day": "4/22-4/26",
+				"Day": "3/24-3/28",
 				"Time": "All Day",
 				"Event": "Problem of the Day"
 			},
-			["4/27", "8:30 AM-9:00 AM", "Check-in"],
-			["4/27", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
-			["4/27", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
-			["4/27", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
-			["4/27", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
-			["4/27", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
-			["4/27", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
-			["4/27", "3:20 PM-4:30 PM", "Optional Activities"],
-			["4/27", "4:30 PM", "Awards Ceremony"]
+			["3/29", "8:30 AM-9:00 AM", "Check-in"],
+			["3/29", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
+			["3/29", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
+			["3/29", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
+			["3/29", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
+			["3/29", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
+			["3/29", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
+			["3/29", "3:20 PM-4:30 PM", "Optional Activities"],
+			["3/29", "4:30 PM", "Awards Ceremony"]
 		]
 	},
 	"GA": {
@@ -64,29 +64,29 @@
 		"Statef": "Georgia",
 		"email": "georgia@mustangmath.com",
 		"TeamSize": "3-4*",
-		"Location": "Howard Middle School, Atlanta, GA",
-		"EarlyEquineCost": "15",
+		"Location": "Peachtree Ridge High School (1555 Old Peachtree Rd NW, Suwanee, GA 30024)",
+		"EarlyEquineCost": "10",
 		"EarlyEquineCostDate": "March 22nd, 2024",
-		"NormalCost": "20",
-		"NormalCostDate": "April 14th, 2024",
-		"LateCost": "25",
-		"LateCostDate": "April 17th, 2024",
-		"Date": "April 20, 2024",
+		"NormalCost": "15",
+		"NormalCostDate": "April 5th, 2024",
+		"LateCost": "20",
+		"LateCostDate": "April 12th, 2024",
+		"Date": "April 19, 2024",
 		"scheduleData": [
 			{
-				"Day": "4/15-4/19",
-				"Time": "All Day",
+				"Day": "4/14-4/18",
+				"Time (PT)": "All Day",
 				"Event": "Problem of the Day"
 			},
-			["4/20", "8:30 AM-9:00 AM", "Check-in"],
-			["4/20", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
-			["4/20", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
-			["4/20", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
-			["4/20", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
-			["4/20", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
-			["4/20", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
-			["4/20", "3:20 PM-4:30 PM", "Optional Activities"],
-			["4/20", "4:30 PM", "Awards Ceremony"]
+			["4/19", "8:30 AM-9:00 AM", "Check-in"],
+			["4/19", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
+			["4/19", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
+			["4/19", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
+			["4/19", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
+			["4/19", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
+			["4/19", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
+			["4/19", "3:20 PM-4:30 PM", "Optional Activities"],
+			["4/19", "4:30 PM", "Awards Ceremony"]
 		]
 	},
 
@@ -103,22 +103,22 @@
 		"LateCost": "20",
 		"LateCostDate": "March 22nd, 2025",
 		"Date": "March 29, 2025",
-		"Footer": "<i><strong>Our tournament date has been moved to 5/4/2024. If you have any concerns, please contact us at <a href='mailto:illinois@mustangmath.com'>illinois@mustangmath.com</a>.</strong></i>",
+		"Footer": "",
 		"scheduleData": [
 			{
-				"Day": "4/22-4/26",
+				"Day": "3/24-3/28",
 				"Time": "All Day",
 				"Event": "Problem of the Day"
 			},
-			["4/27", "8:30 AM-9:00 AM", "Check-in"],
-			["4/27", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
-			["4/27", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
-			["4/27", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
-			["4/27", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
-			["4/27", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
-			["4/27", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
-			["4/27", "3:20 PM-4:30 PM", "Optional Activities"],
-			["4/27", "4:30 PM", "Awards Ceremony"]
+			["3/29", "8:30 AM-9:00 AM", "Check-in"],
+			["3/29", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
+			["3/29", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
+			["3/29", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
+			["3/29", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
+			["3/29", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
+			["3/29", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
+			["3/29", "3:20 PM-4:30 PM", "Optional Activities"],
+			["3/29", "4:30 PM", "Awards Ceremony"]
 		]
 	},
 	"MA": {
@@ -136,19 +136,19 @@
 		"Date": "March 22, 2025",
 		"scheduleData": [
 			{
-				"Day": "4/22-4/26",
+				"Day": "3/17-3/21",
 				"Time": "All Day",
 				"Event": "Problem of the Day"
 			},
-			["4/27", "8:30 AM-9:00 AM", "Check-in"],
-			["4/27", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
-			["4/27", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
-			["4/27", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
-			["4/27", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
-			["4/27", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
-			["4/27", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
-			["4/27", "3:20 PM-4:30 PM", "Optional Activities"],
-			["4/27", "4:30 PM", "Awards Ceremony"]
+			["3/22", "8:30 AM-9:00 AM", "Check-in"],
+			["3/22", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
+			["3/22", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
+			["3/22", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
+			["3/22", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
+			["3/22", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
+			["3/22", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
+			["3/22", "3:20 PM-4:30 PM", "Optional Activities"],
+			["3/22", "4:30 PM", "Awards Ceremony"]
 		]
 	},
     "NV": {
@@ -166,19 +166,19 @@
 		"Date": "April 6, 2025",
 		"scheduleData": [
 			{
-				"Day": "4/22-4/26",
+				"Day": "3/31-4/5",
 				"Time": "All Day",
 				"Event": "Problem of the Day"
 			},
-			["4/27", "8:30 AM-9:00 AM", "Check-in"],
-			["4/27", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
-			["4/27", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
-			["4/27", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
-			["4/27", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
-			["4/27", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
-			["4/27", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
-			["4/27", "3:20 PM-4:30 PM", "Optional Activities"],
-			["4/27", "4:30 PM", "Awards Ceremony"]
+			["4/6", "8:30 AM-9:00 AM", "Check-in"],
+			["4/6", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
+			["4/6", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
+			["4/6", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
+			["4/6", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
+			["4/6", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
+			["4/6", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
+			["4/6", "3:20 PM-4:30 PM", "Optional Activities"],
+			["4/6", "4:30 PM", "Awards Ceremony"]
 		]
 	},
 	"CO": {
@@ -187,46 +187,16 @@
 		"email": "colorado@mustangmath.com",
 		"TeamSize": "3-4*",
 		"Location": "Euclid Middle School, Littleton, Colorado",
-		"EarlyEquineCost": "15",
+		"EarlyEquineCost": "10",
 		"EarlyEquineCostDate": "March 22nd, 2024",
-		"NormalCost": "20",
+		"NormalCost": "15",
 		"NormalCostDate": "April 10th, 2024",
-		"LateCost": "25",
+		"LateCost": "20",
 		"LateCostDate": "April 13th, 2024",
 		"Date": "April 20, 2024",
 		"scheduleData": [
 			{
-				"Day": "4/15-4/19",
-				"Time": "All Day",
-				"Event": "Problem of the Day"
-			},
-			["4/20", "8:30 AM-9:00 AM", "Check-in"],
-			["4/20", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
-			["4/20", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
-			["4/20", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
-			["4/20", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
-			["4/20", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
-			["4/20", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
-			["4/20", "3:20 PM-4:30 PM", "Optional Activities"],
-			["4/20", "4:30 PM", "Awards Ceremony"]
-		]
-	},
-	"WA": {
-		"State": "WA",
-		"Statef": "Washington",
-		"email": "washington@mustangmath.com",
-		"TeamSize": "3-4*",
-		"Location": "Mill Creek Middle School, Kent, Washington",
-		"EarlyEquineCost": "15",
-		"EarlyEquineCostDate": "March 22nd, 2024",
-		"NormalCost": "20",
-		"NormalCostDate": "April 10th, 2024",
-		"LateCost": "25",
-		"LateCostDate": "April 13th, 2024",
-		"Date": "April 20, 2024",
-		"scheduleData": [
-			{
-				"Day": "4/15-4/19",
+				"Day": "4/14-4/18",
 				"Time": "All Day",
 				"Event": "Problem of the Day"
 			},
@@ -247,28 +217,28 @@
 		"email": "tournament@mustangmath.com",
 		"TeamSize": "3-4*",
 		"Location": "Online",
-		"EarlyEquineCost": "15",
-		"EarlyEquineCostDate": "March 22nd, 2024",
-		"NormalCost": "20",
-		"NormalCostDate": "April 24th, 2024",
-		"LateCost": "25",
-		"LateCostDate": "May 3rd, 2024",
-		"Date": "May 4, 2024",
+		"EarlyEquineCost": "10",
+		"EarlyEquineCostDate": "March 19th, 2025",
+		"NormalCost": "15",
+		"NormalCostDate": "April 5th, 2025",
+		"LateCost": "20",
+		"LateCostDate": "April 12th, 2025",
+		"Date": "April 19, 2024",
 		"scheduleData": [
 			{
-				"Day": "4/29-5/3",
+				"Day": "4/14-4/18",
 				"Time (PT)": "All Day",
 				"Event": "Problem of the Day"
 			},
-			["5/4", "8:30 AM-9:00 AM", "Check-in"],
-			["5/4", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
-			["5/4", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
-			["5/4", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
-			["5/4", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
-			["5/4", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
-			["5/4", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
-			["5/4", "3:20 PM-4:30 PM", "Optional Activities"],
-			["5/4", "4:30 PM", "Awards Ceremony"]
+			["4/19", "8:30 AM-9:00 AM", "Check-in"],
+			["4/19", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
+			["4/19", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
+			["4/19", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
+			["4/19", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
+			["4/19", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
+			["4/19", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
+			["4/19", "3:20 PM-4:30 PM", "Optional Activities"],
+			["4/19", "4:30 PM", "Awards Ceremony"]
 		]
 	}
 }

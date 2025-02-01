@@ -118,11 +118,12 @@
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("MA")}}><SVGComponent clicked={loc == "MA" ? true : false} svgURL="/competitions/states/MassachusettsOutlineCursive.svg" hoverFill="blue"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NV")}}><SVGComponent clicked={loc == "NV" ? true : false} svgURL="/competitions/states/NevadaOutlineCursive.svg" hoverFill="purple"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NCA")}}><SVGComponent clicked={loc == "NCA" ? true : false} svgURL="/competitions/states/CaliforniaOutlineCursive.svg" hoverFill="red"/></button>
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("SCA")}}><SVGComponent clicked={loc == "SCA" ? true : false} svgURL="/competitions/states/CaliforniaOutlineCursive.svg" hoverFill="red"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("SCA")}}><SVGComponent clicked={loc == "SCA" ? true : false} svgURL="/competitions/states/CaliforniaOutlineCursive.svg" hoverFill="lightblue"/></button>
                 <!-- <button style="background:transparent; border-color:transparent;" on:click={handleClickCO}><SVGComponent svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill="orange"/></button> -->
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("GA")}}><SVGComponent clicked={loc == "GA" ? true : false} svgURL="/competitions/states/GeorgiaOutlineCursive.svg" hoverFill="orange"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("CO")}}><SVGComponent clicked={loc == "CO" ? true : false} svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill="hotpink"/></button>
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NJ")}}><SVGComponent clicked={loc == "NJ" ? true : false} svgURL="/competitions/states/NewJerseyOutlineCursive.svg" hoverFill="hotpink"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NJ")}}><SVGComponent clicked={loc == "NJ" ? true : false} svgURL="/competitions/states/NewJerseyOutlineCursive.svg" hoverFill="yellow"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("O")}}><SVGComponent clicked={loc == "O" ? true : false} svgURL="/competitions/states/OnlineOutlineCursive.svg" hoverFill="lightgreen"/></button>
                 
             </FlexBox>
     </div> 
