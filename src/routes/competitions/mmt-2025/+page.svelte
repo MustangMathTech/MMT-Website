@@ -20,10 +20,10 @@
     import Tournament from '$lib/components/Tournament.svelte';
     import SVGComponent from '$lib/components/SVGComponent.svelte';
     import {LightenDarkenColor} from "$lib/utils/Colors.svelte";
+    import Newsletter from "$lib/components/Newsletter.svelte";
 
 
     let windowWidth;
-
     let loc = ""
 
     onMount(() => {
@@ -52,6 +52,9 @@
 
 
     }
+
+
+    
     
 
     
@@ -92,10 +95,13 @@
 <div class="page"></div>
 
 <section id="Scroll to Top">
-<PageHeader id="Sidebar" title="Mustang Math Tournament [MMT] {data ? data["Statef"] : "2025"}" description="A teamwork-based, fun, and strategic math contest" button_url="http://tinyurl.com/MMT2024Registration" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
+
+<PageHeader id="Sidebar" title="Mustang Math Tournament [MMT] {data ? data["Statef"] : "2025"}" description="A teamwork-based, fun, and strategic math contest" button_text="Sign Up For Our Newsletter!" button_id="registerOnContestDojo" target="_blank"/>
+
 </section>
 <br />
 <br/>
+
 <section id="What is MMT">
     <Heading text="What is MMT?" size={2.5} textColor="#1B9AAA" />
     <div style="margin-left: 10vw; margin-right: 10vw;">
@@ -115,16 +121,16 @@
     <div class="competition-wrapper">
             <p style="font-size: 2em; text-align: center;">Select your location to see more information!</p>
             <FlexBox align="start">
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("IL")}}><SVGComponent clicked={loc == "IL" ? true : false} svgURL="/competitions/states/IllinoisOutlineCursive.svg" hoverFill="green"/></button>
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("MA")}}><SVGComponent clicked={loc == "MA" ? true : false} svgURL="/competitions/states/MassachusettsOutlineCursive.svg" hoverFill="blue"/></button>
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NV")}}><SVGComponent clicked={loc == "NV" ? true : false} svgURL="/competitions/states/NevadaOutlineCursive.svg" hoverFill="purple"/></button>
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NCA")}}><SVGComponent clicked={loc == "NCA" ? true : false} svgURL="/competitions/states/CaliforniaOutlineCursive.svg" hoverFill="red"/></button>
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("SCA")}}><SVGComponent clicked={loc == "SCA" ? true : false} svgURL="/competitions/states/CaliforniaOutlineCursive.svg" hoverFill="lightblue"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("IL")}}><SVGComponent clicked={loc == "IL" ? true : false} svgURL="/competitions/states/IllinoisOutline.svg" hoverFill="green"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("MA")}}><SVGComponent clicked={loc == "MA" ? true : false} svgURL="/competitions/states/MassachusettsOutline.svg" hoverFill="blue"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NV")}}><SVGComponent clicked={loc == "NV" ? true : false} svgURL="/competitions/states/NevadaOutline.svg" hoverFill="purple"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NCA")}}><SVGComponent clicked={loc == "NCA" ? true : false} svgURL="/competitions/states/NorcalOutline.svg" hoverFill="red"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("SCA")}}><SVGComponent clicked={loc == "SCA" ? true : false} svgURL="/competitions/states/SocalOutline.svg" hoverFill="lightblue"/></button>
                 <!-- <button style="background:transparent; border-color:transparent;" on:click={handleClickCO}><SVGComponent svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill="orange"/></button> -->
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("GA")}}><SVGComponent clicked={loc == "GA" ? true : false} svgURL="/competitions/states/GeorgiaOutlineCursive.svg" hoverFill="orange"/></button>
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("CO")}}><SVGComponent clicked={loc == "CO" ? true : false} svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill="hotpink"/></button>
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NJ")}}><SVGComponent clicked={loc == "NJ" ? true : false} svgURL="/competitions/states/NewJerseyOutlineCursive.svg" hoverFill="yellow"/></button>
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("O")}}><SVGComponent clicked={loc == "O" ? true : false} svgURL="/competitions/states/OnlineOutlineCursive.svg" hoverFill="lightgreen"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("GA")}}><SVGComponent clicked={loc == "GA" ? true : false} svgURL="/competitions/states/GeorgiaOutline.svg" hoverFill="orange"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("CO")}}><SVGComponent clicked={loc == "CO" ? true : false} svgURL="/competitions/states/ColoradoOutline.svg" hoverFill="hotpink"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NJ")}}><SVGComponent clicked={loc == "NJ" ? true : false} svgURL="/competitions/states/NewJerseyOutline.svg" hoverFill="yellow"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("O")}}><SVGComponent clicked={loc == "O" ? true : false} svgURL="/competitions/states/OnlineOutline.svg" hoverFill="lightgreen"/></button>
                 
             </FlexBox>
     </div> 
@@ -146,7 +152,7 @@
                     <strong>EARLY EQUINE COST:</strong> ${data["EarlyEquineCost"]} per participant (Register before <strong>{data["EarlyEquineCostDate"]}</strong>)<br />
                     <strong>NORMAL COST:</strong> ${data["NormalCost"]} per participant (Register before <strong>{data["NormalCostDate"]}</strong>)<br /> 
                     <strong>LATE COST:</strong> ${data["LateCost"]}  per participant (Register before <strong>{data["LateCostDate"]}</strong>)<br /> <br />
-                    <a href="https://tinyurl.com/MMT2024Registration" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
+                    <!--<a href="https://tinyurl.com/MMT2024Registration" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>-->f
                     <br /><br />
                     <i><strong>*:</strong> Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4</i><br />
                     <i><strong>Note for International Students:</strong> Students not in Canada or the United States should participate in the international version of our tournament being run by SIMCC. Email us at <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a> if you're interested.</i><br /><br />
