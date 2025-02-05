@@ -61,6 +61,67 @@
   <Heading text="Past Exams" size={2.5} textColor="#1B9AAA" />
   <DropdownArchive
     id="showDropdown"
+    year="2024"
+    tests={[
+      [
+        ["Slitherlink"],
+        ["Rules", "archive/2024/Rules_Sheet_Slitherlink.pdf"],
+        ["Puzzles", "archive/2024/Puzzles_Slitherlink_MMT_2024.pdf"],
+        ["Answer Sheet", "archive/2024/Answer_Sheet_Slitherlink.pdf"],
+      ], 
+      [
+        ["Herding Hexes [Foal]"],
+        ["Problems", "archive/2024/Herding_Hexes_Foal.pdf"],
+        ["Answers", "archive/2024/Herding_Hexes_Foal_Answers.pdf"],
+      ],
+      [
+        ["Herding Hexes [Colt]"],
+        ["Problems", "archive/2024/Herding_Hexes_Colt.pdf"],
+        ["Answers", "archive/2024/Herding_Hexes_Colt_Answers.pdf"],
+      ],
+      [
+        ["Herding Hexes [Stallion]"],
+        ["Problems", "archive/2024/Herding_Hexes_Stallion.pdf"],
+        ["Answers", "archive/2024/Herding_Hexes_Stallion_Answers.pdf"],
+      ],
+      [
+        ["Relay Rodeo [Foal]"],
+        ["Problems", "archive/2024/RR Foal Test.pdf"],
+        ["Answers Sheet", "archive/2024/RR Foal Answer Sheet.pdf"],
+        ["Answers", "archive/2024/Relay_Rodeo_Foal_Answers.pdf"],
+
+      ],
+      [
+        ["Relay Rodeo [Colt]"],
+        ["Problems", "archive/2024/RR Colt Test.pdf"],
+        ["Answers Sheet", "archive/2024/RR Colt Answer Sheet.pdf"],
+        ["Answers", "archive/2024/Relay_Rodeo_Colt_Answers.pdf"],
+      ],
+      [
+        ["Relay Rodeo [Stallion]"],
+        ["Problems", "archive/2024/RR Stallion Test.pdf"],
+        ["Answers Sheet", "archive/2024/RR Stallion Answer Sheet.pdf"],
+        ["Answers", "archive/2024/Relay_Rodeo_Stallion_Answers.pdf"],
+      ],
+      [
+        ["Gallop [Foal]"],
+        ["Problems", "archive/2024/Gallop_Foal.pdf"],
+        // ["Answers", "archive/2024/Gallop_Foal_Answers.pdf"] # We don't have these
+      ],
+      [
+        ["Gallop [Colt]"],
+        ["Problems", "archive/2024/Gallop_Colt.pdf"],
+        // ["Answers", "archive/2024/Gallop_Colt_Answers.pdf"]
+      ],
+      [
+        ["Gallop [Stallion]"],
+        ["Problems", "archive/2024/Gallop_Stallion.pdf"],
+        // ["Answers", "archive/2024/Gallop_Stallion_Answers.pdf"]
+      ]
+    ]}
+  />
+  <DropdownArchive
+    id="showDropdown"
     year="2023"
     tests={[
       [
