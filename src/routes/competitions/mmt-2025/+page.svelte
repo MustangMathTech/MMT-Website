@@ -96,7 +96,7 @@
 
 <section id="Scroll to Top">
 
-<PageHeader id="Sidebar" title="Mustang Math Tournament [MMT] {data ? data["Statef"] : "2025"}" description="A teamwork-based, fun, and strategic math contest" button_url="https://comp.mt" button_text="Register on COMP" button_id="registerOnCOMP" target="_blank"/>
+<PageHeader id="Sidebar" title="Mustang Math Tournament [MMT] {data ? data["Statef"] : "2025"}" description="A teamwork-based, fun, and strategic math contest" button_url="https://comp.mustangmath.com" button_text="Register on COMP" button_id="registerOnCOMP" target="_blank"/>
 
 </section>
 <br />
@@ -161,7 +161,7 @@
                         <i><strong>Note for Students in the US:</strong> Students living within 50 miles of our in-person sites <strong>must</strong> participate in person. If you have an extenuating circumstance that would prevent this please send an email to <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a>, and we may grant you permission to participate online.</i>
                     </p>
                     <div class="flex">
-                        <a class="join_now" href="https://comp.mt" target="_blank"
+                        <a class="join_now" href="https://comp.mustangmath.com" target="_blank"
                             >Register Now</a
                         >
                     </div>
