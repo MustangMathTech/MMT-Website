@@ -1,6 +1,6 @@
 {
-	"NCA": {
-		"State": "NCA",
+	"NorCal": {
+		"State": "NorCal",
 		"Statef": "North California",
 		"email": "california@mustangmath.com",
 		"TeamSize": "3-4*",
@@ -29,8 +29,8 @@
 			["3/29", "4:30 PM", "Awards Ceremony"]
 		]
 	},
-    "SCA": {
-		"State": "SCA",
+    "SoCal": {
+		"State": "SoCal",
 		"Statef": "South California",
 		"email": "california@mustangmath.com",
 		"TeamSize": "3-4*",

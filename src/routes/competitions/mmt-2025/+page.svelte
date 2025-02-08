@@ -96,7 +96,7 @@
 
 <section id="Scroll to Top">
 
-<PageHeader id="Sidebar" title="Mustang Math Tournament [MMT] {data ? data["Statef"] : "2025"}" description="A teamwork-based, fun, and strategic math contest" button_text="Sign Up For Our Newsletter!" button_id="registerOnContestDojo" target="_blank"/>
+<PageHeader id="Sidebar" title="Mustang Math Tournament [MMT] {data ? data["Statef"] : "2025"}" description="A teamwork-based, fun, and strategic math contest" button_url="https://comp.mt" button_text="Register on COMP" button_id="registerOnCOMP" target="_blank"/>
 
 </section>
 <br />
@@ -124,8 +124,8 @@
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("IL")}}><SVGComponent clicked={loc == "IL" ? true : false} svgURL="/competitions/states/IllinoisOutline.svg" hoverFill="green"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("MA")}}><SVGComponent clicked={loc == "MA" ? true : false} svgURL="/competitions/states/MassachusettsOutline.svg" hoverFill="blue"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NV")}}><SVGComponent clicked={loc == "NV" ? true : false} svgURL="/competitions/states/NevadaOutline.svg" hoverFill="purple"/></button>
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NCA")}}><SVGComponent clicked={loc == "NCA" ? true : false} svgURL="/competitions/states/NorcalOutline.svg" hoverFill="red"/></button>
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("SCA")}}><SVGComponent clicked={loc == "SCA" ? true : false} svgURL="/competitions/states/SocalOutline.svg" hoverFill="lightblue"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NorCal")}}><SVGComponent clicked={loc == "NorCal" ? true : false} svgURL="/competitions/states/NorcalOutline.svg" hoverFill="red"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("SoCal")}}><SVGComponent clicked={loc == "SoCal" ? true : false} svgURL="/competitions/states/SocalOutline.svg" hoverFill="lightblue"/></button>
                 <!-- <button style="background:transparent; border-color:transparent;" on:click={handleClickCO}><SVGComponent svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill="orange"/></button> -->
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("GA")}}><SVGComponent clicked={loc == "GA" ? true : false} svgURL="/competitions/states/GeorgiaOutline.svg" hoverFill="orange"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("CO")}}><SVGComponent clicked={loc == "CO" ? true : false} svgURL="/competitions/states/ColoradoOutline.svg" hoverFill="hotpink"/></button>
@@ -145,19 +145,26 @@
         <div style="margin-left: 10vw; margin-right: 10vw;">
             <CardPanelBox initials="MM">
                 <div style="padding: 10px; padding-left: 30px; padding-top: 25px;">
-                <p>
-                    <strong>DATE:</strong> {data["Date"]} <br />
-                    <strong>TEAM SIZE:</strong> {data["TeamSize"]} <br />
-                    <strong>LOCATION:</strong> {data["Location"]}<br />
-                    <strong>EARLY EQUINE COST:</strong> ${data["EarlyEquineCost"]} per participant (Register before <strong>{data["EarlyEquineCostDate"]}</strong>)<br />
-                    <strong>NORMAL COST:</strong> ${data["NormalCost"]} per participant (Register before <strong>{data["NormalCostDate"]}</strong>)<br /> 
-                    <strong>LATE COST:</strong> ${data["LateCost"]}  per participant (Register before <strong>{data["LateCostDate"]}</strong>)<br /> <br />
-                    <!--<a href="https://tinyurl.com/MMT2024Registration" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>-->f
-                    <br /><br />
-                    <i><strong>*:</strong> Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4</i><br />
-                    <i><strong>Note for International Students:</strong> Students not in Canada or the United States should participate in the international version of our tournament being run by SIMCC. Email us at <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a> if you're interested.</i><br /><br />
-                    <i><strong>Note for Students in the US:</strong> Students living within 50 miles of our in-person sites <strong>must</strong> participate in person. If you have an extenuating circumstance that would prevent this please send an email to <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a>, and we may grant you permission to participate online.</i>
-                </p>
+                    <p>
+                        <strong>DATE:</strong> {data["Date"]} <br />
+                        <strong>TEAM SIZE:</strong> {data["TeamSize"]} <br />
+                        <strong>LOCATION:</strong> {data["Location"]}<br />
+                        <strong>EARLY EQUINE COST:</strong> ${data["EarlyEquineCost"]} per participant (Register before <strong>{data["EarlyEquineCostDate"]}</strong>)<br />
+                        <strong>NORMAL COST:</strong> ${data["NormalCost"]} per participant (Register before <strong>{data["NormalCostDate"]}</strong>)<br /> 
+                        <strong>LATE COST:</strong> ${data["LateCost"]}  per participant (Register before <strong>{data["LateCostDate"]}</strong>)<br />
+                    </p>
+                    <!-- Prominent Registration Button -->
+                    
+                    <p>
+                        <i><strong>*:</strong> Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4</i><br />
+                        <i><strong>Note for International Students:</strong> Students not in Canada or the United States should participate in the international version of our tournament being run by SIMCC. Email us at <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a> if you're interested.</i><br /><br />
+                        <i><strong>Note for Students in the US:</strong> Students living within 50 miles of our in-person sites <strong>must</strong> participate in person. If you have an extenuating circumstance that would prevent this please send an email to <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a>, and we may grant you permission to participate online.</i>
+                    </p>
+                    <div class="flex">
+                        <a class="join_now" href="https://comp.mt" target="_blank"
+                            >Register Now</a
+                        >
+                    </div>
                 </div>
             </CardPanelBox>
         </div> 
@@ -209,7 +216,7 @@
             <br />
             <FlipCard mainText="Answer Formatting Rules" id="showDropdown">
                 <ol>
-                    <li>Make sure you don’t have any extra calculations in your answers!</li>
+                    <li>Make sure you don't have any extra calculations in your answers!</li>
                     <ol type="a">
                         <li>For example, 78 and 2<sup>85</sup> is okay, but ½ + ⅓ is not</li>
                     </ol>
@@ -254,7 +261,7 @@
             <br />
             <FlipCard mainText="ROUND 2: Herding Hexes" id="showDropdown">
                 <ol>
-                    <li>The “Herding Hexes” Round will consist of 26 questions to be solved in 45 minutes.</li>
+                    <li>The "Herding Hexes" Round will consist of 26 questions to be solved in 45 minutes.</li>
                     <li>The questions will be laid out on a grid of connected hexagons, with more difficult problems being located furthest from the center.</li>
                     <li>Your score in the round will be determined by the problems you get correct, with bonus points available for having more correct answers connected within the grid!</li>
                     <li>You are not necessarily expected to solve all the questions in this round within the allotted time. Instead, we encourage you to strategize how you might use your time to maximize your points!</li>
@@ -358,4 +365,23 @@
         list-style-type: disc;
         margin-left: 20px;
     }
+
+    .join_now {
+		text-align: center;
+		color: white;
+		background-color: #1b9aaa;
+		border-radius: 200px;
+		text-decoration: none;
+		padding: 20px 50px;
+		width: fit-content;
+		font-size: 40px;
+		margin: 20px;
+		margin-bottom: 50px;
+		cursor: pointer;
+		transition: all 0.2s ease-out;
+	}
+
+	.join_now:hover {
+		background-color: #36bcce;
+	}
 </style>

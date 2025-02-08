@@ -29,7 +29,7 @@
 	<title>Competitions</title>
 </svelte:head>
 
-<PageHeader title="Competitions" description="Check Out Our Upcoming Competitions" button_url="https://contestdojo.com/" button_text="Register on ContestDojo!" button_id="registerOnContestDojo"/>
+<PageHeader title="Competitions" description="Check Out Our Upcoming Competitions" button_url="https://comp.mt/" button_text="Register on COMP!" button_id="registerOnContestDojo"/>
 <section style="padding: 30px;">
     {#each competitions as competition, i}
     <PanelBox>
