@@ -52,7 +52,7 @@
             <p class="descript" style="font-weight: 300; font-size: 22px; color: white;">{description}</p>
             <div class="flex">
                 <div class="topbuttons">
-                    <Link url={button_url} target={target} className="registrationButton" text={button_text} textColor="white" visitedColor="white" id={button_id} button_id={button_text} />
+                    <Link url={button_url} target={target} className="registrationButton" text={button_text} textColor="white" visitedColor="white" id={button_id} button_id={button_text}/>
                 </div>
             </div>
             {#if button2_url}
