@@ -24,6 +24,7 @@
   const TITLE_BREAKPOINT = MOBILE + 150;
 
   const navPages = [
+	{ path: "/competitions/mmt-2025", text: "MMT 2025", hasSubPages: false },
     {
       path: "/classes",
       text: "Classes",
@@ -35,7 +36,6 @@
         { path: "/classes/seminars", text: "Free Seminars" }
       ],
     },
-	{ path: "/competitions/mmt-2025", text: "MMT 2025", hasSubPages: false },
     { path: "/our-team", text: "Our Team", hasSubPages: false },
     { path: "/join", text: "Join Us", hasSubPages: false },
     { path: "/sponsors", text: "Sponsors", hasSubPages: false },
