@@ -56,7 +56,7 @@
           <div class="person-pic">
             <img
               class="person-img"
-              src={Member.pic1path}
+              src={ ( "/about-us-images/serious/" + Member.pic1path)}
               alt={Member.namef}
               width="130"
               height="130"
@@ -168,7 +168,7 @@
           {#if Member.pic2path}
             <img
               class="person-img"
-              src={Member.pic2path}
+              src={( "/about-us-images/silly/" + Member.pic2path)}
               alt={Member.namef}
               width="130"
               height="130"
@@ -177,7 +177,7 @@
           {:else}
             <img
               class="person-img"
-              src={Member.pic1path}
+              src={( "/about-us-images/serious/" + Member.pic1path)}
               alt={Member.namef}
               width="130"
               height="130"
