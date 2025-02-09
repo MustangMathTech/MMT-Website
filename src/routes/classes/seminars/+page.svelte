@@ -42,7 +42,8 @@
     let prevseminarData = [
         { "Past Seminar Topics": "Intro To Proofs", "Dates": "September 14-15, 2024", "Archived Material (Google Classroom)": "66q7ckx" },
         { "Past Seminar Topics": "AMC 10 Seminar", "Dates": "November 2-3, 2024", "Archived Material (Google Classroom)": "iyjksde" },
-        { "Past Seminar Topics": "AMC 8 Seminar", "Dates": "-------", "Archived Material (Google Classroom)": "-------" }
+        { "Past Seminar Topics": "AMC 8 Seminar", "Dates": "January 18-19, 2025", "Archived Material (Google Classroom)": "iyjksde" },
+        { "Past Seminar Topics": "MMT Prep Seminar", "Dates": "March 15-16, 2025", "Archived Material (Google Classroom)": "7sogth4" }
     ]
 
     onMount(() => {
@@ -111,26 +112,15 @@
 </div> 
 <br />
 <br />
-<Heading text="AMC 8 Seminar" size={2.5} textColor="#1B9AAA" />
+<Heading text="MMT Prep Seminar" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Looking for a final boost <strong>before the AMC 8</strong>? Mustang Math is excited 
-            to be offering a free 2-day AMC Seminar designed to sharpen your skills! These classes will take place the 
-            weekend before the AMC 8. <strong>See below for more details.</strong> <br /><br /><strong>Please join the <a href="https://classroom.google.com/c/NzA2OTY2MDcwMzAw?cjc=iyjksde">Google Classroom</a>
+        <p style="font-size: 1.5em; text-align: center;">Looking for a final boost before <strong>Mustang Math’s very own MMT</strong>? We are excited to be offering a free 2-day Prep Seminar designed to sharpen your skills! These classes will take place the weekend before our first tournament, on 3/15 and 3/16. 
+            <br /><br /><strong>Please join the <a href="https://classroom.google.com/c/NzQ5NDUyNDY2NjM1?cjc=7sogth4">Google Classroom</a>
             to gain access to the zoom link and class material!</strong> 
-            Let’s get ready for the AMC together!</p>
+            Let’s get ready for the MMT together!</p>
     </PanelBox>
 </div>
-<br />
-<br />
-<Heading text="AMC 8 Seminar Class Schedule" size={2.5} textColor="#1B9AAA" />
-<div class="schedule-wrapper">
-    <FlexBox>
-        <PanelBox>
-            <Table data={seminarData} width="auto" headerColor="#1B9AAA" rowColors={["#A4D6AF", "#ADCDD6"]} cellPadding={5} cellPaddingRight={20}/>
-        </PanelBox>
-    </FlexBox>
-</div> 
 <br />
 <br />
 <Heading text="Past Seminars" size={2.5} textColor="#1B9AAA" />
