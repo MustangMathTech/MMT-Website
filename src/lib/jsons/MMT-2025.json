@@ -44,7 +44,7 @@
 		"Date": "April 12th, 2025",
 		"scheduleData": [
 			{
-				"Day": "4/11-4/17",
+				"Day": "4/7-4/11",
 				"Time": "All Day",
 				"Event": "Problem of the Day"
 			},
@@ -188,7 +188,7 @@
 		"TeamSize": "3-4*",
 		"Location": "Coral Academy of Science Sandy Ridge Campus (1051 Sandy Ridge Ave, Henderson, NV 89052)",
 		"EarlyEquineCost": "15",
-		"EarlyEquineCostDate": "March 19th, 2025",
+		"EarlyEquineCostDate": "March 6th, 2025",
 		"NormalCost": "20",
 		"NormalCostDate": "March 23rd, 2025",
 		"LateCost": "25",
@@ -196,7 +196,7 @@
 		"Date": "April 6, 2025",
 		"scheduleData": [
 			{
-				"Day": "3/28-4/2",
+				"Day": "3/31-4/4",
 				"Time": "All Day",
 				"Event": "Problem of the Day"
 			},
