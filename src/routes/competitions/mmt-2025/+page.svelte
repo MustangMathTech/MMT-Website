@@ -115,6 +115,18 @@
     </div>
 </section>
 <br>
+<section id="MMT-Prep-Seminar">
+    <Heading text="Free MMT Prep Seminar" size={2.5} textColor="#1B9AAA" />
+    <div style="margin-left: 10vw; margin-right: 10vw;">
+        <CardPanelBox initials="MM">
+            <div style="padding: 20px;">
+                <p style="font-size: 1.5em; text-align: center;">We are holding a free MMT prep seminar from 3/15-3/16 to help students prepare for the upcoming tournament. Join the <a href="https://classroom.google.com/c/NzQ5NDUyNDY2NjM1?cjc=7sogth4">Google Classroom!</a></p>
+
+            </div>
+        </CardPanelBox>
+    </div>
+</section>
+<br>
 <section id="Competitions">
     <Heading text="Competitions" size={2.5} textColor="#1B9AAA" />
     <div style="margin-top:1%;"></div>
@@ -128,6 +140,7 @@
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("SoCal")}}><SVGComponent clicked={loc == "SoCal" ? true : false} svgURL="/competitions/states/SocalOutline.svg" hoverFill="lightblue"/></button>
                 <!-- <button style="background:transparent; border-color:transparent;" on:click={handleClickCO}><SVGComponent svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill="orange"/></button> -->
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("GA")}}><SVGComponent clicked={loc == "GA" ? true : false} svgURL="/competitions/states/GeorgiaOutline.svg" hoverFill="orange"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("WA")}}><SVGComponent clicked={loc == "WA" ? true : false} svgURL="/competitions/states/WashingtonOutline.svg" hoverFill="white"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("CO")}}><SVGComponent clicked={loc == "CO" ? true : false} svgURL="/competitions/states/ColoradoOutline.svg" hoverFill="hotpink"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NJ")}}><SVGComponent clicked={loc == "NJ" ? true : false} svgURL="/competitions/states/NewJerseyOutline.svg" hoverFill="yellow"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("O")}}><SVGComponent clicked={loc == "O" ? true : false} svgURL="/competitions/states/OnlineOutline.svg" hoverFill="lightgreen"/></button>

@@ -6,7 +6,7 @@
 		"TeamSize": "3-4*",
 		"Location": "San Jose High School (275 N 24th St, San Jose, CA 95116)",
 		"EarlyEquineCost": "15",
-		"EarlyEquineCostDate": "February 15th, 2025",
+		"EarlyEquineCostDate": "March 1st, 2025",
 		"NormalCost": "20",
 		"NormalCostDate": "March 15th, 2025",
 		"LateCost": "25",
@@ -14,7 +14,7 @@
 		"Date": "March 29, 2025",
 		"scheduleData": [
 			{
-				"Day": "4/24-3/28",
+				"Day": "3/24-3/28",
 				"Time": "All Day",
 				"Event": "Problem of the Day"
 			},
@@ -36,27 +36,27 @@
 		"TeamSize": "3-4*",
 		"Location": "Earl Warren Middle School (155 Stevens Ave, Solana Beach, CA 92075)",
 		"EarlyEquineCost": "15",
-		"EarlyEquineCostDate": "February 15th, 2025",
+		"EarlyEquineCostDate": "March 12th, 2025",
 		"NormalCost": "20",
 		"NormalCostDate": "March 29th, 2025",
 		"LateCost": "25",
 		"LateCostDate": "April 5th, 2025",
-		"Date": "March 29, 2025",
+		"Date": "April 12th, 2025",
 		"scheduleData": [
 			{
-				"Day": "3/24-3/28",
+				"Day": "4/11-4/17",
 				"Time": "All Day",
 				"Event": "Problem of the Day"
 			},
-			["3/29", "8:30 AM-9:00 AM", "Check-in"],
-			["3/29", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
-			["3/29", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
-			["3/29", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
-			["3/29", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
-			["3/29", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
-			["3/29", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
-			["3/29", "3:20 PM-4:30 PM", "Optional Activities"],
-			["3/29", "4:30 PM", "Awards Ceremony"]
+			["4/12", "8:30 AM-9:00 AM", "Check-in"],
+			["4/12", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
+			["4/12", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
+			["4/12", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
+			["4/12", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
+			["4/12", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
+			["4/12", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
+			["4/12", "3:20 PM-4:30 PM", "Optional Activities"],
+			["4/12", "4:30 PM", "Awards Ceremony"]
 		]
 	},
 	"GA": {
@@ -66,7 +66,7 @@
 		"TeamSize": "3-4*",
 		"Location": "4110 Carolene Way, Cumming, GA 30040",
 		"EarlyEquineCost": "15",
-		"EarlyEquineCostDate": "March 22nd, 2025",
+		"EarlyEquineCostDate": "March 19th, 2025",
 		"NormalCost": "20",
 		"NormalCostDate": "April 5th, 2025",
 		"LateCost": "25",
@@ -97,28 +97,28 @@
 		"TeamSize": "3-4*",
 		"Location": "Hinsdale Central High School (5500 S Grant St, Hinsdale IL)",
 		"EarlyEquineCost": "15",
-		"EarlyEquineCostDate": "February 15th, 2025",
+		"EarlyEquineCostDate": "February 22nd, 2025",
 		"NormalCost": "20",
-		"NormalCostDate": "March 15th, 2025",
+		"NormalCostDate": "March 8th, 2025",
 		"LateCost": "25",
-		"LateCostDate": "March 22nd, 2025",
-		"Date": "March 29, 2025",
+		"LateCostDate": "March 15th, 2025",
+		"Date": "March 22, 2025",
 		"Footer": "",
 		"scheduleData": [
 			{
-				"Day": "3/24-3/28",
+				"Day": "3/17-3/21",
 				"Time": "All Day",
 				"Event": "Problem of the Day"
 			},
-			["3/29", "8:30 AM-9:00 AM", "Check-in"],
-			["3/29", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
-			["3/29", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
-			["3/29", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
-			["3/29", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
-			["3/29", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
-			["3/29", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
-			["3/29", "3:20 PM-4:30 PM", "Optional Activities"],
-			["3/29", "4:30 PM", "Awards Ceremony"]
+			["3/22", "8:30 AM-9:00 AM", "Check-in"],
+			["3/22", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
+			["3/22", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
+			["3/22", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
+			["3/22", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
+			["3/22", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
+			["3/22", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
+			["3/22", "3:20 PM-4:30 PM", "Optional Activities"],
+			["3/22", "4:30 PM", "Awards Ceremony"]
 		]
 	},
 	"MA": {
@@ -128,7 +128,7 @@
 		"TeamSize": "3-4*",
 		"Location": "Thurston Middle School (850 High St, Westwood, MA 02090)",
 		"EarlyEquineCost": "15",
-		"EarlyEquineCostDate": "February 15th, 2025",
+		"EarlyEquineCostDate": "February 22nd, 2025",
 		"NormalCost": "20",
 		"NormalCostDate": "March 8th, 2025",
 		"LateCost": "25",
@@ -151,6 +151,36 @@
 			["3/22", "4:30 PM", "Awards Ceremony"]
 		]
 	},
+	"WA": {
+		"State": "WA",
+		"Statef": "Washington",
+		"email": "washington@mustangmath.com",
+		"TeamSize": "3-4*",
+		"Location": "Mill Creek Middle School(620 Central Ave N, Kent, WA 98032)",
+		"EarlyEquineCost": "15",
+		"EarlyEquineCostDate": "February 22th, 2025",
+		"NormalCost": "20",
+		"NormalCostDate": "March 15th, 2025",
+		"LateCost": "25",
+		"LateCostDate": "March 25th, 2025",
+		"Date": "March 29, 2025",
+		"scheduleData": [
+			{
+				"Day": "3/24-3/28",
+				"Time": "All Day",
+				"Event": "Problem of the Day"
+			},
+			["3/29", "8:30 AM-9:00 AM", "Check-in"],
+			["3/29", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
+			["3/29", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
+			["3/29", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
+			["3/29", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
+			["3/29", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
+			["3/29", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
+			["3/29", "3:20 PM-4:30 PM", "Optional Activities"],
+			["3/29", "4:30 PM", "Awards Ceremony"]
+		]
+	},
     "NV": {
 		"State": "NV",
 		"Statef": "Nevada",
@@ -158,7 +188,7 @@
 		"TeamSize": "3-4*",
 		"Location": "Coral Academy of Science Sandy Ridge Campus (1051 Sandy Ridge Ave, Henderson, NV 89052)",
 		"EarlyEquineCost": "15",
-		"EarlyEquineCostDate": "February 15th, 2025",
+		"EarlyEquineCostDate": "March 19th, 2025",
 		"NormalCost": "20",
 		"NormalCostDate": "March 23rd, 2025",
 		"LateCost": "25",
@@ -166,7 +196,7 @@
 		"Date": "April 6, 2025",
 		"scheduleData": [
 			{
-				"Day": "3/31-4/5",
+				"Day": "3/28-4/2",
 				"Time": "All Day",
 				"Event": "Problem of the Day"
 			},
@@ -188,27 +218,27 @@
 		"TeamSize": "3-4*",
 		"Location": "TBD",
 		"EarlyEquineCost": "15",
-		"EarlyEquineCostDate": "March 15th, 2025",
+		"EarlyEquineCostDate": "TBD",
 		"NormalCost": "20",
-		"NormalCostDate": "March 29th, 2025",
+		"NormalCostDate": "TBD",
 		"LateCost": "25",
-		"LateCostDate": "April 5th, 2025",
-		"Date": "April 12th, 2025",
+		"LateCostDate": "TBD",
+		"Date": "TBD",
 		"scheduleData": [
 			{
-				"Day": "4/14-4/18",
+				"Day": "TBD",
 				"Time": "All Day",
 				"Event": "Problem of the Day"
 			},
-			["4/20", "8:30 AM-9:00 AM", "Check-in"],
-			["4/20", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
-			["4/20", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
-			["4/20", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
-			["4/20", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
-			["4/20", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
-			["4/20", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
-			["4/20", "3:20 PM-4:30 PM", "Optional Activities"],
-			["4/20", "4:30 PM", "Awards Ceremony"]
+			["TBD", "8:30 AM-9:00 AM", "Check-in"],
+			["TBD", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
+			["TBD", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
+			["TBD", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
+			["TBD", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
+			["TBD", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
+			["TBD", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
+			["TBD", "3:20 PM-4:30 PM", "Optional Activities"],
+			["TBD", "4:30 PM", "Awards Ceremony"]
 		]
 	},
 	"NJ": {
@@ -216,29 +246,29 @@
 		"Statef": "New Jersey",
 		"email": "newjersey@mustangmath.com",
 		"TeamSize": "3-4*",
-		"Location": "TBD",
+		"Location": "Jackson Liberty High School (125 N Hope Chapel Rd, Jackson Township, NJ 08527)",
 		"EarlyEquineCost": "15",
-		"EarlyEquineCostDate": "March 15th, 2025",
+		"EarlyEquineCostDate": "March 1st, 2025",
 		"NormalCost": "20",
-		"NormalCostDate": "March 29th, 2025",
+		"NormalCostDate": "April 1st, 2025",
 		"LateCost": "25",
-		"LateCostDate": "April 5th, 2025",
-		"Date": "April 12th, 2025",
+		"LateCostDate": "April 20th, 2025",
+		"Date": "April 27th, 2025",
 		"scheduleData": [
 			{
-				"Day": "4/14-4/18",
+				"Day": "4/21-4/25",
 				"Time": "All Day",
 				"Event": "Problem of the Day"
 			},
-			["4/20", "8:30 AM-9:00 AM", "Check-in"],
-			["4/20", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
-			["4/20", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
-			["4/20", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
-			["4/20", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
-			["4/20", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
-			["4/20", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
-			["4/20", "3:20 PM-4:30 PM", "Optional Activities"],
-			["4/20", "4:30 PM", "Awards Ceremony"]
+			["4/27", "8:30 AM-9:00 AM", "Check-in"],
+			["4/27", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
+			["4/27", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
+			["4/27", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
+			["4/27", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
+			["4/27", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
+			["4/27", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
+			["4/27", "3:20 PM-4:30 PM", "Optional Activities"],
+			["4/27", "4:30 PM", "Awards Ceremony"]
 		]
 	},
 	"O": {
