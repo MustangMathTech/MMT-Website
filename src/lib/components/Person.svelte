@@ -72,9 +72,9 @@
               </BoopAction>
             </Tooltip>
 
-            <Tooltip title="Community Engagement">
+            <Tooltip title="Business Engagement">
               <BoopAction boopParams={{ y: 5, timing: 200 }}>
-                {#if Member.ce == true}
+                {#if Member.be == true}
                   <i
                     class="fa-solid fa-people-group icon community-engagement"
                   />
@@ -197,9 +197,9 @@
             </BoopAction>
           </Tooltip>
 
-          <Tooltip title="Community Engagement">
+          <Tooltip title="Business Engagement">
             <BoopAction boopParams={{ y: 5, timing: 200 }}>
-              {#if Member.ce == true}
+              {#if Member.be == true}
                 <i class="fa-solid fa-people-group icon community-engagement" />
               {/if}
             </BoopAction>
