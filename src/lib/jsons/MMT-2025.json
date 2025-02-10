@@ -140,15 +140,15 @@
 				"Time": "All Day",
 				"Event": "Problem of the Day"
 			},
-			["3/22", "8:30 AM-9:00 AM", "Check-in"],
-			["3/22", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
-			["3/22", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
-			["3/22", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
-			["3/22", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
-			["3/22", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
-			["3/22", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
-			["3/22", "3:20 PM-4:30 PM", "Optional Activities"],
-			["3/22", "4:30 PM", "Awards Ceremony"]
+			["3/22", "9:00 AM-9:30 AM", "Check-in"],
+			["3/22", "9:30 AM-10:00 AM", "Opening Ceremony & Contest Instructions"],
+			["3/22", "10:00 AM-11:25 AM", "Mounting Mayhem (75 minutes)"],
+			["3/22", "11:25 AM-12:35 PM", "Herding Hexes (60 minutes)"],
+			["3/22", "12:35 PM-1:30 PM", "Lunch Break (55 minutes)"],
+			["3/22", "1:30 PM-2:40 PM", "Mystery Mare (60 minutes)"],
+			["3/22", "2:40 PM-3:50 PM", "Gallop (60 minutes)"],
+			["3/22", "3:50 PM-5:00 PM", "Optional Activities"],
+			["3/22", "5:00 PM", "Awards Ceremony"]
 		]
 	},
 	"WA": {
