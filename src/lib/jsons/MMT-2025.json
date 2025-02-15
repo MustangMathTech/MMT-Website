@@ -36,27 +36,27 @@
 		"TeamSize": "3-4*",
 		"Location": "Earl Warren Middle School (155 Stevens Ave, Solana Beach, CA 92075)",
 		"EarlyEquineCost": "15",
-		"EarlyEquineCostDate": "March 12th, 2025",
+		"EarlyEquineCostDate": "March 26th, 2025",
 		"NormalCost": "20",
-		"NormalCostDate": "March 29th, 2025",
+		"NormalCostDate": "April 12th, 2025",
 		"LateCost": "25",
-		"LateCostDate": "April 5th, 2025",
-		"Date": "April 12th, 2025",
+		"LateCostDate": "April 19th, 2025",
+		"Date": "April 26th, 2025",
 		"scheduleData": [
 			{
-				"Day": "4/7-4/11",
+				"Day": "4/21-4/25",
 				"Time": "All Day",
 				"Event": "Problem of the Day"
 			},
-			["4/12", "8:30 AM-9:00 AM", "Check-in"],
-			["4/12", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
-			["4/12", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
-			["4/12", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
-			["4/12", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
-			["4/12", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
-			["4/12", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
-			["4/12", "3:20 PM-4:30 PM", "Optional Activities"],
-			["4/12", "4:30 PM", "Awards Ceremony"]
+			["4/26", "8:30 AM-9:00 AM", "Check-in"],
+			["4/26", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
+			["4/26", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
+			["4/26", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
+			["4/26", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
+			["4/26", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
+			["4/26", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
+			["4/26", "3:20 PM-4:30 PM", "Optional Activities"],
+			["4/26", "4:30 PM", "Awards Ceremony"]
 		]
 	},
 	"GA": {
@@ -218,27 +218,27 @@
 		"TeamSize": "3-4*",
 		"Location": "TBD",
 		"EarlyEquineCost": "15",
-		"EarlyEquineCostDate": "TBD",
+		"EarlyEquineCostDate": "March 12th, 2025",
 		"NormalCost": "20",
-		"NormalCostDate": "TBD",
+		"NormalCostDate": "March 29th, 2025",
 		"LateCost": "25",
-		"LateCostDate": "TBD",
-		"Date": "TBD",
+		"LateCostDate": "April 5th, 2025",
+		"Date": "April 12, 2025",
 		"scheduleData": [
 			{
-				"Day": "TBD",
+				"Day": "4/7-4/11",
 				"Time": "All Day",
 				"Event": "Problem of the Day"
 			},
-			["TBD", "8:30 AM-9:00 AM", "Check-in"],
-			["TBD", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
-			["TBD", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
-			["TBD", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
-			["TBD", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
-			["TBD", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
-			["TBD", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
-			["TBD", "3:20 PM-4:30 PM", "Optional Activities"],
-			["TBD", "4:30 PM", "Awards Ceremony"]
+			["4/12", "8:30 AM-9:00 AM", "Check-in"],
+			["4/12", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
+			["4/12", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
+			["4/12", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
+			["4/12", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
+			["4/12", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
+			["4/12", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
+			["4/12", "3:20 PM-4:30 PM", "Optional Activities"],
+			["4/12", "4:30 PM", "Awards Ceremony"]
 		]
 	},
 	"NJ": {
