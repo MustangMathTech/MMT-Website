@@ -115,12 +115,12 @@
     </div>
 </section>
 <br>
-<section id="MMT-Prep-Seminar">
+<section id="MMT Prep Seminar">
     <Heading text="Free MMT Prep Seminar" size={2.5} textColor="#1B9AAA" />
     <div style="margin-left: 10vw; margin-right: 10vw;">
         <CardPanelBox initials="MM">
             <div style="padding: 20px;">
-                <p style="font-size: 1.5em; text-align: center;">We are holding a free MMT prep seminar from 3/15-3/16 to help students prepare for the upcoming tournament. Join the <a href="https://classroom.google.com/c/NzQ5NDUyNDY2NjM1?cjc=7sogth4">Google Classroom!</a></p>
+                <p style="font-size: 1.5em; text-align: center;">We are holding a free MMT prep seminar from 3/15-3/16 to help students prepare for the upcoming tournament. <strong><a href="https://classroom.google.com/c/NzQ5NDUyNDY2NjM1?cjc=7sogth4">Join the Google Classroom!</a></strong></p>
 
             </div>
         </CardPanelBox>
