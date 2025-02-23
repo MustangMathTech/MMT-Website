@@ -35,8 +35,8 @@
     let y;
     
     let seminarData = [
-        { "Class": "1", "Dates": "Saturday, January 18", "Time (PT)": "4-6 PM", "Topics Covered": "Combinatorics and Number Theory" },
-        { "Class": "2", "Dates": "Sunday, January 19", "Time (PT)": "12-2 PM", "Topics Covered": "Geometry and Algebra" }
+        { "Class": "1", "Dates": "Saturday, March 15", "Time (PT)": "1-3 PM", "Topics Covered": "MMT 2020" },
+        { "Class": "2", "Dates": "Sunday, March 16", "Time (PT)": "3-5 PM", "Topics Covered": "MMT 2021" }
     ]
 
     let prevseminarData = [
@@ -100,7 +100,7 @@
 </div>
 -->
 
-<PageHeader title="Free Seminars" description="Beyond The School Curriculum" button_url="https://classroom.google.com/c/NzA2OTY2MDcwMzAw?cjc=iyjksde" button_text="Join the Google Classroom!" id="gclass"/>
+<PageHeader title="Free Seminars" description="Beyond The School Curriculum" button_url="https://classroom.google.com/c/NzQ5NDUyNDY2NjM1?cjc=7sogth4" button_text="Join the Google Classroom!" id="gclass"/>
 
 <br><br>
 
@@ -121,6 +121,16 @@
             Let’s get ready for the MMT together!</p>
     </PanelBox>
 </div>
+<br />
+<br />
+<Heading text="MMT Prep Seminar Class Schedule" size={2.5} textColor="#1B9AAA" />
+<div class="schedule-wrapper">
+    <FlexBox>
+        <PanelBox>
+            <Table data={seminarData} width="auto" headerColor="#1B9AAA" rowColors={["#A4D6AF", "#ADCDD6"]} cellPadding={5} cellPaddingRight={20}/>
+        </PanelBox>
+    </FlexBox>
+</div> 
 <br />
 <br />
 <Heading text="Past Seminars" size={2.5} textColor="#1B9AAA" />

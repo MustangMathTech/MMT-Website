@@ -1,6 +1,7 @@
 <script>
     import Heading from '$lib/components/Heading.svelte';
     import FlexBox from '$lib/components/FlexBox.svelte';
+    import Sidebar from '$lib/components/Sidebar.svelte';
     import Table from "$lib/components/Table.svelte";
     import PanelBox from '$lib/components/PanelBox.svelte';
     import Competition from '$lib/components/Competition.svelte';
@@ -41,15 +42,16 @@
     ]
     
     let topicsData = [
-        { "Week": "1", "Dates": "Jan 5 - Jan 11", "Beginner": "Lesson A", "Intermediate": "Lesson A + B" },
-        { "Week": "2", "Dates": "Jan 12 - Jan 18", "Beginner": "Problemset A", "Intermediate": "Problemset A + B" },
-        { "Week": "3", "Dates": "Jan 19 - Jan 25", "Beginner": "Lesson B", "Intermediate": "Lesson C + More Triangle Properties" },
-	    { "Week": "4", "Dates": "Jan 26 - Feb 1", "Beginner": "Problemset B", "Intermediate": "Problemset C + More Triangle Properties" },
-        { "Week": "5", "Dates": "Feb 2 - Feb 8", "Beginner": "Lesson C", "Intermediate": "Lesson D + More Circle Theorems" },
-        { "Week": "6", "Dates": "Feb 9 - Feb 15", "Beginner": "Problemset C", "Intermediate": "Problemset D + More Circle Theorems" },
-        { "Week": "7", "Dates": "Feb 16 - Feb 22", "Beginner": "Lesson D", "Intermediate": "Lesson E" },
-        { "Week": "8", "Dates": "Feb 23 - Mar 1", "Beginner": "Problemset D", "Intermediate": "Problemset E + Review" },
+        { "Week": "1", "Dates": "Apr 6 - Apr 12", "Beginner": "Divisibility, Multiples, Factors", "Intermediate": "Beginner Weeks 1-2" },
+        { "Week": "2", "Dates": "Apr 13 - Apr 19", "Beginner": "GCD/LCM, Modulo, Remainder Theorem", "Intermediate": "Beginner Weeks 3-4" },
+        { "Week": "3", "Dates": "Apr 20 - Apr 26", "Beginner": "Basic Lemmas, Divisibility Rules", "Intermediate": "Euclidean Algorithm, Chinese Remainder Theorem, Fermat’s Little Theorem" },
+        { "Week": "4", "Dates": "Apr 27 - May 3", "Beginner": "Modular Equivalences + Number Theory Review", "Intermediate": "Number Theory Review" },
+        { "Week": "5", "Dates": "May 4 - May 10", "Beginner": "Permutations and Combinations", "Intermediate": "Beginner Weeks 5-6" },
+        { "Week": "6", "Dates": "May 11 - May 17", "Beginner": "Committees, Complementary Counting, Counting Factors", "Intermediate": "Beginner Weeks 7-8" },
+        { "Week": "7", "Dates": "May 18 - May 24", "Beginner": "Principle of Inclusion Exclusion, Venn Diagrams", "Intermediate": "States and Combinatorial Identities" },
+        { "Week": "8", "Dates": "May 25 - May 31", "Beginner": "Conditional Probability", "Intermediate": "Combinatorics Review" },
     ]
+
 
     onMount(() => {
         if (windowWidth && windowWidth < 700) {
@@ -76,22 +78,31 @@
 	<title>Classes</title>
 </svelte:head>
 
-<PageHeader title="Classes" description="Online Math Contest Prep Classes" button_url="https://forms.gle/Vh8Qrv8Nbye5RfxY6" button_text="	Class Registration!	" id="register"/>
+<PageHeader title="Classes" description="Online Math Contest Prep Classes" button_url="https://forms.gle/FuBEBckKQm3QDJUz5" button_text="	Class Registration!	" id="register"/>
 
 <br><br>
 
 <Heading text="Summary" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><strong>Mustang Math Classes</strong> focus on <strong>competition math</strong> and are split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving, with each term running for <strong>8 weeks</strong>. Our upcoming <a href="#topicSection"><strong>Geometry term</strong></a> will alternate between <strong>lectures + problem solving</strong>, allowing for students to gain a stronger understanding of the material. A <strong>$10 gift card prize</strong> will be awarded to students who show diligent effort.</p>  
-        <p style="font-size: 1.5em; text-align: center;">Instructive sessions run for <strong>90 minutes</strong> every week over Zoom. Each class will have 10-15 students and 2 instructors.</p>
-        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions is <strong>$100</strong>, or all 32 sessions for <strong>$320</strong>. Financial aid is available upon request. As a nonprofit, we charge for our classes to improve our classes and tournaments. Furthermore, putting a price on our classes encourages students to stay committed. <a href="https://er.educause.edu/articles/2013/6/retention-and-intention-in-massive-open-online-courses-in-depth">Learn more</a>!</p> 
+        <p style="font-size: 1.5em; text-align: center;"><strong>Mustang Math Classes</strong> focus on <strong>competition math</strong> and are split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving, with each term running for <strong>8 weeks</strong>. Our upcoming <a href="#topicSection"><strong>Discrete term</strong></a> will alternate between <strong>lectures and problem solving</strong>, allowing for students to gain a stronger understanding of the material.</p>  
+        <p style="font-size: 1.5em; text-align: center;">Instructive sessions run for <strong>90 minutes</strong> every week over Zoom. Each class will have 5-15 students and 2 instructors.</p>
+        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions is <strong>$100</strong>, or all 32 sessions for <strong>$320</strong>. Financial aid is available upon request. As a nonprofit, we charge for our classes to improve our classes and tournaments. Furthermore, putting a price on our classes encourages students to <a href="https://er.educause.edu/articles/2013/6/retention-and-intention-in-massive-open-online-courses-in-depth">stay committed</a>.</p> 
     </PanelBox>
 </div> 
 <br />
 <br />
 
-<Heading text="Benefits of MM Classes" size={2.5} textColor="#1B9AAA" />
+<Heading text="Prizes" size={2.5} textColor="#1B9AAA" />
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox>
+        <p style="font-size: 1.5em; text-align: center;">All students who put in effort into our classes will receive a personalized certificate of completion and a <strong>$10 gift card!</strong> This means 100% class attendance and homework completion.</p> 
+    </PanelBox>
+</div> 
+<br />
+<br />
+
+<!--<Heading text="Benefits of MM Classes" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;" id="benefitsSection">
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;"><strong>Structure</strong></p>  
@@ -109,7 +120,17 @@
     </PanelBox>
 </div> 
 <br />
+<br /> -->
+
+<Heading text="Friend Referrals" size={2.5} textColor="#1B9AAA" />
+<div style="margin-left: 10vw; margin-right: 10vw;" id="benefitsSection">
+    <PanelBox>
+        <p style="font-size: 1.5em; text-align: center;">Mustang Math’s goal is to spread our love for math. We are offering a new friend referral program, for which if you refer a paying student to our classes, <strong>both you and the new student will receive a $10 gift card</strong> at the end of the term! This offer stacks, meaning the more friends you refer, the larger your discount will be.</p>  
+    </PanelBox>
+</div> 
 <br />
+<br />
+
 
 <Heading text="Topic-Based Courses" size={2.5} textColor="#1B9AAA" />
 <div class="competition-wrapper">
@@ -121,12 +142,12 @@
     </FlexBox>
 </div> <br />
 
-<h1 id="topicSection"><strong style="color: #1b9aaa;">Current Term: Geometry</strong></h1>
+<h1 id="topicSection"><strong style="color: #1b9aaa;">Current Term: Discrete</strong></h1>
 
 <Heading text="Class Details" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Our class will be on Geometry and will start on the week of <strong>January 5th, 2025</strong> and run through the week of <strong>February 23rd, 2025</strong>. We have two levels of classes: <strong>Beginner Geometry (AMC 8/10)</strong> and <strong>Intermediate Geometry (AMC 10/12/AIME)</strong>. Both classes will feature individualized feedback and problemsets with a diverse range of difficulty <a href="#benefitsSection">(see above)</a>. See below for the weekly schedule and breakdown of topics! If you're interested in participating, make sure to fill out the <a href="https://forms.gle/Vh8Qrv8Nbye5RfxY6"><strong>registration form</strong></a>. If you have any questions, please email <a href="mailto:classes@mustangmath.com">classes@mustangmath.com</a>.</p>
+        <p style="font-size: 1.5em; text-align: center;">This term will cover Discrete (Combinatorics and Number Theory). It will start on the week of <strong>April 6th</strong> and runs through the week of <strong>May 31st, 2025</strong>. We have two levels of classes: <strong>Beginner Discrete (AMC 8/10)</strong> and <strong>Intermediate Discrete (AMC 10/12/AIME)</strong>. See below for the weekly schedule and breakdown of topics! If you're interested in participating, make sure to fill out the <a href="https://forms.gle/FuBEBckKQm3QDJUz5"><strong>registration form</strong></a>. If you have any questions, please email <a href="mailto:classes@mustangmath.com">classes@mustangmath.com</a>.</p>
     </PanelBox>
 </div> <br />
 <br />
@@ -149,15 +170,12 @@
     <FlexBox>
         <PanelBox>
             <Table data={topicsData} width="auto" headerColor="#1B9AAA" rowColors={["#A4D6AF", "#ADCDD6"]} cellPadding={5} cellPaddingRight={20}/>
-            <p>A: Angles, Pythagorean Theorem, Similar and Congruent Triangles</p>
-            <p>B: Special Right Triangles, Quadrilaterals, Polygons</p>
-            <p>C: Triangle Centers, Area Formulas</p>
-            <p>D: Circles, Inscribed Angles, Power of a Point, Cyclic Quadrilaterals</p>
-            <p>E: 3D Geometry, Coordinate Bashing</p>
         </PanelBox>
     </FlexBox>
 </div> <br />
 <br />
+
+<!--<Sidebar />-->
 
 <style>
     strong {
