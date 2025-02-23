@@ -325,7 +325,7 @@ bind:innerHeight={windowHeight} />
 
 
     <div class="homeText">
-        As MM gears up for the upcoming year, we plan to host an individual tournament this fall, a proof based tournament after that, along with our flagship team-based Mustang Math Tournament [MMT]. MMT is our focal point, and we plan to have twelve in-person locations in addition to an online tournament in the upcoming year. This is an international math tournament for the middle school level that features a variety of interesting rounds designed to not only test mathematical ability, but also promote collaboration and be enjoyable for the participants. 
+        As MM gears up for the upcoming year, we plan to host our flagship team-based Mustang Math Tournament [MMT] along with a proof based tournament and an individual tournament this fall. MMT is our focal point, and we plan to have twelve in-person locations in addition to an online tournament in the upcoming year. This is an international math tournament for the middle school level that features a variety of interesting rounds designed to not only test mathematical ability, but also promote collaboration and be enjoyable for the participants. 
     </div>
 
 <!-- Add button here -->
