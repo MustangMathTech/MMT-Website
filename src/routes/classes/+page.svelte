@@ -49,7 +49,7 @@
         { "Week": "5", "Dates": "May 4 - May 10", "Beginner": "Permutations and Combinations", "Intermediate": "Beginner Weeks 5-6" },
         { "Week": "6", "Dates": "May 11 - May 17", "Beginner": "Committees, Complementary Counting, Counting Factors", "Intermediate": "Beginner Weeks 7-8" },
         { "Week": "7", "Dates": "May 18 - May 24", "Beginner": "Principle of Inclusion Exclusion, Venn Diagrams", "Intermediate": "States and Combinatorial Identities" },
-        { "Week": "8", "Dates": "May 25 - May 31", "Beginner": "Conditional Probability", "Intermediate": "Combinatorics Review" },
+        { "Week": "8", "Dates": "May 25 - May 31", "Beginner": "Conditional Probability + Combinatorics Review", "Intermediate": "Combinatorics Review" },
     ]
 
 
@@ -85,7 +85,7 @@
 <Heading text="Summary" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><strong>Mustang Math Classes</strong> focus on <strong>competition math</strong> and are split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving, with each term running for <strong>8 weeks</strong>. Our upcoming <a href="#topicSection"><strong>Discrete term</strong></a> will alternate between <strong>lectures and problem solving</strong>, allowing for students to gain a stronger understanding of the material.</p>  
+        <p style="font-size: 1.5em; text-align: center;"><strong>Mustang Math Classes</strong> focus on <strong>competition math</strong> and are split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving, with each term running for <strong>8 weeks</strong>. Our upcoming <a href="#topicSection"><strong>Discrete term</strong></a>, allowing for students to gain a stronger understanding of the material.</p>  
         <p style="font-size: 1.5em; text-align: center;">Instructive sessions run for <strong>90 minutes</strong> every week over Zoom. Each class will have 5-15 students and 2 instructors.</p>
         <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions is <strong>$100</strong>, or all 32 sessions for <strong>$320</strong>. Financial aid is available upon request. As a nonprofit, we charge for our classes to improve our classes and tournaments. Furthermore, putting a price on our classes encourages students to <a href="https://er.educause.edu/articles/2013/6/retention-and-intention-in-massive-open-online-courses-in-depth">stay committed</a>.</p> 
     </PanelBox>
