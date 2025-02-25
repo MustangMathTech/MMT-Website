@@ -336,7 +336,7 @@ bind:innerHeight={windowHeight} />
     <Heading text="Classes" size={4} textColor="#3C6F8B;" />
 
     <div class="homeText">
-        <strong>Mustang Math Classes</strong> focus on <strong>competition math</strong> and are split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving, with each term running for <strong>8 weeks</strong>. Our upcoming <a href="/classes#topicSection"><strong>Discrete term</strong></a>, allowing for students to gain a stronger understanding of the material.
+        <strong>Mustang Math Classes</strong> focus on <strong>competition math</strong> and are split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving, with each term running for <strong>8 weeks</strong>. Our upcoming <a href="/classes#topicSection"><strong>Discrete term</strong></a> will focus on both lectures and problem solving, allowing for students to gain a strong understanding of the material.
     </div>
 
     <div class="homeText">

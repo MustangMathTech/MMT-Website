@@ -85,7 +85,7 @@
 <Heading text="Summary" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><strong>Mustang Math Classes</strong> focus on <strong>competition math</strong> and are split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving, with each term running for <strong>8 weeks</strong>. Our upcoming <a href="#topicSection"><strong>Discrete term</strong></a>, allowing for students to gain a stronger understanding of the material.</p>  
+        <p style="font-size: 1.5em; text-align: center;"><strong>Mustang Math Classes</strong> focus on <strong>competition math</strong> and are split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving, with each term running for <strong>8 weeks</strong>. Our upcoming <a href="#topicSection"><strong>Discrete term</strong></a> will focus on both lectures and problem solving, allowing for students to gain a strong understanding of the material.</p>  
         <p style="font-size: 1.5em; text-align: center;">Instructive sessions run for <strong>90 minutes</strong> every week over Zoom. Each class will have 5-15 students and 2 instructors.</p>
         <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions is <strong>$100</strong>, or all 32 sessions for <strong>$320</strong>. Financial aid is available upon request. As a nonprofit, we charge for our classes to improve our classes and tournaments. Furthermore, putting a price on our classes encourages students to <a href="https://er.educause.edu/articles/2013/6/retention-and-intention-in-massive-open-online-courses-in-depth">stay committed</a>.</p> 
     </PanelBox>
