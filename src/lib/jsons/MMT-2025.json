@@ -248,7 +248,7 @@
 		"TeamSize": "3-4*",
 		"Location": "Jackson Liberty High School (125 N Hope Chapel Rd, Jackson Township, NJ 08527)",
 		"EarlyEquineCost": "15",
-		"EarlyEquineCostDate": "March 1st, 2025",
+		"EarlyEquineCostDate": "March 10th, 2025",
 		"NormalCost": "20",
 		"NormalCostDate": "April 1st, 2025",
 		"LateCost": "25",
@@ -278,27 +278,27 @@
 		"TeamSize": "3-4*",
 		"Location": "Online",
 		"EarlyEquineCost": "10",
-		"EarlyEquineCostDate": "March 19th, 2025",
+		"EarlyEquineCostDate": "March 26th, 2025",
 		"NormalCost": "15",
-		"NormalCostDate": "April 5th, 2025",
+		"NormalCostDate": "April 12th, 2025",
 		"LateCost": "20",
-		"LateCostDate": "April 12th, 2025",
-		"Date": "April 19, 2025",
+		"LateCostDate": "April 19th, 2025",
+		"Date": "April 26, 2025",
 		"scheduleData": [
 			{
-				"Day": "4/14-4/18",
+				"Day": "4/21-4/25",
 				"Time (PT)": "All Day",
 				"Event": "Problem of the Day"
 			},
-			["4/19", "8:30 AM-9:00 AM", "Check-in"],
-			["4/19", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
-			["4/19", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
-			["4/19", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
-			["4/19", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
-			["4/19", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
-			["4/19", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
-			["4/19", "3:20 PM-4:30 PM", "Optional Activities"],
-			["4/19", "4:30 PM", "Awards Ceremony"]
+			["4/26", "8:30 AM-9:00 AM", "Check-in"],
+			["4/26", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
+			["4/26", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
+			["4/26", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
+			["4/26", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
+			["4/26", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
+			["4/26", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
+			["4/26", "3:20 PM-4:30 PM", "Optional Activities"],
+			["4/26", "4:30 PM", "Awards Ceremony"]
 		]
 	}
 }
