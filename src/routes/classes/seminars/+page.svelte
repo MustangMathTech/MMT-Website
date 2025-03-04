@@ -35,8 +35,8 @@
     let y;
     
     let seminarData = [
-        { "Class": "1", "Dates": "Saturday, March 15", "Time (PT)": "1-3 PM", "Topics Covered": "MMT 2020" },
-        { "Class": "2", "Dates": "Sunday, March 16", "Time (PT)": "3-5 PM", "Topics Covered": "MMT 2021" }
+        { "Class": "1", "Dates": "Saturday, March 15", "Time (PT)": "1-3 PM", "Topics Covered": "Beginner" },
+        { "Class": "2", "Dates": "Sunday, March 16", "Time (PT)": "3-5 PM", "Topics Covered": "Intermediate" }
     ]
 
     let prevseminarData = [
