@@ -36,7 +36,7 @@ https://link.mustangmath.com/donate" button_text="Donate to Mustang Math!" butto
     <FlexBox>
         <PanelBox width="60%" style="min-width: 360px;">
             <p style="font-size: 1.2em; margin: 5px">All donations made to Mustang Math may be tax-deductible. Any donations upwards of $250 will be provided a receipt (contemporaneous written acknowledgement)
-                for presentation to the IRS. You can either donate through <a href="link.mustangmath.com/donate">PayPal</a>, or by mailing a check made out to Mustang Math at <b>8139 231st PL NE, Redmond WA 98053</b>. 
+                for presentation to the IRS. You can either donate through <a href="https://www.paypal.com/us/fundraiser/charity/4676911">PayPal</a>, or by mailing a check made out to Mustang Math at <b>8139 231st PL NE, Redmond WA 98053</b>. 
                 If you have any questions, don't hesitate to <a href="mailto:contact@mustangmath.com">email us</a>.
             </p>
         </PanelBox>
