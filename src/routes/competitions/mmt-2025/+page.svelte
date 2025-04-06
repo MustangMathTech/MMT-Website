@@ -164,8 +164,7 @@
                         <strong>LOCATION:</strong> {data["Location"]}<br />
                         <strong>EARLY EQUINE COST:</strong> ${data["EarlyEquineCost"]} per participant (Register before <strong>{data["EarlyEquineCostDate"]}</strong>)<br />
                         <strong>NORMAL COST:</strong> ${data["NormalCost"]} per participant (Register before <strong>{data["NormalCostDate"]}</strong>)<br /> 
-                        <strong>LATE COST:</strong> ${data["LateCost"]}  per participant (Register before <strong>{data["LateCostDate"]}</strong>)<br />
-                        <strong>EMAIL US AT:</strong> <a href="mailto:{data["email"]}">{data["email"]}</a><br />
+                        {#if data["State"] != "CO"}<strong>LATE COST:</strong> ${data["LateCost"]}  per participant (Register before <strong>{data["LateCostDate"]}</strong>)<br />{/if}
                     </p>
                     <!-- Prominent Registration Button -->
                     
