@@ -162,7 +162,7 @@
                         <strong>DATE:</strong> {data["Date"]} <br />
                         <strong>TEAM SIZE:</strong> {data["TeamSize"]} <br />
                         <strong>LOCATION:</strong> {data["Location"]}<br />
-                        <strong>EARLY EQUINE COST:</strong> ${data["EarlyEquineCost"]} per participant (Register before <strong>{data["EarlyEquineCostDate"]}</strong>)<br />
+                        {#if data["State"] != "NV"}<strong>EARLY EQUINE COST:</strong> ${data["EarlyEquineCost"]} per participant (Register before <strong>{data["EarlyEquineCostDate"]}</strong>)<br />{/if}
                         <strong>NORMAL COST:</strong> ${data["NormalCost"]} per participant (Register before <strong>{data["NormalCostDate"]}</strong>)<br /> 
                         {#if data["State"] != "CO"}<strong>LATE COST:</strong> ${data["LateCost"]}  per participant (Register before <strong>{data["LateCostDate"]}</strong>)<br />{/if}
                     </p>

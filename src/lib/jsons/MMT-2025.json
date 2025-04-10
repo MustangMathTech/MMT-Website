@@ -218,12 +218,12 @@
 		"TeamSize": "3-4*",
 		"Location": "Boulder/Broomfield, school TBD",
 		"EarlyEquineCost": "15",
-		"EarlyEquineCostDate": "April 12th, 2025",
+		"EarlyEquineCostDate": "April 15th, 2025",
 		"NormalCost": "20",
-		"NormalCostDate": " April 19th, 2025",
+		"NormalCostDate": " April 23rd, 2025",
 		"LateCost": "25",
-		"LateCostDate": "TBD",
-		"Date": "April 26th, 2025",
+		"LateCostDate": "N/A",
+		"Date": "N/A",
 		"scheduleData": [
 			{
 				"Day": "4/26",
