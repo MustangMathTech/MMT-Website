@@ -133,7 +133,6 @@
     <div class="competition-wrapper">
             <p style="font-size: 2em; text-align: center;">Select your location to see more information!</p>
             <FlexBox align="start">
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("CO")}}><SVGComponent clicked={loc == "CO" ? true : false} svgURL="/competitions/states/ColoradoOutline.svg" hoverFill="hotpink"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NorCal")}}><SVGComponent clicked={loc == "NorCal" ? true : false} svgURL="/competitions/states/NorcalOutline.svg" hoverFill="red"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("SoCal")}}><SVGComponent clicked={loc == "SoCal" ? true : false} svgURL="/competitions/states/SocalOutline.svg" hoverFill="lightblue"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("GA")}}><SVGComponent clicked={loc == "GA" ? true : false} svgURL="/competitions/states/GeorgiaOutline.svg" hoverFill="orange"/></button>
