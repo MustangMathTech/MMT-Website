@@ -64,10 +64,11 @@
     year="2024"
     tests={[
       [
-        ["Slitherlink"],
+        ["Mounting Mayhem"],
         ["Rules", "archive/2024/Rules_Sheet_Slitherlink.pdf"],
         ["Puzzles", "archive/2024/Puzzles_Slitherlink_MMT_2024.pdf"],
         ["Answer Sheet", "archive/2024/Answer_Sheet_Slitherlink.pdf"],
+        ["Answers", "archive/2024/Mounting_Mayhem_Answers.pdf"],
       ], 
       [
         ["Herding Hexes [Foal]"],
@@ -106,17 +107,20 @@
       [
         ["Gallop [Foal]"],
         ["Problems", "archive/2024/Gallop_Foal.pdf"],
-        // ["Answers", "archive/2024/Gallop_Foal_Answers.pdf"] # We don't have these
+        ["Answers", "archive/2024/Gallop_Foal_Answers.pdf"],
+        ["Solutions", "archive/2024/Gallop_Foal_Solutions.pdf"]
       ],
       [
         ["Gallop [Colt]"],
         ["Problems", "archive/2024/Gallop_Colt.pdf"],
-        // ["Answers", "archive/2024/Gallop_Colt_Answers.pdf"]
+        ["Answers", "archive/2024/Gallop_Colt_Answers.pdf"],
+        ["Solutions", "archive/2024/Gallop_Colt_Solutions.pdf"]
       ],
       [
         ["Gallop [Stallion]"],
         ["Problems", "archive/2024/Gallop_Stallion.pdf"],
-        // ["Answers", "archive/2024/Gallop_Stallion_Answers.pdf"]
+        ["Answers", "archive/2024/Gallop_Stallion_Answers.pdf"],
+        ["Solutions", "archive/2024/Gallop_Stallion_Solutions.pdf"]
       ]
     ]}
   />
