@@ -14,13 +14,14 @@
 <svelte:window bind:innerWidth={windowWidth} />
 
 <PageHeader
+	
 	title="Join Mustang Math"
 	description="Spread our Mission!"
-	button_url="https://tinyurl.com/MMRegionDirectorRecruitment"
-	button_text="Start MMT in your Area"
-	button2_url="https://link.mustangmath.com/RecruitmentInfo"
-	button2_text="Join Our Teams"
+	button_url="https://link.mustangmath.com/RecruitmentInfo"
+	button_text="Join Our Teams"
 	id="joinTheMustangMathTeam"
+	button2_url="https://tinyurl.com/MMRegionDirectorRecruitment"
+	button2_text="Start MMT in your Area"
 />
 <br /> <br />
 
@@ -34,24 +35,22 @@
 			middle schoolers access to challenging, interesting, fun, and
 			collaborative math competitions and resources! We are the organizers of
 			the annual <b style="color: #1B9AAA;">Mustang Math Tournament</b>
-			as well as our individual 3MT, run low-cost and high-quality
+			as well as our individual MMM, run low-cost and high-quality
 			<b style="color: #1B9AAA;">mathematics teaching</b>
 			and are also working on many new and exciting projects such as building an online test-taking platform, 
-			creating our own math curriculum and books, and expanding
+			creating AMC and MATHCOUNTS mocks, and expanding
 			our social media reach! We reached
-			<b style="color: #1B9AAA;">almost 600 U.S. competitors</b> across our 6 locations of MMT 2024
+			<b style="color: #1B9AAA;">almost 900 U.S. competitors</b> across our 9 locations of MMT 2025
 			contests, and we're expecting many more in our international tournament this
 			upcoming August. We are excited to expand our team to continue our mission
 			of spreading a love for mathematics amongst students.
 		</p>
 		<p style="font-size: 1.5em; text-align: center;">
-			We're currently looking for motivated high school students to <b style="color: #1B9AAA;">start a Mustang Math Tournament</b> in your area! By joining our team, 
-			we will give you the guidance and resources that you need to run your own MMT, including building a team of volunteers, finding a location, marketing, and much more!
-			To apply and learn more, click below!
+			We're currently looking for motivated high school students to <b style="color: #1B9AAA;">join our team!</b>
 		</p>
 		<div class="flex">
-			<a class="join_now" href="https://tinyurl.com/MMRegionDirectorRecruitment" target="_blank"
-				>Start your own MMT Contest</a
+			<a class="join_now" href="https://link.mustangmath.com/RecruitmentInfo" target="_blank"
+				>Join our teams</a
 			>
 		</div>
 	</PanelBox>
@@ -66,13 +65,7 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
 	<PanelBox>
 		<p style="font-size: 1.5em; text-align: center;">
-			You should join Mustang Math if you are in high school or college and are
-			passionate about promoting an interest in competition math to younger
-			students!
-		</p>
-		<p style="font-size: 1.5em; text-align: center;">
-			A lot of our members currently cite that they joined Mustang Math because
-			they want to share the love they have of <b style="color: #1B9AAA;"
+			You should join Mustang Math if you are in high school or college and want to share the love you have for <b style="color: #1B9AAA;"
 				>competition math</b
 			>
 			and the
@@ -86,6 +79,10 @@
 			all while learning <b style="color: #1B9AAA;">real-life skills</b> such as
 			teamwork, time management, and how to see a project through to completion.
 		</p>
+		<p style="font-size: 1.5em; text-align: center;">
+			Our <b style="color: #1B9AAA;">wide plethora of teams and projects</b> means you can find things to work on that are interesting and exciting to you. There are both math-inclined teams (Curriculum Development, Problem Writing), and non-math related teams (Tech, Design, Tournament Development, Business and Engagement). We welcome <b style="color: #1B9AAA;">all interested high schoolers to join</b>, no matter your experience with math!
+
+		</p>
 		
 	</PanelBox>
 </div>
@@ -95,7 +92,7 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
 	<PanelBox>
 		<p style="font-size: 1.5em; text-align: center;">
-			For 2024-2025, we are looking to expand our in-person tournaments to include:
+			For 2025-2026, we are looking to expand our in-person tournaments to include:
 		</p>
 		<ul>
 			<li>Washington (Seattle)</li>
@@ -112,11 +109,22 @@
 			<li>Colorado (Denver)</li>
 		</ul>
 		<p style="font-size: 1.5em; text-align: center;">
-			These locations would be responsible for running an in-person location of MMT 2025 to the students
+			These locations would be responsible for running an in-person location of MMT 2026 to the students
 			from their state and nearby areas, and will also receive support from
 			Mustang Math to run other similar events. If you're from these areas and
 			want to help give a wonderful contest experience to your local middle
-			school students, highly consider joining!
+			school students, definitely consider joining!  If you are not from these areas, 
+			we are also looking for people to <b style="color: #1B9AAA;">start a Mustang Math Tournament</b> in their area! 
+			By joining our team, we will give you the guidance and resources that you need to run your own MMT, 
+			including building a team of volunteers, finding a location, marketing, and much more. To apply and see more details, click below!
+		</p>
+		<div class="flex">
+			<a class="join_now" href="https://tinyurl.com/MMRegionDirectorRecruitment" target="_blank"
+			>Start your own MMT Contest</a
+			>
+		</div>
+		<p style="font-size: 1.5em; text-align: center;">
+			If you aren't from these regions, remember that our teams are open to anyone interested!
 		</p>
 	</PanelBox>
 </div>

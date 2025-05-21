@@ -61,14 +61,14 @@ bind:innerHeight={windowHeight} />
   
                 <div class="flex"><div class="headerline" /></div>
                     <br>
-                    <a sveltekit:prefetch href="/competitions/mmt-2025" class="headerButton">
+                    <a sveltekit:prefetch href="/join" class="headerButton">
                         <div
                             class="headerButton"
                             on:mouseenter={toggleBackground}
                             on:mouseleave={toggleBackground}
                         >
                             <p class="headerButton" id="signupformmt">
-                                Register for MMT 2025!
+                                Join our team!
                             </p>
                             <img
                                 height="25px"
