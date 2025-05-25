@@ -12,12 +12,6 @@
 
 	const tournaments = [
 		{
-			name: "Mustang Math Mania (M^3)",
-			date: "9/28/2024",
-			description:
-				"Includes a week-long proof-based contest prior to contest day followed by a series of individual and team rounds including a standard individual round, a time based, intensive round called Mustang Meltdown and a strategic betting round, Betting Bonanza, where contestants wager points to different problems sets to maximize their score..",
-		},
-		{
 			name: "MMT (Mustang Math Tournament)",
 			date: "Spring 2025",
 			description:
@@ -27,6 +21,12 @@
 			name: "MMT (International)",
 			date: "Summer 2025",
 			description: "International version of MMT.",
+		},
+		{
+			name: "Mustang Math Mania (M^3)",
+			date: "Fall 2025",
+			description:
+				"Includes a week-long proof-based contest prior to contest day followed by a series of individual and team rounds including a standard individual round, a time based, intensive round called Mustang Meltdown and a strategic betting round, Betting Bonanza, where contestants wager points to different problems sets to maximize their score..",
 		},
 	];
 

@@ -1,13 +1,13 @@
 [
   {
     "priority": 1,
-    "org": "Director",
+    "org": "Directors",
     "pw": "Leads",
     "t": "Leads",
     "d": "Leads",
     "td": "National Leads",
     "cd": "Leads",
-    "ce": "Leads",
+    "be": "Leads",
     "vp": "Leads"
   },
   {
@@ -15,13 +15,16 @@
     "org": "Leadership",
     "pw": "Test Coordinators",
     "t": "Project Leads",
-    "td": "State Leads"
+    "td": "State Leads",
+    "cd": "Instructors"
   },
   {
-    "priority": 3
+    "priority": 3,
+    "cd": "TAs"
   },
   {
-    "priority": 4
+    "priority": 4,
+     "cd": "Tutors"
   },
   {
     "priority": 5,
@@ -31,7 +34,7 @@
     "d": "Designers",
     "td": "Organizers",
     "cd": "Educators",
-    "ce": "Community Engagers",
+    "be": "Business Engagers",
     "vp": "Content Creators"
   }
 ]

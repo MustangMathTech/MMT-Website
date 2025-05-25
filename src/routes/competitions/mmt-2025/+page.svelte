@@ -115,22 +115,34 @@
     </div>
 </section>
 <br>
+<section id="MMT Prep Seminar">
+    <Heading text="Free MMT Prep Seminar" size={2.5} textColor="#1B9AAA" />
+    <div style="margin-left: 10vw; margin-right: 10vw;">
+        <CardPanelBox initials="MM">
+            <div style="padding: 20px;">
+                <p style="font-size: 1.5em; text-align: center;">We are holding a free MMT prep seminar from 3/15-3/16 to help students prepare for the upcoming tournament. <strong><a href="https://classroom.google.com/c/NzQ5NDUyNDY2NjM1?cjc=7sogth4">Join the Google Classroom!</a></strong></p>
+
+            </div>
+        </CardPanelBox>
+    </div>
+</section>
+<br>
 <section id="Competitions">
     <Heading text="Competitions" size={2.5} textColor="#1B9AAA" />
     <div style="margin-top:1%;"></div>
     <div class="competition-wrapper">
             <p style="font-size: 2em; text-align: center;">Select your location to see more information!</p>
             <FlexBox align="start">
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("IL")}}><SVGComponent clicked={loc == "IL" ? true : false} svgURL="/competitions/states/IllinoisOutline.svg" hoverFill="green"/></button>
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("MA")}}><SVGComponent clicked={loc == "MA" ? true : false} svgURL="/competitions/states/MassachusettsOutline.svg" hoverFill="blue"/></button>
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NV")}}><SVGComponent clicked={loc == "NV" ? true : false} svgURL="/competitions/states/NevadaOutline.svg" hoverFill="purple"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NorCal")}}><SVGComponent clicked={loc == "NorCal" ? true : false} svgURL="/competitions/states/NorcalOutline.svg" hoverFill="red"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("SoCal")}}><SVGComponent clicked={loc == "SoCal" ? true : false} svgURL="/competitions/states/SocalOutline.svg" hoverFill="lightblue"/></button>
-                <!-- <button style="background:transparent; border-color:transparent;" on:click={handleClickCO}><SVGComponent svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill="orange"/></button> -->
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("GA")}}><SVGComponent clicked={loc == "GA" ? true : false} svgURL="/competitions/states/GeorgiaOutline.svg" hoverFill="orange"/></button>
-                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("CO")}}><SVGComponent clicked={loc == "CO" ? true : false} svgURL="/competitions/states/ColoradoOutline.svg" hoverFill="hotpink"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("IL")}}><SVGComponent clicked={loc == "IL" ? true : false} svgURL="/competitions/states/IllinoisOutline.svg" hoverFill="green"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("MA")}}><SVGComponent clicked={loc == "MA" ? true : false} svgURL="/competitions/states/MassachusettsOutline.svg" hoverFill="blue"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NJ")}}><SVGComponent clicked={loc == "NJ" ? true : false} svgURL="/competitions/states/NewJerseyOutline.svg" hoverFill="yellow"/></button>
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NV")}}><SVGComponent clicked={loc == "NV" ? true : false} svgURL="/competitions/states/NevadaOutline.svg" hoverFill="purple"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("O")}}><SVGComponent clicked={loc == "O" ? true : false} svgURL="/competitions/states/OnlineOutline.svg" hoverFill="lightgreen"/></button>
+                <!-- <button style="background:transparent; border-color:transparent;" on:click={handleClickCO}><SVGComponent svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill="orange"/></button> -->
+                <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("WA")}}><SVGComponent clicked={loc == "WA" ? true : false} svgURL="/competitions/states/WashingtonOutline.svg" hoverFill="white"/></button>
                 
             </FlexBox>
     </div> 
@@ -149,9 +161,9 @@
                         <strong>DATE:</strong> {data["Date"]} <br />
                         <strong>TEAM SIZE:</strong> {data["TeamSize"]} <br />
                         <strong>LOCATION:</strong> {data["Location"]}<br />
-                        <strong>EARLY EQUINE COST:</strong> ${data["EarlyEquineCost"]} per participant (Register before <strong>{data["EarlyEquineCostDate"]}</strong>)<br />
+                        {#if data["State"] != "NV"}<strong>EARLY EQUINE COST:</strong> ${data["EarlyEquineCost"]} per participant (Register before <strong>{data["EarlyEquineCostDate"]}</strong>)<br />{/if}
                         <strong>NORMAL COST:</strong> ${data["NormalCost"]} per participant (Register before <strong>{data["NormalCostDate"]}</strong>)<br /> 
-                        <strong>LATE COST:</strong> ${data["LateCost"]}  per participant (Register before <strong>{data["LateCostDate"]}</strong>)<br />
+                        {#if data["State"] != "CO"}<strong>LATE COST:</strong> ${data["LateCost"]}  per participant (Register before <strong>{data["LateCostDate"]}</strong>)<br />{/if}
                     </p>
                     <!-- Prominent Registration Button -->
                     
