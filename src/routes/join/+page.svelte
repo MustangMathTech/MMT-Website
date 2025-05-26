@@ -20,7 +20,7 @@
 	button_url="https://link.mustangmath.com/RecruitmentInfo"
 	button_text="Join Our Teams"
 	id="joinTheMustangMathTeam"
-	button2_url="https://tinyurl.com/MMRegionDirectorRecruitment"
+	button2_url="https://docs.google.com/forms/d/e/1FAIpQLSdO-bYRgXo9rh3z_HTZs4yQ1ebf81XyRZiPPqiYiLFZMFDAdQ/viewform"
 	button2_text="Start MMT in your Area"
 />
 <br /> <br />
