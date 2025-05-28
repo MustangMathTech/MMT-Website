@@ -64,7 +64,7 @@
     year="2024"
     tests={[
       [
-        ["Slitherlink"],
+        ["Mounting Mayhem"],
         ["Rules", "archive/2024/Rules_Sheet_Slitherlink.pdf"],
         ["Puzzles", "archive/2024/Puzzles_Slitherlink_MMT_2024.pdf"],
         ["Answer Sheet", "archive/2024/Answer_Sheet_Slitherlink.pdf"],
@@ -85,20 +85,20 @@
         ["Answers", "archive/2024/Herding_Hexes_Stallion_Answers.pdf"],
       ],
       [
-        ["Relay Rodeo [Foal]"],
+        ["Mystery Mare [Foal]"],
         ["Problems", "archive/2024/RR Foal Test.pdf"],
         ["Answers Sheet", "archive/2024/RR Foal Answer Sheet.pdf"],
         ["Answers", "archive/2024/Relay_Rodeo_Foal_Answers.pdf"],
 
       ],
       [
-        ["Relay Rodeo [Colt]"],
+        ["Mystery Mare [Colt]"],
         ["Problems", "archive/2024/RR Colt Test.pdf"],
         ["Answers Sheet", "archive/2024/RR Colt Answer Sheet.pdf"],
         ["Answers", "archive/2024/Relay_Rodeo_Colt_Answers.pdf"],
       ],
       [
-        ["Relay Rodeo [Stallion]"],
+        ["Mystery Mare [Stallion]"],
         ["Problems", "archive/2024/RR Stallion Test.pdf"],
         ["Answers Sheet", "archive/2024/RR Stallion Answer Sheet.pdf"],
         ["Answers", "archive/2024/Relay_Rodeo_Stallion_Answers.pdf"],
