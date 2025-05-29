@@ -184,6 +184,21 @@
         ["Problems", "archive/2023/Gallop_Stallion.pdf"],
         ["Answers", "archive/2023/Gallop_Stallion_Answers.pdf"],
         ["Solutions", "archive/2023/Gallop_Stallion_Solutions.pdf"],
+      ],
+      [
+        ["3MT [Foal]"],
+        ["Problems", "archive/2023/3MT_Foal.pdf"],
+        ["Solutions", "archive/2023/3MT_Foal_Solutions.pdf"]
+      ],
+      [
+        ["3MT [Colt]"],
+        ["Problems", "archive/2023/3MT_Colt.pdf"],
+        ["Solutions", "archive/2023/3MT_Colt_Solutions.pdf"]
+      ],
+      [
+        ["3MT [Stallion]"],
+        // ["Problems", "archive/2023/3MT_Stallion.pdf"],
+        ["Solutions", "archive/2023/3MT_Stallion_Solutions.pdf"]
       ]
     ]}
   />
