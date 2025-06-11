@@ -188,16 +188,19 @@
       [
         ["3MT [Foal]"],
         ["Problems", "archive/2023/3MT_Foal.pdf"],
+        ["Answers", "archive/2023/3MT_Foal_Answers.pdf"],
         ["Solutions", "archive/2023/3MT_Foal_Solutions.pdf"]
       ],
       [
         ["3MT [Colt]"],
         ["Problems", "archive/2023/3MT_Colt.pdf"],
+        ["Answers", "archive/2023/3MT_Colt_Answers.pdf"],
         ["Solutions", "archive/2023/3MT_Colt_Solutions.pdf"]
       ],
       [
         ["3MT [Stallion]"],
-        // ["Problems", "archive/2023/3MT_Stallion.pdf"],
+        ["Problems", "archive/2023/3MT_Stallion.pdf"],
+        ["Answers", "archive/2023/3MT_Stallion_Answers.pdf"],
         ["Solutions", "archive/2023/3MT_Stallion_Solutions.pdf"]
       ]
     ]}
