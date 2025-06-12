@@ -78,13 +78,13 @@
         <br>
         <FlexBox wrap={true}>
           {#each [...new Set(Members.map((member) => member[tab.role + "priority"]))].sort() as priority}
-            <Heading
-              text={Titles.filter(function (title) {
-                return(title.priority == priority)
-              })[0][tab.role]}
-              size={2.5}
-              textColor={LightenDarkenColor(tab.hex, -120)}
-            />
+            {#if Titles.find(t => t.priority == priority && t[tab.role])}
+              <Heading
+                text={Titles.find(t => t.priority == priority)[tab.role]}
+                size={2.5}
+                textColor={LightenDarkenColor(tab.hex, -120)}
+              />
+            {/if}
             <div class="break"></div>
             {#each Members
               .filter(function (member) {
