@@ -36,9 +36,11 @@
     let y;
 
     let scheduleData = [
+        { "Class": "Intermediate 1", "Days of Week": "Tuesdays + Thursdays", "Time (PT)": "5:00 - 6:30 PM"},
+        { "Class": "Intermediate 2", "Days of Week": "Saturdays + Sundays", "Time (PT)": "1:00 - 2:30 PM"},
         { "Class": "Beginner 1", "Days of Week": "Mondays + Fridays", "Time (PT)": "5:30 - 7:00 PM"},
-        { "Class": "Beginner 2", "Days of Week": "Tuesdays + Thursdays", "Time (PT)": "3:15 - 4:45 PM"},
-        { "Class": "Intermediate", "Days of Week": "Tuesdays + Thursdays", "Time (PT)": "5:00 - 6:30 PM"}
+        { "Class": "Beginner 2", "Days of Week": "Tuesdays + Thursdays", "Time (PT)": "3:15 - 4:45 PM"}
+        
     ]
     
     let topicsData = [
@@ -122,11 +124,11 @@
 <div id="classDetails" style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;">
-            Our <strong>Problem Solving</strong> term runs from the week of <strong>July 14th</strong> through the week of <strong>August 4th, 2025</strong>. We offer two program levels:
+            Our <strong>Problem Solving</strong> term runs from the week of <strong>July 20th</strong> through the week of <strong>August 10th 2025</strong>. We offer two program levels:
         </p>
         <ul style="font-size: 1.5em; text-align: center; list-style: none; padding: 0;">
-            <li><strong>Beginner Problem Solving</strong> (AMC 8 Level)</li>
-            <li><strong>Intermediate Problem Solving</strong> (AMC 10/12 Level)</li>
+            <li><strong>Beginner Problem Solving</strong> (AMC 8 - Little to no competition experience)</li>
+            <li><strong>Intermediate Problem Solving</strong> (AMC 10 - Some competition experience)</li>
         </ul>
         <p style="font-size: 1.5em; text-align: center;">
             Each week will focus on problems from a different topic: Week 1 on Algebra, Week 2 on Geometry, Week 3 on Counting, and Week 4 on Number Theory.
@@ -178,7 +180,9 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;">
-            To support your learning journey, we provide helpful hints for all homework problems, guiding you toward the solution while still allowing you to develop your problem-solving skills. If you need additional help after considering the hints, our instructors are here to help! You can upload your work on Google Classroom and receive feedback and guidance from our instructors, ensuring you fully understand the concepts and strategies.
+            All of our homework problems have <strong>hints</strong> and <strong>answers</strong>, which guide you toward the solution while still allowing you to <strong>develop your problem-solving skills.</strong> If you need additional help, our instructors are here to help! You can <strong>upload your homework</strong> on Google Classroom and receive feedback and guidance from our instructors, ensuring you fully understand the concepts and strategies.</p>
+        <p style="font-size: 1.5em; text-align: center;">
+            If your student needs additional help, <strong>free 1-on-1 office hours</strong> are available upon request.
         </p>
     </PanelBox>
 </div> <br />
@@ -222,25 +226,25 @@
             <p style="font-size: 1.5em; text-align: center; font-style: italic;">
                 "The instructors were very patient and gave opportunity to the student to explain their answers. The follow-up on homework submissions was great!"
                 <br>
-                <span style="font-style: normal; font-size: 0.9em; color: #666;">— Grade 6 Student</span>
+                <span style="font-style: normal; font-size: 0.9em; color: #666;">— Indira, Grade 6 Student</span>
             </p>
             
             <p style="font-size: 1.5em; text-align: center; font-style: italic;">
                 "I like that there are many topics being learnt each day, and that we also get to work on our HW in class sometimes."
                 <br>
-                <span style="font-style: normal; font-size: 0.9em; color: #666;">— Grade 5 Student</span>
+                <span style="font-style: normal; font-size: 0.9em; color: #666;">— Venkata, Grade 5 Student</span>
             </p>
             
             <p style="font-size: 1.5em; text-align: center; font-style: italic;">
                 "I like the content taught and how informative it is. There are a lot of important concepts useful for competition math."
                 <br>
-                <span style="font-style: normal; font-size: 0.9em; color: #666;">— Grade 8 Student</span>
+                <span style="font-style: normal; font-size: 0.9em; color: #666;">— Samriddhi, Grade 8 Student</span>
             </p>
 
             <p style="font-size: 1.5em; text-align: center; font-style: italic;">
                 "The homework set is a good practice problem set, it lets us apply our learning to problems, which fit the class."
                 <br>
-                <span style="font-style: normal; font-size: 0.9em; color: #666;">— Grade 7 Student</span>
+                <span style="font-style: normal; font-size: 0.9em; color: #666;">— Shlok, Grade 7 Student</span>
             </p>
         </div>
     </PanelBox>

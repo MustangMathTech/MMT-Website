@@ -357,16 +357,13 @@ If you are <strong>outside the USA</strong> and interested in participating in M
     <Heading text="Classes" size={4} textColor="#3C6F8B;" />
 
     <div class="homeText">
-        <strong>Mustang Math Classes</strong> focus on <strong>competition math</strong> and are split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving, with each term running for <strong>8 weeks</strong>. Our upcoming <a href="/classes#topicSection"><strong>Discrete term</strong></a> will focus on both lectures and problem solving, allowing for students to gain a strong understanding of the material.
+        <strong>Mustang Math Classes</strong> focus on <strong>competition math</strong> and are split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving, with each term running for <strong>4 weeks</strong>. Our current <a href="/classes#topicSection"><strong>Problem Solving term</strong></a> will run from <strong>July 20th</strong> through <strong>August 10th, 2025</strong>, with two sessions per week. Each session consists of 90-minute Zoom classes with 5-15 students and 2 instructors. Each week will focus on problems from a different topic: Week 1 on Algebra, Week 2 on Geometry, Week 3 on Counting, and Week 4 on Number Theory.
     </div>
 
     <div class="homeText">
-        Instructive sessions run for <strong>90 minutes</strong> every week over Zoom. Each class will have 5-15 students and 2 instructors.
+        The total cost for the 8 sessions is <strong>$100</strong>. Financial aid is available upon request. As a nonprofit, we charge for our classes to fund our tournaments while promoting student commitment.
     </div>
 
-    <div class="homeText">
-        The total cost for the 8 sessions is <strong>$100</strong>, or all 32 sessions for <strong>$320</strong>. Financial aid is available upon request. As a nonprofit, we charge for our classes to improve our classes and tournaments. Furthermore, putting a price on our classes encourages students to <a href="https://er.educause.edu/articles/2013/6/retention-and-intention-in-massive-open-online-courses-in-depth">stay committed</a>.
-    </div>
 </div>
 
 
