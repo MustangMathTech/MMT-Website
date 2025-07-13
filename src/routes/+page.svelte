@@ -333,6 +333,27 @@ bind:innerHeight={windowHeight} />
     <div class="vertLine"></div>
     <div class="dot"> </div>
 
+    <Heading text="Exciting Announcement: " size={4} textColor="#3C6F8B;" />
+
+    <div  class="homeText" style="font-size: 3em !important;">
+        <strong>Mustang Math Tournament Partners with SIMCC for Global Expansion!</strong>
+    </div>
+    <div class="homeText">
+        We are delighted to share that Mustang Math Tournament (MMT) has officially appointed <strong>SIMCC as its exclusive global partner outside of the USA.</strong> With a strong presence in over 54 countries through SIMCC’s network of dedicated council partners, SIMCC is committed to making MMT accessible to students worldwide.
+If you are <strong>outside the USA</strong> and interested in participating in MMT, SIMCC will provide full support and assistance.
+</div>
+
+    <div class="homeText">
+        To register or learn more, please visit <a href="https://www.simcconline.org/mmt/">https://www.simcconline.org/mmt/</a> or contact SIMCC at admin@simcc.org.
+    </div>
+
+    <div class="homeText">
+       For countries without an existing SIMCC partner, SIMCC remains available to assist all interested students and schools in joining this prestigious competition. We look forward to welcoming talented students from around the world to experience the challenge and excitement of Mustang Math Tournament!
+    </div>
+
+    <div class="vertLine"></div>
+    <div class="dot"> </div>
+
     <Heading text="Classes" size={4} textColor="#3C6F8B;" />
 
     <div class="homeText">
