@@ -107,7 +107,7 @@
 <Heading text="Purpose" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Through <strong>our free online seminars</strong> we aim to help students develop strong mathematical reasoning skills while exploring the world of math beyond the middle and high school curriculum. Our goal is to introduce advanced math topics in a way that benefits both the inexperienced and experienced student, as well as to help develop strong mathematical reasoning skills<strong>—important for math contests, colleges, and life! </strong> These seminars our made possible through our <strong><a href="https://mustangmath.com/classes" target="_blank">seasonal competition math classes</a></strong>.</p>
+        <p style="font-size: 1.5em; text-align: center;">Through <strong>our free online seminars</strong> we aim to help students develop strong mathematical reasoning skills while exploring the world of math beyond the middle and high school curriculum. Our goal is to introduce advanced math topics in a way that benefits both the inexperienced and experienced student, as well as to help develop strong mathematical reasoning skills<strong>—important for math contests, colleges, and life! </strong> These seminars are made possible through our <strong><a href="https://mustangmath.com/classes" target="_blank">seasonal competition math classes</a></strong>.</p>
     </PanelBox>
 </div> 
 <br />
