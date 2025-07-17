@@ -13,7 +13,7 @@
 	const tournaments = [
 		{
 			name: "MMT (Mustang Math Tournament)",
-			date: "Spring 2025",
+			date: "Spring 2026",
 			description:
 				"Our flagship tournament. Teamwork and cooperation-based: no individual round. Hidden puzzle throughout the tournament to uncover a hidden message.",
 		},
