@@ -1,8 +1,10 @@
 <script>
+	import { link } from "svelte-routing";
+
 	export let events = [];
 	export let links = [];
 	export let blurb =
-		"Mustang Math is a nonprofit led by high school and college volunteers, offering middle schoolers engaging math competitions and resources. We organize the annual Mustang Math Tournament, provide affordable tutoring, and are expanding with new projects like a YouTube channel and competition management platform. In 2024, we reached nearly 600 U.S. competitors and expect 1,000 more in our upcoming international tournament. We're growing our team to inspire more students to love math!"; // Blurb text to display at the top
+		"Mustang Math is a nonprofit led by high school and college volunteers, offering middle schoolers engaging math competitions and resources. We organize the annual Mustang Math Tournament, provide affordable tutoring, and are expanding with new projects like a YouTube channel and competition management platform. In the past 6 years, we have reached over 4,000 competitors and expect 1,000 more in our upcoming international tournament."; // Blurb text to display at the top
 </script>
 
 <div class="blurb-container">
@@ -23,7 +25,7 @@
 			</div>
 		{/each}
 	</div>
-
+	
 	<div class="timeline">
 		{#each events as event, index}
 			<div class="event-container {index % 2 === 0 ? 'left' : 'right'}">
@@ -31,6 +33,12 @@
 					<h3>{event.name}</h3>
 					<p><strong>Date:</strong> {event.date}</p>
 					<p>{event.description}</p>
+					{#if event.url && event.name == "MMT (International)"}
+					<a href = {event.url} target = "_blank">Register Now!</a>
+					{/if}
+					{#if event.url && event.name == "MMT (Mustang Math Tournament)"}
+					<a href = {event.url} target = "_blank">See 2025!</a>
+					{/if}
 				</div>
 			</div>
 		{/each}
