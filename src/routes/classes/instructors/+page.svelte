@@ -13,6 +13,17 @@
 </svelte:head>
 
 <PageHeader title="Instructors" description="Meet the Experienced Instructors for our Prep Classes" button_url="https://docs.google.com/forms/d/e/1FAIpQLScHT_pnmm_nhQq3YAk_1s3oq6yxFjgKqhNwg-6YgjAvREb9yg/viewform?usp=dialog" button_text="Class Registration!" id="registerBeginner"/>
+<style>
+    .background {
+        background-image: url('/classes/classesbackground.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        
+
+    }
+
+</style>
 
 <br><br>
 

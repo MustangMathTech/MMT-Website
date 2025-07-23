@@ -12,6 +12,7 @@
     let background = "right-arrow.png";
     let background2 = "right-arrow.png";
 
+
     onMount(() => {
         visible = true;
     })
@@ -99,7 +100,7 @@
     </div>
 </div>
 -->
-
+<div class="background">
 <PageHeader title="Free Seminars" description="Beyond The School Curriculum" button_url="https://classroom.google.com/c/NzQ5NDUyNDY2NjM1?cjc=7sogth4" button_text="Join the Google Classroom!" id="gclass"/>
 
 <br><br>
@@ -141,6 +142,7 @@
         </PanelBox>
     </FlexBox>
 </div> 
+</div>
 <br />
 <br />
 <style>
@@ -150,5 +152,14 @@
 
     a, a strong {
         color: #ff3e00;
+    }
+
+    .background {
+        background-image: url('/classes/classesbackground.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        
+
     }
 </style>
