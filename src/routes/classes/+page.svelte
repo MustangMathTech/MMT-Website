@@ -32,7 +32,6 @@
             background2 = "right-arrow.png";
         }
     }
-
     let y;
 
     let scheduleData = [
@@ -87,6 +86,9 @@
         <p style="font-size: 1.5em; text-align: center;">The program fee is <strong>$100</strong> for all 8 sessions, with financial aid available upon request. As a nonprofit, we charge for our classes to fund our tournaments while promoting student commitment.</p> 
     </PanelBox>
 </div> 
+
+<div class="background"> 
+</div>
 <br />
 <br />
 
@@ -262,4 +264,19 @@
     a, a strong {
         color: #ff3e00;
     }
+
+    .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url('/classes/classesbackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+
 </style>

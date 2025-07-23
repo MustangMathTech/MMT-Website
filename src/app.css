@@ -17,14 +17,14 @@
 		sans-serif;
 	--font-mono: "Fira Mono", monospace;
 	--pure-white: #ffffff;
-	--primary-color: #b9c6d2;
+	--primary-color:  rgba(255, 255, 255, 0.2);
 	--secondary-color: #d0dde9;
 	--tertiary-color: #edf0f8;
 	--bold-color: #1b9aaa;
 	--accent-color: #ff3e00;
 	--paragraph-color: rgba(3, 2, 2, 0.7);
 	--text-color: #444444;
-	--background-without-opacity: rgba(255, 255, 255, 0.7);
+	--background-without-opacity: rgba(255, 255, 255, 0.2);
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
 	--time: 0.707s;
