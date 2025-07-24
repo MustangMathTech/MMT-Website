@@ -5,9 +5,9 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const inputDir = path.join(__dirname, 'static/about-us-images/silly'); // or silly
-const outputDir = path.join(__dirname, 'static/about-us-images/optimized');
-const csvPath = path.join(__dirname, 'static/about-us-images/image_report.csv');
+const inputDir = path.join(__dirname, 'static/about-us-images/serious'); // or silly
+const outputDir = path.join(__dirname, 'static/about-us-images/serious');
+const csvPath = path.join(__dirname, 'static/about-us-images/image_report_serious.csv');
 const targetWidth = 130;
 const targetHeight = 130;
 
