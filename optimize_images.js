@@ -5,42 +5,30 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
-const inputDir = path.join(__dirname, 'static/about-us-images/silly'); //change to serious also
+const inputDir = path.join(__dirname, 'static/about-us-images/silly'); // or silly
 const outputDir = path.join(__dirname, 'static/about-us-images/optimized');
-
+const csvPath = path.join(__dirname, 'static/about-us-images/image_report.csv');
 const targetWidth = 130;
 const targetHeight = 130;
 
 if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
 }
-
-function cleanFilename(name) {
-  return name
-    .toLowerCase()
-    .replace(/\s+/g, '-')
-    .replace(/[^a-z0-9\-\.]/g, '');
-}
+fs.writeFileSync(csvPath, 'Filename,Original Size (KB),Original Dimensions,Optimized Size (KB),Optimized Dimensions\n');
 
 async function processImage(filename) {
   const inputPath = path.join(inputDir, filename);
-  const ext = path.extname(filename).toLowerCase();
+  const ext = path.extname(filename);
   const baseName = path.basename(filename, ext);
-  const cleanName = cleanFilename(baseName);
-
-  const outputName = cleanName + '.webp';
+  const outputName = baseName + '.webp';
   const outputPath = path.join(outputDir, outputName);
 
   try {
     const originalStats = fs.statSync(inputPath);
     const originalSizeKB = (originalStats.size / 1024).toFixed(2);
-
     const image = sharp(inputPath);
     const metadata = await image.metadata();
-
-    console.log(`\nProcessing: ${filename}`);
-    console.log(`Original - Size: ${originalSizeKB} KB, Dimensions: ${metadata.width}x${metadata.height}`);
+    const originalDimensions = `${metadata.width}x${metadata.height}`;
 
     await image
       .resize(targetWidth, targetHeight, {
@@ -48,16 +36,17 @@ async function processImage(filename) {
       })
       .webp({ quality: 80 })
       .toFile(outputPath);
-
+    
     const newStats = fs.statSync(outputPath);
     const newSizeKB = (newStats.size / 1024).toFixed(2);
-
     const newImage = sharp(outputPath);
     const newMetadata = await newImage.metadata();
-
-    console.log(`Optimized - Size: ${newSizeKB} KB, Dimensions: ${newMetadata.width}x${newMetadata.height}`);
+    const newDimensions = `${newMetadata.width}x${newMetadata.height}`;
+    const csvLine = `${filename},${originalSizeKB},${originalDimensions},${newSizeKB},${newDimensions}\n`;
+    fs.appendFileSync(csvPath, csvLine);
+    console.log(`processed: ${filename}`);
   } catch (err) {
-    console.error(`Error processing ${filename}:`, err);
+    console.error(`error processing ${filename}:`, err);
   }
 }
 
@@ -66,12 +55,10 @@ async function main() {
     const ext = path.extname(f).toLowerCase();
     return ['.png', '.jpg', '.jpeg'].includes(ext);
   });
-
   for (const file of files) {
     await processImage(file);
   }
-
-  console.log('\nAll images processed.');
+  console.log(`\nall images processed and saved to ${csvPath}`);
 }
 
 main();
