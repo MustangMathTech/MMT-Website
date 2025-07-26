@@ -8,13 +8,16 @@ const __dirname = path.dirname(__filename);
 const inputDir = path.join(__dirname, 'static/about-us-images/serious'); // or silly
 const outputDir = path.join(__dirname, 'static/about-us-images/serious');
 const csvPath = path.join(__dirname, 'static/about-us-images/image_report_serious.csv');
-const targetWidth = 130;
-const targetHeight = 130;
+const targetWidth = 512;
+const targetHeight = 512;
 
 if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
 }
 fs.writeFileSync(csvPath, 'Filename,Original Size (KB),Original Dimensions,Optimized Size (KB),Optimized Dimensions\n');
+
+let totalOriginalSize = 0;
+let totalOptimizedSize = 0;
 
 async function processImage(filename) {
   const inputPath = path.join(inputDir, filename);
@@ -25,7 +28,7 @@ async function processImage(filename) {
 
   try {
     const originalStats = fs.statSync(inputPath);
-    const originalSizeKB = (originalStats.size / 1024).toFixed(2);
+    const originalSizeKB = originalStats.size / 1024;
     const image = sharp(inputPath);
     const metadata = await image.metadata();
     const originalDimensions = `${metadata.width}x${metadata.height}`;
@@ -33,17 +36,20 @@ async function processImage(filename) {
     await image
       .resize(targetWidth, targetHeight, {
         fit: sharp.fit.cover,
+        kernel: sharp.kernel.lanczos3,
       })
-      .webp({ quality: 80 })
+      .webp({ quality: 95 })
       .toFile(outputPath);
     
     const newStats = fs.statSync(outputPath);
-    const newSizeKB = (newStats.size / 1024).toFixed(2);
+    const newSizeKB = newStats.size / 1024;
     const newImage = sharp(outputPath);
     const newMetadata = await newImage.metadata();
     const newDimensions = `${newMetadata.width}x${newMetadata.height}`;
-    const csvLine = `${filename},${originalSizeKB},${originalDimensions},${newSizeKB},${newDimensions}\n`;
+    const csvLine = `${filename},${originalSizeKB.toFixed(2)},${originalDimensions},${newSizeKB.toFixed(2)},${newDimensions}\n`;
     fs.appendFileSync(csvPath, csvLine);
+    totalOriginalSize += originalSizeKB;
+    totalOptimizedSize += newSizeKB;
     console.log(`processed: ${filename}`);
   } catch (err) {
     console.error(`error processing ${filename}:`, err);
@@ -58,7 +64,11 @@ async function main() {
   for (const file of files) {
     await processImage(file);
   }
-  console.log(`\nall images processed and saved to ${csvPath}`);
-}
 
+  const totalReducedKB = totalOriginalSize - totalOptimizedSize;
+  console.log(`\nsaved at ${csvPath}`);
+  console.log(`total original size: ${totalOriginalSize.toFixed(2)} KB`);
+  console.log(`total optimized size: ${totalOptimizedSize.toFixed(2)} KB`);
+  console.log(`total reduction: ${totalReducedKB.toFixed(2)} KB`);
+}
 main();
