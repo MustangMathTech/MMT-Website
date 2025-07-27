@@ -32,6 +32,7 @@
   import PanelBox from "$lib/components/PanelBox.svelte";
   import Tooltip from "$lib/components/Tooltip.svelte";
   import { LightenDarkenColor, hexToRgb } from "$lib/utils/Colors.svelte";
+	import { lazyLoad } from "$lib/lazyload";
 </script>
 
 <div class="panel-box">
@@ -55,8 +56,10 @@
         <div class="person">
           <div class="person-pic">
             <img
+              use:lazyLoad
               class="person-img"
-              src={ ( "/about-us-images/serious/" + Member.pic1path)}
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+              data-src={ ( "/about-us-images/serious/" + Member.pic1path)}
               alt={Member.namef}
               width="130"
               height="130"
@@ -167,8 +170,10 @@
         <div class="person-pic">
           {#if Member.pic2path}
             <img
+              use:lazyLoad
               class="person-img"
-              src={( "/about-us-images/silly/" + Member.pic2path)}
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+              data-src={( "/about-us-images/silly/" + Member.pic2path)}
               alt={Member.namef}
               width="130"
               height="130"
@@ -176,8 +181,10 @@
             />
           {:else}
             <img
+              use:lazyLoad
               class="person-img"
-              src={( "/about-us-images/serious/" + Member.pic1path)}
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+              data-src={( "/about-us-images/serious/" + Member.pic1path)}
               alt={Member.namef}
               width="130"
               height="130"

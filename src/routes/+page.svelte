@@ -9,6 +9,7 @@
     import PanelBoxAnimated from "$lib/components/PanelBoxAnimated.svelte";
     import Header from "$lib/header/Header.svelte";
     import Horse from "$lib/components/Horse.svelte";
+    import {lazyLoad} from '$lib/lazyload.js';
 
     // need to do this to make the animation play on page load
     let visible = false;
@@ -71,9 +72,11 @@ bind:innerHeight={windowHeight} />
                                 Join our team!
                             </p>
                             <img
+                                use:lazyLoad
                                 height="25px"
                                 class="headerButton"
-                                src={background}
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+                                data-src = {background}
                                 alt="Right-facing arrow icon"
                             />
                             <div
@@ -239,19 +242,21 @@ bind:innerHeight={windowHeight} />
     <Heading text="Who are We?" size={4} textColor="#3C6F8B;" />
     <div class="homeBox">
         <div class="homeCard">
-            <img 
-            src="/home-page/Volunteers.png" 
-            style="width: 216px;
-            height: 216px;
-            flex-shrink: 0;"
-            alt="Volunteers"
-            />
+<img
+  use:lazyLoad
+  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+  data-src="/home-page/Volunteers.png"
+  style="width: 216px; height: 216px; flex-shrink: 0;"
+  alt="Volunteers"
+/>
             <Heading text="80+" size={4} textColor="#38C27C;" />
             <Heading text="Volunteers" size={2} textColor="#000;" />
         </div>
         <div class="homeCard">
-            <img 
-            src="/home-page/States.png" 
+            <img
+            use:lazyLoad 
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" 
+            data-src = "/home-page/States.png"
             style="width: 216px;
             height: 216px;
             flex-shrink: 0;"
@@ -261,8 +266,10 @@ bind:innerHeight={windowHeight} />
             <Heading text="States with Volunteers" size={2} textColor="#000;" />
         </div>
         <div class="homeCard">
-            <img 
-            src="/home-page/Teams.png" 
+            <img
+            use:lazyLoad
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+            data-src = "/home-page/Teams.png"
             style="width: 216px;
             height: 216px;
             flex-shrink: 0;"
@@ -272,6 +279,7 @@ bind:innerHeight={windowHeight} />
             <Heading text="Teams" size={2} textColor="#000;" />
         </div>
     </div>
+    
 
     <div class="homeText">
         Mustang Math began with a small team of dedicated volunteers in 2020, who wanted to spread their love for mathematics to the surrounding community. Since then, MM has hosted several successful tournaments and provided mathematical resources available worldwide. 
@@ -289,7 +297,9 @@ bind:innerHeight={windowHeight} />
     <div class="homeBox">
         <div class="homeCard">
             <img 
-            src="/home-page/DomesticComp.png" 
+            use:lazyLoad 
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+            data-src="/home-page/DomesticComp.png"
             style="width: 266px;
             height: 216px;
             flex-shrink: 0;"
@@ -299,8 +309,10 @@ bind:innerHeight={windowHeight} />
             <Heading text="Domestic Competitors" size={2} textColor="#000;" />
         </div>
         <div class="homeCard">
-            <img 
-            src="/home-page/InternationalComp.png" 
+            <img
+            use:lazyLoad 
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+            data-src = "/home-page/InternationalComp.png"  
             style="width: 266px;
             height: 216px;
             flex-shrink: 0;"
@@ -310,8 +322,10 @@ bind:innerHeight={windowHeight} />
             <Heading text="International Competitors" size={2} textColor="#000;" />
         </div>
         <div class="homeCard">
-            <img 
-            src="/home-page/Worldcomp.png" 
+            <img
+            use:lazyLoad 
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+            data-src = "/home-page/Worldcomp.png"
             style="width: 266px;
             height: 216px;
             flex-shrink: 0;"
