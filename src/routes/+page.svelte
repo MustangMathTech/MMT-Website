@@ -222,7 +222,7 @@ bind:innerHeight={windowHeight} />
         </PanelBox>
     </div>
 </div> -->
-<div bind:this={scrollElem} style="background: #FFFCFC; width:100%; display:flex; align-items:center; flex-direction:column; justify-content:center;">
+<div bind:this={scrollElem} style="background: #b9c6d2; width:100%; display:flex; align-items:center; flex-direction:column; justify-content:center;">
     <!-- <Horse></Horse> -->
     <div class="vertLine"></div>
     <div class="dot"> </div>
