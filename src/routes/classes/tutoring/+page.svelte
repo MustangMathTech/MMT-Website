@@ -31,7 +31,7 @@
     left: 0;
     height: 100vh;
     width: 100%;
-    background-image: url('/classes/classesbackground.png');
+    background-image: url('/classes/tutoringbackground.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
