@@ -25,7 +25,6 @@
 
   const navPages = [
 	{path:"https://comp.mt/", text:"COMP", hasSubPages:false},
-	{ path: "/competitions/mmt-2025", text: "MMT 2025", hasSubPages: false },
     {
       path: "/classes",
       text: "Classes",
