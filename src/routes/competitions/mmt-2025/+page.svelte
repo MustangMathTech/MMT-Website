@@ -1,3 +1,4 @@
+<!--
 <script>
     import Heading from '$lib/components/Heading.svelte';
     import Dropdown from '$lib/components/Dropdown.svelte';
@@ -141,7 +142,7 @@
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NJ")}}><SVGComponent clicked={loc == "NJ" ? true : false} svgURL="/competitions/states/NewJerseyOutline.svg" hoverFill="yellow"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("NV")}}><SVGComponent clicked={loc == "NV" ? true : false} svgURL="/competitions/states/NevadaOutline.svg" hoverFill="purple"/></button>
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("O")}}><SVGComponent clicked={loc == "O" ? true : false} svgURL="/competitions/states/OnlineOutline.svg" hoverFill="lightgreen"/></button>
-                <!-- <button style="background:transparent; border-color:transparent;" on:click={handleClickCO}><SVGComponent svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill="orange"/></button> -->
+                 <button style="background:transparent; border-color:transparent;" on:click={handleClickCO}><SVGComponent svgURL="/competitions/states/ColoradoOutlineCursive.svg" hoverFill="orange"/></button> 
                 <button style="background:transparent; border-color:transparent;" on:click={() => {handleClick("WA")}}><SVGComponent clicked={loc == "WA" ? true : false} svgURL="/competitions/states/WashingtonOutline.svg" hoverFill="white"/></button>
                 
             </FlexBox>
@@ -165,7 +166,7 @@
                         <strong>NORMAL COST:</strong> ${data["NormalCost"]} per participant (Register before <strong>{data["NormalCostDate"]}</strong>)<br /> 
                         {#if data["State"] != "CO"}<strong>LATE COST:</strong> ${data["LateCost"]}  per participant (Register before <strong>{data["LateCostDate"]}</strong>)<br />{/if}
                     </p>
-                    <!-- Prominent Registration Button -->
+                     Prominent Registration Button 
                     
                     <p>
                         <i><strong>*:</strong> Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4</i><br />
@@ -297,7 +298,7 @@
             </FlipCard>
         </div>
     </section>
-    <!--
+   
     <Dropdown mainText="FAQ" id="showDropdown">
         <p>
             <strong>Q:</strong> I'm a parent or a student, not a coach - how can I register? <br />
@@ -308,7 +309,7 @@
             <strong>A:</strong> You can take a look at our <a target="_blank" sveltekit:prefetch href="past_tests">past tests</a>, and we also highly recommend looking at <a target="_blank" sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a target="_blank" sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a target="_blank" sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
         </p>
     </Dropdown>
-    -->
+    
     <br />
 {/if}
 <section id="Testimonials">
@@ -337,11 +338,11 @@
     </div>
 </div> 
 </section>
-<!-- <section id="Sample-Questions">
+ <section id="Sample-Questions">
     <Heading text="Sample Questions" size={2.5} textColor="#1B9AAA" />
     <Slideshow/>
     </section>
-<br /> -->
+<br /> 
 
 <br /><br />
 
@@ -397,3 +398,4 @@
 		background-color: #36bcce;
 	}
 </style>
+-->
