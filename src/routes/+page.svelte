@@ -61,6 +61,7 @@ bind:innerHeight={windowHeight} />
   
                 <div class="flex"><div class="headerline" /></div>
                     <br>
+                    
                     <a sveltekit:prefetch href="/join" class="headerButton">
                         <div
                             class="headerButton"
@@ -76,7 +77,10 @@ bind:innerHeight={windowHeight} />
                                 src={background}
                                 alt="Right-facing arrow icon"
                             />
-                            <div
+                            
+                        </div>
+                    </a>
+                    <div
                             class="scroll-notification topbuttons"
                             style="opacity: {scrollOpacity}; display: {learnMoreIsVisible
                                 ? ''
@@ -86,13 +90,16 @@ bind:innerHeight={windowHeight} />
                             Learn more &nbsp;
                             <i class="fa fa-caret-down" style="margin-left: 2px;" />
                         </div>
+                    
+                        
+                            
+                    
                         </div>
-                    </a>
                 <br />
                 <!--
                 <button class="sign-up" on:click={() => {show = !show;}}><i class="fa-regular fa-newspaper"></i> Sign Up for our Newsletter</button>
                 -->
-            </div>
+            
 
             <svg
                 style="transform: translate({y / 6 - 30}px, 0px)"
@@ -431,6 +438,7 @@ If you are <strong>outside the USA</strong> and interested in participating in M
         align-items: center;
         width: 300px;
     }
+
 
     p.headerButton {
         color: white;
