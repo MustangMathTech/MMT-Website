@@ -155,11 +155,11 @@
     }
 
     .background {
-        background-image: url('/classes/classesbackground.png');
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-        
-
-    }
+  background-image: url('/classes/classesbackground.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
 </style>
