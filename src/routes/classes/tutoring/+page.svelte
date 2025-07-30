@@ -5,7 +5,8 @@
 
     let windowWidth;
 </script>
-
+<div class="background"> 
+</div>
 <svelte:window bind:innerWidth={windowWidth}/>
 
 <svelte:head>
@@ -15,6 +16,28 @@
 <PageHeader title="Tutoring" description="Join Mustang Math's one-on-one tutoring!" button_url="https://forms.gle/D1ckzySxmH5L7v4X9" button_text="Tutoring Registration" id="registerTutoring"/>
 
 <br><br>
+<style>
+    strong {
+        color: #1b9aaa;
+    }
+
+    a, a strong {
+        color: #ff3e00;
+    }
+
+    .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url('/classes/classesbackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    } 
+</style>
 
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
