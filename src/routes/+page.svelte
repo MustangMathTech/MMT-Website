@@ -51,7 +51,8 @@ bind:innerHeight={windowHeight} />
 <svelte:head>
     <title>Mustang Math</title>
 </svelte:head>
-
+<div class="background"> 
+</div>
 <Newsletter {show} />
 <div class="outside" style="height: 100vh;">
     <div class="header flex">
@@ -383,6 +384,18 @@ If you are <strong>outside the USA</strong> and interested in participating in M
 
 
 <style>
+    /* .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url('mainpagebackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;} */
+
     .outside {
         background-image: url("/splash.svg"); /*url("/home-page/mustang_math_splash_screeen_5.gif");*/
         background-size: cover;

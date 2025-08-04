@@ -14,6 +14,7 @@
 
 <PageHeader title="Instructors" description="Meet the Experienced Instructors for our Prep Classes" button_url="https://docs.google.com/forms/d/e/1FAIpQLScHT_pnmm_nhQq3YAk_1s3oq6yxFjgKqhNwg-6YgjAvREb9yg/viewform?usp=dialog" button_text="Class Registration!" id="registerBeginner"/>
 
+
 <br><br>
 
 <FlexBox wrap={true}>

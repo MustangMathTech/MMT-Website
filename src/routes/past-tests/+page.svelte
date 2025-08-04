@@ -43,7 +43,8 @@
     }
   });
 </script>
-
+<div class="background"> 
+</div>
 <svelte:head>
   <title>Study Resources</title>
 </svelte:head>
@@ -367,4 +368,16 @@
     text-align: left;
     border-spacing: 1em;
   }
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url('pasttestsbackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0; 
+    }
 </style>

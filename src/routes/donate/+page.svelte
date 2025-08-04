@@ -8,14 +8,28 @@
     import Link from '$lib/components/Link.svelte';
     import sponsorTiers from '$lib/jsons/sponsorTiers';
 </script>
-
+<div class="background"> 
+</div>
 <svelte:head>
 	<title>Donate</title>
 </svelte:head>
 
 <PageHeader title="Donate" description="Help improve our tournaments, classes, and more!" button_url="
 https://link.mustangmath.com/donate" button_text="Donate to Mustang Math!" button_id="donateMM"/>
-
+<style>
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url('donatebackground.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0; 
+    }
+</style>
 
 <Section>
     <br /> <br />
