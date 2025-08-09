@@ -349,7 +349,7 @@ bind:innerHeight={windowHeight} />
 
     <Heading text="Exciting Announcement: " size={4} textColor="#3C6F8B;" />
 
-    <div  class="homeText" style="font-size: 3em !important;">
+    <div  class="homeText" style="font-size: 2.7em !important;">
         <strong>Mustang Math Tournament Partners with SIMCC for Global Expansion!</strong>
     </div>
     <div class="homeText">
