@@ -84,7 +84,7 @@ bind:innerHeight={windowHeight} />
                             class="scroll-notification topbuttons"
                             style="opacity: {scrollOpacity}; display: {learnMoreIsVisible
                                 ? ''
-                                : 'none'} "
+                                : 'none'}; margin-left:150px;"
                             on:click={() => scrollToElem(scrollElem)}
                         >
                             Learn more &nbsp;
@@ -350,6 +350,10 @@ bind:innerHeight={windowHeight} />
 If you are <strong>outside the USA</strong> and interested in participating in MMT, SIMCC will provide full support and assistance.
 </div>
 
+<div class="homeText">
+       MMT International will take place on <strong>8/24</strong>.
+</div>
+
     <div class="homeText">
         To register or learn more, please visit <a href="https://www.simcconline.org/mmt/">https://www.simcconline.org/mmt/</a> or contact SIMCC at admin@simcc.org.
     </div>
@@ -428,7 +432,7 @@ If you are <strong>outside the USA</strong> and interested in participating in M
     }
 
     div.headerButton {
-        display: flex;
+        display: inline-flex;
         background-color: #65c083;
         border-radius: 50px;
         padding: 10px;
