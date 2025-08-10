@@ -62,6 +62,7 @@ bind:innerHeight={windowHeight} />
   
                 <div class="flex"><div class="headerline" /></div>
                     <br>
+                    
                     <a sveltekit:prefetch href="/join" class="headerButton">
                         <div
                             class="headerButton"
@@ -79,23 +80,29 @@ bind:innerHeight={windowHeight} />
                                 data-src = {background}
                                 alt="Right-facing arrow icon"
                             />
-                            <div
+                            
+                        </div>
+                    </a>
+                    <div
                             class="scroll-notification topbuttons"
                             style="opacity: {scrollOpacity}; display: {learnMoreIsVisible
                                 ? ''
-                                : 'none'} "
+                                : 'none'}; margin-left:150px;"
                             on:click={() => scrollToElem(scrollElem)}
                         >
                             Learn more &nbsp;
                             <i class="fa fa-caret-down" style="margin-left: 2px;" />
                         </div>
+                    
+                        
+                            
+                    
                         </div>
-                    </a>
                 <br />
                 <!--
                 <button class="sign-up" on:click={() => {show = !show;}}><i class="fa-regular fa-newspaper"></i> Sign Up for our Newsletter</button>
                 -->
-            </div>
+            
 
             <svg
                 style="transform: translate({y / 6 - 30}px, 0px)"
@@ -357,6 +364,10 @@ bind:innerHeight={windowHeight} />
 If you are <strong>outside the USA</strong> and interested in participating in MMT, SIMCC will provide full support and assistance.
 </div>
 
+<div class="homeText">
+       MMT International will take place on <strong>8/24</strong>.
+</div>
+
     <div class="homeText">
         To register or learn more, please visit <a href="https://www.simcconline.org/mmt/">https://www.simcconline.org/mmt/</a> or contact SIMCC at admin@simcc.org.
     </div>
@@ -435,7 +446,7 @@ If you are <strong>outside the USA</strong> and interested in participating in M
     }
 
     div.headerButton {
-        display: flex;
+        display: inline-flex;
         background-color: #65c083;
         border-radius: 50px;
         padding: 10px;
@@ -445,6 +456,7 @@ If you are <strong>outside the USA</strong> and interested in participating in M
         align-items: center;
         width: 300px;
     }
+
 
     p.headerButton {
         color: white;
