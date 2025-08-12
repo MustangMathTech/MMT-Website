@@ -8,55 +8,63 @@
     import Link from '$lib/components/Link.svelte';
     import sponsorTiers from '$lib/jsons/sponsorTiers';
 </script>
-<div class="background"> 
-</div>
 <svelte:head>
 	<title>Donate</title>
 </svelte:head>
+<div class="page-container">
+    <div class="background"></div>
 
-<PageHeader title="Donate" description="Help improve our tournaments, classes, and more!" button_url="
+    <PageHeader title="Donate" description="Help improve our tournaments, classes, and more!" button_url="
 https://link.mustangmath.com/donate" button_text="Donate to Mustang Math!" button_id="donateMM"/>
+    
+
+    <Section>
+        <br /> <br />
+        <Heading text="Why Donate to Mustang Math?" size={4} textColor="#1B9AAA" />
+        <FlexBox>
+            <PanelBox width="60%" style="min-width: 360px;">
+                <p style="font-size: 1.2em; margin: 5px">Mustang Math is a <b>501(c)(3) nonprofit</b> organization composed entirely of <b>high school and college volunteers</b>. 
+                    We are incredibly passionate about providing middle school students with access to collaborative, challenging, and creative math tournaments, events, and classes.
+                    However, while our volunteers put countless hours of time into Mustang Math, in order to provide high quality events and enable our resources to be accessed by as many students as possible,
+                    we have a multitude of costs, including but not limited to venue booking, technology services, and teaching resources. Your donation will be attributed directly towards these costs allowing us
+                    to work towards our goal of <b>charging minimal to no registration fees</b> for our services.
+                </p>
+            </PanelBox>
+        </FlexBox>
+        <br>
+
+        <Heading text="How to Donate" size={4} textColor="#1B9AAA" />
+        <FlexBox>
+            <PanelBox width="60%" style="min-width: 360px;">
+                <p style="font-size: 1.2em; margin: 5px">All donations made to Mustang Math may be tax-deductible. Any donations upwards of $250 will be provided a receipt (contemporaneous written acknowledgement)
+                    for presentation to the IRS. You can either donate through <a href="https://www.paypal.com/us/fundraiser/charity/4676911">PayPal</a>, or by mailing a check made out to Mustang Math at <b>8139 231st PL NE, Redmond WA 98053</b>. 
+                    If you have any questions, don't hesitate to <a href="mailto:contact@mustangmath.com">email us</a>.
+                </p>
+            </PanelBox>
+        </FlexBox>
+        <br />
+        <br />
+    </Section>
+</div>
 <style>
-  .background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    background-image: url('donatebackground.png');
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 0; 
-    }
-</style>
-
-<Section>
-    <br /> <br />
-    <Heading text="Why Donate to Mustang Math?" size={4} textColor="#1B9AAA" />
-    <FlexBox>
-        <PanelBox width="60%" style="min-width: 360px;">
-            <p style="font-size: 1.2em; margin: 5px">Mustang Math is a <b>501(c)(3) nonprofit</b> organization composed entirely of <b>high school and college volunteers</b>. 
-                We are incredibly passionate about providing middle school students with access to collaborative, challenging, and creative math tournaments, events, and classes.
-                However, while our volunteers put countless hours of time into Mustang Math, in order to provide high quality events and enable our resources to be accessed by as many students as possible,
-                we have a multitude of costs, including but not limited to venue booking, technology services, and teaching resources. Your donation will be attributed directly towards these costs allowing us
-                to work towards our goal of <b>charging minimal to no registration fees</b> for our services.
-            </p>
-        </PanelBox>
-    </FlexBox>
-    <br>
-
-    <Heading text="How to Donate" size={4} textColor="#1B9AAA" />
-    <FlexBox>
-        <PanelBox width="60%" style="min-width: 360px;">
-            <p style="font-size: 1.2em; margin: 5px">All donations made to Mustang Math may be tax-deductible. Any donations upwards of $250 will be provided a receipt (contemporaneous written acknowledgement)
-                for presentation to the IRS. You can either donate through <a href="https://www.paypal.com/us/fundraiser/charity/4676911">PayPal</a>, or by mailing a check made out to Mustang Math at <b>8139 231st PL NE, Redmond WA 98053</b>. 
-                If you have any questions, don't hesitate to <a href="mailto:contact@mustangmath.com">email us</a>.
-            </p>
-        </PanelBox>
-    </FlexBox>
-    <br />
-    <br />
-</Section>
+      .page-container {
+        position: relative;
+        z-index: 1;
+        min-height: 100vh;
+        width: 100%;
+      }
+      .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url('donatebackground.png');
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+      }
+    </style>
 
 
