@@ -1,8 +1,8 @@
 <script>
     import Heading from "$lib/components/Heading.svelte";
     import Newsletter from "$lib/components/Newsletter.svelte";
-    import { fly, slide, blur, fade } from "svelte/transition";
-    import { quintOut } from 'svelte/easing';
+    import {fly, slide, blur, fade, scale} from "svelte/transition";
+    import { elasticIn, quintOut } from 'svelte/easing';
     import { onMount } from "svelte";
     import PanelBox from "$lib/components/PanelBox.svelte";
     import AnimatedElement from "$lib/components/AnimatedElement.svelte";
@@ -43,6 +43,7 @@
             behavior: "smooth",
         });
     }
+
 </script>
 
 <svelte:window bind:scrollY={y} bind:scrollX={x} bind:innerWidth={windowWidth}
@@ -242,17 +243,24 @@ bind:innerHeight={windowHeight} />
     <Heading text="Who are We?" size={4} textColor="#3C6F8B;" />
     <div class="homeBox">
         <div class="homeCard">
-<img
-  use:lazyLoad
-  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
-  data-src="/home-page/Volunteers.png"
-  style="width: 216px; height: 216px; flex-shrink: 0;"
-  alt="Volunteers"
-/>
+
+
+        <div id="volunteers">
+        <img
+        use:lazyLoad
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+        data-src="/home-page/Volunteers.png"
+        style="width: 216px; height: 210px; flex-shrink: 0;"
+        alt="Volunteers"
+        />
+
+        </div>
             <Heading text="80+" size={4} textColor="#38C27C;" />
             <Heading text="Volunteers" size={2} textColor="#000;" />
         </div>
+
         <div class="homeCard">
+            <div id = "states">
             <img
             use:lazyLoad 
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" 
@@ -262,10 +270,13 @@ bind:innerHeight={windowHeight} />
             flex-shrink: 0;"
             alt="States with Volunteers"
             />
+            </div>
             <Heading text="34" size={4} textColor="#38C27C;" />
             <Heading text="States with Volunteers" size={2} textColor="#000;" />
         </div>
+
         <div class="homeCard">
+            <div id = "teams">
             <img
             use:lazyLoad
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
@@ -274,7 +285,9 @@ bind:innerHeight={windowHeight} />
             height: 216px;
             flex-shrink: 0;"
             alt="Teams"
+            
             />
+            </div>
             <Heading text="7" size={4} textColor="#38C27C;" />
             <Heading text="Teams" size={2} textColor="#000;" />
         </div>
@@ -391,6 +404,27 @@ If you are <strong>outside the USA</strong> and interested in participating in M
         overflow: hidden;
         
     }
+    #volunteers {
+        animation:scaleUp 5s ease;
+        animation-iteration-count: infinite;
+        
+    }
+    #states {
+        animation:scaleUp 5s ease;
+        animation-iteration-count: infinite;
+    }
+    #teams {
+        animation: scaleUp 5s ease;
+        animation-iteration-count: infinite;
+    }
+    @keyframes scaleUp{
+        to {
+            transform:scale(1.55)
+        }
+        
+    }
+
+    
 
     .sign-up {
         background-color: #65c083;
