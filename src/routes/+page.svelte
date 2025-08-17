@@ -63,14 +63,14 @@ bind:innerHeight={windowHeight} />
                 <div class="flex"><div class="headerline" /></div>
                     <br>
                     
-                    <a sveltekit:prefetch href="/join" class="headerButton">
+                    <a sveltekit:prefetch href="/classes/seminars" class="headerButton">
                         <div
                             class="headerButton"
                             on:mouseenter={toggleBackground}
                             on:mouseleave={toggleBackground}
                         >
                             <p class="headerButton" id="signupformmt">
-                                Join our team!
+                                Join our <strong>FREE</strong> Calculus Seminar!
                             </p>
                             <img
                                 use:lazyLoad
