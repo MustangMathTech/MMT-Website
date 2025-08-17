@@ -100,7 +100,7 @@
 </div>
 -->
 
-<PageHeader title="Free Seminars" description="Beyond The School Curriculum" button_url="https://classroom.google.com/c/NzQ5NDUyNDY2NjM1?cjc=7sogth4" button_text="Join the Google Classroom!" id="gclass"/>
+<PageHeader title="Free Seminars" description="Beyond The School Curriculum" button_url="https://classroom.google.com/c/Nzk1NDU0MTY0Mjc3?cjc=dwuumbea" button_text="Join the Google Classroom!" id="gclass"/>
 
 <br><br>
 
@@ -112,13 +112,12 @@
 </div> 
 <br />
 <br />
-<Heading text="MMT Prep Seminar" size={2.5} textColor="#1B9AAA" />
+<Heading text="Intro to Calculus Seminar" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Looking for a final boost before <strong>Mustang Math’s very own MMT</strong>? We are excited to be offering a free 2-day Prep Seminar designed to sharpen your skills! These classes will take place the weekend before our first tournament, on 3/15 and 3/16. 
-            <br /><br /><strong>Please join the <a href="https://classroom.google.com/c/NzQ5NDUyNDY2NjM1?cjc=7sogth4">Google Classroom</a>
-            to gain access to the zoom link and class material!</strong> 
-            Let’s get ready for the MMT together!</p>
+        <p style="font-size: 1.5em; text-align: center;">Looking to <strong>develop strong mathematical reasoning skills</strong> while exploring the world of math <strong>beyond the middle school curriculum</strong>? We are excited to be offering a <strong>free</strong> 2-day Introduction to Calculus Seminar designed to give you a head start on preparation for AP Calculus in high school as well as mathematics related research! These classes will take place on Saturday, 8/30 and Sunday, 8/31. 
+<br /><br /><strong>Please join the <strong><a href='https://classroom.google.com/c/Nzk1NDU0MTY0Mjc3?cjc=dwuumbea'>Google Classroom</a></strong> to gain access to the Zoom link and class material! </strong>Let’s dive into higher-level mathematics together!
+        </p>
     </PanelBox>
 </div>
 <br />
