@@ -28,9 +28,14 @@
             location: "mmt-2024"
         },
         {
-            title: "Mustang Math Tournament 2024 [MMT]",
+            title: "Mustang Math Mania Tournament 2024 [MMM]",
             location: "mmm-2024"
         },
+        { 
+            title: "Mustang Math Tournament 2025 [MMT]",
+            location: "mmt-2025"
+        }
+
     ];
     // A value of false represents that the ith button is unfilled
     let buttonStates = Array(competitions.length).fill(false);
