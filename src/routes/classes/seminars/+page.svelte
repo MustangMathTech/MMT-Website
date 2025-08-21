@@ -35,8 +35,8 @@
     let y;
     
     let seminarData = [
-        { "Class": "1", "Dates": "Saturday, August 30", "Time (PT)": "1-3 PM", "Day": "Day 1" },
-        { "Class": "2", "Dates": "Sunday, August 31", "Time (PT)": "1-3 PM", "Day": "Day 2" }
+        { "Class": "1", "Dates": "Saturday, August 30", "Time (PT)": "1-3 PM"},
+        { "Class": "2", "Dates": "Sunday, August 31", "Time (PT)": "1-3 PM"}
     ]
 
     let prevseminarData = [
@@ -122,7 +122,7 @@
 </div>
 <br />
 <br />
-<Heading text="MMT Prep Seminar Class Schedule" size={2.5} textColor="#1B9AAA" />
+<Heading text="Intro to Calculus Seminar Class Schedule" size={2.5} textColor="#1B9AAA" />
 <div class="schedule-wrapper">
     <FlexBox>
         <PanelBox>
