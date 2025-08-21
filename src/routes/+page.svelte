@@ -382,11 +382,10 @@ If you are <strong>outside the USA</strong> and interested in participating in M
     <Heading text="Classes" size={4} textColor="#3C6F8B;" />
 
     <div class="homeText">
-        <strong>Mustang Math Classes</strong> focus on <strong>competition math</strong> and are split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving, with each term running for <strong>4 weeks</strong>. Our current <a href="/classes#topicSection"><strong>Problem Solving term</strong></a> will run from <strong>July 20th</strong> through <strong>August 10th, 2025</strong>, with two sessions per week. Each session consists of 90-minute Zoom classes with 5-15 students and 2 instructors. Each week will focus on problems from a different topic: Week 1 on Algebra, Week 2 on Geometry, Week 3 on Counting, and Week 4 on Number Theory.
-    </div>
+        <strong>Mustang Math Classes</strong> focus on <strong>competition math</strong> and are split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving. Our current <a href="/classes#classDetails"><strong>Algebra term</strong></a> runs for <strong>10 weeks</strong>, with one session per week. Each session is a 90-minute Zoom class with 5–15 students and 2 instructors.    </div>
 
     <div class="homeText">
-        The total cost for the 8 sessions is <strong>$100</strong>. Financial aid is available upon request. As a nonprofit, we charge for our classes to fund our tournaments while promoting student commitment.
+        The total cost for the 10 sessions is <strong>$100</strong>. Financial aid is available upon request. As a nonprofit, we charge for our classes to fund our tournaments while promoting student commitment.
     </div>
 
 </div>
