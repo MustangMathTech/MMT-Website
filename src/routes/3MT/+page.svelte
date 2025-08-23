@@ -3,11 +3,8 @@
 	import Dropdown from "$lib/components/Dropdown.svelte";
 	import PageHeader from "$lib/components/PageHeader.svelte";
 	import PanelBox from "$lib/components/PanelBox.svelte";
-	import FlipCard from "$lib/components/FlipCard.svelte";
-	let windowWidth;
     import Section from '$lib/components/Section.svelte';
     import FlexBox from '$lib/components/FlexBox.svelte';
-	import Header from "$lib/header/Header.svelte";
     import Table from "$lib/components/Table.svelte";
     import Link from '$lib/components/Link.svelte';
     import SlideshowNew from "$lib/components/SlideshowNew.svelte";
@@ -204,7 +201,6 @@ No Cheating - This contest has a zero-tolerance cheating policy. Any evidence of
         
         <div class="testimonials-section">
             <Heading text = "What people are saying" size = {2} textColor="#1B9AAA"></Heading>
-            <h2 class="column-title">What People Are Saying</h2>
             {#each testimonials as testimonial}
             <div class="testimonial">
                 <p class="quote">"{testimonial.quote}"</p>
