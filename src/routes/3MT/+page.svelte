@@ -54,10 +54,6 @@
             title: "MMT 2025 Coach, Northern California"
         }
     ]
-
-    const sponsors = [
-        { name: "BreadIndustries", logoUrl: "https://hudsonbread.com/wp-content/uploads/2020/07/67402-FREEFORM-RYE-PLAIN.jpg", website: "#" },
-    ];
 </script>
 
 <svelte:head>
@@ -210,18 +206,6 @@ No Cheating - This contest has a zero-tolerance cheating policy. Any evidence of
             </div>
             {/each}
         </div>
-
-        <div class="sponsors-section">
-            <Heading text = "Our Sponsors" size = {2} textColor="#1B9AAA"></Heading>
-            <div class="sponsors-grid">
-            {#each sponsors as sponsor}
-                <a href={sponsor.website} target="_blank" rel="noopener noreferrer" class="sponsor-logo">
-                <img src={sponsor.logoUrl} alt="{sponsor.name} Logo" />
-                </a>
-            {/each}
-            </div>
-        </div>
-
     </div>
 </div>
 </Section>
