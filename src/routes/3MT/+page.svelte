@@ -29,9 +29,10 @@
     ]
 
     const contestPhotos = [
-        "https://placehold.co/800x600/333/FFF?text=Contest+Photo+1",
-        "https://placehold.co/800x600/555/FFF?text=Contest+Photo+2",
-        "https://placehold.co/800x600/777/FFF?text=Contest+Photo+3",
+        "/3MT-2025/pics/im1.jpg",
+        "/3MT-2025/pics/im2.jpg",
+        "/3MT-2025/pics/im3.jpg",
+        "/3MT-2025/pics/im4.jpg",
     ];
     const potentialTopicImages = [
         "/3MT-2025/prevQuestions/im1.png",
@@ -43,14 +44,14 @@
 
     const testimonials = [
         {
-            quote: "Lorem Ipsum Dolor",
-            author: "John Doe",
-            title: "Previous Winner"
+            quote: "This is one of the best contests I did this year! It also was the longest, and I really liked the mystery puzzle!” ",
+            author: "Leeoz Nebat",
+            title: "Mustang Math Tournament Participant, Nevada 2025"
         },
         {
-            quote: "Hmm hmm yes very fun",
-            author: "Bread",
-            title: "Supreme Overlord of Math"
+            quote: "It's a fun opportunity for the kids to work in teams.",
+            author: "David Freeman",
+            title: "MMT 2025 Coach, Northern California"
         }
     ]
 
@@ -201,6 +202,7 @@ No Cheating - This contest has a zero-tolerance cheating policy. Any evidence of
         
         <div class="testimonials-section">
             <Heading text = "What people are saying" size = {2} textColor="#1B9AAA"></Heading>
+            <p1>Collective testimonials for Mustang Math's competitions</p1><br><br>
             {#each testimonials as testimonial}
             <div class="testimonial">
                 <p class="quote">"{testimonial.quote}"</p>
@@ -237,13 +239,6 @@ flex: 1; /* Each column will take up equal space */
 min-width: 300px; /* Ensures columns don't get too squished before wrapping */
 }
 
-.column-title {
-font-size: 1.8rem;
-color: #333;
-margin-bottom: 20px;
-border-bottom: 2px solid #eee;
-padding-bottom: 10px;
-}
 
 /* Testimonial Styles */
 .testimonial {
