@@ -3,7 +3,7 @@
 2. If you use VSCode, you can install the Svelte plugin.
 3. Install `npm`, if you haven't already.
 4. Run the command `npm install`.
-5. Run the local server using the command `npm run dev -- --open`.
+5. Run the local server using the command ``.
 6. Start coding! :)
 
 # Repository
