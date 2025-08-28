@@ -24,6 +24,7 @@
   const TITLE_BREAKPOINT = MOBILE + 150;
 
   const navPages = [
+	{ path: "/3MT", text: "M^3", hasSubPages: false },
 	{path:"https://comp.mt/", text:"COMP", hasSubPages:false},
     {
       path: "/classes",
@@ -31,6 +32,7 @@
       hasSubPages: true,
       index: 1,
       subPages: [
+		{ path: "/classes", text: "Algebra Class" },
         { path: "/classes/instructors", text: "Instructors" },
         { path: "/classes/tutoring", text: "Tutoring" },
         { path: "/classes/seminars", text: "Free Seminars" }
@@ -42,7 +44,6 @@
     { path: "/past-tests", text: "Past Tests", hasSubPages: false },
     { path: "/donate", text: "Donate", hasSubPages: false },
     { path: "/parent-info", text: "Parent Info", hasSubPages: false },
-	
   ];
   const show = [0, 0];
 

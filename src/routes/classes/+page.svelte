@@ -36,21 +36,31 @@
     let y;
 
     let scheduleData = [
-        { "Class": "Intermediate 1", "Days of Week": "Tuesdays + Thursdays", "Time (PT)": "5:00 - 6:30 PM"},
-        { "Class": "Intermediate 2", "Days of Week": "Saturdays + Sundays", "Time (PT)": "1:00 - 2:30 PM"},
-        { "Class": "Beginner 1", "Days of Week": "Mondays + Fridays", "Time (PT)": "5:30 - 7:00 PM"},
-        { "Class": "Beginner 2", "Days of Week": "Tuesdays + Thursdays", "Time (PT)": "3:15 - 4:45 PM"}
-        
+        { "Class": "Beginner Sat", "Day of Week": "Saturday", "Time (PT)": "4:00 - 5:30 PM", "Dates": "9/13 - 11/22 (break 9/27)"},
+        { "Class": "Intermediate Sat", "Day of Week": "Saturday", "Time (PT)": "1:00 - 2:30 PM", "Dates": "9/13 - 11/22 (break 9/27)"},
+        { "Class": "Beginner Sun", "Day of Week": "Sunday", "Time (PT)": "2:00 - 3:30 PM", "Dates": "9/14 - 11/16"},
+        { "Class": "Intermediate Sun", "Day of Week": "Sunday", "Time (PT)": "4:00 - 5:30 PM", "Dates": "9/14 - 11/16"}
     ]
     
+    // let topicsData = [
+    //     { "Week": "1", "Dates": "Jul 14 - Jul 20", "Beginner": "Algebra A, Algebra B", "Intermediate": "Algebra A, Algebra B" },
+    //     { "Week": "2", "Dates": "Jul 21 - Jul 27", "Beginner": "Geometry A, Geometry B", "Intermediate": "Geometry A, Geometry B" },
+    //     { "Week": "3", "Dates": "Jul 28 - Aug 3", "Beginner": "Counting A, Counting B", "Intermediate": "Counting A, Counting B" },
+    //     { "Week": "4", "Dates": "Aug 4 - Aug 10", "Beginner": "Number Theory A, Number Theory B", "Intermediate": "Number Theory A, Number Theory B" }
+    // ]
+
     let topicsData = [
-        { "Week": "1", "Dates": "Jul 14 - Jul 20", "Beginner": "Algebra A, Algebra B", "Intermediate": "Algebra A, Algebra B" },
-        { "Week": "2", "Dates": "Jul 21 - Jul 27", "Beginner": "Geometry A, Geometry B", "Intermediate": "Geometry A, Geometry B" },
-        { "Week": "3", "Dates": "Jul 28 - Aug 3", "Beginner": "Counting A, Counting B", "Intermediate": "Counting A, Counting B" },
-        { "Week": "4", "Dates": "Aug 4 - Aug 10", "Beginner": "Number Theory A, Number Theory B", "Intermediate": "Number Theory A, Number Theory B" }
-    ]
-
-
+        { "Week": "1", "Beginner": "Ratios, Proportions, Rates, Absolute Value", "Intermediate": "Factorizations, Exponents, Radicals" },
+        { "Week": "2", "Beginner": "Solving Systems of Equations, Word Problems", "Intermediate": "Advanced Systems of Equations" },
+        { "Week": "3", "Beginner": "Inequalities", "Intermediate": "More Inequalities" },
+        { "Week": "4", "Beginner": "Polynomials, Solving Quadratics", "Intermediate": "Quadratics: Solving, Discriminant, Completing the Square" },
+        { "Week": "5", "Beginner": "Review", "Intermediate": "Review" },
+        { "Week": "6", "Beginner": "Quadratic Extrema Points, Functions", "Intermediate": "Function Problem Solving & Extrema Points" },
+        { "Week": "7", "Beginner": "Vieta's for Quadratics, Special Factorizations", "Intermediate": "Graphing Polynomials, Graphing Inequalities, Generalized Vieta's" },
+        { "Week": "8", "Beginner": "Arithmetic and Geometric Sequences and Series", "Intermediate": "Arithmetic & Geometric Sequences and Series and Telescoping" },
+        { "Week": "9", "Beginner": "Working Backwards, Logic", "Intermediate": "Logarithms, Working Backwards" },
+        { "Week": "10", "Beginner": "Review", "Intermediate": "Review" }
+    ];
     onMount(() => {
         if (windowWidth && windowWidth < 700) {
             for (var i = 0; i < topicsData.length; i++) {
@@ -59,7 +69,7 @@
                 topicsData[i]["Dates"] = stringBetter;
             }
             for (var i = 0; i < scheduleData.length; i++) {
-                let string = scheduleData[i]["Days of Week"];
+                let string = scheduleData[i]["Day of Week"];
                 let stringBetter = string.replaceAll("Sunday", "Sun.").replaceAll("Monday", "Mon.").replaceAll("Tuesday", "Tue.").replaceAll("Wednesday", "Wed.").replaceAll("Thursday", "Thu.").replaceAll("Friday", "Fri.").replaceAll("Saturday", "Sat.");
                 scheduleData[i]["Days of Week"] = stringBetter;
                 string = scheduleData[i]["Class"];
@@ -76,15 +86,15 @@
 	<title>Classes</title>
 </svelte:head>
 
-<PageHeader title="Classes" description="Online Math Contest Prep Classes" button_url="https://docs.google.com/forms/d/e/1FAIpQLScHT_pnmm_nhQq3YAk_1s3oq6yxFjgKqhNwg-6YgjAvREb9yg/viewform?usp=dialog" button_text="Class Registration!" id="register"/>
+<PageHeader title="Classes" description="Online Math Contest Prep Classes" button_url="https://docs.google.com/forms/d/e/1FAIpQLSfq-ZzmPXvrax4sNlz_fvL0txvfRECcYlybmQ0JCpR8KU7upA/viewform?usp=dialog" button_text="Register for Class!" id="register"/>
 
 <br><br>
 
 <Heading text="Summary" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><strong>Mustang Math Classes</strong> prepare students for <strong>math competitions</strong> through four terms: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving. Our current <a href="#classDetails"><strong>Problem Solving term</strong></a> runs for <strong>4 weeks</strong>, with two sessions per week. Each session consists of 90-minute Zoom classes with 5-15 students and 2 instructors.</p>  
-        <p style="font-size: 1.5em; text-align: center;">The program fee is <strong>$100</strong> for all 8 sessions, with financial aid available upon request. As a nonprofit, we charge for our classes to fund our tournaments while promoting student commitment.</p> 
+        <p style="font-size: 1.5em; text-align: center;"><strong>Mustang Math Classes</strong> prepare students for <strong>math competitions</strong> through four terms: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving. Our current <a href="#classDetails"><strong>Algebra term</strong></a> runs for <strong>10 weeks</strong>, with one session per week. Each session consists of 90-minute Zoom classes with 5-15 students and 2 instructors.</p>  
+        <p style="font-size: 1.5em; text-align: center;">The program fee is <strong>$100</strong> for all 10 sessions, with financial aid available upon request. As a nonprofit, we charge for our classes to fund our tournaments while promoting student commitment.</p> 
     </PanelBox>
 </div> 
 <br />
@@ -120,21 +130,21 @@
 <br /> -->
 
 
-<Heading text="Class Details" size={2} textColor="#1B9AAA" />
+<Heading text="Algebra Class Details" size={2} textColor="#1B9AAA" />
 <div id="classDetails" style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;">
-            Our <strong>Problem Solving</strong> term runs from the week of <strong>July 20th</strong> through the week of <strong>August 10th 2025</strong>. We offer two program levels:
-        </p>
+            Our 10-week <strong>Algebra class</strong> is strong preparation for math competitions. Each week, instructors teach key concepts that students practice through homework. Completing all homework earns students a <strong>certificate of completion</strong> and a $10 gift card.        </p>
+        
         <ul style="font-size: 1.5em; text-align: center; list-style: none; padding: 0;">
-            <li><strong>Beginner Problem Solving</strong> (AMC 8 - Little to no competition experience)</li>
-            <li><strong>Intermediate Problem Solving</strong> (AMC 10 - Some competition experience)</li>
+            <li><strong>Beginner Algebra</strong> (AMC 8 - Little to no competition experience)</li>
+            <li><strong>Intermediate Algebra</strong> (AMC 10 - Some competition experience)</li>
         </ul>
-        <p style="font-size: 1.5em; text-align: center;">
+        <!-- <p style="font-size: 1.5em; text-align: center;">
             Each week will focus on problems from a different topic: Week 1 on Algebra, Week 2 on Geometry, Week 3 on Counting, and Week 4 on Number Theory.
-        </p>
+        </p> -->
         <p style="font-size: 2em; text-align: center;">
-            Click to view the <a href="https://docs.google.com/forms/d/e/1FAIpQLScHT_pnmm_nhQq3YAk_1s3oq6yxFjgKqhNwg-6YgjAvREb9yg/viewform?usp=dialog"><strong>registration form</strong></a>.
+            Click to view the <a href="https://docs.google.com/forms/d/e/1FAIpQLSfq-ZzmPXvrax4sNlz_fvL0txvfRECcYlybmQ0JCpR8KU7upA/viewform?usp=dialog"><strong>registration form</strong></a>.
         </p>
     </PanelBox>
 </div> <br />
@@ -153,7 +163,7 @@
 </div> <br />
 <br />
 
-<Heading text="Classes Schedule" size={2} textColor="#1B9AAA" />
+<Heading text="Class Content" size={2} textColor="#1B9AAA" />
 <div class="schedule-wrapper">
     <FlexBox>
         <PanelBox>
@@ -163,7 +173,7 @@
 </div> <br />
 <br />
 
-<Heading text="Syllabus and Sample Material" size={2} textColor="#1B9AAA" />
+<!-- <Heading text="Syllabus and Sample Material" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;">
@@ -174,7 +184,7 @@
         </p>
     </PanelBox>
 </div> <br />
-<br />
+<br /> -->
 
 <Heading text="Problem Hints and Instructor Guidance" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
@@ -192,14 +202,19 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <div style="font-size: 1.5em; text-align: center;">
-            <p style="margin-bottom: 0.5em;"><strong>Are the Zoom classes recorded?</strong></p>
-            <p style="margin-bottom: 2em;">Yes, all classes are recorded and made available to students. If you miss a class or want to review the material, you can access the recordings.</p>
+            <p style="margin-bottom: 0.5em;"><strong>Are there rewards for doing the class?</strong></p>
+            <p style="margin-bottom: 2em;">
+                Students who maintain attendance and complete all assignments will receive a personalized <strong>certificate of completion</strong> and a <strong>$10 gift card</strong> in recognition of their dedication!
+            </p>
 
             <p style="margin-bottom: 0.5em;"><strong>Can I sign up late? Will I still be able to access Week 1 materials?</strong></p>
             <p style="margin-bottom: 2em;">Yes, you can join after classes have started. You'll have access to all previous class recordings, homework problems, and materials from earlier weeks.</p>
 
             <p style="margin-bottom: 0.5em;"><strong>Can I switch between Beginner and Intermediate levels?</strong></p>
             <p style="margin-bottom: 2em;">Yes, you can switch between levels if you find that one better suits your needs. Please email us. </p>
+
+            <p style="margin-bottom: 0.5em;"><strong>Are the Zoom classes recorded?</strong></p>
+            <p style="margin-bottom: 2em;">Yes, all classes are recorded and made available to students. If you miss a class or want to review the material, you can access the recordings.</p>
 
             <p style="margin-bottom: 0.5em;"><strong>How to contact you?</strong></p>
             <p style="margin-bottom: 2em;">For questions, contact <a href="mailto:classes@mustangmath.com">classes@mustangmath.com</a>.</p>
@@ -211,10 +226,10 @@
 <Heading text="Topic-Based Courses" size={2.5} textColor="#1B9AAA" />
 <div class="competition-wrapper">
     <FlexBox align="start">
-        <Competition initials="A" imgSource="classes/fx.png" competition="Algebra" description="Invariably fun. Key topics include Polynomials, Sequences, and Inequalities." />
+        <Competition initials="A" imgSource="classes/fx.png" competition="Algebra" description="Invariably fun. Key topics include Polynomials, Sequences, and Inequalities. This is the current term." />
         <Competition initials="G" imgSource="classes/compass.png" competition="Geometry" description="Just plane interesting. Key topics include Similar Triangles, Circles, and 3D Geometry" />
         <Competition initials="C/NT" imgSource="classes/dice.png" competition="Discrete" description="You can always count on it. Key topics include Counting Techniques, Distinguishability, Probability, Primes, Bases, and Modular Arithmetic" />
-        <Competition initials="PS" imgSource="classes/numbers.png" competition="Problem Solving" description="Prime learning material. Key focus is on preparing students for the AMC Series and other contests that come in the Fall. This is the current term." />
+        <Competition initials="PS" imgSource="classes/numbers.png" competition="Problem Solving" description="Prime learning material. Key focus is on preparing students for the AMC Series and other contests that come in the Fall." />
 
     </FlexBox>
 </div> <br />
