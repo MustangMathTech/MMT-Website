@@ -332,7 +332,7 @@ bind:innerHeight={windowHeight} />
             <img
             use:lazyLoad 
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
-            data-src = "/home-page/Worldcomp.png"
+            data-src = "home-page/Worldcomp.png"
             style="width: 266px;
             height: 216px;
             flex-shrink: 0;"
