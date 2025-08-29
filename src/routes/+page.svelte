@@ -393,8 +393,6 @@ If you are <strong>outside the USA</strong> and interested in participating in M
 
 </div>
 
-
-
 <style>
     .outside {
         background-image: url("/splash.svg"); /*url("/home-page/mustang_math_splash_screeen_5.gif");*/
