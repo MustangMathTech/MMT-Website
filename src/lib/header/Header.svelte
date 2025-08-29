@@ -293,7 +293,7 @@
 		display: block;
 	}
 
-	@media only screen and (max-width: 1120px) {
+	@media only screen and (max-width: 1199px) {
 		.navbar {
 			height: 50px;
 		}
