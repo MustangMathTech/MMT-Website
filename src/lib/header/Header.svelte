@@ -20,12 +20,20 @@
     courseExpanded = !courseExpanded;
   }
 
-  const MOBILE = 1140;
-  const TITLE_BREAKPOINT = MOBILE + 150;
+  const MOBILE = 1199; //Based on InnerWidth
 
   const navPages = [
-	{ path: "/3MT", text: "M^3", hasSubPages: false },
-	{path:"https://comp.mt/", text:"COMP", hasSubPages:false},
+	{
+		path: "/MMM",
+		text: "Competitions",
+		hasSubPages: true,
+		index: 2,
+		subPages: [
+			{ path: "/MMM", text: "Mustang Math Mania", hasSubPages: false },
+			{ path: "/past-tests", text: "Past Tests", hasSubPages: false },
+			{ path:"https://comp.mt/", text:"COMP Platform", hasSubPages:false},
+		],
+	},
     {
       path: "/classes",
       text: "Classes",
@@ -41,11 +49,10 @@
     { path: "/our-team", text: "Our Team", hasSubPages: false },
     { path: "/join", text: "Join Us", hasSubPages: false },
     { path: "/sponsors", text: "Sponsors", hasSubPages: false },
-    { path: "/past-tests", text: "Past Tests", hasSubPages: false },
     { path: "/donate", text: "Donate", hasSubPages: false },
     { path: "/parent-info", text: "Parent Info", hasSubPages: false },
   ];
-  const show = [0, 0];
+  const show = [0, 0, 0];
 
 </script>
 
@@ -63,7 +70,7 @@
 	/>
 </svelte:head>
 
-<svelte:window bind:outerWidth={windowWidth} />
+<svelte:window bind:innerWidth={windowWidth} />
 
 <div class="navbar" style="position: relative;">
 	<div
@@ -286,7 +293,7 @@
 		display: block;
 	}
 
-	@media only screen and (max-width: 1120px) {
+	@media only screen and (max-width: 1199px) {
 		.navbar {
 			height: 50px;
 		}
