@@ -104,7 +104,7 @@ LATE COST: $15 per participant (Register before September 20th, 2025)<br>
     <FlexBox>
         <PanelBox width="60%" style="min-width: 360px;">
             <p style="font-size: 1.2em; margin: 5px">
-In addition to the competition itself, we are hosting 2 free Intro to Proofs classes to prepare students for the week-long proof round in MMM! Class 1 will cover logic and proof techniques like contradiction. Class 2 will be slightly more challenging and focus on induction. These classes will be a great opportunity to gain a head start and develop stronger mathematical foundations. Proof techniques, which aren’t covered in a typical middle school classroom will benefit both students with no proof experience and experienced problem solvers. If interested, please join the <b><a href = "https://classroom.google.com">google classroom</a></b> with the code JRIXSGAY.
+In addition to the competition itself, we are hosting 2 free Intro to Proofs classes to prepare students for the week-long proof round in MMM! Proof techniques, which aren’t covered in a typical middle school classroom will benefit both students with no proof experience and experienced problem solvers. If interested, please join the <b><a href = "https://classroom.google.com/c/Nzk1NTE3NjQxNTgy?cjc=jrixsgay">Google Classroom</a></b>.
             </p>
         </PanelBox>
     </FlexBox>
