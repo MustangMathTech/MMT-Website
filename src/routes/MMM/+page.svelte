@@ -83,7 +83,7 @@ Don't believe us? Check out some comments from past participants below!
 DATE: September 27th, 2025 <br>
 TEAM SIZE: 3-4*<br>
 LOCATION: Online<br>
-EARLY EQUINE COST: $8 per participant (Register before August 31st, 2025)<br>
+EARLY EQUINE COST: $8 per participant (Register before September 6th, 2025)<br>
 NORMAL COST: $10 per participant (Register before September 13th, 2025)<br>
 LATE COST: $15 per participant (Register before September 20th, 2025)<br>
 <br><br>
