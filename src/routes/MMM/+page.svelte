@@ -152,7 +152,7 @@ No Cheating - This contest has a zero-tolerance cheating policy. Any evidence of
 <Heading text = "Answer Formatting Rules" size = {1} textColor="#1B9AAA"></Heading>
 <ul>
     <li>Make sure you don’t have any extra calculations in your answers!</li>
-    <li>For example, 78 and 285 is okay, but ½ + ⅓ is not
+    <li>For example, 78 and 285 is okay, but ½ + ⅓ is not. 
     Simplify radicals!</li>
     <li>Rewrite expressions like √63 into 3√7 and √(1/9) as ⅓ (exact decimal answers are also acceptable)</li>
     <li>Rationalize all denominators - write 1/√2 as √2/2 and 1/(√2 - 1) as √2 + 1</li>
@@ -254,4 +254,5 @@ color: #333;
     flex-direction: column; /* Stack columns vertically */
 }
 }
+
 </style>
