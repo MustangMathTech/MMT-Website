@@ -117,6 +117,21 @@
         ["Gallop [Stallion]"],
         ["Problems", "archive/2024/Gallop_Stallion.pdf"],
         // ["Answers", "archive/2024/Gallop_Stallion_Answers.pdf"]
+      ],
+      [
+        ["MMM Solo Stampede [Foal]"],
+        ["Problems", "archive/2024/MMM_Solo_Stampede_Foal.pdf"],
+        ["Answers", "archive/2024/MMM_Solo_Stampede_Foal_Answers.pdf"],
+      ],
+      [
+        ["MMM Solo Stampede [Colt]"],
+        ["Problems", "archive/2024/MMM_Solo_Stampede_Colt.pdf"],
+        ["Answers", "archive/2024/MMM_Solo_Stampede_Colt_Answers.pdf"],
+      ],
+      [
+        ["MMM Solo Stampede [Stallion]"],
+        ["Problems", "archive/2024/MMM_Solo_Stampede_Stallion.pdf"],
+        ["Answers", "archive/2024/MMM_Solo_Stampede_Stallion_Answers.pdf"]
       ]
     ]}
   />

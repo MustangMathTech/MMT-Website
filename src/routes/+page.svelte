@@ -1,14 +1,15 @@
 <script>
     import Heading from "$lib/components/Heading.svelte";
     import Newsletter from "$lib/components/Newsletter.svelte";
-    import { fly, slide, blur, fade } from "svelte/transition";
-    import { quintOut } from 'svelte/easing';
+    import {fly, slide, blur, fade, scale} from "svelte/transition";
+    import { elasticIn, quintOut } from 'svelte/easing';
     import { onMount } from "svelte";
     import PanelBox from "$lib/components/PanelBox.svelte";
     import AnimatedElement from "$lib/components/AnimatedElement.svelte";
     import PanelBoxAnimated from "$lib/components/PanelBoxAnimated.svelte";
     import Header from "$lib/header/Header.svelte";
     import Horse from "$lib/components/Horse.svelte";
+    import {lazyLoad} from '$lib/lazyload.js';
 
     // need to do this to make the animation play on page load
     let visible = false;
@@ -42,6 +43,7 @@
             behavior: "smooth",
         });
     }
+
 </script>
 
 <svelte:window bind:scrollY={y} bind:scrollX={x} bind:innerWidth={windowWidth}
@@ -61,38 +63,47 @@ bind:innerHeight={windowHeight} />
   
                 <div class="flex"><div class="headerline" /></div>
                     <br>
-                    <a sveltekit:prefetch href="/join" class="headerButton">
+                    
+                    <a sveltekit:prefetch href="/classes/seminars" class="headerButton">
                         <div
                             class="headerButton"
                             on:mouseenter={toggleBackground}
                             on:mouseleave={toggleBackground}
                         >
                             <p class="headerButton" id="signupformmt">
-                                Join our team!
+                                Join our <strong>FREE</strong> Calculus Seminar!
                             </p>
                             <img
+                                use:lazyLoad
                                 height="25px"
                                 class="headerButton"
-                                src={background}
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+                                data-src = {background}
                                 alt="Right-facing arrow icon"
                             />
-                            <div
+                            
+                        </div>
+                    </a>
+                    <div
                             class="scroll-notification topbuttons"
                             style="opacity: {scrollOpacity}; display: {learnMoreIsVisible
                                 ? ''
-                                : 'none'} "
+                                : 'none'}; margin-left:150px;"
                             on:click={() => scrollToElem(scrollElem)}
                         >
                             Learn more &nbsp;
                             <i class="fa fa-caret-down" style="margin-left: 2px;" />
                         </div>
+                    
+                        
+                            
+                    
                         </div>
-                    </a>
                 <br />
                 <!--
                 <button class="sign-up" on:click={() => {show = !show;}}><i class="fa-regular fa-newspaper"></i> Sign Up for our Newsletter</button>
                 -->
-            </div>
+            
 
             <svg
                 style="transform: translate({y / 6 - 30}px, 0px)"
@@ -219,7 +230,7 @@ bind:innerHeight={windowHeight} />
         </PanelBox>
     </div>
 </div> -->
-<div bind:this={scrollElem} style="background: #FFFCFC; width:100%; display:flex; align-items:center; flex-direction:column; justify-content:center;">
+<div bind:this={scrollElem} style="background: #b9c6d2; width:100%; display:flex; align-items:center; flex-direction:column; justify-content:center;">
     <!-- <Horse></Horse> -->
     <div class="vertLine"></div>
     <div class="dot"> </div>
@@ -239,39 +250,56 @@ bind:innerHeight={windowHeight} />
     <Heading text="Who are We?" size={4} textColor="#3C6F8B;" />
     <div class="homeBox">
         <div class="homeCard">
-            <img 
-            src="/home-page/Volunteers.png" 
-            style="width: 216px;
-            height: 216px;
-            flex-shrink: 0;"
-            alt="Volunteers"
-            />
+
+
+        <div id="volunteers">
+        <img
+        use:lazyLoad
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+        data-src="/home-page/Volunteers.png"
+        style="width: 216px; height: 210px; flex-shrink: 0;"
+        alt="Volunteers"
+        />
+
+        </div>
             <Heading text="80+" size={4} textColor="#38C27C;" />
             <Heading text="Volunteers" size={2} textColor="#000;" />
         </div>
+
         <div class="homeCard">
-            <img 
-            src="/home-page/States.png" 
+            <div id = "states">
+            <img
+            use:lazyLoad 
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" 
+            data-src = "/home-page/States.png"
             style="width: 216px;
             height: 216px;
             flex-shrink: 0;"
             alt="States with Volunteers"
             />
+            </div>
             <Heading text="34" size={4} textColor="#38C27C;" />
             <Heading text="States with Volunteers" size={2} textColor="#000;" />
         </div>
+
         <div class="homeCard">
-            <img 
-            src="/home-page/Teams.png" 
+            <div id = "teams">
+            <img
+            use:lazyLoad
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+            data-src = "/home-page/Teams.png"
             style="width: 216px;
             height: 216px;
             flex-shrink: 0;"
             alt="Teams"
+            
             />
+            </div>
             <Heading text="7" size={4} textColor="#38C27C;" />
             <Heading text="Teams" size={2} textColor="#000;" />
         </div>
     </div>
+    
 
     <div class="homeText">
         Mustang Math began with a small team of dedicated volunteers in 2020, who wanted to spread their love for mathematics to the surrounding community. Since then, MM has hosted several successful tournaments and provided mathematical resources available worldwide. 
@@ -289,7 +317,9 @@ bind:innerHeight={windowHeight} />
     <div class="homeBox">
         <div class="homeCard">
             <img 
-            src="/home-page/DomesticComp.png" 
+            use:lazyLoad 
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+            data-src="/home-page/DomesticComp.png"
             style="width: 266px;
             height: 216px;
             flex-shrink: 0;"
@@ -299,8 +329,10 @@ bind:innerHeight={windowHeight} />
             <Heading text="Domestic Competitors" size={2} textColor="#000;" />
         </div>
         <div class="homeCard">
-            <img 
-            src="/home-page/InternationalComp.png" 
+            <img
+            use:lazyLoad 
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+            data-src = "/home-page/InternationalComp.png"  
             style="width: 266px;
             height: 216px;
             flex-shrink: 0;"
@@ -310,8 +342,10 @@ bind:innerHeight={windowHeight} />
             <Heading text="International Competitors" size={2} textColor="#000;" />
         </div>
         <div class="homeCard">
-            <img 
-            src="/home-page/Worldcomp.png" 
+            <img
+            use:lazyLoad 
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+            data-src = "home-page/Worldcomp.png"
             style="width: 266px;
             height: 216px;
             flex-shrink: 0;"
@@ -335,12 +369,16 @@ bind:innerHeight={windowHeight} />
 
     <Heading text="Exciting Announcement: " size={4} textColor="#3C6F8B;" />
 
-    <div  class="homeText" style="font-size: 3em !important;">
+    <div  class="homeText" style="font-size: 2.7em !important;">
         <strong>Mustang Math Tournament Partners with SIMCC for Global Expansion!</strong>
     </div>
     <div class="homeText">
         We are delighted to share that Mustang Math Tournament (MMT) has officially appointed <strong>SIMCC as its exclusive global partner outside of the USA.</strong> With a strong presence in over 54 countries through SIMCC’s network of dedicated council partners, SIMCC is committed to making MMT accessible to students worldwide.
 If you are <strong>outside the USA</strong> and interested in participating in MMT, SIMCC will provide full support and assistance.
+</div>
+
+<div class="homeText">
+       MMT International will take place on <strong>8/24</strong>.
 </div>
 
     <div class="homeText">
@@ -357,16 +395,13 @@ If you are <strong>outside the USA</strong> and interested in participating in M
     <Heading text="Classes" size={4} textColor="#3C6F8B;" />
 
     <div class="homeText">
-        <strong>Mustang Math Classes</strong> focus on <strong>competition math</strong> and are split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving, with each term running for <strong>4 weeks</strong>. Our current <a href="/classes#topicSection"><strong>Problem Solving term</strong></a> will run from <strong>July 20th</strong> through <strong>August 10th, 2025</strong>, with two sessions per week. Each session consists of 90-minute Zoom classes with 5-15 students and 2 instructors. Each week will focus on problems from a different topic: Week 1 on Algebra, Week 2 on Geometry, Week 3 on Counting, and Week 4 on Number Theory.
-    </div>
+        <strong>Mustang Math Classes</strong> focus on <strong>competition math</strong> and are split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving. Our current <a href="/classes#classDetails"><strong>Algebra term</strong></a> runs for <strong>10 weeks</strong>, with one session per week. Each session is a 90-minute Zoom class with 5–15 students and 2 instructors.    </div>
 
     <div class="homeText">
-        The total cost for the 8 sessions is <strong>$100</strong>. Financial aid is available upon request. As a nonprofit, we charge for our classes to fund our tournaments while promoting student commitment.
+        The total cost for the 10 sessions is <strong>$100</strong>. Financial aid is available upon request. As a nonprofit, we charge for our classes to fund our tournaments while promoting student commitment.
     </div>
 
 </div>
-
-
 
 <style>
     .outside {
@@ -377,6 +412,27 @@ If you are <strong>outside the USA</strong> and interested in participating in M
         overflow: hidden;
         
     }
+    #volunteers {
+        animation:scaleUp 5s ease;
+        animation-iteration-count: infinite;
+        
+    }
+    #states {
+        animation:scaleUp 5s ease;
+        animation-iteration-count: infinite;
+    }
+    #teams {
+        animation: scaleUp 5s ease;
+        animation-iteration-count: infinite;
+    }
+    @keyframes scaleUp{
+        to {
+            transform:scale(1.55)
+        }
+        
+    }
+
+    
 
     .sign-up {
         background-color: #65c083;
@@ -421,7 +477,7 @@ If you are <strong>outside the USA</strong> and interested in participating in M
     }
 
     div.headerButton {
-        display: flex;
+        display: inline-flex;
         background-color: #65c083;
         border-radius: 50px;
         padding: 10px;
@@ -431,6 +487,7 @@ If you are <strong>outside the USA</strong> and interested in participating in M
         align-items: center;
         width: 300px;
     }
+
 
     p.headerButton {
         color: white;

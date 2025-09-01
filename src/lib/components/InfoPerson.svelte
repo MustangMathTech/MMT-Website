@@ -9,6 +9,7 @@
     import Text from '$lib/components/Text.svelte';
     import Heading from '$lib/components/Heading.svelte';
     import PanelBox from '$lib/components/PanelBox.svelte';
+    import {lazyLoad} from '$lib/lazyload.js';
 </script>
 
 <PanelBox width={width}>
@@ -17,7 +18,15 @@
         <div class="person-pic flex">
             <div>
                 <div class="flex">
-                    <img class="person-img" src={pic} alt={name} width="130" height="130" style="object-fit: cover; border-radius: 9999px;"/>
+                    <img
+                    use:lazyLoad 
+                    class="person-img"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" 
+                    data-src={pic} 
+                    alt={name} 
+                    width="130" 
+                    height="130" 
+                    style="object-fit: cover; border-radius: 9999px;"/>
                 </div>
                 <p style="color: black; font-size: 1.2em;font-weight:500;margin:0;padding:0;text-align: center;">{name}</p>
             </div>
@@ -34,7 +43,15 @@
         <div class="person-pic flex">
             <div>
                 <div class="flex">
-                    <img class="person-img" src={pic} alt={name} width="130" height="130" style="object-fit: cover; border-radius: 9999px;"/>
+                
+                    <img class="person-img"
+                    use:lazyLoad
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" 
+                    data-src={pic} 
+                    alt={name} 
+                    width="130" 
+                    height="130" 
+                    style="object-fit: cover; border-radius: 9999px;"/>
                 </div>
                 <p style="color: black; font-size: 1.2em;font-weight:500;margin:0;padding:0;text-align: center;">{name}</p>
             </div>
