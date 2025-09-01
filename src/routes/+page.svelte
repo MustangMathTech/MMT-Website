@@ -10,6 +10,8 @@
     import Header from "$lib/header/Header.svelte";
     import Horse from "$lib/components/Horse.svelte";
     import {lazyLoad} from '$lib/lazyload.js';
+    import {isEarlyBird} from '$lib/earlyBird.js';
+
 
     // need to do this to make the animation play on page load
     let visible = false;
@@ -43,6 +45,7 @@
             behavior: "smooth",
         });
     }
+    $: showEarlyBird = isEarlyBird();
 
 </script>
 
@@ -64,14 +67,17 @@ bind:innerHeight={windowHeight} />
                 <div class="flex"><div class="headerline" /></div>
                     <br>
                     
-                    <a sveltekit:prefetch href="/classes/seminars" class="headerButton">
+                    <a sveltekit:prefetch href="/MMM" class="headerButton">
                         <div
                             class="headerButton"
                             on:mouseenter={toggleBackground}
                             on:mouseleave={toggleBackground}
                         >
                             <p class="headerButton" id="signupformmt">
-                                Join our <strong>FREE</strong> Calculus Seminar!
+                                {#if showEarlyBird}
+                                    Early Bird
+                                {/if}
+                                Registration is <strong>NOW OPEN</strong> for Mustang Math Mania!
                             </p>
                             <img
                                 use:lazyLoad
