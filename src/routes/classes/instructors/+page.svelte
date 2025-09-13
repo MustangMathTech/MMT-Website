@@ -17,15 +17,82 @@
 <br><br>
 
 <FlexBox wrap={true}>
-    <InfoPerson width={windowWidth < 700 ? "90%" : "50%"} pic="/about-us-images/serious/Photo - Alexander Liu.jpg" name="Alexander Liu" description="Alexander Liu is a high school junior in Massachusetts. He has participated in math competitions since elementary school, including getting 24th place in MA MATHCOUNTS state, and achieving DHR in the 2024 AMC10A and B. Outside of math, he enjoys reading, playing piano, playing badminton, playing video games, and playing ultimate." left/>
+    <div id = "first"><InfoPerson width={windowWidth < 700 ? "90%" : "50%"} pic="/about-us-images/Person_filler_icon.png" name="Shaurya Mohapatra" description="Shaurya is a high-schooler in San Mateo, California. He began his competition math journey in middle school. His favorite competition is AMC 8 because of the widespread accessibility to the competition, and how awesome the memories made with his school team were. He has close to 3 to 4 years of experience in tutoring and coaching on and off, and is a proud member of the Curriculum Development team at Mustang Math. He has tutored 7th and 8th graders, high schoolers, and coached kids from a range of 7 to 10 years old. Finally, it should mentioned that he has a younger brother who is nine years old." left/></div>
 
-    <InfoPerson width={windowWidth < 700 ? "90%" : "50%"} pic="/about-us-images/serious/Margaret_Sikes_Serious - Margaret Sikes.png" name="Margaret Sikes" description="Margaret is a homeschooled high school junior in California. She began her competition math journey in middle school, and her favorite competition is USAMTS because of the unique competition structure and opportunity to research challenging problems. She has close to two years of experience in tutoring, and is a member of the Curriculum Development and Problem Writing Teams at Mustang Math. Margaret's hobbies include doing math, reading, writing, chess, and much more." right/>
+    <div id = "second"><InfoPerson  width={windowWidth < 700 ? "90%" : "50%"} pic="/about-us-images/Person_filler_icon.png" name="Kavish Karia" description="Kavish is a high-school freshman in Novi, Michigan. He has been participating in his school's math teams since he was in elementary school. He has competed in a variety of math competitions including the AMC 8, MATHCOUNTS, Math Olympiad,  and Math Pentathlon, achieving Hall of Fame in Math Pentathlon. He has around 2 years of experience in tutoring the newcomers (6th and 7th graders) in his robotics team. He is also a member of the Curriculum Development team. Outside of math and school, he enjoys playing competitive tennis, robotics, programming, and playing video games." right/></div>
 
-    <InfoPerson width={windowWidth < 700 ? "90%" : "50%"} pic="/about-us-images/serious/Anika_Gupta_Serious - Anika Gupta.png" name="Anika Gupta" description="Anika is a high school junior in Washington and has participated in math competitions since third grade, including Math Kangaroo and AMC. Anika is part of the Curriculum Development team for Mustang Math. She is passionate about teaching others and has experience tutoring students online. Outside of math, Anika enjoys reading, baking, and traveling." left/>
+    <div id = "third"><InfoPerson  width={windowWidth < 700 ? "90%" : "50%"} pic="/about-us-images/Person_filler_icon.png" name="Anish Agrawal" description="Anish is a high-school freshman in Washington. He has been participating in competition math since elementary school, with his favorite competitions being AIME and USAMTS. He has been tutoring students in competition math for around 3 years, and recently started tutoring for SAT math. Anish is part of the Problem Writing and Curriculum Development team for Mustang Math, helping create and teach material. Outside of math, he enjoys robotics, tennis, chess, and playing the piano and violin." left/></div>
 
-    <InfoPerson width={windowWidth < 700 ? "90%" : "50%"} pic="/about-us-images/serious/IMG_7776 - Girish Thillai Natarajan.jpeg" name="Girish Thillai Natarajan" description="Girish Thillai Natarajan is a high school junior in California. He has participated in math contests such as BMT, SMT, and the AMC series beginning in middle school. He has experience tutoring students in math both in person and online at many levels of difficulty. At Mustang Math, Girish is a member of the Curriculum Development team. Outside of math, he enjoys reading, programming, and playing video games." right/>
+    <div id= "fourth"><InfoPerson  width={windowWidth < 700 ? "90%" : "50%"} pic="/about-us-images/Person_filler_icon.png" name="Margaret Sikes" description="Margaret is a homeschooled high school student in California. She began her competition math journey in middle school, and her favorite competition is USAMTS because of the unique competition structure and opportunity to research challenging problems. She has three years of experience in tutoring, and is a member of the Curriculum Development and Problem Writing Teams at Mustang Math. Margaret's hobbies include doing math, reading, writing, Antichess, and more." right/></div>
 
-    <InfoPerson width={windowWidth < 700 ? "90%" : "50%"} pic="/about-us-images/serious/Daniel_Swetman_Serious - Daniel Swetman.png" name="Daniel Swetman" description="Daniel is a high school junior in Washington. He has participated in various math competitions over the years such as MATHCOUNTS, AMC 8, and AMC 10. He is a part of the Problem Writing and Curriculum Development Team for Mustang Math, but also helps with teaching students in his school's math team. Apart from math, he enjoys drawing and playing video games." left/>
+    <div id = "fifth"><InfoPerson width={windowWidth < 700 ? "90%" : "50%"} pic="/about-us-images/Person_filler_icon.png" name="Wenyuan Xi" description="Wenyuan is a high schoool student in California. He enjoys math competitions such as the AMC series and solving problems in general. Currently, he is part of the Curriculum Development and Problem Writing team in Mustang Math. His favorite math subject is counting and probability. Outside of math, Wenyuan likes running, playing video games, and reading." left/></div>
 
-    <InfoPerson width={windowWidth < 700 ? "90%" : "50%"} pic="/about-us-images/serious/Sara_Liu_Instructor.png" name="Sara Liu" description="Sara is a high school sophomore in Washington. She has participated in competitions such as the AMC series and AIME. She has tutored younger students in middle school, and she is also one of the leaders of her school's math club. Outside of math, she enjoys music, badminton, and birdwatching." right/>
+    <div id = "sixth"><InfoPerson width={windowWidth < 700 ? "90%" : "50%"} pic="/about-us-images/Person_filler_icon.png" name="Wenbo Xi" description="Wenbo is a high school sophomore in California. He began participating in math contests in elementary school and his current favorite math subject is geometry. Wenbo is a member of the Tournament Development, Curriculum Development, and Problem Writing team. Besides math, he enjoys running, coding, and video games." right/></div>
+
+    <div id = "seventh"><InfoPerson width={windowWidth < 700 ? "90%" : "50%"} pic="/about-us-images/Person_filler_icon.png" name="Avi Batra" description="Avi is a high schooler from Fremont, California. He's been participating in math competitions since 2nd grade, and his favorite math series is the AMC. He is currently a part of the Curriculum Development and Tournament Development teams. Outside of math, he likes to read about biology and play golf." left/></div>
+
+    <div id = "eighth"><InfoPerson width={windowWidth < 700 ? "90%" : "50%"} pic="/about-us-images/Person_filler_icon.png" name="Ekaansh Agrawal" description="Ekaansh is a high school senior in Washington. He has participated in several math competitions such as Math Kangaroo, AMC 10, AMC 12, and AIME. He is passionate about teaching and helps teach elementary students with his school's math club. Outside of math, he enjoys watching sports, running track, and playing video games." right/></div>
 </FlexBox>
+
+<style>
+
+    #first {
+        display: flex;
+        justify-content: center;
+        animation: moveRight 5s;
+    }
+
+    #second {
+        display: flex;
+        justify-content: center;
+        animation: moveLeft 5s;
+    }
+
+    #third {
+        display: flex;
+        justify-content: center;
+        animation: moveRight 5s;
+    }  
+
+    #fourth {
+        display: flex;
+        justify-content: center;
+        animation: moveLeft 5s;
+    } 
+
+    #fifth {
+        display: flex;
+        justify-content: center;
+        animation: moveRight 5s;
+    } 
+
+    #sixth {
+        display: flex;
+        justify-content: center;
+        animation: moveLeft 5s;
+    } 
+
+    #seventh {
+        display: flex;
+        justify-content: center;
+        animation: moveRight 5s;
+    } 
+
+    #eighth {
+        display: flex;
+        justify-content: center;
+        animation: moveLeft 5s;
+    } 
+
+    @keyframes moveRight{
+       from {
+        transform: translate(50em)
+       }
+    }
+
+    @keyframes moveLeft {
+        from {
+            transform: translate(-50em)
+        }
+    }
+</style>
