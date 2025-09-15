@@ -13,7 +13,7 @@
         {"Day": "9/20 to 9/27", "Start Time (PT)": "All Day", "Event": "Perilous Proofs"},
         {"Day": "9/27", "Start Time (PT)": "9:00 AM", "Event": "Opening Ceremony"},
         {"Day": "9/27", "Start Time (PT)": "9:30 AM", "Event": "Solo Stampede"},
-        {"Day": "9/27", "Start Time (PT)": "10:45 AM", "Event": "Lucnh"},
+        {"Day": "9/27", "Start Time (PT)": "10:45 AM", "Event": "Lunch"},
         {"Day": "9/27", "Start Time (PT)": "12:00 PM", "Event": "Betting Bonanza"},
         {"Day": "9/27", "Start Time (PT)": "1:00 PM", "Event": "Meltdown Madness"},
         {"Day": "9/27", "Start Time (PT)": "2:15 PM", "Event": "Activities"},
@@ -57,20 +57,20 @@
 </script>
 
 <svelte:head>
-	<title>M^3</title>
+	<title>MMM</title>
 </svelte:head>
 
 <PageHeader
-	title="M^3"
+	title="MMM"
 	description="Mustang Math Mania"
-	button_url="https://docs.google.com/document/d/1mKKPEXknc3b3zCBVsDkkrhutKylvl3_0lo46VCr3F34/edit?usp=sharing"
+	button_url=" https://docs.google.com/document/d/1YH8V1JGTukikWwpQ_x7eDjDwgL_b6FLvWFX8l241xQ8?usp=sharing"
 	button_text="Register Now"
 	id="registerFor3MT"
 />
 
 <Section>
     <br /> <br />
-    <Heading text="What is M^3?" size={4} textColor="#1B9AAA" />
+    <Heading text="What is MMM?" size={4} textColor="#1B9AAA" />
     <FlexBox>
         <PanelBox width="80%" style="min-width: 360px;">
             <p style="font-size: 1.2em; margin: 5px">
@@ -83,12 +83,14 @@ Don't believe us? Check out some comments from past participants below!
 DATE: September 27th, 2025 <br>
 TEAM SIZE: 3-4*<br>
 LOCATION: Online<br>
-EARLY EQUINE COST: $8 per participant (Register before August 31st, 2025)<br>
+EARLY EQUINE COST: $8 per participant (Register before September 6th, 2025)<br>
 NORMAL COST: $10 per participant (Register before September 13th, 2025)<br>
 LATE COST: $15 per participant (Register before September 20th, 2025)<br>
 <br><br>
-<b><a href = "https://docs.google.com/document/d/1mKKPEXknc3b3zCBVsDkkrhutKylvl3_0lo46VCr3F34/edit?usp=sharing">Click Here To Access Registration Instructions</a></b><br>
+<b><a href = "https://docs.google.com/document/d/1YH8V1JGTukikWwpQ_x7eDjDwgL_b6FLvWFX8l241xQ8?usp=sharing">Click Here To Access Registration Instructions</a></b><br>
+<b><a href = "https://docs.google.com/document/d/1mKKPEXknc3b3zCBVsDkkrhutKylvl3_0lo46VCr3F34/">Click Here To Access Further Information</a></b><br>
 <br><br>
+
 
 *: Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4
             </p>
@@ -150,7 +152,7 @@ No Cheating - This contest has a zero-tolerance cheating policy. Any evidence of
 <Heading text = "Answer Formatting Rules" size = {1} textColor="#1B9AAA"></Heading>
 <ul>
     <li>Make sure you don’t have any extra calculations in your answers!</li>
-    <li>For example, 78 and 285 is okay, but ½ + ⅓ is not
+    <li>For example, 78 and 285 is okay, but ½ + ⅓ is not. 
     Simplify radicals!</li>
     <li>Rewrite expressions like √63 into 3√7 and √(1/9) as ⅓ (exact decimal answers are also acceptable)</li>
     <li>Rationalize all denominators - write 1/√2 as √2/2 and 1/(√2 - 1) as √2 + 1</li>
@@ -215,7 +217,7 @@ No Cheating - This contest has a zero-tolerance cheating policy. Any evidence of
 .split-layout {
 display: flex;
 flex-wrap: wrap; /* Allows columns to stack on smaller screens */
-gap: 40px; /* Space between the two columns */
+gap: 30px; /* Space between the two columns */
 }
 
 .column {
@@ -231,6 +233,7 @@ padding: 20px;
 border-radius: 8px;
 margin-bottom: 20px;
 border-left: 4px solid #ddd;
+max-width: 800px;
 }
 
 .testimonial .quote {
@@ -245,32 +248,11 @@ text-align: right;
 color: #333;
 }
 
-/* Sponsor Styles */
-.sponsors-section {
-margin-top: 40px;
-}
-
-.sponsors-grid {
-display: flex;
-flex-wrap: wrap;
-gap: 20px;
-align-items: center;
-}
-
-.sponsor-logo img {
-max-width: 150px;
-opacity: 0.7;
-transition: opacity 0.3s ease;
-}
-
-.sponsor-logo:hover img {
-opacity: 1;
-}
-
 /* Responsive behavior for smaller screens */
 @media (max-width: 768px) {
 .split-layout {
     flex-direction: column; /* Stack columns vertically */
 }
 }
+
 </style>
