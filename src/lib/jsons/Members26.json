@@ -928,35 +928,6 @@
         "bio": "Margaret is a homeschooled student with a passion for math. She writes problems and teaches at MM, and some of her other hobbies include teaching, reading, writing, and photography."
     },
     {
-        "email": "zhuoz@mustangmath.com",
-        "displayname": "Zhuo Zhan Chen",
-        "first": "Zhuo Zhan",
-        "last": "Chen",
-        "org": true,
-        "pw": true,
-        "t": false,
-        "d": false,
-        "td": false,
-        "cd": false,
-        "be": false,
-        "vp": false,
-        "discordid": "",
-        "discordusername": "zhuozhanc",
-        "discordroles": "",
-        "orgrole": "",
-        "orgpriority": "5",
-        "pwpriority": "2",
-        "tpriority": "5",
-        "dpriority": "5",
-        "tdpriority": "5",
-        "cdpriority": "5",
-        "bepriority": "5",
-        "vppriority": "5",
-        "pic1path": "",
-        "pic2path": "",
-        "bio": "Zhuo Zhan is a sophomore at Stuyvesant High School in New York. Besides helping out as a problem writer, he also enjoys listening to many different genre of albums. His favorite math subject is Geometry."
-    },
-    {
         "email": "riddhimanr@mustangmath.com",
         "displayname": "Riddhiman Rana",
         "first": "Riddhiman",
@@ -2605,7 +2576,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "James_Pinsuvana_Serious - James Pinsuvana.png",
         "pic2path": "",
         "bio": "James is a senior at International Community School in Bangkok, Thailand. Besides helping MMT write problems, James enjoys playing ukulele, tennis, and volleyball in his free time. He occasionally draws as well."
     },
@@ -2750,7 +2721,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "Gabriel_NevesSiqueira_Serious - Gabriel Neves Siqueira.png",
         "pic2path": "",
         "bio": "Gabriel is a senior at the British College of Brazil. Besides tech, he enjoys modding games, playing the piano, learning languages, and studying machine learning."
     },
@@ -2895,7 +2866,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "9312 - Jiayi Zhu.jpeg",
         "pic2path": "",
         "bio": "Joey is a sophomore at Eastlake High School in Washington. Besides developing the tech at Mustang Math, Joey enjoys playing table tennis with his friends and playing the violin."
     },
@@ -4258,7 +4229,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "Nicole_Hernandez_Unger_Serious.png - Nicole Hernandez Unger.png",
         "pic2path": "",
         "bio": "Nicole is a senior at Kent School in Connecticut. Outside of working on MM Tournament Development, Nicole enjoys stage crew, hiking, and art with oil pastels!"
     },
@@ -4606,7 +4577,7 @@
         "cdpriority": "2",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "headshotMM - Andrea Gualdron.png",
         "pic2path": "",
         "bio": "Andrea Gualdron is a senior at Adlai E Stevenson High School in Illinois. She is part of the curriculum development team as an instructor, as well as a problem writing, test coordinator, and test-solver at Mustang Math. Besides MM, she enjoys skiing (tree-hugging), swimming (drowning), puzzles, reading, and going outside (touching grass)."
     },
@@ -4838,7 +4809,7 @@
         "cdpriority": "2",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "IMG_9917 - Girish Thillai Natarajan.jpeg",
         "pic2path": "",
         "bio": "Girish is a junior at Archbishop Mitty High School in California. Aside from Curriculum Development, he enjoys programming, reading, and playing the Wikipedia Game."
     },
@@ -4867,7 +4838,7 @@
         "cdpriority": "5",
         "bepriority": "2",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "Vivian_RosadoGriffith_Serious - Vivian Rosado Griffith.png",
         "pic2path": "",
         "bio": "Vivian is a junior at Walter Payton College Prep in Illinois. Besides promoting Mustang Math and helping out with MM’s Illinois Tournament, Vivian enjoys running, crocheting, and playing New York Times games (she mourns the Mini daily)."
     },
@@ -5041,7 +5012,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "Keira_Chari_Serious - Keira Chari.HEIC",
+        "pic1path": "Keira Chari Serious.png",
         "pic2path": "",
         "bio": "Keira is a freshman at The Nueva School in California. In addition to helping with Mustang Math events, she enjoys competing in math competition such as the AMC 10 and solving fun math-related puzzles. She is also an avid reader and Rubik's cube solver."
     },
@@ -5099,7 +5070,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "IMG_0365 - Jiko Chatterjee.jpg",
         "pic2path": "",
         "bio": "Soumalya Chatterjee is a junior at Sharon High School in Massachusetts. I help out with tournament development such as sending flyers, getting sponsorships, and volunteering at the events. During my free time, I like to draw and watch movies."
     },
@@ -5128,7 +5099,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "ZhuoZhan_Chen_ Serious - Zhuo Zhan Chen.png",
         "pic2path": "",
         "bio": "Zhuo Zhan is a sophomore at Stuyvesant High School in New York. Besides writing problems, Zhuo Zhan enjoys playing chess and listening to music."
     },
