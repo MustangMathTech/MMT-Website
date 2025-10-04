@@ -23,6 +23,17 @@ members = []
 
 with open(CSV_FILE, newline="", encoding="utf-8") as csvfile:
     reader = csv.DictReader(csvfile)
+    # identify the actual CSV header keys for the last two questions (flexible search)
+    sample_headers = reader.fieldnames or []
+    team_colname = None
+    region_colname = None
+    for h in sample_headers:
+        key = h.lower()
+        if "team you lead" in key:
+            team_colname = h
+        if "region you lead" in key:
+            region_colname = h
+
     for row in reader:
         full_name = get_col(row, "What's your Full Name?")
         first_name = get_col(row, "What's your Preferred First Name?")
@@ -33,6 +44,18 @@ with open(CSV_FILE, newline="", encoding="utf-8") as csvfile:
         bio = get_col(row, "Put your bio below.")
         teams = get_col(row, "Which teams are you part of? Check all that apply.")
         teams_lower = teams.lower()
+
+        # Read leader columns (if they exist)
+        team_lead_val = get_col(row, team_colname) if team_colname else ""
+        region_lead_val = get_col(row, region_colname) if region_colname else ""
+
+        # prefer team lead if filled, otherwise region lead
+        if team_lead_val:
+            orgrole_value = team_lead_val
+        elif region_lead_val:
+            orgrole_value = region_lead_val
+        else:
+            orgrole_value = ""
 
         org = True
         pw = "problem writing" in teams_lower
@@ -59,6 +82,9 @@ with open(CSV_FILE, newline="", encoding="utf-8") as csvfile:
             "discordid": discord_id,
             "discordusername": discord_username,
             "discordroles": "",
+            # --- new field added below ---
+            "orgrole": orgrole_value,
+            # ------------------------------
             "orgpriority": "5",
             "pwpriority": "2" if pw else "5",
             "tpriority": "2" if t else "5",
