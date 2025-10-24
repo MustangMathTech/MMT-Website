@@ -1,7 +1,7 @@
 import json
 import os
 
-input_path = "src/lib/jsons/Members25.json"
+input_path = "src/lib/jsons/Members26.json"
 output_path = input_path 
 
 with open(input_path, "r", encoding="utf-8") as f:
