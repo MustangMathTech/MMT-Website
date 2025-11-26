@@ -262,7 +262,7 @@ We reached over <b>1500 U.S. and international competitors</b> in our 2025 conte
     <Heading text="Who are We?" size={4} textColor="#3C6F8B;" />
 
 
-<embed src="src/lib/recap.pdf" width="800px" height="2100px" />
+<embed src="/home-page/recap.pdf" width="800px" height="2100px" />
     
 
 <div class="homeBox">
