@@ -246,7 +246,9 @@ bind:innerHeight={windowHeight} />
         <div class="homeText">
            Mustang Math is a <b>nonprofit organization</b> of over 200 high school and college volunteers who are dedicated towards providing middle schoolers access to <b>challenging, fun, and collaborative</b> math competitions and resources! 
 <br>
+<br>
 Our key projects include our annual team-based Mustang Math Tournament, free seminars and high-quality classes, mock AMCs, merch, custom tournament platform, and more! 
+<br>
 <br>
 We reached over <b>1500 U.S. and international competitors</b> in our 2025 contests, and are excited to continue our mission of spreading a love for mathematics amongst students.
         </div>
@@ -260,7 +262,7 @@ We reached over <b>1500 U.S. and international competitors</b> in our 2025 conte
     <Heading text="Who are We?" size={4} textColor="#3C6F8B;" />
 
 
-<embed src="recap.pdf" width="800px" height="2100px" />
+<embed src="src/lib/recap.pdf" width="800px" height="2100px" />
     
 
 <div class="homeBox">
@@ -326,7 +328,7 @@ Now, MM has a full team of volunteers worldwide, consisting of 6 dedicated teams
 Alongside our projects, MM has contributed to other mathematical initiatives, such as creating tests for the ASDAN Math Tournament and Math Kangaroo Asia Camp. 
 <br>
 <br>
-Internationally, Mustang Math is partnered with SIMCC as its exclusive global partner outside of the USA. With a strong presence in over 54 countries through SIMCC’s network of dedicated council partners, SIMCC is committed to making MMT accessible to students worldwide. To learn more, please visit https://www.simcconline.org/mmt/. 
+Internationally, Mustang Math is partnered with SIMCC as its exclusive global partner outside of the USA. With a strong presence in over 54 countries through SIMCC’s network of dedicated council partners, SIMCC is committed to making MMT accessible to students worldwide. To learn more, please visit <a href="https://www.simcconline.org/mmt/">https://www.simcconline.org/mmt/</a>. 
 
     </div>
 
