@@ -1,8 +1,8 @@
 <script>
     import Heading from "$lib/components/Heading.svelte";
     import Newsletter from "$lib/components/Newsletter.svelte";
-    import { fly, slide, blur, fade } from "svelte/transition";
-    import { quintOut } from 'svelte/easing';
+    import {fly, slide, blur, fade, scale} from "svelte/transition";
+    import { elasticIn, quintOut } from 'svelte/easing';
     import { onMount } from "svelte";
     import PanelBox from "$lib/components/PanelBox.svelte";
     import AnimatedElement from "$lib/components/AnimatedElement.svelte";
@@ -10,6 +10,8 @@
     import Header from "$lib/header/Header.svelte";
     import Horse from "$lib/components/Horse.svelte";
     import {lazyLoad} from '$lib/lazyload.js';
+    import {isEarlyBird} from '$lib/earlyBird.js';
+
 
     // need to do this to make the animation play on page load
     let visible = false;
@@ -43,6 +45,8 @@
             behavior: "smooth",
         });
     }
+    $: showEarlyBird = isEarlyBird();
+
 </script>
 
 <svelte:window bind:scrollY={y} bind:scrollX={x} bind:innerWidth={windowWidth}
@@ -63,14 +67,17 @@ bind:innerHeight={windowHeight} />
                 <div class="flex"><div class="headerline" /></div>
                     <br>
                     
-                    <a sveltekit:prefetch href="/classes/seminars" class="headerButton">
+                    <a sveltekit:prefetch href="/MMM" class="headerButton">
                         <div
                             class="headerButton"
                             on:mouseenter={toggleBackground}
                             on:mouseleave={toggleBackground}
                         >
                             <p class="headerButton" id="signupformmt">
-                                Join our <strong>FREE</strong> Calculus Seminar!
+                                {#if showEarlyBird}
+                                    Early Bird
+                                {/if}
+                                Registration is <strong>NOW OPEN</strong> for Mustang Math Mania!
                             </p>
                             <img
                                 use:lazyLoad
@@ -237,7 +244,13 @@ bind:innerHeight={windowHeight} />
     <div style="width:100%; align-items:center;display:flex; flex-direction:column; justify-content:center;" >
         <Heading text="About Mustang Math" size={4} textColor="#3C6F8B;" />
         <div class="homeText">
-            Mustang Math is a <b>nonprofit organization</b> of high school and college volunteers that are dedicated towards providing middle schoolers access to challenging, interesting, fun, and collaborative math competitions and resources! We are the organizers of the annual Mustang Math Tournament, run low-cost and high-quality mathematics tutoring and are also working on many new and exciting projects including a Youtube Channel, a competition management platform, private tutoring, and more! We reached almost 600 U.S. competitors in our MMT 2024 contests, and we're expecting 1000 more in our international tournament this upcoming August. We are excited to expand our team to continue our mission of spreading a love for mathematics amongst students. 
+           Mustang Math is a <b>nonprofit organization</b> of over 200 high school and college volunteers who are dedicated towards providing middle schoolers access to <b>challenging, fun, and collaborative</b> math competitions and resources! 
+<br>
+<br>
+Our key projects include our annual team-based Mustang Math Tournament, free seminars and high-quality classes, mock AMCs, merch, custom tournament platform, and more! 
+<br>
+<br>
+We reached over <b>1500 U.S. and international competitors</b> in our 2025 contests, and are excited to continue our mission of spreading a love for mathematics amongst students.
         </div>
     </div>  
 
@@ -247,19 +260,31 @@ bind:innerHeight={windowHeight} />
 
 
     <Heading text="Who are We?" size={4} textColor="#3C6F8B;" />
-    <div class="homeBox">
+
+
+<embed src="src/lib/recap.pdf" width="800px" height="2100px" />
+    
+
+<div class="homeBox">
         <div class="homeCard">
-<img
-  use:lazyLoad
-  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
-  data-src="/home-page/Volunteers.png"
-  style="width: 216px; height: 216px; flex-shrink: 0;"
-  alt="Volunteers"
-/>
-            <Heading text="80+" size={4} textColor="#38C27C;" />
+
+
+        <div id="volunteers">
+        <img
+        use:lazyLoad
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+        data-src="/home-page/Volunteers.png"
+        style="width: 216px; height: 210px; flex-shrink: 0;"
+        alt="Volunteers"
+        />
+
+        </div>
+            <Heading text="200+" size={4} textColor="#38C27C;" />
             <Heading text="Volunteers" size={2} textColor="#000;" />
         </div>
+
         <div class="homeCard">
+            <div id = "states">
             <img
             use:lazyLoad 
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" 
@@ -269,10 +294,13 @@ bind:innerHeight={windowHeight} />
             flex-shrink: 0;"
             alt="States with Volunteers"
             />
+            </div>
             <Heading text="34" size={4} textColor="#38C27C;" />
             <Heading text="States with Volunteers" size={2} textColor="#000;" />
         </div>
+
         <div class="homeCard">
+            <div id = "teams">
             <img
             use:lazyLoad
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
@@ -281,19 +309,27 @@ bind:innerHeight={windowHeight} />
             height: 216px;
             flex-shrink: 0;"
             alt="Teams"
+            
             />
-            <Heading text="7" size={4} textColor="#38C27C;" />
+            </div>
+            <Heading text="6" size={4} textColor="#38C27C;" />
             <Heading text="Teams" size={2} textColor="#000;" />
         </div>
     </div>
     
 
     <div class="homeText">
-        Mustang Math began with a small team of dedicated volunteers in 2020, who wanted to spread their love for mathematics to the surrounding community. Since then, MM has hosted several successful tournaments and provided mathematical resources available worldwide. 
-    </div>
+        Mustang Math began with a small team of dedicated volunteers in 2020, who wanted to spread their love for mathematics to their community. 
+<br>
+<br>
+Now, MM has a full team of volunteers worldwide, consisting of 6 dedicated teams overseeing several projects, all working towards the shared goal of promoting mathematics. 
+<br>
+<br>
+Alongside our projects, MM has contributed to other mathematical initiatives, such as creating tests for the ASDAN Math Tournament and Math Kangaroo Asia Camp. 
+<br>
+<br>
+Internationally, Mustang Math is partnered with SIMCC as its exclusive global partner outside of the USA. With a strong presence in over 54 countries through SIMCC’s network of dedicated council partners, SIMCC is committed to making MMT accessible to students worldwide. To learn more, please visit <a href="https://www.simcconline.org/mmt/">https://www.simcconline.org/mmt/</a>. 
 
-    <div class="homeText"> 
-        Now, MM has a full team of volunteers worldwide, consisting of multiple dedicated teams overseeing several projects, all working towards the shared goal of promoting mathematics. Alongside our projects, MM has contributed to other mathematical initiatives, such as the ASDAN Math Tournament (AMT), by providing problems and proctors to coordinate testing.
     </div>
 
     <div class="vertLine"></div>
@@ -332,7 +368,7 @@ bind:innerHeight={windowHeight} />
             <img
             use:lazyLoad 
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
-            data-src = "/home-page/Worldcomp.png"
+            data-src = "home-page/Worldcomp.png"
             style="width: 266px;
             height: 216px;
             flex-shrink: 0;"
@@ -390,8 +426,6 @@ If you are <strong>outside the USA</strong> and interested in participating in M
 
 </div>
 
-
-
 <style>
     .outside {
         background-image: url("/splash.svg"); /*url("/home-page/mustang_math_splash_screeen_5.gif");*/
@@ -401,6 +435,27 @@ If you are <strong>outside the USA</strong> and interested in participating in M
         overflow: hidden;
         
     }
+    #volunteers {
+        animation:scaleUp 5s ease;
+        animation-iteration-count: infinite;
+        
+    }
+    #states {
+        animation:scaleUp 5s ease;
+        animation-iteration-count: infinite;
+    }
+    #teams {
+        animation: scaleUp 5s ease;
+        animation-iteration-count: infinite;
+    }
+    @keyframes scaleUp{
+        to {
+            transform:scale(1.55)
+        }
+        
+    }
+
+    
 
     .sign-up {
         background-color: #65c083;

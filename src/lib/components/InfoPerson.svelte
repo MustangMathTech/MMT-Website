@@ -43,7 +43,6 @@
         <div class="person-pic flex">
             <div>
                 <div class="flex">
-                
                     <img class="person-img"
                     use:lazyLoad
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" 
