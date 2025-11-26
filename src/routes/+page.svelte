@@ -244,7 +244,11 @@ bind:innerHeight={windowHeight} />
     <div style="width:100%; align-items:center;display:flex; flex-direction:column; justify-content:center;" >
         <Heading text="About Mustang Math" size={4} textColor="#3C6F8B;" />
         <div class="homeText">
-            Mustang Math is a <b>nonprofit organization</b> of high school and college volunteers that are dedicated towards providing middle schoolers access to challenging, interesting, fun, and collaborative math competitions and resources! We are the organizers of the annual Mustang Math Tournament, run low-cost and high-quality mathematics tutoring and are also working on many new and exciting projects including a Youtube Channel, a competition management platform, private tutoring, and more! We reached almost 600 U.S. competitors in our MMT 2024 contests, and we're expecting 1000 more in our international tournament this upcoming August. We are excited to expand our team to continue our mission of spreading a love for mathematics amongst students. 
+           Mustang Math is a <b>nonprofit organization</b> of over 200 high school and college volunteers who are dedicated towards providing middle schoolers access to <b>challenging, fun, and collaborative</b> math competitions and resources! 
+<br>
+Our key projects include our annual team-based Mustang Math Tournament, free seminars and high-quality classes, mock AMCs, merch, custom tournament platform, and more! 
+<br>
+We reached over <b>1500 U.S. and international competitors</b> in our 2025 contests, and are excited to continue our mission of spreading a love for mathematics amongst students.
         </div>
     </div>  
 
@@ -254,7 +258,12 @@ bind:innerHeight={windowHeight} />
 
 
     <Heading text="Who are We?" size={4} textColor="#3C6F8B;" />
-    <div class="homeBox">
+
+
+<embed src="recap.pdf" width="800px" height="2100px" />
+    
+
+<div class="homeBox">
         <div class="homeCard">
 
 
@@ -268,7 +277,7 @@ bind:innerHeight={windowHeight} />
         />
 
         </div>
-            <Heading text="80+" size={4} textColor="#38C27C;" />
+            <Heading text="200+" size={4} textColor="#38C27C;" />
             <Heading text="Volunteers" size={2} textColor="#000;" />
         </div>
 
@@ -301,18 +310,24 @@ bind:innerHeight={windowHeight} />
             
             />
             </div>
-            <Heading text="7" size={4} textColor="#38C27C;" />
+            <Heading text="6" size={4} textColor="#38C27C;" />
             <Heading text="Teams" size={2} textColor="#000;" />
         </div>
     </div>
     
 
     <div class="homeText">
-        Mustang Math began with a small team of dedicated volunteers in 2020, who wanted to spread their love for mathematics to the surrounding community. Since then, MM has hosted several successful tournaments and provided mathematical resources available worldwide. 
-    </div>
+        Mustang Math began with a small team of dedicated volunteers in 2020, who wanted to spread their love for mathematics to their community. 
+<br>
+<br>
+Now, MM has a full team of volunteers worldwide, consisting of 6 dedicated teams overseeing several projects, all working towards the shared goal of promoting mathematics. 
+<br>
+<br>
+Alongside our projects, MM has contributed to other mathematical initiatives, such as creating tests for the ASDAN Math Tournament and Math Kangaroo Asia Camp. 
+<br>
+<br>
+Internationally, Mustang Math is partnered with SIMCC as its exclusive global partner outside of the USA. With a strong presence in over 54 countries through SIMCC’s network of dedicated council partners, SIMCC is committed to making MMT accessible to students worldwide. To learn more, please visit https://www.simcconline.org/mmt/. 
 
-    <div class="homeText"> 
-        Now, MM has a full team of volunteers worldwide, consisting of multiple dedicated teams overseeing several projects, all working towards the shared goal of promoting mathematics. Alongside our projects, MM has contributed to other mathematical initiatives, such as the ASDAN Math Tournament (AMT), by providing problems and proctors to coordinate testing.
     </div>
 
     <div class="vertLine"></div>
