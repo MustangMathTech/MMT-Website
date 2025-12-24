@@ -67,7 +67,7 @@ bind:innerHeight={windowHeight} />
                 <div class="flex"><div class="headerline" /></div>
                     <br>
                     
-                    <a sveltekit:prefetch href="/MMM" class="headerButton">
+                    <a sveltekit:prefetch href="/classes" class="headerButton">
                         <div
                             class="headerButton"
                             on:mouseenter={toggleBackground}
@@ -77,7 +77,7 @@ bind:innerHeight={windowHeight} />
                                 {#if showEarlyBird}
                                     Early Bird
                                 {/if}
-                                Registration is <strong>NOW OPEN</strong> for Mustang Math Mania!
+                                Registration is <strong>NOW OPEN</strong> for Geometry Classes!
                             </p>
                             <img
                                 use:lazyLoad
@@ -341,7 +341,7 @@ Internationally, Mustang Math is partnered with SIMCC as its exclusive global pa
     <Heading text="Classes" size={4} textColor="#3C6F8B;" />
 
     <div class="homeText">
-        <strong>Mustang Math Classes</strong> focus on <strong>competition math</strong> and are split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving. Our current <a href="/classes#classDetails"><strong>Algebra term</strong></a> runs for <strong>10 weeks</strong>, with one session per week. Each session is a 90-minute Zoom class with 5–15 students and 2 instructors.    </div>
+        <strong>Mustang Math Classes</strong> focus on <strong>competition math</strong> and are split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving. Our current <a href="/classes#classDetails"><strong>Geometry term</strong></a> runs for <strong>10 weeks</strong>, with one session per week. Each session is a 90-minute Zoom class with 5–15 students and 2 instructors.    </div>
 
     <div class="homeText">
         The total cost for the 10 sessions is <strong>$100</strong>. Financial aid is available upon request. As a nonprofit, we charge for our classes to fund our tournaments while promoting student commitment.
