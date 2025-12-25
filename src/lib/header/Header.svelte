@@ -40,7 +40,7 @@
       hasSubPages: true,
       index: 1,
       subPages: [
-		{ path: "/classes", text: "Algebra Class" },
+		{ path: "/classes", text: "Geometry Class" },
         { path: "/classes/instructors", text: "Instructors" },
         { path: "/classes/tutoring", text: "Tutoring" },
         { path: "/classes/seminars", text: "Free Seminars" }
