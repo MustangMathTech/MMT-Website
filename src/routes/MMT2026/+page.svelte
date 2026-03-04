@@ -71,7 +71,7 @@
     { name: "Online", date: "04/11/2026", location: "At home!", early: "$8", earlyDate: "March 11", normal: "$10", normalDate: "March 28", late: "$15", lateDate: "April 4", note: "Online only if unable to attend in-person.", link: "https://comp.mt/student/1/21" },
     { name: "Colorado", date: "04/11/2026", location: "Angevine Middle School", address: "1150 W South Boulder Road, Lafayette, CO 80026", early: "$15", earlyDate: "March 11", normal: "$20", normalDate: "March 28", late: "$25", lateDate: "April 4",link: "https://comp.mt/student/1/29" },
     { name: "Florida", date: "04/04/2026", location: "Pine View School", address: "1 Python Path, Osprey, FL 34229", early: "$15", earlyDate: "March 4", normal: "$20", normalDate: "March 21", late: "$25", lateDate: "March 28", link: "https://comp.mt/student/1/30" },
-    { name: "Georgia", date: "04/11/2026", location: "Old Atlanta Community Room", address: "810 Nichols Road, Suwanee, GA 30024", early: "$15", earlyDate: "March 11", normal: "$20", normalDate: "March 28", late: "$25", lateDate: "April 4", link: "https://comp.mt/student/1/28" },
+    { name: "Georgia", date: "4/25/2026", location: "Fowler Park", address: "4110 Carolene Way, Cumming, GA 30040", early: "$15", earlyDate: "March 25", normal: "$20", normalDate: "March 28", late: "$25", lateDate: "April 4", link: "https://comp.mt/student/1/28" },
     { name: "Massachusetts", date: "04/04/2026", location: "Thurston Middle School", address: "850 High St, Westwood, MA 02090", early: "$15", earlyDate: "March 4", normal: "$20", normalDate: "March 21", late: "$25", lateDate: "March 28", link: "https://comp.mt/student/1/24" },
     { name: "Michigan", date: "04/11/2026", location: "Novi High School", address: "24062 Taft Road, Novi, Michigan 48375", early: "$15", earlyDate: "March 11", normal: "$20", normalDate: "March 28", late: "$25", lateDate: "April 4", link: "https://comp.mt/student/1/33/" },
     { name: "Nevada", date: "03/28/2026", location: "Coral Academy of Science (Sandy Ridge)", address: "1051 Sandy Ridge Ave, Henderson, NV 89052", early: "$15", earlyDate: "Feb 21", normal: "$20", normalDate: "March 7", late: "$25", lateDate: "March 14", link: "https://comp.mt/student/1/32" },
@@ -193,6 +193,12 @@ Register now for lower pricing! Scroll down for registration links, and <a href=
               <span>Normal</span>
               <strong>{loc.normal}</strong>
               <small>Until {loc.normalDate}</small>
+            </div>
+
+            <div class="price-item">
+              <span>Late</span>
+              <strong>{loc.late}</strong>
+              <small>Until {loc.lateDate}</small>
             </div>
           </div>
 
