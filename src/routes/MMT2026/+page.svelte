@@ -80,7 +80,7 @@
     { name: "Ohio", date: "04/12/2026", location: "The Wellington School", address: "3650 Reed Rd, Columbus, OH 43220", early: "$15", earlyDate: "March 12", normal: "$20", normalDate: "March 29", late: "$25", lateDate: "April 5" , link: "https://comp.mt/student/1/31"},
     { name: "Southern California", date: "03/21/2026", location: "Earl Warren Middle School", address: "155 Stevens Ave, Solana Beach, CA 92075", early: "$15", earlyDate: "Feb 21", normal: "$20", normalDate: "March 7", late: "$25", lateDate: "March 14", note: "Lunch is INCLUDED" , link: "https://comp.mt/student/1/26"},
     { name: "Washington", date: "04/04/2026", location: "TBD", address: "Most likely Kent, WA (Confirmed Feb)", early: "$15", earlyDate: "March 4", normal: "$20", normalDate: "March 21", late: "$25", lateDate: "March 28" , link: "https://comp.mt/student/1/23"},
-    { name: "Illinois", date: "04/04/2026", location: "Hinsdale Central High School", address: "5500 S Grant St, Hinsdale IL 60521", early: "$15", earlyDate: "March 4", normal: "$20", normalDate: "March 28", late: "$25", lateDate: "TBD", link: "https://comp.mt/student/1/22" },
+    { name: "Illinois", date: "04/04/2026", location: "Hinsdale Central High School", address: "5500 S Grant St, Hinsdale IL 60521", early: "$15", earlyDate: "March 7", normal: "$20", normalDate: "March 20", late: "$25", lateDate: "March 28", link: "https://comp.mt/student/1/22" },
     { name: "Missouri", date: "TBD", location: "TBD", address: "Details coming soon", early: "$15", earlyDate: "TBD", normal: "$20", normalDate: "TBD", late: "$25", lateDate: "TBD", link: "https://comp.mt/student/1" }
   ];
 
