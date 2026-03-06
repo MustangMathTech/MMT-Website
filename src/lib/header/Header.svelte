@@ -20,7 +20,7 @@
     courseExpanded = !courseExpanded;
   }
 
-  const MOBILE = 1199;
+  const MOBILE = 1320;
 
   const navPages = [
   	{ path: "/MMT2026", text: "MMT 2026", hasSubPages: false},
