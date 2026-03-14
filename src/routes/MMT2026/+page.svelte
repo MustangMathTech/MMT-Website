@@ -84,6 +84,20 @@
     //{ name: "Missouri", date: "TBD", location: "TBD", address: "Details coming soon", early: "$15", earlyDate: "TBD", normal: "$20", normalDate: "TBD", late: "$25", lateDate: "TBD", link: "https://comp.mt/student/1" }
   ];
 
+
+    const scheduleData = [
+        { "Date": "4/26", "Time": "8:30 AM-9:00 AM", "Event": "Check-in" },
+        { "Date": "4/26", "Time": "9:00 AM-9:30 AM", "Event": "Opening Ceremony & Contest Instructions" },
+        { "Date": "4/26", "Time": "9:30 AM-11:10 AM", "Event": "Mounting Mayhem (75 minutes)" },
+        { "Date": "4/26", "Time": "11:10 AM-12:05 PM", "Event": "Herding Hexes (45 minutes)" },
+        { "Date": "4/26", "Time": "12:05 PM-1:00 PM", "Event": "Lunch Break (55 minutes)" },
+        { "Date": "4/26", "Time": "1:00 PM-2:25 PM", "Event": "Mystery Mare (75 minutes)" },
+        { "Date": "4/26", "Time": "2:25 PM-3:20 PM", "Event": "Relay Rodeo (45 minutes)" },
+        { "Date": "4/26", "Time": "3:20 PM-4:30 PM", "Event": "Optional Activities" },
+        { "Date": "4/26", "Time": "4:30 PM", "Event": "Awards Ceremony" }
+    ];
+
+
     const potentialTopicImages = [
         "/3MT-2025/prevQuestions/im1.png",
         "/3MT-2025/prevQuestions/im2.png",
@@ -211,6 +225,11 @@ Register now for lower pricing! Scroll down for registration links, and <a href=
       </div>
     {/each}
   </div>
+  <Heading text="Schedule" size={4} textColor="#1B9AAA" />
+  <div style="display: flex; justify-content: center;">
+    <Table data={scheduleData} width="auto" headerColor="#1B9AAA" rowColors={["#A4D6AF", "#ADCDD6"]} cellPadding={5} cellPaddingRight={20}/>
+  </div>
+  <p style="text-align: center;">*Note: schedule subject to change by region</p>
 </Section>
 
 <Section>
