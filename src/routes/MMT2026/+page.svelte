@@ -86,15 +86,15 @@
 
 
     const scheduleData = [
-        { "Date": "4/26", "Time": "8:30 AM-9:00 AM", "Event": "Check-in" },
-        { "Date": "4/26", "Time": "9:00 AM-9:30 AM", "Event": "Opening Ceremony & Contest Instructions" },
-        { "Date": "4/26", "Time": "9:30 AM-11:10 AM", "Event": "Mounting Mayhem (75 minutes)" },
-        { "Date": "4/26", "Time": "11:10 AM-12:05 PM", "Event": "Herding Hexes (45 minutes)" },
-        { "Date": "4/26", "Time": "12:05 PM-1:00 PM", "Event": "Lunch Break (55 minutes)" },
-        { "Date": "4/26", "Time": "1:00 PM-2:25 PM", "Event": "Mystery Mare (75 minutes)" },
-        { "Date": "4/26", "Time": "2:25 PM-3:20 PM", "Event": "Relay Rodeo (45 minutes)" },
-        { "Date": "4/26", "Time": "3:20 PM-4:30 PM", "Event": "Optional Activities" },
-        { "Date": "4/26", "Time": "4:30 PM", "Event": "Awards Ceremony" }
+        { "Time": "8:30 AM-9:00 AM", "Event": "Check-in" },
+        { "Time": "9:00 AM-9:30 AM", "Event": "Opening Ceremony & Contest Instructions" },
+        { "Time": "9:30 AM-11:10 AM", "Event": "Mounting Mayhem (75 minutes)" },
+        { "Time": "11:10 AM-12:05 PM", "Event": "Herding Hexes (45 minutes)" },
+        { "Time": "12:05 PM-1:00 PM", "Event": "Lunch Break (55 minutes)" },
+        { "Time": "1:00 PM-2:25 PM", "Event": "Mystery Mare (75 minutes)" },
+        { "Time": "2:25 PM-3:20 PM", "Event": "Relay Rodeo (45 minutes)" },
+        { "Time": "3:20 PM-4:30 PM", "Event": "Optional Activities" },
+        { "Time": "4:30 PM", "Event": "Awards Ceremony" }
     ];
 
 
