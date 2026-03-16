@@ -23,18 +23,18 @@
   const MOBILE = 1320;
 
   const navPages = [
-  	{ path: "/MMT2026", text: "MMT 2026", hasSubPages: false},
-
 	{
-		path: "/MMT2026 ",
+		path: "/MMT2026",
 		text: "Competitions",
 		hasSubPages: true,
 		index: 1,
 		subPages: [
+			{ path: "/MMT2026", text: "MMT 2026", hasSubPages: false },
 			{ path: "/past-tests", text: "Past Tests", hasSubPages: false },
 			{ path:"https://comp.mt/", text:"COMP Platform", hasSubPages:false},
 		],
 	},
+
     {
       path: "/classes",
       text: "Classes",
