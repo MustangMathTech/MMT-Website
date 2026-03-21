@@ -25,7 +25,7 @@
   const navPages = [
 	{
 		path: "/MMT2026",
-		text: "Competitions",
+		text: "MMT 2026",
 		hasSubPages: true,
 		index: 1,
 		subPages: [
