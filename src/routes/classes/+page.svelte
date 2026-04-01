@@ -36,9 +36,9 @@
     let y;
 
     let scheduleData = [
-        { "Class": "Beginner Sat", "Day of Week": "Saturday", "Time (PT)": "4:00 - 5:30 PM", "Dates": "1/10 - 3/14"},
-        { "Class": "Beginner Sun", "Day of Week": "Sunday", "Time (PT)": "2:00 - 3:30 PM", "Dates": "1/4 - 3/8"},
-        { "Class": "Intermediate Sun", "Day of Week": "Sunday", "Time (PT)": "4:00 - 5:30 PM", "Dates": "1/4 - 3/8"}
+        { "Class": "Beginner Sat", "Day of Week": "Saturday", "Time (PT)": "11:00 AM - 12:30 PM", "Dates": "4/11 - 6/21"},
+        { "Class": "Beginner Sun", "Day of Week": "Sunday", "Time (PT)": "11:00 AM - 12:30 PM", "Dates": "4/12 - 6/21"},
+        { "Class": "Intermediate Sun", "Day of Week": "Sunday", "Time (PT)": "3:00 PM - 4:30 PM", "Dates": "4/12 - 6/21"}
     ]
     
     // let topicsData = [
@@ -49,15 +49,15 @@
     // ]
 
     let topicsData = [
-    { "Week": "1", "Beginner": "Angles, Pythagorean Theorem, Similar and Congruent Triangles", "Intermediate": "Angles, Pythagorean Theorem, Similar and Congruent Triangles + Special Right Triangles, Quadrilaterals, Polygons" },
-    { "Week": "2", "Beginner": "Problemset: Angles, Pythagoras, Similarity/Congruence", "Intermediate": "Problemset: Angles, Pythagoras, Similarity/Congruence + Special Right Triangles, Quadrilaterals, Polygons" },
-    { "Week": "3", "Beginner": "Special Right Triangles, Quadrilaterals, Polygons", "Intermediate": "Triangle Centers, Area Formulas + More Triangle Properties" },
-    { "Week": "4", "Beginner": "Problemset: Special Right Triangles, Quadrilaterals, Polygons", "Intermediate": "Problemset: Triangle Centers, Area Formulas + More Triangle Properties" },
+    { "Week": "1", "Beginner": "Divisibility/Multiples/Factors", "Intermediate": "Divisibility/Multiples/Factors" },
+    { "Week": "2", "Beginner": "GCD&LCM/Notation/Remainder Thrm", "Intermediate": "GCD&LCM/Notation/Remainder Thrm" },
+    { "Week": "3", "Beginner": "Basic Lemmas (modulo)/Proofs of Divisibility Rules", "Intermediate": "Basic Lemmas (modulo)/Proofs of Divisibility Rules + Mods" },
+    { "Week": "4", "Beginner": "Mods + Review", "Intermediate": "Primes, Euler’s Totient, Fermat’s Little Thrm" },
     { "Week": "5", "Beginner": "Review", "Intermediate": "Review" },
-    { "Week": "6", "Beginner": "Triangle Centers, Area Formulas", "Intermediate": "Circles, Inscribed Angles, Power of a Point, Cyclic Quadrilaterals + More Circle Theorems" },
-    { "Week": "7", "Beginner": "Problemset: Triangle Centers, Area Formulas", "Intermediate": "Problemset: Circles, Inscribed Angles, Power of a Point, Cyclic Quadrilaterals + More Circle Theorems" },
-    { "Week": "8", "Beginner": "Circles, Inscribed Angles, Power of a Point, Cyclic Quadrilaterals", "Intermediate": "3D Geometry, Coordinate Bashing" },
-    { "Week": "9", "Beginner": "Problemset: Circles, Inscribed Angles, Power of a Point, Cyclic Quadrilaterals", "Intermediate": "3D Geometry, Coordinate Bashing + Review" },
+    { "Week": "6", "Beginner": "Permutations/Combinations", "Intermediate": "Permutations/Combinations + Committees/Casework/Complementary Counting" },
+    { "Week": "7", "Beginner": "Permutations/Combinations", "Intermediate": "Permutations/Combinations + Committees/Casework/Complementary Counting" },
+    { "Week": "8", "Beginner": "Venn Diagrams/PIE", "Intermediate": "Venn Diagrams/PIE + Advanced Probability" },
+    { "Week": "9", "Beginner": "Advanced Probability", "Intermediate": "Expected Value/More complicated probability" },
     { "Week": "10", "Beginner": "Review", "Intermediate": "Review" }
 ];
     onMount(() => {
@@ -92,7 +92,7 @@
 <Heading text="Summary" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><strong>Mustang Math Classes</strong> prepare students for <strong>math competitions</strong> through four terms: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving. Our current <a href="#classDetails"><strong>Geometry term</strong></a> runs for <strong>10 weeks</strong>, with one session per week. Each session consists of 90-minute Zoom classes with 5-15 students and 2 instructors.</p>  
+        <p style="font-size: 1.5em; text-align: center;"><strong>Mustang Math Classes</strong> prepare students for <strong>math competitions</strong> through four terms: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving. Our current <a href="#classDetails"><strong>Discrete term</strong></a> runs for <strong>10 weeks</strong>, with one session per week. Each session consists of 90-minute Zoom classes with 5-15 students and 2 instructors.</p>  
         <p style="font-size: 1.5em; text-align: center;">The program fee is <strong>$100</strong> for all 10 sessions, with financial aid available upon request. As a nonprofit, we charge for our classes to fund our tournaments while promoting student commitment.</p> 
     </PanelBox>
 </div> 
@@ -103,7 +103,6 @@
 <div style="margin-left: 10vw; margin-right: 10vw;" id="benefitsSection">
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;"><strong>Structure</strong></p>  
-        <p style="font-size: 1.5em; text-align: center;">This upcoming geometry term alternates between lectures + problem solving sessions. In total, slideshow lectures contain around 250+ slides, and problemsets contain 150+ practice problems. Homework between lectures and problem solving sessions will feature Gimkit games to solidify student understanding of basic concepts.</p>
         <p style="font-size: 1.5em; text-align: center;">Students can also request feedback on their homework submitted through google classroom. <a href="https://drive.google.com/drive/folders/1zD7pfsExHnB4pD2lxfWNoU7Fj42kQ0Nw">Sample class material and sample feedback.</a> Instructors will provide both group and one-on-one guidance on specific problems during problem solving sessions (every other week).</p>
         <br />
 
@@ -129,15 +128,15 @@
 <br /> -->
 
 
-<Heading text="Geometry Class Details" size={2} textColor="#1B9AAA" />
+<Heading text="Discrete Class Details" size={2} textColor="#1B9AAA" />
 <div id="classDetails" style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;">
-            Our 10-week <strong>Geometry class</strong> is strong preparation for math competitions. Each week, instructors teach key concepts that students practice through homework. Completing all homework earns students a <strong>certificate of completion</strong> and a $10 gift card.        </p>
+            Our 10-week <strong>Discrete class</strong> is strong preparation for math competitions. Each week, instructors teach key concepts that students practice through homework. Completing all homework earns students a <strong>certificate of completion</strong> and a $10 gift card.        </p>
         
         <ul style="font-size: 1.5em; text-align: center; list-style: none; padding: 0;">
-            <li><strong>Beginner Geometry</strong> (AMC 8 - Little to no competition experience)</li>
-            <li><strong>Intermediate Geometry</strong> (AMC 10 - Some competition experience)</li>
+            <li><strong>Beginner</strong> (AMC 8 - Little to no competition experience)</li>
+            <li><strong>Intermediate</strong> (AMC 10 - Some competition experience)</li>
         </ul>
         <!-- <p style="font-size: 1.5em; text-align: center;">
             Each week will focus on problems from a different topic: Week 1 on Algebra, Week 2 on Geometry, Week 3 on Counting, and Week 4 on Number Theory.
@@ -145,7 +144,6 @@
         <p style="font-size: 2em; text-align: center;">
             Click to view the <a href="https://link.mustangmath.com/ClassReg"><strong>registration form</strong></a>.
         </p>
-        <p style = "font-size: 1.5em; text-align:center;">This upcoming geometry term alternates between <strong>lectures + problem solving sessions</strong>. In total, slideshow lectures contain around 250+ slides, and <strong>problemsets</strong> contain 150+ practice problems. Homework between lectures and problem solving sessions will feature <strong>Gimkit games</strong> to solidify student understanding of basic concepts.
 Students can also request feedback on their homework submitted through google classroom. Sample class material and sample feedback. Instructors will provide both <strong>group and one-on-one guidance</strong> on specific problems during problem solving sessions.
 </p>
     </PanelBox>
