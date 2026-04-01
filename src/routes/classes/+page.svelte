@@ -144,6 +144,7 @@
         <p style="font-size: 2em; text-align: center;">
             Click to view the <a href="https://link.mustangmath.com/ClassReg"><strong>registration form</strong></a>.
         </p>
+<p style = "font-size: 1.5em; text-align:center;"> 
 Students can also request feedback on their homework submitted through google classroom. Sample class material and sample feedback. Instructors will provide both <strong>group and one-on-one guidance</strong> on specific problems during problem solving sessions.
 </p>
     </PanelBox>
