@@ -68,7 +68,7 @@
     ]
 
    const locations = [
-    { name: "Online", date: "04/11/2026", location: "At home!", early: "$8", earlyDate: "March 11", normal: "$10", normalDate: "March 28", late: "$15", lateDate: "April 4", note: "Online only if unable to attend in-person.", link: "https://comp.mt/student/1/21" },
+    { name: "Online", date: "04/25/2026", location: "At home!", early: "$8", earlyDate: "March 25", normal: "$10", normalDate: "April 11", late: "$15", lateDate: "April 18", note: "Online only if unable to attend in-person.", link: "https://comp.mt/student/1/21" },
     { name: "Colorado", date: "04/11/2026", location: "Angevine Middle School", address: "1150 W South Boulder Road, Lafayette, CO 80026", early: "$15", earlyDate: "March 11", normal: "$20", normalDate: "March 28", late: "$25", lateDate: "April 4",link: "https://comp.mt/student/1/29" },
     { name: "Florida", date: "04/04/2026", location: "Pine View School", address: "1 Python Path, Osprey, FL 34229", early: "$15", earlyDate: "March 4", normal: "$20", normalDate: "March 21", late: "$25", lateDate: "March 28", link: "https://comp.mt/student/1/30" },
     { name: "Georgia", date: "4/25/2026", location: "Fowler Park", address: "4110 Carolene Way, Cumming, GA 30040", early: "$15", earlyDate: "March 25", normal: "$20", normalDate: "March 28", late: "$25", lateDate: "April 4", link: "https://comp.mt/student/1/28" },
