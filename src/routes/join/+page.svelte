@@ -20,7 +20,7 @@
 	button_url="https://link.mustangmath.com/RecruitmentInfo"
 	button_text="Join Our Teams"
 	id="joinTheMustangMathTeam"
-	button2_url="https://docs.google.com/forms/d/e/1FAIpQLSdO-bYRgXo9rh3z_HTZs4yQ1ebf81XyRZiPPqiYiLFZMFDAdQ/viewform"
+	button2_url="link.mustangmath.com/RecruitmentInfo2627"
 	button2_text="Start MMT in your Area"
 />
 <br /> <br />
@@ -30,20 +30,12 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
 	<PanelBox>
 		<p style="font-size: 1.5em; text-align: center;">
-			Mustang Math is a <b style="color: #1B9AAA;">nonprofit organization</b> of
-			high school and college volunteers that are dedicated towards providing
-			middle schoolers access to challenging, interesting, fun, and
-			collaborative math competitions and resources! We are the organizers of
-			the annual <b style="color: #1B9AAA;">Mustang Math Tournament</b>
-			as well as our individual MMM, run low-cost and high-quality
+			Mustang Math is a <b style="color: #1B9AAA;">nonprofit organization</b>of high school and college volunteers that are dedicated towards providing middle schoolers access to challenging, interesting, fun, and collaborative math competitions and resources! We are the organizers of the annual  <b style="color: #1B9AAA;">Mustang Math Tournament</b>
+			as well as our individual MMM
 			<b style="color: #1B9AAA;">mathematics teaching</b>
-			and are also working on many new and exciting projects such as building an online test-taking platform, 
-			creating AMC and MATHCOUNTS mocks, and expanding
-			our social media reach! We reached
-			<b style="color: #1B9AAA;">almost 900 U.S. competitors</b> across our 9 locations of MMT 2025
-			contests, and we're expecting many more in our international tournament this
-			upcoming August. We are excited to expand our team to continue our mission
-			of spreading a love for mathematics amongst students.
+			and are also working on many new and exciting projects such as building an online test-taking platform, creating AMC and MATHCOUNTS mocks, and expanding our social media reach! We reached 
+			<b style="color: #1B9AAA;">over 1000 competitors</b> across the world during our annual 2025-2026 competitions, and we are excited to expand our team to continue our mission of spreading a love for mathematics amongst students.
+
 		</p>
 		<p style="font-size: 1.5em; text-align: center;">
 			We're currently looking for motivated high school students to <b style="color: #1B9AAA;">join our team!</b>
@@ -206,7 +198,7 @@
 <br />
 
 <div class="flex">
-	<a class="join_now" href="https://link.mustangmath.com/RecruitmentInfo" target="_blank"
+	<a class="join_now" href="link.mustangmath.com/RecruitmentInfo2627" target="_blank"
 		>Join Now</a
 	>
 </div>
