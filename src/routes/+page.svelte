@@ -67,14 +67,14 @@ bind:innerHeight={windowHeight} />
                 <div class="flex"><div class="headerline" /></div>
                     <br>
                     
-                    <a sveltekit:prefetch href="/MMT2026" class="headerButton">
+                    <a sveltekit:prefetch href="/join" class="headerButton">
                         <div
                             class="headerButton"
                             on:mouseenter={toggleBackground}
                             on:mouseleave={toggleBackground}
                         >
                             <p class="headerButton" id="signupformmt">
-                                Sign up for MMT 2026!
+                                Applications for MM 2026-2027 now open!
                             </p>
                             <img
                                 use:lazyLoad
