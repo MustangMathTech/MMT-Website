@@ -30,7 +30,7 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
 	<PanelBox>
 		<p style="font-size: 1.5em; text-align: center;">
-			Mustang Math is a <b style="color: #1B9AAA;">nonprofit organization</b> of
+			Mustang Math is a <b style="color: #1B9AAA;">nonprofit organization</b>  of
 			high school and college volunteers that are dedicated towards providing
 			middle schoolers access to challenging, interesting, fun, and
 			collaborative math competitions and resources! We are the organizers of
