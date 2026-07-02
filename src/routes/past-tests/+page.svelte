@@ -59,6 +59,82 @@
 
 <section>
   <Heading text="Past Exams" size={2.5} textColor="#1B9AAA" />
+    <DropdownArchive
+    id="showDropdown"
+    year="2025"
+    tests={[
+      [
+        ["Mounting Mayhem"],
+        ["Rules", "archive/2025/Rules_Puzzle_Cave.pdf"],
+        ["Puzzles", "archive/2025/Puzzle_Cave.pdf"],
+        ["Answer Sheet", "archive/2025/Puzzle_Cave_Answer_Sheet.pdf"],
+      ], 
+      [
+        ["Herding Hexes [Foal]"],
+        ["Problems", "archive/2025/Hexes_Foal.pdf"],
+        ["Answers", "archive/2025/Hexes_Foal_Answer_Key.pdf"],
+      ],
+      [
+        ["Herding Hexes [Colt]"],
+        ["Problems", "archive/2025/Hexes_Colt.pdf"],
+        ["Answers", "archive/2025/Hexes_Colt_Answer_Key.pdf"],
+      ],
+      [
+        ["Herding Hexes [Stallion]"],
+        ["Problems", "archive/2025/Hexes_Stallion.pdf"],
+        ["Answers", "archive/2025/Hexes_Stallion_Answer_Key.pdf"],
+      ],
+      [
+        ["Focussed Filly [Foal]"],
+        ["Problems", "archive/2025/Filly_Foal.pdf"],
+        ["Answers Sheet", "archive/2025/Filly_Foal_Answer_Sheet.pdf"],
+        ["Answers", "archive/2025/Filly_Foal_Answer_Key.pdf"],
+
+      ],
+      [
+        ["Focussed Filly [Colt]"],
+        ["Problems", "archive/2025/Filly_Colt.pdf"],
+        ["Answers Sheet", "archive/2025/Filly_Colt_Answer_Sheet.pdf"],
+        ["Answers", "archive/2025/Filly_Colt_Answer_Key.pdf"],
+      ],
+      [
+        ["Focussed Filly [Stallion]"],
+        ["Problems", "archive/2025/Filly_Stallion.pdf"],
+        ["Answers Sheet", "archive/2025/Filly_Stallion_Answer_Sheet.pdf"],
+        ["Answers", "archive/2025/Filly_Stallion_Answer_Key.pdf"],
+      ],
+      [
+        ["Gallop [Foal]"],
+        ["Problems", "archive/2025/Gallop_Foal.pdf"],
+        // ["Answers", "archive/2024/Gallop_Foal_Answers.pdf"] # We don't have these
+      ],
+      [
+        ["Gallop [Colt]"],
+        ["Problems", "archive/2025/Gallop_Colt.pdf"],
+        // ["Answers", "archive/2024/Gallop_Colt_Answers.pdf"]
+      ],
+      [
+        ["Gallop [Stallion]"],
+        ["Problems", "archive/2025/Gallop_Stallion.pdf"],
+        // ["Answers", "archive/2024/Gallop_Stallion_Answers.pdf"]
+      ],
+      [
+        ["MMM Solo Stampede [Foal]"],
+        ["Problems", "archive/2025/Foal.pdf"],
+        ["Answers", "archive/2025/Foal (1).pdf"],
+      ],
+      [
+        ["MMM Solo Stampede [Colt]"],
+        ["Problems", "archive/2025/Colt.pdf"],
+        ["Answers", "archive/2025/Colt (1).pdf"],
+      ],
+      [
+        ["MMM Solo Stampede [Stallion]"],
+        ["Problems", "archive/2025/Stallion.pdf"],
+        ["Answers", "archive/2025/Stallion (1).pdf"]
+      ]
+    ]}
+  />
   <DropdownArchive
     id="showDropdown"
     year="2024"
