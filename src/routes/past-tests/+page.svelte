@@ -120,18 +120,18 @@
       ],
       [
         ["MMM Solo Stampede [Foal]"],
-        ["Problems", "archive/2025/Foal.pdf"],
-        ["Answers", "archive/2025/Foal (1).pdf"],
+        ["Problems", "archive/2025/Foal (1).pdf"],
+        ["Answers", "archive/2025/Foal.pdf"],
       ],
       [
         ["MMM Solo Stampede [Colt]"],
-        ["Problems", "archive/2025/Colt.pdf"],
-        ["Answers", "archive/2025/Colt (1).pdf"],
+        ["Problems", "archive/2025/Colt (1).pdf"],
+        ["Answers", "archive/2025/Colt.pdf"],
       ],
       [
         ["MMM Solo Stampede [Stallion]"],
-        ["Problems", "archive/2025/Stallion.pdf"],
-        ["Answers", "archive/2025/Stallion (1).pdf"]
+        ["Problems", "archive/2025/Stallion (1).pdf"],
+        ["Answers", "archive/2025/Stallion.pdf"]
       ]
     ]}
   />
