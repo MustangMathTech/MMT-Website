@@ -9,7 +9,8 @@
     import sponsorTiers from '$lib/jsons/sponsorTiers';
     import Scratchpad from '$lib/components/Scratchpad.svelte';
     import { onMount, tick } from 'svelte';
-    import { evaluate } from 'mathjs';
+
+    export let data;
 
     let mathContainer;
 
@@ -22,51 +23,34 @@
     $: scrollOpacity = Math.max((windowHeight - 2 * y) / windowHeight, 0);
     $: learnMoreIsVisible = scrollOpacity > 0;
 
-    // answer checking logic:
-    const CORRECT_ANSWER = '12';
     let userAnswer = '';
     let feedback = null;
 
-    // relative tolerance for floating point
-    const TOLERANCE = 1e-9;
-    function safeEvaluate(expr) {
-        const value = evaluate(expr);
-        if (typeof value !== 'number' || !Number.isFinite(value)) {
-            throw new Error('Non-numeric result');
-        }
-        return value;
-    }
-
-    function numbersMatch(a, b) {
-        const diff = Math.abs(a - b);
-        const scale = Math.max(1, Math.abs(a), Math.abs(b));
-        return diff <= TOLERANCE * scale;
-    }
-
-    function checkAnswer() {
+    async function checkAnswer() {
         if (userAnswer.trim() === '') {
             feedback = null;
             return;
         }
 
-        let userValue;
         try {
-            userValue = safeEvaluate(userAnswer);
-        } catch (err) {
-            feedback = 'invalid';
-            return;
-        }
+            const response = await fetch('/potw/api/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ answer: userAnswer })
+            });
 
-        let correctValue;
-        try {
-            correctValue = safeEvaluate(CORRECT_ANSWER);
-        } catch (err) {
-            console.error('CORRECT_ANSWER failed to evaluate:', CORRECT_ANSWER, err);
+            if (response.ok) {
+                const result = await response.json();
+                feedback = result.feedback;
+            } else {
+                feedback = 'invalid';
+            }
+        } catch (error) {
             feedback = 'invalid';
-            return;
+            console.error('Error submitting answer:', error);
         }
-
-        feedback = numbersMatch(userValue, correctValue) ? 'correct' : 'incorrect';
     }
     function handleInput() {
         if (userAnswer.includes('\n')) {
@@ -132,14 +116,14 @@
 
 <Section>
     <div class="potw-layout" bind:this={mathContainer}>
-        <Heading text="PoTW #1" size={4} textColor="#3C6F8B" />
+        <Heading text={data.potw.title} size={4} textColor="#3C6F8B" />
 
         <PanelBox width="min(920px, 92vw)" padding="2rem" borderRadius="18px" style="background: #f8fbfd;">
             <div class="problem-card">
                 <p class="problem-label">Problem</p>
                 <div class="latex-problem">
                     <p>
-                        Let \(a,b,c\) be positive integers such that \(a+b+c=12\). Find the number of ordered triples \((a,b,c)\) with \(a \le b \le c\).
+                        {@html data.potw.problem}
                     </p>
                 </div>
             </div>
