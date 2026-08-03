@@ -2,44 +2,35 @@
     import PageHeader from '$lib/components/PageHeader.svelte';
     import Section from '$lib/components/Section.svelte';
     import Heading from '$lib/components/Heading.svelte';
-    import FlexBox from '$lib/components/FlexBox.svelte';
-    import Image from '$lib/components/Image.svelte';
     import PanelBox from '$lib/components/PanelBox.svelte';
-    import Link from '$lib/components/Link.svelte';
-    import sponsorTiers from '$lib/jsons/sponsorTiers';
-    import { onMount } from 'svelte';
+    import { onMount, tick } from 'svelte';
 
-    let windowWidth;
-    let windowHeight;
-    let learnMoreIsVisible = true;
-    let y;
-    let scrollOpacity = 1;
-    $: scrollOpacity = Math.max((windowHeight - 2 * y) / windowHeight, 0);
-    $: learnMoreIsVisible = scrollOpacity > 0;
+    export let data;
+    let mathContainers = [];
 
-    onMount(() => {
-        if (window.MathJax?.typesetPromise) {
-            window.MathJax.typesetPromise();
+    onMount(async () => {
+        await tick();
+
+        for (let attempts = 0; attempts < 100; attempts++) {
+            if (window.MathJax?.typesetPromise) {
+                await new Promise(requestAnimationFrame);
+                window.MathJax.typesetClear?.(mathContainers);
+                await window.MathJax.typesetPromise(mathContainers);
+                return;
+            }
+
+            await new Promise((resolve) => setTimeout(resolve, 100));
         }
     });
-
-    function scrollToElem(e) {
-        e.scrollIntoView({
-            behavior: "smooth",
-        });
-    }
 </script>
-
-<svelte:window
-    bind:scrollY={y}
-    bind:innerWidth={windowWidth}
-    bind:innerHeight={windowHeight}
-/>
 
 <svelte:head>
 	<title>Problem of the Week</title>
     <script>
         window.MathJax = {
+            startup: {
+                typeset: false
+            },
             tex: {
                 inlineMath: [['\\(', '\\)'], ['$', '$']]
             }
@@ -51,33 +42,33 @@
 
 <PageHeader title="Past Problems" description="Previous Problems of the Week and Solutions" button_url="/potw" button_text="See Current Problem" button_id="seePotw" target="_self"/>
 
-
-
+{#each data.archive as potw, i}
 <Section>
-    <div class="potw-layout">
-        <Heading text="PoTW #1" size={4} textColor="#3C6F8B" />
+    <div class="potw-layout" bind:this={mathContainers[i]}>
+        <Heading text={potw.title} size={4} textColor="#3C6F8B" />
 
         <PanelBox width="min(920px, 92vw)" padding="2rem" borderRadius="18px" style="background: #f8fbfd;">
             <div class="problem-card">
                 <p class="problem-label">Problem</p>
                 <div class="latex-problem">
                     <p>
-                        Let \(a,b,c\) be positive integers such that \(a+b+c=12\). Find the number of ordered triples \((a,b,c)\) with \(a \le b \le c\).
+                        {@html potw.problem}
                     </p>
                 </div>
             </div>
 
+            {#if potw.solution}
             <div class="solution-card">
-                <p class="solution-label">Answer: 12</p>
+                <p class="solution-label">Answer: {potw.answer}</p>
                 <p>
-                    We can find that when \(a=1\) there are \(5\) possible triples,
-                    4 when \(a=2\), 2 when \(a=3\), and 1 when \(a=4\).
-                    Therefore, there is a total of \(12\) possible solutions.
+                    {@html potw.solution}
                 </p>
             </div>
+            {/if}
         </PanelBox>
     </div>
 </Section>
+{/each}
 
 <style>
     .potw-layout {

@@ -38,7 +38,7 @@
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ answer: userAnswer })
+                body: JSON.stringify({ answer: userAnswer, potwId: data.potw.id })
             });
 
             if (response.ok) {

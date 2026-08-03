@@ -1,22 +1,8 @@
 import { json } from '@sveltejs/kit';
-import { evaluate } from 'mathjs';
+import fs from 'fs';
+import path from 'path';
 
-
-
-const CORRECT_ANSWER = '12';   // ANSWER
 const TOLERANCE = 1e-9;
-
-function safeEvaluate(expr) {
-    try {
-        const value = evaluate(expr);
-        if (typeof value !== 'number' || !Number.isFinite(value)) {
-            return { valid: false };
-        }
-        return { valid: true, value };
-    } catch (err) {
-        return { valid: false };
-    }
-}
 
 function numbersMatch(a, b) {
     const diff = Math.abs(a - b);
@@ -25,24 +11,33 @@ function numbersMatch(a, b) {
 }
 
 export async function POST({ request }) {
-    const { answer } = await request.json();
+    const { answer, potwId } = await request.json();
 
     if (answer.trim() === '') {
         return json({ feedback: null });
     }
 
-    const userResult = safeEvaluate(answer);
-    if (!userResult.valid) {
+    const filePath = path.resolve('src/routes/potw/server/potw.json');
+    const potwData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+
+    const potw = potwData.find(p => p.id === potwId);
+
+    if (!potw) {
         return json({ feedback: 'invalid' });
     }
 
-    const correctResult = safeEvaluate(CORRECT_ANSWER);
-    if (!correctResult.valid) {
-        console.error('CORRECT_ANSWER failed to evaluate:', CORRECT_ANSWER);
+    const userAnswer = parseFloat(answer);
+    if (isNaN(userAnswer)) {
         return json({ feedback: 'invalid' });
     }
 
-    const feedback = numbersMatch(userResult.value, correctResult.value) ? 'correct' : 'incorrect';
+    const correctAnswer = parseFloat(potw.answer);
+    if (isNaN(correctAnswer)) {
+        console.error('Correct answer is not a number for potwId:', potwId);
+        return json({ feedback: 'invalid' });
+    }
+
+    const feedback = numbersMatch(userAnswer, correctAnswer) ? 'correct' : 'incorrect';
 
     return json({ feedback });
 }
