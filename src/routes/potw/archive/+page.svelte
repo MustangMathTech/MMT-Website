@@ -32,7 +32,7 @@
                 typeset: false
             },
             tex: {
-                inlineMath: [['\\(', '\\)'], ['$', '$']]
+                inlineMath: [['\(', '\)'], ['$', '$']]
             }
         };
     </script>
@@ -42,33 +42,50 @@
 
 <PageHeader title="Past Problems" description="Previous Problems of the Week and Solutions" button_url="/potw" button_text="See Current Problem" button_id="seePotw" target="_self"/>
 
-{#each data.archive as potw, i}
-<Section>
-    <div class="potw-layout" bind:this={mathContainers[i]}>
-        <Heading text={potw.title} size={4} textColor="#3C6F8B" />
+{#if data.archive && data.archive.length > 0}
+    {#each data.archive as potw, i}
+    <Section>
+        <div class="potw-layout" bind:this={mathContainers[i]}>
+            <Heading text={potw.title} size={4} textColor="#3C6F8B" />
 
-        <PanelBox width="min(920px, 92vw)" padding="2rem" borderRadius="18px" style="background: #f8fbfd;">
-            <div class="problem-card">
-                <p class="problem-label">Problem</p>
-                <div class="latex-problem">
+            <PanelBox width="min(920px, 92vw)" padding="2rem" borderRadius="18px" style="background: #f8fbfd;">
+                <div class="problem-card">
+                    <p class="problem-label">Problem</p>
+                    <div class="latex-problem">
+                        <p>
+                            {@html potw.problem}
+                        </p>
+                    </div>
+                </div>
+
+                {#if potw.solution}
+                <div class="solution-card">
+                    <p class="solution-label">Answer: {potw.answer}</p>
                     <p>
-                        {@html potw.problem}
+                        {@html potw.solution}
                     </p>
                 </div>
-            </div>
+                {/if}
+            </PanelBox>
+        </div>
+    </Section>
+    {/each}
+{:else}
+    <Section>
+        <div class="potw-layout">
+            <Heading text="Past Problems" size={4} textColor="#3C6F8B" />
+            <PanelBox width="min(920px, 92vw)" padding="2rem" borderRadius="18px" style="background: #f8fbfd;">
+                <div class="problem-card">
+                    <p class="problem-label">Problem</p>
+                    <div class="latex-problem">
+                        <p>No problems archived yet, check back soon for past problems and their solutions.</p>
+                    </div>
+                </div>
+            </PanelBox>
+        </div>
+    </Section>
+{/if}
 
-            {#if potw.solution}
-            <div class="solution-card">
-                <p class="solution-label">Answer: {potw.answer}</p>
-                <p>
-                    {@html potw.solution}
-                </p>
-            </div>
-            {/if}
-        </PanelBox>
-    </div>
-</Section>
-{/each}
 
 <style>
     .potw-layout {

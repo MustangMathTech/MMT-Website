@@ -6,8 +6,8 @@ export async function load() {
     const potwData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 
     // Return all but the most recent problem
-    const allPotw = potwData.slice(0, -1).reverse();
+    const archive = potwData.slice(0, -1).reverse();
     return {
-        allPotw
+        archive
     };
 }

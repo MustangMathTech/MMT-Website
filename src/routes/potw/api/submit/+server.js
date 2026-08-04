@@ -1,8 +1,21 @@
 import { json } from '@sveltejs/kit';
 import fs from 'fs';
 import path from 'path';
+import { evaluate } from 'mathjs';
 
 const TOLERANCE = 1e-9;
+
+function safeEvaluate(expr) {
+    try {
+        const value = evaluate(expr);
+        if (typeof value !== 'number' || !Number.isFinite(value)) {
+            return { valid: false };
+        }
+        return { valid: true, value };
+    } catch (err) {
+        return { valid: false };
+    }
+}
 
 function numbersMatch(a, b) {
     const diff = Math.abs(a - b);
@@ -26,18 +39,18 @@ export async function POST({ request }) {
         return json({ feedback: 'invalid' });
     }
 
-    const userAnswer = parseFloat(answer);
-    if (isNaN(userAnswer)) {
+    const userResult = safeEvaluate(answer);
+    if (!userResult.valid) {
         return json({ feedback: 'invalid' });
     }
 
-    const correctAnswer = parseFloat(potw.answer);
-    if (isNaN(correctAnswer)) {
-        console.error('Correct answer is not a number for potwId:', potwId);
+    const correctResult = safeEvaluate(potw.answer);
+    if (!correctResult.valid) {
+        console.error('Correct answer is not a valid expression for potwId:', potwId);
         return json({ feedback: 'invalid' });
     }
 
-    const feedback = numbersMatch(userAnswer, correctAnswer) ? 'correct' : 'incorrect';
+    const feedback = numbersMatch(userResult.value, correctResult.value) ? 'correct' : 'incorrect';
 
     return json({ feedback });
 }
