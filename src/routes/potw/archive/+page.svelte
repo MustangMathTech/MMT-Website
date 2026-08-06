@@ -32,7 +32,7 @@
                 typeset: false
             },
             tex: {
-                inlineMath: [['\(', '\)'], ['$', '$']]
+                inlineMath: [['\\(', '\\)'], ['$', '$']]
             }
         };
     </script>
