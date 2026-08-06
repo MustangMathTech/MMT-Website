@@ -13,9 +13,12 @@ Each problem object should have the following structure:
     "title": "PoTW #N",
     "problem": "Formatted problem",
     "answer": "The answer to the problem",
-    "solution": "The detailed solution to the problem"
+    "solution": "The detailed solution to the problem",
+    "image": "/potw/images/[imagefile]"
 }
 ```
+
+Note that the images are stored in `static/potw/images/`.
 
 ## Date-Based Problem Selection
 

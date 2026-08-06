@@ -126,6 +126,13 @@
                     <p>
                         {@html data.potw.problem}
                     </p>
+                    {#if data.potw.image}
+                        {#if data.potw.image.endsWith('.pdf')}
+                            <iframe src={data.potw.image} title="Problem PDF" width="100%" height="500px" style="border: none; margin-top: 1rem; border-radius: 8px;"></iframe>
+                        {:else}
+                            <Image url={data.potw.image} alt="Problem Image" style="margin-top: 1rem; border-radius: 8px;" />
+                        {/if}
+                    {/if}
                 </div>
             </div>
 

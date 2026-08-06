@@ -4,6 +4,7 @@
     import Heading from '$lib/components/Heading.svelte';
     import PanelBox from '$lib/components/PanelBox.svelte';
     import { onMount, tick } from 'svelte';
+    import Image from '$lib/components/Image.svelte';
 
     export let data;
     let mathContainers = [];
@@ -55,6 +56,13 @@
                         <p>
                             {@html potw.problem}
                         </p>
+                        {#if potw.image}
+                            {#if potw.image.endsWith('.pdf')}
+                                <iframe src={potw.image} title="Problem PDF" width="100%" height="500px" style="border: none; margin-top: 1rem; border-radius: 8px;"></iframe>
+                            {:else}
+                                <Image url={potw.image} alt="Problem Image" style="margin-top: 1rem; border-radius: 8px;" />
+                            {/if}
+                        {/if}
                     </div>
                 </div>
 
