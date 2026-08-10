@@ -1,5 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+import potwData from './server/potw.json';
+
 export async function load() {
 
     // NOTE: this is secure. It checks the server's date, etc to see which
@@ -8,8 +8,7 @@ export async function load() {
 
     const now = new Date();
 
-    const filePath = path.resolve('src/routes/potw/server/potw.json');
-    const potwData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+
 
 
     // START TIME. MODIFY TO CHANGE POTW SELECTION instead of server/potw.json
