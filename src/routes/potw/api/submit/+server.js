@@ -1,6 +1,6 @@
 import { json } from '@sveltejs/kit';
 import { evaluate } from 'mathjs';
-import potwData from '../server/potw.json';
+import potwData from '../../server/potw.json';
 
 const TOLERANCE = 1e-9;
 
