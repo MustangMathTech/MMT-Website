@@ -1,7 +1,6 @@
 import { json } from '@sveltejs/kit';
-import fs from 'fs';
-import path from 'path';
 import { evaluate } from 'mathjs';
+import potwData from '../../server/potw.json';
 
 const TOLERANCE = 1e-9;
 
@@ -29,9 +28,6 @@ export async function POST({ request }) {
     if (answer.trim() === '') {
         return json({ feedback: null });
     }
-
-    const filePath = path.resolve('src/routes/potw/server/potw.json');
-    const potwData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 
     const potw = potwData.find(p => p.id === potwId);
 
