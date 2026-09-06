@@ -24,11 +24,12 @@
 
   const navPages = [
 	{
-		path: "/MMT2026",
-		text: "MMT 2026",
+		path: "/MMM",
+		text: "MMM",
 		hasSubPages: true,
-		index: 1,
+		index: 0,
 		subPages: [
+			{ path: "/MMM", text: "MMM", hasSubPages: false },
 			{ path: "/MMT2026", text: "MMT 2026", hasSubPages: false },
 			{ path: "/past-tests", text: "Past Tests", hasSubPages: false },
 			{ path:"https://comp.mt/", text:"COMP Platform", hasSubPages:false},
@@ -95,7 +96,7 @@
 								<span>
 									{navPage.text}
 									<i class="fa fa-caret-down" style="margin-left: 2px;" />
-									{#if $page.url.pathname.includes(navPage.path)}
+									{#if $page.url.pathname.includes(navPage.path) || (navPage.hasSubPages && navPage.subPages.some(sub => sub.path === $page.url.pathname))}
 										<div
 											class="textunderline"
 											in:receive|local
