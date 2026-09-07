@@ -9,24 +9,26 @@
     import Link from '$lib/components/Link.svelte';
     import SlideshowNew from "$lib/components/SlideshowNew.svelte";
 
+    let windowWidth;
+
     const scheduleData = [
-        {"Day": "9/20 to 9/27", "Start Time (PT)": "All Day", "Event": "Perilous Proofs"},
-        {"Day": "9/27", "Start Time (PT)": "9:00 AM", "Event": "Opening Ceremony"},
-        {"Day": "9/27", "Start Time (PT)": "9:30 AM", "Event": "Solo Stampede"},
-        {"Day": "9/27", "Start Time (PT)": "10:45 AM", "Event": "Lunch"},
-        {"Day": "9/27", "Start Time (PT)": "12:00 PM", "Event": "Betting Bonanza"},
-        {"Day": "9/27", "Start Time (PT)": "1:00 PM", "Event": "Meltdown Madness"},
-        {"Day": "9/27", "Start Time (PT)": "2:15 PM", "Event": "Activities"},
-        {"Day": "9/27", "Start Time (PT)": "4:30 PM", "Event": "Awards"},
+        {"Day": "09/19 to 09/26", "Start Time (PT)": "All Day", "Event": "Perilous Proofs"},
+        {"Day": "09/26", "Start Time (PT)": "9:00 AM", "Event": "Opening Ceremony <a href='https://us06web.zoom.us/j/88019410306?pwd=l36Mh72xy14BjjhCAJz7xGtXn56FzB.1' target='_blank' style='color:#1B9AAA;'>[Zoom Link]</a>"},
+        {"Day": "09/26", "Start Time (PT)": "9:30 AM", "Event": "Solo Stampede <a href='https://discord.gg/bYDDWxan5d' target='_blank' style='color:#5865F2;'>[Discord]</a>"},
+        {"Day": "09/26", "Start Time (PT)": "10:45 AM", "Event": "Lunch"},
+        {"Day": "09/26", "Start Time (PT)": "12:00 PM", "Event": "Betting Bonanza <a href='https://discord.gg/bYDDWxan5d' target='_blank' style='color:#5865F2;'>[Discord]</a>"},
+        {"Day": "09/26", "Start Time (PT)": "1:00 PM", "Event": "Meltdown Madness <a href='https://discord.gg/bYDDWxan5d' target='_blank' style='color:#5865F2;'>[Discord]</a>"},
+        {"Day": "09/26", "Start Time (PT)": "2:15 PM", "Event": "Activities (Break out rooms in zoom)"},
+        {"Day": "09/26", "Start Time (PT)": "4:30 PM", "Event": "Awards <a href='https://us06web.zoom.us/j/88019410306?pwd=l36Mh72xy14BjjhCAJz7xGtXn56FzB.1' target='_blank' style='color:#1B9AAA;'>[Zoom Link]</a>"},
     ];
 
     const acceptableData = [
-        {"Unnacceptable Answers": "61 x 17", "Acceptable Answers": "1037"},
-        {"Unnacceptable Answers": "sin(π/10)", "Acceptable Answers": "(√5 - 1)/4"},
-        {"Unnacceptable Answers": "1/√3", "Acceptable Answers": "√3/3"},
-        {"Unnacceptable Answers": "61/31415", "Acceptable Answers": "1/515"},
-        {"Unnacceptable Answers": "sin(π)", "Acceptable Answers": "0"},
-    ]
+        {"Unacceptable Answers": "61 x 17", "Acceptable Answers": "1037"},
+        {"Unacceptable Answers": "Sin (π/10)", "Acceptable Answers": "(√5 - 1)/4"},
+        {"Unacceptable Answers": "1/√3", "Acceptable Answers": "√3/3"},
+        {"Unacceptable Answers": "61/31415", "Acceptable Answers": "1/515"},
+        {"Unacceptable Answers": "Sin (π)", "Acceptable Answers": "0"},
+    ];
 
     const contestPhotos = [
         "/3MT-2025/pics/im1.jpg",
@@ -35,11 +37,39 @@
         "/3MT-2025/pics/im4.jpg",
     ];
     const potentialTopicImages = [
-        "/3MT-2025/prevQuestions/im1.png",
-        "/3MT-2025/prevQuestions/im2.png",
-        "/3MT-2025/prevQuestions/im3.png",
-        "/3MT-2025/prevQuestions/im4.png",
-        "/3MT-2025/prevQuestions/im5.png",
+        "/MMM/prevQuestions/im1.png",
+        "/MMM/prevQuestions/im2.png",
+        "/MMM/prevQuestions/im3.png",
+        "/MMM/prevQuestions/im4.png",
+        "/MMM/prevQuestions/im5.png",
+    ];
+
+    const topicsCovered = [
+        { "Algebra": "<ul><li>Systems of equations</li> <li>Quadratics</li> <li>Vieta’s</li> <li>Binomial Theorem</li> <li>Radicals/Exponents</li> <li>Simon’s Favorite Factoring Trick</li> <li>Ratios</li> <li>(Infinite) Geometric Series</li> <li>Arithmetic Series</li> <li>Sum/Difference of Powers</li> <li>Rate/Time</li> <li>Floor/Ceiling</li> <li>Absolute Value</li> <li>Substitution (Nested Roots/Repeated Fractions)</li> <li>Mean, Median, Mode, Range</li> <li>Telescoping</li></ul>",
+        "Combinatorics": "<ul><li>Sticks and Stones</li> <li>Permutation/Combination</li> <li>Properties of Inclusion Exclusion for three or less sets</li> <li>Basic Geometric Probability</li> <li>Conditional Probability</li> <li>Expected Values</li> <li>Complementary Counting</li> <li>Recursion</li> <li>Bijections</li> <li>Casework</li> <li>Pigeonhole Principle</li> <li>Double-counting</li> <li>Basic Invariants</li></ul>",
+        "Geometry": "<ul><li>Area Formulas</li> <li>Volume Formulas</li> <li>Shoelace Formula</li> <li>Pythagorean Theorem</li> <li>Distance Formula</li> <li>Similar Triangles</li> <li>Angle Chasing</li> <li>Power of a Point</li> <li>Basic Mass Points</li> <li>Heron’s Formula</li> <li>Pick’s Theorem</li> <li>Surface Area for Pyramids, Prisms, and Cones</li> <li>Arcs and Sectors</li> <li>Angle Bisector Theorem</li> <li>Internal/External Angles</li></ul>",
+        "Number Theory": "<ul><li>Fermat’s Little Theorem</li> <li>Euclidean Algorithm</li> <li>Chinese Remainder Theorem</li> <li>Divisibility</li> <li>Chicken McNugget Theorem</li> <li>GCD and LCM</li> <li>Number of Factors</li> <li>Sum of Factors</li> <li>Basic Modular Arithmetic</li> <li>Fundamental Theorem of Arithmetic</li></ul>" }
+    ];
+
+    const topicsSmall1 = [
+        { "Algebra": "<ul><li>Systems of equations</li> <li>Quadratics</li> <li>Vieta’s</li> <li>Binomial Theorem</li> <li>Radicals/Exponents</li> <li>Simon’s Favorite Factoring Trick</li> <li>Ratios</li> <li>(Infinite) Geometric Series</li> <li>Arithmetic Series</li> <li>Sum/Difference of Powers</li> <li>Rate/Time</li> <li>Floor/Ceiling</li> <li>Absolute Value</li> <li>Substitution (Nested Roots/Repeated Fractions)</li> <li>Mean, Median, Mode, Range</li> <li>Telescoping</li></ul>",
+        "Combinatorics": "<ul><li>Sticks and Stones</li> <li>Permutation/Combination</li> <li>Properties of Inclusion Exclusion for three or less sets</li> <li>Basic Geometric Probability</li> <li>Conditional Probability</li> <li>Expected Values</li> <li>Complementary Counting</li> <li>Recursion</li> <li>Bijections</li> <li>Casework</li> <li>Pigeonhole Principle</li> <li>Double-counting</li> <li>Basic Invariants</li></ul>" }
+    ];
+    const topicsSmall2 = [
+        { "Geometry": "<ul><li>Area Formulas</li> <li>Volume Formulas</li> <li>Shoelace Formula</li> <li>Pythagorean Theorem</li> <li>Distance Formula</li> <li>Similar Triangles</li> <li>Angle Chasing</li> <li>Power of a Point</li> <li>Basic Mass Points</li> <li>Heron’s Formula</li> <li>Pick’s Theorem</li> <li>Surface Area for Pyramids, Prisms, and Cones</li> <li>Arcs and Sectors</li> <li>Angle Bisector Theorem</li> <li>Internal/External Angles</li></ul>",
+        "Number Theory": "<ul><li>Fermat’s Little Theorem</li> <li>Euclidean Algorithm</li> <li>Chinese Remainder Theorem</li> <li>Divisibility</li> <li>Chicken McNugget Theorem</li> <li>GCD and LCM</li> <li>Number of Factors</li> <li>Sum of Factors</li> <li>Basic Modular Arithmetic</li> <li>Fundamental Theorem of Arithmetic</li></ul>" }
+    ];
+    const topicsAlgebra = [
+        {"Algebra": "<ul><li>Systems of equations</li> <li>Quadratics</li> <li>Vieta’s</li> <li>Binomial Theorem</li> <li>Radicals/Exponents</li> <li>Simon’s Favorite Factoring Trick</li> <li>Ratios</li> <li>(Infinite) Geometric Series</li> <li>Arithmetic Series</li> <li>Sum/Difference of Powers</li> <li>Rate/Time</li> <li>Floor/Ceiling</li> <li>Absolute Value</li> <li>Substitution (Nested Roots/Repeated Fractions)</li> <li>Mean, Median, Mode, Range</li> <li>Telescoping</li></ul>"}
+    ];
+    const topicsCombo = [
+        {"Combinatorics": "<ul><li>Sticks and Stones</li> <li>Permutation/Combination</li> <li>Properties of Inclusion Exclusion for three or less sets</li> <li>Basic Geometric Probability</li> <li>Conditional Probability</li> <li>Expected Values</li> <li>Complementary Counting</li> <li>Recursion</li> <li>Bijections</li> <li>Casework</li> <li>Pigeonhole Principle</li> <li>Double-counting</li> <li>Basic Invariants</li></ul>"}
+    ];
+    const topicsGeo = [
+        {"Geometry": "<ul><li>Area Formulas</li> <li>Volume Formulas</li> <li>Shoelace Formula</li> <li>Pythagorean Theorem</li> <li>Distance Formula</li> <li>Similar Triangles</li> <li>Angle Chasing</li> <li>Power of a Point</li> <li>Basic Mass Points</li> <li>Heron’s Formula</li> <li>Pick’s Theorem</li> <li>Surface Area for Pyramids, Prisms, and Cones</li> <li>Arcs and Sectors</li> <li>Angle Bisector Theorem</li> <li>Internal/External Angles</li></ul>"}
+    ];
+    const topicsNT = [
+        {"Number Theory": "<ul><li>Fermat’s Little Theorem</li> <li>Euclidean Algorithm</li> <li>Chinese Remainder Theorem</li> <li>Divisibility</li> <li>Chicken McNugget Theorem</li> <li>GCD and LCM</li> <li>Number of Factors</li> <li>Sum of Factors</li> <li>Basic Modular Arithmetic</li> <li>Fundamental Theorem of Arithmetic</li></ul>"}
     ];
 
     const testimonials = [
@@ -53,17 +83,19 @@
             author: "David Freeman",
             title: "MMT 2025 Coach, Northern California"
         }
-    ]
+    ];
 </script>
 
 <svelte:head>
 	<title>MMM</title>
 </svelte:head>
 
+<svelte:window bind:innerWidth={windowWidth} />
+
 <PageHeader
 	title="MMM"
 	description="Mustang Math Mania"
-	button_url=" https://docs.google.com/document/d/1YH8V1JGTukikWwpQ_x7eDjDwgL_b6FLvWFX8l241xQ8?usp=sharing"
+	button_url="https://docs.google.com/document/d/1YH8V1JGTukikWwpQ_x7eDjDwgL_b6FLvWFX8l241xQ8?usp=sharing"
 	button_text="Register Now"
 	id="registerFor3MT"
 />
@@ -80,18 +112,16 @@ The tournament is centered around teamwork and collaboration, incentivizing stud
 <br><br>
 Don't believe us? Check out some comments from past participants below!
 <br><br>
-DATE: September 27th, 2025 <br>
+DATE: September 26th, 2026 <br>
 TEAM SIZE: 3-4*<br>
 LOCATION: Online<br>
-EARLY EQUINE COST: $8 per participant (Register before September 6th, 2025)<br>
-NORMAL COST: $10 per participant (Register before September 13th, 2025)<br>
-LATE COST: $15 per participant (Register before September 20th, 2025)<br>
+EARLY EQUINE COST: $12 per participant (Register before September 5th, 2026)<br>
+NORMAL COST: $15 per participant (Register before September 12th, 2026)<br>
+LATE COST: $20 per participant (Register before September 19th, 2026)<br>
 <br><br>
 <b><a href = "https://docs.google.com/document/d/1YH8V1JGTukikWwpQ_x7eDjDwgL_b6FLvWFX8l241xQ8?usp=sharing">Click Here To Access Registration Instructions</a></b><br>
 <b><a href = "https://docs.google.com/document/d/1mKKPEXknc3b3zCBVsDkkrhutKylvl3_0lo46VCr3F34/">Click Here To Access Further Information</a></b><br>
 <br><br>
-
-
 *: Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4
             </p>
         </PanelBox>
@@ -100,11 +130,11 @@ LATE COST: $15 per participant (Register before September 20th, 2025)<br>
 
 <Section>
     <br /> <br />
-    <Heading text="Intro to Proofs Seminar!!!" size={3} textColor="#FF2E00" />
+    <Heading text="Intro to Proofs Seminar" size={3} textColor="#FF2E00" />
     <FlexBox>
         <PanelBox width="60%" style="min-width: 360px;">
             <p style="font-size: 1.2em; margin: 5px">
-In addition to the competition itself, we are hosting 2 free Intro to Proofs classes to prepare students for the week-long proof round in MMM! Proof techniques, which aren’t covered in a typical middle school classroom will benefit both students with no proof experience and experienced problem solvers. If interested, please join the <b><a href = "https://classroom.google.com/c/Nzk1NTE3NjQxNTgy?cjc=jrixsgay">Google Classroom</a></b>.
+In addition to the competition itself, we are hosting 2 free Intro to Proofs classes to prepare students for the week-long proof round in MMM! Class 1 will cover logic and proof techniques like contradiction. Class 2 will be slightly more challenging and focus on induction. These classes will be a great opportunity to gain a head start and develop stronger mathematical foundations. Proof techniques, which aren’t covered in a typical middle school classroom will benefit both students with no proof experience and experienced problem solvers. If interested, please join the google classroom with the code <b>JRIXSGAY</b> (<b><a href = "https://classroom.google.com/c/Nzk1NTE3NjQxNTgy?cjc=jrixsgay">Google Classroom Link</a></b>).
             </p>
         </PanelBox>
     </FlexBox>
@@ -119,6 +149,9 @@ In addition to the competition itself, we are hosting 2 free Intro to Proofs cla
             <FlexBox>
                 <PanelBox>
                     <Table data={scheduleData} width="auto" headerColor="#1B9AAA" rowColors={["#A4D6AF", "#ADCDD6"]} cellPadding={5} cellPaddingRight={20}/>
+                    <p style="font-size: 0.9em; text-align: center; margin-top: 10px; font-style: italic;">
+                        *Schedule subject to change. Note that there is built-in buffer time to explain instructions & assist with technical difficulties.
+                    </p>
                 </PanelBox>
             </FlexBox>
         </div>
@@ -152,12 +185,12 @@ No Cheating - This contest has a zero-tolerance cheating policy. Any evidence of
 <Heading text = "Answer Formatting Rules" size = {1} textColor="#1B9AAA"></Heading>
 <ul>
     <li>Make sure you don’t have any extra calculations in your answers!</li>
-    <li>For example, 78 and 285 is okay, but ½ + ⅓ is not. 
+    <li>For example, 78 and 2<sup>85</sup> is okay, but ½ + ⅓ is not. 
     Simplify radicals!</li>
     <li>Rewrite expressions like √63 into 3√7 and √(1/9) as ⅓ (exact decimal answers are also acceptable)</li>
     <li>Rationalize all denominators - write 1/√2 as √2/2 and 1/(√2 - 1) as √2 + 1</li>
     <li>No repeating sums / products!</li>
-    1.333… should be submitted as 1 ⅓ and 2*2*2*2*2 as 32
+    1.333… should be submitted as 4/3 and 2*2*2*2*2 as 32
     <li>If you have any further questions, please contact us at <Link target="_blank" url="mailto:tournament@mustangmath.com" text="tournament@mustangmath.com" />!</li>
 </ul>
 
@@ -178,13 +211,49 @@ No Cheating - This contest has a zero-tolerance cheating policy. Any evidence of
         <p style="font-size: 1.2em; margin: 5px">Students will compete individually to answer a 25 question test in 60 minutes. These individual scores will be factored into the team score at the end.</p>
         
         <Heading text = "Meltdown Madness" size = {1} textColor="#1B9AAA"></Heading>
-        <p style="font-size: 1.2em; margin: 5px">Teams will compete in a 25 question test over 25 minutes. After the first minute, problem #1 will sink and become unsolvable. Every minute, the next problem will sink until all 25 problems become locked (new answers can not be submitted). Students will only earn points on unlocked problems solved correctly.</p>
+        <p style="font-size: 1.2em; margin: 5px">Teams will compete in a 25 question test over 50 minutes. After the first minute, problem #1 will sink and become unsolvable. Every minute, the next problem will sink until all 25 problems become locked (new answers can not be submitted). Students will only earn points on unlocked problems solved correctly.</p>
 
-        <Heading text = "Betting Bonanza:" size = {1} textColor="#1B9AAA"></Heading>
+        <Heading text = "Betting Bonanza" size = {1} textColor="#1B9AAA"></Heading>
         <p style="font-size: 1.2em; margin: 5px">Teams start with 100 points and 5 problem sets, each with a multiplier, (1.5, 2, 2.5, 3, and 3.5). Teams can then bet/allocate their points to sets before seeing problems, keeping any unused points. Over the next 45 minutes, teams work to solve the 25 problems. Each full set correctly solved returns the bet points multiplied, no points otherwise. Teams also earn 2 bonus points per correct problem, with a maximum of 50 bonus points.</p>
     </Dropdown>
     <Dropdown mainText="Potential Topics Covered">
+        {#if windowWidth > 1000}
+            <Table data={topicsCovered} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/1200}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/1500}em;" />
+        {:else if windowWidth > 800}
+            <Table data={topicsSmall1} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/800}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/800}em;" />
+            <Table data={topicsSmall2} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/800}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/800}em;" />
+        {:else}
+            <Table data={topicsAlgebra} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
+            <Table data={topicsCombo} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
+            <Table data={topicsGeo} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
+            <Table data={topicsNT} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
+        {/if}
+        <br />
+        <Heading text="Sample Questions" size={1} textColor="#1B9AAA"></Heading>
         <SlideshowNew images={potentialTopicImages}></SlideshowNew>
+    </Dropdown>
+    <Dropdown mainText="FAQ">
+        <div style="margin-left: 5vw; margin-right: 5vw; font-size: 1.1em;">
+            <p>
+                <strong>Q:</strong> I'm a parent or a student, not a coach - how can I register? <br />
+                <strong>A:</strong> Mustang Math doesn't require you to be a coach! A parent can act as a coach (and register as a coach on ContestDojo) to create an organization and team(s) for their participating students. <strong>Students should not create coach accounts.</strong>
+            </p>
+            <p>
+                <strong>Q:</strong> Why aren't there awards for high schoolers? <br />
+                <strong>A:</strong> Our mission and tests are geared towards middle school mathematics, and thus our awards are as well. We welcome high school students to participate for the experience only.
+            </p>
+            <p>
+                <strong>Q:</strong> You have three divisions, what are the differences? <br />
+                <strong>A:</strong> Our Foal Division is for students in 6th grade and below, Colt Division is for 7th grade, and Stallion Division is for 8th grade. Students may compete in divisions higher than their grade level but are not allowed to compete in lower divisions.
+            </p>
+            <p>
+                <strong>Q:</strong> Where can I find practice material for the tests? How can we prepare? <br />
+                <strong>A:</strong> You can take a look at our <a target="_blank" sveltekit:prefetch href="/past-tests">past tests</a>, and we also highly recommend looking at <a target="_blank" sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a target="_blank" sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a target="_blank" sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
+            </p>
+            <p>
+                <strong>Have more questions?</strong> Please feel free to contact us at <Link target="_blank" url="mailto:tournament@mustangmath.com" text="tournament@mustangmath.com" />!
+            </p>
+        </div>
     </Dropdown>
 </Section>
 
@@ -212,6 +281,7 @@ No Cheating - This contest has a zero-tolerance cheating policy. Any evidence of
 </div>
 </Section>
 
+<br><br><br><br><br>
 
 <style>
 .split-layout {
