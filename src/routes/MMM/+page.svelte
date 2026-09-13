@@ -14,10 +14,10 @@
     const scheduleData = [
         {"Day": "09/19 to 09/26", "Start Time (PT)": "All Day", "Event": "Perilous Proofs"},
         {"Day": "09/26", "Start Time (PT)": "9:00 AM", "Event": "Opening Ceremony <a href='https://us06web.zoom.us/j/88019410306?pwd=l36Mh72xy14BjjhCAJz7xGtXn56FzB.1' target='_blank' style='color:#1B9AAA;'>[Zoom Link]</a>"},
-        {"Day": "09/26", "Start Time (PT)": "9:30 AM", "Event": "Solo Stampede <a href='https://discord.gg/bYDDWxan5d' target='_blank' style='color:#5865F2;'>[Discord]</a>"},
+        {"Day": "09/26", "Start Time (PT)": "9:30 AM", "Event": "Solo Stampede <a href='https://bit.ly/MMMdiscord' target='_blank' style='color:#5865F2;'>[Discord]</a>"},
         {"Day": "09/26", "Start Time (PT)": "10:45 AM", "Event": "Lunch"},
-        {"Day": "09/26", "Start Time (PT)": "12:00 PM", "Event": "Betting Bonanza <a href='https://discord.gg/bYDDWxan5d' target='_blank' style='color:#5865F2;'>[Discord]</a>"},
-        {"Day": "09/26", "Start Time (PT)": "1:00 PM", "Event": "Meltdown Madness <a href='https://discord.gg/bYDDWxan5d' target='_blank' style='color:#5865F2;'>[Discord]</a>"},
+        {"Day": "09/26", "Start Time (PT)": "12:00 PM", "Event": "Betting Bonanza <a href='https://bit.ly/MMMdiscord' target='_blank' style='color:#5865F2;'>[Discord]</a>"},
+        {"Day": "09/26", "Start Time (PT)": "1:00 PM", "Event": "Meltdown Madness <a href='https://bit.ly/MMMdiscord' target='_blank' style='color:#5865F2;'>[Discord]</a>"},
         {"Day": "09/26", "Start Time (PT)": "2:15 PM", "Event": "Activities (Break out rooms in zoom)"},
         {"Day": "09/26", "Start Time (PT)": "4:30 PM", "Event": "Awards <a href='https://us06web.zoom.us/j/88019410306?pwd=l36Mh72xy14BjjhCAJz7xGtXn56FzB.1' target='_blank' style='color:#1B9AAA;'>[Zoom Link]</a>"},
     ];
@@ -116,8 +116,8 @@ DATE: September 26th, 2026 <br>
 TEAM SIZE: 3-4*<br>
 LOCATION: Online<br>
 EARLY EQUINE COST: $12 per participant (Register before September 5th, 2026)<br>
-NORMAL COST: $15 per participant (Register before September 12th, 2026)<br>
-LATE COST: $20 per participant (Register before September 19th, 2026)<br>
+NORMAL COST: $15 per participant (Register before September 19th, 2026)<br>
+LATE COST: $20 per participant (Register before September 22nd, 2026)<br>
 <br><br>
 <b><a href = "https://docs.google.com/document/d/1KcXrzksrI2VY84erTJ4I1dNTMSxQ3ujXwqWMD3i8MUg/edit?usp=drivesdk">Click Here To Access Registration Instructions</a></b><br>
 <b><a href = "https://docs.google.com/document/d/1xAx_feHicQjdqq-PhWK8bF2HBch5pzpPzju9qhw7pOo/edit?usp=drivesdk">Click Here To Access Further Information</a></b><br>
@@ -134,7 +134,7 @@ LATE COST: $20 per participant (Register before September 19th, 2026)<br>
     <FlexBox>
         <PanelBox width="60%" style="min-width: 360px;">
             <p style="font-size: 1.2em; margin: 5px">
-In addition to the competition itself, we are hosting 2 free Intro to Proofs classes to prepare students for the week-long proof round in MMM! Class 1 will cover logic and proof techniques like contradiction. Class 2 will be slightly more challenging and focus on induction. These classes will be a great opportunity to gain a head start and develop stronger mathematical foundations. Proof techniques, which aren’t covered in a typical middle school classroom will benefit both students with no proof experience and experienced problem solvers. If interested, please join the google classroom with the code <b>JRIXSGAY</b> (<b><a href = "https://classroom.google.com/c/Nzk1NTE3NjQxNTgy?cjc=jrixsgay">Google Classroom Link</a></b>).
+In addition to the competition itself, we are hosting 2 free Intro to Proofs classes to prepare students for the week-long proof round in MMM! Class 1 will cover logic and proof techniques like contradiction. Class 2 will be slightly more challenging and focus on induction. These classes will be a great opportunity to gain a head start and develop stronger mathematical foundations. Proof techniques, which aren’t covered in a typical middle school classroom will benefit both students with no proof experience and experienced problem solvers. If interested, please join the google classroom with the code <b>NMT3DOEW</b> (<b><a href = "https://classroom.google.com/c/ODg0NzE4OTc2ODU5?cjc=nmt3doew">Google Classroom Link</a></b>).
             </p>
         </PanelBox>
     </FlexBox>
@@ -159,7 +159,7 @@ In addition to the competition itself, we are hosting 2 free Intro to Proofs cla
     <div>
         <Heading text="Awards" size={2} textColor="#1B9AAA" />
         <FlexBox>
-            <p style="font-size: 1.2em; margin: 5px">We will be awarding the top teams of each division with <p1 style="color: red">$10 Amazon Gift Cards!</p1></p>
+            <p style="font-size: 1.2em; margin: 5px">We will be awarding the top teams of each division with <p1 style="color: red">$25 Amazon Gift Cards!</p1></p>
         </FlexBox>
     </div>
     <Dropdown mainText="Rules">
