@@ -95,7 +95,7 @@
 <PageHeader
 	title="MMM"
 	description="Mustang Math Mania"
-	button_url="https://docs.google.com/document/d/1YH8V1JGTukikWwpQ_x7eDjDwgL_b6FLvWFX8l241xQ8?usp=sharing"
+	button_url="https://docs.google.com/document/d/1KcXrzksrI2VY84erTJ4I1dNTMSxQ3ujXwqWMD3i8MUg/edit?tab=t.0#heading=h.i7gdx55nkvd8"
 	button_text="Register Now"
 	id="registerFor3MT"
 />
@@ -119,8 +119,8 @@ EARLY EQUINE COST: $12 per participant (Register before September 5th, 2026)<br>
 NORMAL COST: $15 per participant (Register before September 12th, 2026)<br>
 LATE COST: $20 per participant (Register before September 19th, 2026)<br>
 <br><br>
-<b><a href = "https://docs.google.com/document/d/1YH8V1JGTukikWwpQ_x7eDjDwgL_b6FLvWFX8l241xQ8?usp=sharing">Click Here To Access Registration Instructions</a></b><br>
-<b><a href = "https://docs.google.com/document/d/1mKKPEXknc3b3zCBVsDkkrhutKylvl3_0lo46VCr3F34/">Click Here To Access Further Information</a></b><br>
+<b><a href = "https://docs.google.com/document/d/1KcXrzksrI2VY84erTJ4I1dNTMSxQ3ujXwqWMD3i8MUg/edit?usp=drivesdk">Click Here To Access Registration Instructions</a></b><br>
+<b><a href = "https://docs.google.com/document/d/1xAx_feHicQjdqq-PhWK8bF2HBch5pzpPzju9qhw7pOo/edit?usp=drivesdk">Click Here To Access Further Information</a></b><br>
 <br><br>
 *: Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4
             </p>
