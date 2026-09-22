@@ -20,37 +20,51 @@
     courseExpanded = !courseExpanded;
   }
 
-  const MOBILE = 1199; //Based on InnerWidth
+  const MOBILE = 1320;
 
   const navPages = [
 	{
 		path: "/MMM",
-		text: "Competitions",
+		text: "MMM",
 		hasSubPages: true,
-		index: 2,
+		index: 0,
 		subPages: [
-			{ path: "/MMM", text: "Mustang Math Mania", hasSubPages: false },
+			{ path: "/MMM", text: "MMM", hasSubPages: false },
+			{ path: "/MMT2026", text: "MMT 2026", hasSubPages: false },
 			{ path: "/past-tests", text: "Past Tests", hasSubPages: false },
 			{ path:"https://comp.mt/", text:"COMP Platform", hasSubPages:false},
 		],
 	},
+
     {
       path: "/classes",
       text: "Classes",
       hasSubPages: true,
       index: 1,
       subPages: [
-		{ path: "/classes", text: "Algebra Class" },
+		{ path: "/classes", text: "Discrete Class" },
         { path: "/classes/instructors", text: "Instructors" },
         { path: "/classes/tutoring", text: "Tutoring" },
         { path: "/classes/seminars", text: "Free Seminars" }
       ],
     },
+	{
+		path: "/potw",
+		text: "PoTW",
+		hasSubPages: true,
+		index:1,
+		subPages: [
+			{ path: "/potw",text: "Current", hasSubPages: false },
+			{ path: "/potw/archive", text: "Archive", hasSubPages: false },
+		]
+	},
+
     { path: "/our-team", text: "Our Team", hasSubPages: false },
     { path: "/join", text: "Join Us", hasSubPages: false },
     { path: "/sponsors", text: "Sponsors", hasSubPages: false },
     { path: "/donate", text: "Donate", hasSubPages: false },
     { path: "/parent-info", text: "Parent Info", hasSubPages: false },
+	{ path: "/merch", text: "Merch", hasSubPages: false },
   ];
   const show = [0, 0, 0];
 
@@ -93,7 +107,7 @@
 								<span>
 									{navPage.text}
 									<i class="fa fa-caret-down" style="margin-left: 2px;" />
-									{#if $page.url.pathname.includes(navPage.path)}
+									{#if $page.url.pathname.includes(navPage.path) || (navPage.hasSubPages && navPage.subPages.some(sub => sub.path === $page.url.pathname))}
 										<div
 											class="textunderline"
 											in:receive|local

@@ -153,7 +153,7 @@
       </div>
       <div class="card-side-back person-details">
         <a
-          href="mailto:{Member.email}?subject=Mail to {Member.namef} {Member.namel}"
+          href="mailto:{Member.email}?subject=Mail to {Member.first} {Member.last}"
           style="position:absolute; top:8px; right:10px;"
         >
           <BoopAction boopParams={{ y: 5, timing: 200 }}>

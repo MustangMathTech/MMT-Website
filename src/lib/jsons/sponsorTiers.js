@@ -35,7 +35,11 @@ const sponsorTiers = [
 				url: "sponsors/partners/SIMCC.png",
 				alt: "SIMCC",
 				link: "https://simcc.org/",
-			},
+			}, {
+				url: "sponsors/partners/usamo_guide.png",
+				alt: "USAMO Guide",
+				link: "https://www.usamoguide.com/"
+			}
 		],
 	},
 ];

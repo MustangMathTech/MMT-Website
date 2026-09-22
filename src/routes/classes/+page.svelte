@@ -36,10 +36,9 @@
     let y;
 
     let scheduleData = [
-        { "Class": "Beginner Sat", "Day of Week": "Saturday", "Time (PT)": "4:00 - 5:30 PM", "Dates": "9/13 - 11/22 (break 9/27)"},
-        { "Class": "Intermediate Sat", "Day of Week": "Saturday", "Time (PT)": "1:00 - 2:30 PM", "Dates": "9/13 - 11/22 (break 9/27)"},
-        { "Class": "Beginner Sun", "Day of Week": "Sunday", "Time (PT)": "2:00 - 3:30 PM", "Dates": "9/14 - 11/16"},
-        { "Class": "Intermediate Sun", "Day of Week": "Sunday", "Time (PT)": "4:00 - 5:30 PM", "Dates": "9/14 - 11/16"}
+        { "Class": "Beginner Sat", "Day of Week": "Saturday", "Time (PT)": "11:00 AM - 12:30 PM", "Dates": "4/11 - 6/21"},
+        { "Class": "Beginner Sun", "Day of Week": "Sunday", "Time (PT)": "11:00 AM - 12:30 PM", "Dates": "4/12 - 6/21"},
+        { "Class": "Intermediate Sun", "Day of Week": "Sunday", "Time (PT)": "3:00 PM - 4:30 PM", "Dates": "4/12 - 6/21"}
     ]
     
     // let topicsData = [
@@ -50,17 +49,17 @@
     // ]
 
     let topicsData = [
-        { "Week": "1", "Beginner": "Ratios, Proportions, Rates, Absolute Value", "Intermediate": "Factorizations, Exponents, Radicals" },
-        { "Week": "2", "Beginner": "Solving Systems of Equations, Word Problems", "Intermediate": "Advanced Systems of Equations" },
-        { "Week": "3", "Beginner": "Inequalities", "Intermediate": "More Inequalities" },
-        { "Week": "4", "Beginner": "Polynomials, Solving Quadratics", "Intermediate": "Quadratics: Solving, Discriminant, Completing the Square" },
-        { "Week": "5", "Beginner": "Review", "Intermediate": "Review" },
-        { "Week": "6", "Beginner": "Quadratic Extrema Points, Functions", "Intermediate": "Function Problem Solving & Extrema Points" },
-        { "Week": "7", "Beginner": "Vieta's for Quadratics, Special Factorizations", "Intermediate": "Graphing Polynomials, Graphing Inequalities, Generalized Vieta's" },
-        { "Week": "8", "Beginner": "Arithmetic and Geometric Sequences and Series", "Intermediate": "Arithmetic & Geometric Sequences and Series and Telescoping" },
-        { "Week": "9", "Beginner": "Working Backwards, Logic", "Intermediate": "Logarithms, Working Backwards" },
-        { "Week": "10", "Beginner": "Review", "Intermediate": "Review" }
-    ];
+    { "Week": "1", "Beginner": "Divisibility/Multiples/Factors", "Intermediate": "Divisibility/Multiples/Factors" },
+    { "Week": "2", "Beginner": "GCD&LCM/Notation/Remainder Thrm", "Intermediate": "GCD&LCM/Notation/Remainder Thrm" },
+    { "Week": "3", "Beginner": "Basic Lemmas (modulo)/Proofs of Divisibility Rules", "Intermediate": "Basic Lemmas (modulo)/Proofs of Divisibility Rules + Mods" },
+    { "Week": "4", "Beginner": "Mods + Review", "Intermediate": "Primes, Euler’s Totient, Fermat’s Little Thrm" },
+    { "Week": "5", "Beginner": "Review", "Intermediate": "Review" },
+    { "Week": "6", "Beginner": "Permutations/Combinations", "Intermediate": "Permutations/Combinations + Committees/Casework/Complementary Counting" },
+    { "Week": "7", "Beginner": "Permutations/Combinations", "Intermediate": "Permutations/Combinations + Committees/Casework/Complementary Counting" },
+    { "Week": "8", "Beginner": "Venn Diagrams/PIE", "Intermediate": "Venn Diagrams/PIE + Advanced Probability" },
+    { "Week": "9", "Beginner": "Advanced Probability", "Intermediate": "Expected Value/More complicated probability" },
+    { "Week": "10", "Beginner": "Review", "Intermediate": "Review" }
+];
     onMount(() => {
         if (windowWidth && windowWidth < 700) {
             for (var i = 0; i < topicsData.length; i++) {
@@ -86,14 +85,14 @@
 	<title>Classes</title>
 </svelte:head>
 
-<PageHeader title="Classes" description="Online Math Contest Prep Classes" button_url="https://docs.google.com/forms/d/e/1FAIpQLSfq-ZzmPXvrax4sNlz_fvL0txvfRECcYlybmQ0JCpR8KU7upA/viewform?usp=dialog" button_text="Register for Class!" id="register"/>
+<PageHeader title="Classes" description="Online Math Contest Prep Classes" button_url="https://link.mustangmath.com/ClassReg" button_text="Register for Class!" id="register"/>
 
 <br><br>
 
 <Heading text="Summary" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><strong>Mustang Math Classes</strong> prepare students for <strong>math competitions</strong> through four terms: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving. Our current <a href="#classDetails"><strong>Algebra term</strong></a> runs for <strong>10 weeks</strong>, with one session per week. Each session consists of 90-minute Zoom classes with 5-15 students and 2 instructors.</p>  
+        <p style="font-size: 1.5em; text-align: center;"><strong>Mustang Math Classes</strong> prepare students for <strong>math competitions</strong> through four terms: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving. Our current <a href="#classDetails"><strong>Discrete term</strong></a> runs for <strong>10 weeks</strong>, with one session per week. Each session consists of 90-minute Zoom classes with 5-15 students and 2 instructors.</p>  
         <p style="font-size: 1.5em; text-align: center;">The program fee is <strong>$100</strong> for all 10 sessions, with financial aid available upon request. As a nonprofit, we charge for our classes to fund our tournaments while promoting student commitment.</p> 
     </PanelBox>
 </div> 
@@ -104,7 +103,6 @@
 <div style="margin-left: 10vw; margin-right: 10vw;" id="benefitsSection">
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;"><strong>Structure</strong></p>  
-        <p style="font-size: 1.5em; text-align: center;">This upcoming geometry term alternates between lectures + problem solving sessions. In total, slideshow lectures contain around 250+ slides, and problemsets contain 150+ practice problems. Homework between lectures and problem solving sessions will feature Gimkit games to solidify student understanding of basic concepts.</p>
         <p style="font-size: 1.5em; text-align: center;">Students can also request feedback on their homework submitted through google classroom. <a href="https://drive.google.com/drive/folders/1zD7pfsExHnB4pD2lxfWNoU7Fj42kQ0Nw">Sample class material and sample feedback.</a> Instructors will provide both group and one-on-one guidance on specific problems during problem solving sessions (every other week).</p>
         <br />
 
@@ -130,22 +128,25 @@
 <br /> -->
 
 
-<Heading text="Algebra Class Details" size={2} textColor="#1B9AAA" />
+<Heading text="Discrete Class Details" size={2} textColor="#1B9AAA" />
 <div id="classDetails" style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;">
-            Our 10-week <strong>Algebra class</strong> is strong preparation for math competitions. Each week, instructors teach key concepts that students practice through homework. Completing all homework earns students a <strong>certificate of completion</strong> and a $10 gift card.        </p>
+            Our 10-week <strong>Discrete class</strong> is strong preparation for math competitions. Each week, instructors teach key concepts that students practice through homework. Completing all homework earns students a <strong>certificate of completion</strong> and a $10 gift card.        </p>
         
         <ul style="font-size: 1.5em; text-align: center; list-style: none; padding: 0;">
-            <li><strong>Beginner Algebra</strong> (AMC 8 - Little to no competition experience)</li>
-            <li><strong>Intermediate Algebra</strong> (AMC 10 - Some competition experience)</li>
+            <li><strong>Beginner</strong> (AMC 8 - Little to no competition experience)</li>
+            <li><strong>Intermediate</strong> (AMC 10 - Some competition experience)</li>
         </ul>
         <!-- <p style="font-size: 1.5em; text-align: center;">
             Each week will focus on problems from a different topic: Week 1 on Algebra, Week 2 on Geometry, Week 3 on Counting, and Week 4 on Number Theory.
         </p> -->
         <p style="font-size: 2em; text-align: center;">
-            Click to view the <a href="https://docs.google.com/forms/d/e/1FAIpQLSfq-ZzmPXvrax4sNlz_fvL0txvfRECcYlybmQ0JCpR8KU7upA/viewform?usp=dialog"><strong>registration form</strong></a>.
+            Click to view the <a href="https://link.mustangmath.com/ClassReg"><strong>registration form</strong></a>.
         </p>
+<p style = "font-size: 1.5em; text-align:center;"> 
+Students can also request feedback on their homework submitted through google classroom. Sample class material and sample feedback. Instructors will provide both <strong>group and one-on-one guidance</strong> on specific problems during problem solving sessions.
+</p>
     </PanelBox>
 </div> <br />
 <br />
