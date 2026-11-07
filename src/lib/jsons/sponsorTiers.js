@@ -36,6 +36,11 @@ const sponsorTiers = [
 				alt: "SIMCC",
 				link: "https://simcc.org/",
 			},
+			{
+				url: "/sponsors/partners/AoPS.png",
+				alt: "Art of Problem Solving (AoPS)",
+				link: "https://artofproblemsolving.com",
+			},
 		],
 	},
 ];
