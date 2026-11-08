@@ -42,6 +42,16 @@ const sponsorTiers = [
 				link: "https://lhsmath.org/LMT/Home",
 			},
 			{
+				url: "sponsors/partners/SIMCC.png",
+				alt: "SIMCC",
+				link: "https://simcc.org/",
+			},
+			{
+				url: "/sponsors/partners/AoPS.png",
+				alt: "Art of Problem Solving (AoPS)",
+				link: "https://artofproblemsolving.com",
+			},
+      {
 				url: "sponsors/partners/usamo_guide.png",
 				alt: "USAMO Guide",
 				link: "https://www.usamoguide.com/"

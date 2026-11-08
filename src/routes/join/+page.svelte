@@ -30,7 +30,11 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
 	<PanelBox>
 		<p style="font-size: 1.5em; text-align: center;">
-			Mustang Math is a <b style="color: #1B9AAA;">nonprofit organization</b>of high school and college volunteers that are dedicated towards providing middle schoolers access to challenging, interesting, fun, and collaborative math competitions and resources! We are the organizers of the annual  <b style="color: #1B9AAA;">Mustang Math Tournament</b>
+			Mustang Math is a <b style="color: #1B9AAA;">nonprofit organization</b> of
+			high school and college volunteers that are dedicated towards providing
+			middle schoolers access to challenging, interesting, fun, and
+			collaborative math competitions and resources! We are the organizers of
+			the annual <b style="color: #1B9AAA;">Mustang Math Tournament</b>
 			as well as our individual MMM, run low-cost and high-quality
 			<b style="color: #1B9AAA;">mathematics teaching</b>
 			and are also working on many new and exciting projects such as building an online test-taking platform, creating AMC and MATHCOUNTS mocks, and expanding our social media reach! We reached 
