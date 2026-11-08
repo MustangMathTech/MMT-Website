@@ -17,6 +17,16 @@ const sponsorTiers = [
 		headerColor: "#1B9AAA",
 		sponsors: [
 			{
+				url: "sponsors/partners/SIMCC.png",
+				alt: "SIMCC",
+				link: "https://simcc.org/",
+			}, 
+			{
+				url: "sponsors/partners/Mathleague.png",
+				alt: "Math League",
+				link: "https://www.mathleague.org/"
+			},
+			{
 				url: "sponsors/partners/Berkeley Math Tournament.png",
 				alt: "Berkeley Math Tournament",
 				link: "https://bmt.berkeley.edu/",
@@ -41,6 +51,11 @@ const sponsorTiers = [
 				alt: "Art of Problem Solving (AoPS)",
 				link: "https://artofproblemsolving.com",
 			},
+      {
+				url: "sponsors/partners/usamo_guide.png",
+				alt: "USAMO Guide",
+				link: "https://www.usamoguide.com/"
+			}
 		],
 	},
 ];

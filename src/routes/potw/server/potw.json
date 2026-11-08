@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "PoTW #1",
+    "problem": "Let \\(a,b,c,d\\) be a permutation of the numbers \\(11,13,15,17\\). If \\(x = ab+bc+cd+da\\), how many distinct possible values are there for \\(x\\)?",
+    "answer": "3",
+    "solution": "Notice that \\(x = ab+bc+cd+da = (a+c)(b+d)\\). Checking, there are \\(3\\) solutions for \\(x\\).",
+    "image": null
+
+  },
+  {
+    "id": 2,
+    "title": "PoTW #2",
+    "problem": "Let \\(a,b,c\\) be positive integers such that \\(a+b+c=12\\). Find the number of ordered triples \\((a,b,c)\\) with \\(a \\le b \\le c\\).",
+    "answer": "12",
+    "solution": "We can find that when \\(a=1\\) there are \\(5\\) possible triples, 4 when \\(a=2\\), 2 when \\(a=3\\), and 1 when \\(a=4\\). Therefore, there is a total of \\(12\\) possible solutions.",
+    "image": null
+  },
+  {
+    "id": 3,
+    "title": "PoTW #3",
+    "problem": "George the Gambler enters a cassino to play a new game, \"Guess the Parity\". In the game, the dealer tosses six coins, and you have to bet on whether the number of heads is even or odd. However, George finds that the coins are rigged! He finds out that the six coins have the probability of landing heads equal to \\({\\frac{1}{2},\\frac{1}{3}, \\frac{1}{5}, \\frac{1}{7}, \\frac{1}{11}}\\) respectively. What is the expected chance of George winning  each round if he bets \"even\"?" ,
+    "answer": "1/2",
+    "solution": "WLOG, roll all coins other than the coin with probability \\(\\frac{1}{2}\\). No matter whether the previous tosses resulted in an odd or even number of heads, the coin we did not roll has a probability of \\(\\frac{1}{2}\\) of being heads or tails, so the probability of the total number of heads being even is exactly \\(\\frac{1}{2}\\)",
+    "image": null
+  },
+  {
+    "id": 4,
+    "title": "PoTW #4",
+    "problem": "Find the sum of all real values of $z$ satisfying \\(\\sqrt{z^2-2026}+z^2=2027\\).",
+    "answer": "0",
+    "solution": "It is easy to realize that whatever real number \\(z_0\\) satisfies the above question, \\(-z_0\\) satisfies as well. Thus, the sum of all real values for \\(z\\) is \\(0\\).",
+    "image": null
+  }
+]
