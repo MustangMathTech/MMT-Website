@@ -14,6 +14,10 @@ def get_col(row, col_name):
 def find_image(folder, first_name, last_name, imageType):
     first_lower = first_name.lower()
     last_lower = last_name.lower()
+    if " " in last_lower:
+        last_lower = last_lower.split(" ")[0]  # take only the first part of the last name
+    if " " in first_lower:
+        first_lower = first_lower.split(" ")[0]  # take only the first part of the first name
     for file in os.listdir(folder):
         file_lower = file.lower().replace(" ", "").replace("-", "")
         if first_lower in file_lower and last_lower in file_lower and imageType in file_lower:

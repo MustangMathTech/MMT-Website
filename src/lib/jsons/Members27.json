@@ -220,7 +220,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "alexander-gao-pro.png",
         "pic2path": "",
         "bio": "Alexander is a junior at Carmel High in the great state of Indiana. Besides enjoying writing problems and helping with Tournament Development, Alexander is a fan of Brawl Stars, rollerblading, and eating pizza. His favorite type of problems are in computational mathematics."
     },
@@ -327,7 +327,7 @@
     {
         "displayname": "Andrea Gualdrón",
         "first": "Andrea",
-        "last": "Gualdrón",
+        "last": "Gualdron",
         "org": true,
         "pw": true,
         "t": false,
@@ -345,8 +345,8 @@
         "cdpriority": "2",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
-        "pic2path": "",
+        "pic1path": "andrea-gualdron-pro.jpg",
+        "pic2path": "andrea-gualdron-fun.png",
         "bio": "Andrea Gualdron is a Freshman at University of Pennsylvania. She is part of the curriculum development team as an instructor, as well as a problem writing, test coordinator, and test-solver at Mustang Math. Besides MM, she enjoys skiing (tree-hugging), swimming (drowning), building things, and going outside (touching grass)."
     },
     {
@@ -545,7 +545,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "arianna-portis-pro.jpg",
         "pic2path": "",
         "bio": "Arianna Portis is in 11th grade, and goes to Steele Highschool in Texas besides being in problem writing and working on tests. Arianna enjoys reading, playing cello, physics, coding, and teaching herself cool new topics. Arianna has multiple favorite math subjects and really just loves it A LOT!"
     },
@@ -620,7 +620,7 @@
         "cdpriority": "2",
         "bepriority": "2",
         "vppriority": "5",
-        "pic1path": "arjun-kenthapadi-pro.heif",
+        "pic1path": "arjun-kenthapadi-pro.png",
         "pic2path": "arjun-kenthapadi-fun.jpg",
         "bio": "Arjun is a junior at Adrian Wilcox HS in the Bay Area. Besides making videos or teaching classes for Mustang Math, Arjun enjoys tennis, cricket, and destroying his friends in Calc BC integration bees."
     },
@@ -870,7 +870,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "azim-ahmad-julkipli-pro.png",
         "pic2path": "",
         "bio": "Azim is a freshman at the Downingtown East High School. When he's not helping with problem writing or tournament developement, he enjoys coding, reading books, and listening to podcasts!"
     },
@@ -895,7 +895,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "cooper-joseph-pro.png",
         "pic2path": "",
         "bio": "Cooper is a high school freshman from San Jose, California. Other than problem writing for Mustang Math, Cooper enjoys Ultimate Frisbee, chess, and Magic: the Gathering. His favorite branch of mathematics is statistics."
     },
@@ -945,7 +945,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "david-guo-pro.png",
         "pic2path": "",
         "bio": "David is a senior at Cupertino High School in California. Besides helping with tournament development at Mustang Math, David enjoys running, playing Brawl Stars, and listening to music."
     },
@@ -970,7 +970,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "debarghya-das-pro.heif",
+        "pic1path": "debarghya-das-pro.png",
         "pic2path": "",
         "bio": "Debarghya is a junior at Stevenson High School. Besides being a part of the Tournament Development team at MM, he enjoys playing chess, poker, and watching a lot of YouTube."
     },
@@ -1100,7 +1100,7 @@
         "bio": "Emma is a sophomore at Pine View School in Florida. When she’s not working with MM’s Design Team, Emma enjoys playing the clarinet, drawing, reading, and playing ping pong (don't worry, I still like minesweeper but it's been a while). She’s also a zealous member of the band cult and takes all things band very, very seriously. #BAND4LIFE"
     },
     {
-        "displayname": "",
+        "displayname": "Eric Shu",
         "first": "Eric",
         "last": "Shu",
         "org": true,
@@ -1120,7 +1120,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "eric-shu-pro.jpeg",
         "pic2path": "",
         "bio": "Eric is a sophomore in the Bay Area attending Cupertino High School. Outside of math, Eric enjoys reading, fencing (the sport), and the New York Times Connections."
     },
@@ -1195,7 +1195,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "gabriel-neves-siqueira-pro.png",
         "pic2path": "",
         "bio": "Gabriel is a freshman at Northeastern University in Boston. Besides working as a Tech lead at Mustang Math, Gabriel enjoys coding and learning languages, and his favorite math subject is Real Analysis."
     },
@@ -1245,7 +1245,7 @@
         "cdpriority": "2",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "gavin-deng-pro.jpg",
         "pic2path": "",
         "bio": "Gavin is a sophomore at Northside College Prep in Chicago. Outside of being a member of the mustang math problem writing, curriculum development, and tournament development I teams, Gavin enjoys Geocaching(even though he hasn’t really geocached recently)."
     },
@@ -1320,7 +1320,7 @@
         "cdpriority": "5",
         "bepriority": "2",
         "vppriority": "5",
-        "pic1path": "gloria-chi-pro.zip",
+        "pic1path": "gloria-chi-pro.png",
         "pic2path": "",
         "bio": "Gloria is a senior at Clements High School in Texas. Besides writing for Mustang Math's Newsletter as well as helping out with projects and activities, Gloria enjoys writing poetry and listening to music."
     },
@@ -1670,7 +1670,7 @@
         "cdpriority": "5",
         "bepriority": "2",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "james-yang-pro.png",
         "pic2path": "james-yang-fun.png",
         "bio": "James is a sophomore at Lakeside School in Seattle. Besides leading the Washington MM chapter, James likes hanging out with his pet birds, listening to music, and hiking outdoors."
     },
@@ -2095,7 +2095,7 @@
         "cdpriority": "2",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "kevin-chen-pro.png",
         "pic2path": "kevin-chen-fun.png",
         "bio": "Kevin is a junior at Ridge High School in New Jersey. Besides contributing to Mustang Math and leading its New Jersey tournament, he enjoys making music and playing tennis."
     },
@@ -2320,7 +2320,7 @@
         "cdpriority": "5",
         "bepriority": "2",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "maggie-chen-pro.jpg",
         "pic2path": "",
         "bio": "Yixuan (Maggie) Chen is a Sophomore from White Station High School in Memphis TN. Besides being a tournament developer for Mustang Math, Maggie enjoys playing tennis, violin, reading fantasy books and sleeping."
     },
@@ -2395,7 +2395,7 @@
         "cdpriority": "2",
         "bepriority": "2",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "maria-baginskaya-pro.png",
         "pic2path": "",
         "bio": "Hi I'm Maria Baginskaya, a sophomore at Bellevue high school in Washington state. Besides working in design, curriculum development, and sponsorships at mustang math, I also love to draw and play chess."
     },
@@ -2470,7 +2470,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "matthew-hsiao-pro.heif",
+        "pic1path": "matthew-hsiao-pro.png",
         "pic2path": "",
         "bio": "Matthew is a sophomore at Torrey Pines in California. He is a problem writer for Mustang Math and enjoys playing tennis and piano in his free time."
     },
@@ -2670,7 +2670,7 @@
         "cdpriority": "2",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "nicholas-andrison-pro.png",
         "pic2path": "",
         "bio": "Nicholas is a junior at Elyon Christian School in Surabaya. Besides helping with problems, designs, and class materials in Mustang Math, he enjoys listening to music, solving puzzles and (maybe) learning competitive programming."
     },
@@ -3020,7 +3020,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "ryan-chan-pro.png",
         "pic2path": "",
         "bio": "Ryan Chan is a senior from Chantilly High School in the state of Virginia. He's a problem writer for Mustang Math Tournament, but he also likes playing mystery games and writing in his spare time."
     },
@@ -3071,7 +3071,7 @@
         "bepriority": "5",
         "vppriority": "5",
         "pic1path": "ryan-lahey-pro.png",
-        "pic2path": "",
+        "pic2path": "ryan-lahey-fun.png",
         "bio": "Ryan is a sophomore at Pine View School in Florida. Aside from developing problems for MM, Ryan enjoys various STEM-related topics including biology, organic chemistry, and computer science. His favorite math subjects include trigonometry and calculus."
     },
     {
@@ -3545,7 +3545,7 @@
         "cdpriority": "2",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "sid-selvaraj-pro.png",
         "pic2path": "",
         "bio": "Sid is a sophomore at The Wardlaw-Hartridge School in New Jersey. At Mustang Math, he is a Sustang and enjoys theoretical physics, soccer, and running track and field. He loves watching 3Blue1Brown."
     },
@@ -3676,7 +3676,7 @@
     },
     {
         "displayname": "Soumalya Chatterjee",
-        "first": "Jiko",
+        "first": "Soumalya",
         "last": "Chatterjee",
         "org": true,
         "pw": false,
@@ -3695,7 +3695,7 @@
         "cdpriority": "2",
         "bepriority": "2",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "soumalya-chatterjee-pro.jpg",
         "pic2path": "",
         "bio": "Soumalya Chatterjee is a senior at Sharon High School in Massachusetts. I help out with tournament development and marketing such as logistics, sending flyers, getting sponsorships, and volunteering at the events. During my free time, I like to draw and watch movies."
     },
@@ -3720,7 +3720,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "srihari-raghavendra-pro.png",
         "pic2path": "",
         "bio": "Srihari Raghavendra is a sophomore at Eastlake High School in Washington. Besides working on the Design team at Mustang Math, Srihari enjoys playing cricket, piano, and chess."
     },
@@ -3770,7 +3770,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "steven-brody-pro.png",
         "pic2path": "",
         "bio": "Steven is a freshman at Mountain View High School in California. Besides writing problems and coordinating tests at Mustang Math, Steven enjoys coding, juggling, AI, playing chess, and number theory!"
     },
@@ -4270,7 +4270,7 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "zhuo-zhan-chen-pro.png",
         "pic2path": "",
         "bio": "Zhuo Zhan is a junior at Stuyvesant High School in New York City. Besides working as a problem writer at Mustang Math, Zhuo Zhan enjoys listening to music. His favorite math subject is Geometry."
     },
@@ -4370,8 +4370,8 @@
         "cdpriority": "5",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
-        "pic2path": "",
+        "pic1path": "ethan-xia-pro.png",
+        "pic2path": "ethan-xia-fun.png",
         "bio": "Ziyi (Ethan) Xia is a junior at St. George's School in Vancouver, Canada. In addition to working on the Problem Writing team at Mustang Math, Ethan plays basketball and piano, runs, and debates. He is also active in youth leadership and community service, helping diverse voices be heard."
     },
     {
@@ -4395,7 +4395,7 @@
         "cdpriority": "1",
         "bepriority": "5",
         "vppriority": "5",
-        "pic1path": "",
+        "pic1path": "zoe-guo-pro.png",
         "pic2path": "",
         "bio": "Zoe is a senior at Sharon High School in Massachusetts who enjoys working with the Curriculum Development, Tournament Development, and Design teams at Mustang Math. When she's not busy mathing, Zoe likes to doodle, watch sunsets, and sleep."
     }
