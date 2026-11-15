@@ -59,7 +59,7 @@
               use:lazyLoad
               class="person-img"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
-              data-src={ ( "/about-us-images/serious/" + Member.pic1path)}
+              data-src={ ( "/about-us-images/images27/" + Member.pic1path)}
               alt={Member.namef}
               width="130"
               height="130"
@@ -173,7 +173,7 @@
               use:lazyLoad
               class="person-img"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
-              data-src={( "/about-us-images/silly/" + Member.pic2path)}
+              data-src={( "/about-us-images/images27/" + Member.pic2path)}
               alt={Member.namef}
               width="130"
               height="130"
@@ -184,7 +184,7 @@
               use:lazyLoad
               class="person-img"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
-              data-src={( "/about-us-images/serious/" + Member.pic1path)}
+              data-src={( "/about-us-images/images27/" + Member.pic1path)}
               alt={Member.namef}
               width="130"
               height="130"
