@@ -2,58 +2,64 @@ import csv
 import json
 import os
 
-CSV_FILE = "src/lib/jsons/Members26.csv"
-JSON_FILE = "src/lib/jsons/Members26.json"
-SERIOUS_FOLDER = "static/about-us-images/serious"
-SILLY_FOLDER = "static/about-us-images/silly"
+CSV_FILE = "src/lib/jsons/Members27.csv"
+JSON_FILE = "src/lib/jsons/Members27.json"
+SERIOUS_FOLDER = "static/about-us-images/images27"
+SILLY_FOLDER = "static/about-us-images/images27"
 
 def get_col(row, col_name):
     return row.get(col_name, "").strip()
 
-def find_image(folder, first_name, last_name):
+# imageType is "pro" or "fun"
+def find_image(folder, first_name, last_name, imageType):
     first_lower = first_name.lower()
     last_lower = last_name.lower()
+    if " " in last_lower:
+        last_lower = last_lower.split(" ")[0]  # take only the first part of the last name
+    if " " in first_lower:
+        first_lower = first_lower.split(" ")[0]  # take only the first part of the first name
     for file in os.listdir(folder):
         file_lower = file.lower().replace(" ", "").replace("-", "")
-        if first_lower in file_lower and last_lower in file_lower:
+        if first_lower in file_lower and last_lower in file_lower and imageType in file_lower:
             return file
     return ""
 
 members = []
 
+# set column headers as: preferredFullName,preferredFirstName,preferredLastName,grade,yearsInMM,country,professionalImage,sillyImage,bio,teams,teamLead,regionLead
 with open(CSV_FILE, newline="", encoding="utf-8") as csvfile:
     reader = csv.DictReader(csvfile)
     # identify the actual CSV header keys for the last two questions (flexible search)
-    sample_headers = reader.fieldnames or []
-    team_colname = None
-    region_colname = None
-    for h in sample_headers:
-        key = h.lower()
-        if "team you lead" in key:
-            team_colname = h
-        if "region you lead" in key:
-            region_colname = h
+    # sample_headers = reader.fieldnames or []
+    # team_colname = None
+    # region_colname = None
+    # for h in sample_headers:
+    #     key = h.lower()
+    #     if "team you lead" in key:
+    #         team_colname = h
+    #     if "region you lead" in key:
+    #         region_colname = h
 
     for row in reader:
-        full_name = get_col(row, "What's your Full Name?")
-        first_name = get_col(row, "What's your Preferred First Name?")
-        last_name = get_col(row, "What's your Preferred Last Name?")
-        email = get_col(row, "Email Address")
-        discord_username = get_col(row, "What's your Discord Username")
-        discord_id = get_col(row, "What's your Discord ID (18 digit user ID)")
-        bio = get_col(row, "Put your bio below.")
-        teams = get_col(row, "Which teams are you part of? Check all that apply.")
+        full_name = get_col(row, "preferredFullName")
+        first_name = get_col(row, "preferredFirstName")
+        last_name = get_col(row, "preferredLastName")
+        # email = get_col(row, "Email Address")
+        # discord_username = get_col(row, "What's your Discord Username")
+        # discord_id = get_col(row, "What's your Discord ID (18 digit user ID)")
+        bio = get_col(row, "bio")
+        teams = get_col(row, "teams")
         teams_lower = teams.lower()
 
         # Read leader columns (if they exist)
-        team_lead_val = get_col(row, team_colname) if team_colname else ""
-        region_lead_val = get_col(row, region_colname) if region_colname else ""
+        team_lead_val = get_col(row, "teamLead")
+        region_lead_val = get_col(row, "regionLead")
 
         # prefer team lead if filled, otherwise region lead
         if team_lead_val:
-            orgrole_value = team_lead_val
+            orgrole_value = team_lead_val + " Lead"
         elif region_lead_val:
-            orgrole_value = region_lead_val
+            orgrole_value = region_lead_val + " Lead"
         else:
             orgrole_value = ""
 
@@ -66,8 +72,52 @@ with open(CSV_FILE, newline="", encoding="utf-8") as csvfile:
         be = "business engagement" in teams_lower or "business + engagement" in teams_lower
         vp = "video production" in teams_lower
 
+        pwPriority = "2" if pw else "5"
+        tPriority = "2" if t else "5"
+        dPriority = "2" if d else "5"
+        tdPriority = "2" if td else "5"
+        cdPriority = "2" if cd else "5"
+        bePriority = "2" if be else "5"
+        vpPriority = "2" if vp else "5"
+        orgPriority = "5"
+
+        teamLeadLower = team_lead_val.lower()
+
+        pwLead = "problem writing" in teamLeadLower
+        tLead = "tech" in teamLeadLower
+        dLead = "design" in teamLeadLower
+        tdLead = "tournament development" in teamLeadLower
+        cdLead = "curriculum development" in teamLeadLower
+        beLead = "business engagement" in teamLeadLower or "business + engagement" in teamLeadLower
+        vpLead = "video production" in teamLeadLower
+
+        if pwLead:
+            pwPriority = "1"
+            orgrole_value = "PW Lead"
+        if tLead:
+            tPriority = "1"
+        if dLead:
+            dPriority = "1"
+        if tdLead:
+            tdPriority = "1"
+            orgrole_value = "TD Lead"
+        if cdLead:
+            cdPriority = "1"
+            orgrole_value = "CD Lead"
+        if beLead:
+            bePriority = "1"
+            orgrole_value = "BE Lead"
+        if vpLead:
+            vpPriority = "1"
+
+        if "director" in teamLeadLower:
+            orgPriority = "1"
+            orgrole_value = "Director"
+        elif team_lead_val != "":
+            orgPriority = "2"
+        elif region_lead_val != "":
+            orgPriority = "2"
         member = {
-            "email": email,
             "displayname": full_name,
             "first": first_name,
             "last": last_name,
@@ -79,22 +129,19 @@ with open(CSV_FILE, newline="", encoding="utf-8") as csvfile:
             "cd": cd,
             "be": be,
             "vp": vp,
-            "discordid": discord_id,
-            "discordusername": discord_username,
-            "discordroles": "",
             # --- new field added below ---
             "orgrole": orgrole_value,
             # ------------------------------
-            "orgpriority": "5",
-            "pwpriority": "2" if pw else "5",
-            "tpriority": "2" if t else "5",
-            "dpriority": "2" if d else "5",
-            "tdpriority": "2" if td else "5",
-            "cdpriority": "2" if cd else "5",
-            "bepriority": "2" if be else "5",
-            "vppriority": "2" if vp else "5",
-            "pic1path": find_image(SERIOUS_FOLDER, first_name, last_name),
-            "pic2path": find_image(SILLY_FOLDER, first_name, last_name),
+            "orgpriority": orgPriority,
+            "pwpriority": pwPriority,
+            "tpriority": tPriority,
+            "dpriority": dPriority,
+            "tdpriority": tdPriority,
+            "cdpriority": cdPriority,
+            "bepriority": bePriority,
+            "vppriority": vpPriority,
+            "pic1path": find_image(SERIOUS_FOLDER, first_name, last_name, "pro"),
+            "pic2path": find_image(SILLY_FOLDER, first_name, last_name, "fun"),
             "bio": bio
         }
 
