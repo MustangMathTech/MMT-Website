@@ -41,24 +41,32 @@
   };
 
   let emeritus = [
+    "Ahana Gholkar",
+    "Alex Chen",
     "Alon Ragoler",
     "Andrew Liu",
     "Anna Li",
     "Apurva Varigonda",
     "Arpit Ranasaria",
     "Carson Mitchell",
+    "Claire Shen",
     "Conor Kennedy",
     "Daniel Chirakarn",
+    "Dhruv Jena",
+    "Elaine Tang",
     "Eesha Jain",
     "Eric Ge",
+    "Ethan Huang",
     "Grace Zhao",
     "Kiran Parthasarathy",
+    "Linnrue Wei",
     "Linus Tang",
     "Michael Liu",
     "Owen Zhang",
     "Rithwick Pal",
     "Sydney Park",
     "Tristan Kay",
+    "Troy Yang",
     "Yuuki Sawanoi"
   ];
 
